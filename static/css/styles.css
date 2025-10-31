@@ -29,9 +29,11 @@ body .paper-background {
 
 .paper {
     width: var(--page-width);
+    max-width: var(--page-width);
     padding: 4em;
     display: inline;
     max-height: 100vh;
+    min-height: 100vh;
     overflow: scroll;
     background: white;
 }

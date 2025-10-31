@@ -8,7 +8,11 @@ app = Flask(__name__)
 def index():
     with open("prompt.txt", "r") as f:
         paper = f.read()
-    return render_template('index.html', paper=paper)
+    with open("llm.txt", "r") as f:
+        llm_discussion = f.read()
+    with open("discussion.txt", "r") as f:
+        discussion = f.read()
+    return render_template('index.html', paper=paper, llm_discussion=llm_discussion, discussion=discussion)
 
 
 if __name__ == '__main__':
