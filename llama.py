@@ -1,5 +1,4 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer
-import torch
+from transformers import AutoTokenizer, LlamaForCausalLM
 
 
 class OLlama:
@@ -9,10 +8,7 @@ class OLlama:
         ):
         
         self.model_name = model_name
-        self.model = AutoModelForCausalLM.from_pretrained(
-            model_name,
-            device_map="auto",
-        )
+        self.model = LlamaForCausalLM.from_pretrained(model_name)
 
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
 
@@ -20,12 +16,6 @@ class OLlama:
     def prompt(self, prompt):
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
 
-        with torch.inference_mode():
-            output = self.model.generate(
-                **inputs,
-                max_new_tokens=1000,
-                do_sample=True,
-                temperature=0.7
-            )
+        generate_ids = self.model.generate(inputs.input_ids, max_length=500)
 
-        return self.tokenizer.decode(output[0], skip_special_tokens=True)
+        return self.tokenizer.batch_decode(generate_ids, skip_special_tokens=True, clean_up_tokenization_spaces=False)[0]

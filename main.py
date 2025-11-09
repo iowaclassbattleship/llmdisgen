@@ -46,7 +46,7 @@ for i in range(3):
     evaluations = []
     for ollama_model in ollama_models:
         ollama_wrapper = OLlama(model_name=ollama_model)
-        llm_dis = ollama_wrapper.prompt(abstract)
+        llm_dis = ollama_wrapper.prompt("Write a discussion for this:" + abstract + "XXX")
 
         accuracy_scores = []
         for model_type in model_types:
