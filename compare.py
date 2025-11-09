@@ -3,6 +3,7 @@ from bert_score import BERTScorer
 
 class TextComparator():
     def __init__(self, model_type):
+        self.model_name = model_type
         self.scorer = BERTScorer(model_type=model_type)
 
 

@@ -1,8 +1,8 @@
-from transformers import AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
+from transformers import AutoModelForCausalLM, AutoTokenizer
 import torch
 
 
-class Proompter:
+class OLlama:
     def __init__(
             self,
             model_name="unsloth/llama-3-8b-bnb-4bit"
@@ -17,7 +17,7 @@ class Proompter:
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
 
     
-    def proompt(self, prompt):
+    def prompt(self, prompt):
         inputs = self.tokenizer(prompt, return_tensors="pt").to(self.model.device)
 
         with torch.inference_mode():
