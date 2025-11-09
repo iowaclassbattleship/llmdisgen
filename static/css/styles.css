@@ -1,0 +1,47 @@
+:root {
+    --page-width: 210mm;
+    --page-height: 297mm;
+    --page-margin: 16mm;
+    --bg: #e6eef8;
+    --paper: #ffffff;
+    --shadow: 0 12px 30px rgba(2, 6, 23, 0.35);
+    --gutter: 20px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+body .paper-background {
+    background: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2em 0;
+}
+
+.paper {
+    width: var(--page-width);
+    max-width: var(--page-width);
+    padding: 4em;
+    display: inline;
+    max-height: 100vh;
+    min-height: 100vh;
+    overflow: scroll;
+    background: white;
+}
+
+.side-by-side {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    align-items: center;
+}
