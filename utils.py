@@ -1,8 +1,13 @@
 import json
 from pathlib import Path
+import time
 
-def write_json(filename: Path, obj):
-    with open(filename, "w") as f:
+out = Path("runs")
+out.mkdir(exist_ok=True)
+
+def write_json(obj):
+    filename = f"metadata-{int(time.time())}.json"
+    with open(out / filename, "w") as f:
         json.dump(obj, f, indent=2)
 
 
