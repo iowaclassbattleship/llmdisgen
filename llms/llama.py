@@ -9,7 +9,7 @@ available_models = [
 ]
 
 class Llama:
-    def __init__(self, model_name="unsloth/llama-3-8b-bnb-4bit"):
+    def __init__(self, model_name):
         self.model_name = model_name
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
         self.model = LlamaForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16, device_map="auto")
@@ -18,19 +18,29 @@ class Llama:
         system_prompt = (
             "You are a scientific research assistant. Always answer as helpfully as possible, "
             "while being safe and unbiased. If a question is unclear or false, clarify or correct it."
-            "Only respond with the requested section, not with any fluff."
+            "Write a scientific discussion based on the given abstract with no fluff, just the discussion"
         )
 
-        formatted_prompt = f"[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n{user_prompt} [/INST]"
+        formatted_prompt = (
+            f"[INST] <<SYS>>\n{system_prompt}\n<</SYS>>\n\n{user_prompt} [/INST]"
+        )
 
-        inputs = self.tokenizer(formatted_prompt, return_tensors="pt", return_attention_mask=True).to(self.model.device)
+        inputs = self.tokenizer(
+            formatted_prompt,
+            return_tensors="pt",
+            return_attention_mask=True
+        ).to(self.model.device)
+
+        input_ids = inputs["input_ids"]
 
         outputs = self.model.generate(
-            input_ids=inputs["input_ids"],
+            input_ids=input_ids,
             attention_mask=inputs["attention_mask"],
-            max_new_tokens=500,
             temperature=0.7,
             do_sample=True,
         )
 
-        return self.tokenizer.decode(outputs[0], skip_special_tokens=True)
+        # Only decode NEW tokens (model’s response)
+        new_tokens = outputs[0][input_ids.shape[1]:]
+
+        return self.tokenizer.decode(new_tokens, skip_special_tokens=True).strip()

@@ -26,7 +26,6 @@ ds = load_dataset(f"annamkiepura99/{levels[level]}-diss-gen-combined")
 papers = ds["train"]
 # cited_papers = load_dataset(f"annamkiepura99/{levels[level]}-cited-papers-combined")
 
-metadata = []
 for i in tqdm(range(10), desc=f"Processing papers"):
     corpus_id = papers["corpus_id"][i]
     abstract = papers["abstract"][i]
@@ -36,11 +35,7 @@ for i in tqdm(range(10), desc=f"Processing papers"):
     for llama_model in llama.available_models:
         llama_wrapper = llama.Llama(model_name=llama_model)
 
-        preprompt = (
-            "You are given the abstract for a scientific research paper. Write ONLY a scientific discussion based on this abstract:"
-        )
-
-        llm_dis = llama_wrapper.prompt(preprompt + abstract)
+        llm_dis = llama_wrapper.prompt(abstract)
         ollama_model_name = llama_wrapper.model_name
 
         del llama_wrapper
@@ -64,7 +59,7 @@ for i in tqdm(range(10), desc=f"Processing papers"):
             "accuracy_scores": accuracy_scores
         })
 
-    metadata.append({
+    utils.write_json({
         "corpus_id": corpus_id,
         "level": levels[level],
         "method": "zero-shot",
@@ -73,5 +68,3 @@ for i in tqdm(range(10), desc=f"Processing papers"):
         "evaluations": evaluations,
         "cited_paper_ids": re.findall(pattern, discussion_txt)
     })
-
-utils.write_json(metadata)

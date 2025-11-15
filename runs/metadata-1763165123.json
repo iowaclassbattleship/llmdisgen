@@ -1,0 +1,919 @@
+[
+  {
+    "corpus_id": "10009609",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "There has been a substantially increased interest in biomedical research impact assessment over the past 5 years. This can be studied by a number of methods, but its influence on clinical guidelines must rank as one of the most important. In cancer, there are 43 UK guidelines (and associated Health Technology Assessments) published (up to October 2006) across three series, each of which has an evidence base in the form of references, many of which are papers in peer-reviewed journals. These have all been identified and analysed to determine their geographical provenance and type of research, in comparison with overall oncology research published in the peak years of guideline references (1999\u20132001). The UK papers were cited nearly three times as frequently as would have been expected from their presence in world oncology research (6.5%). Within the United Kingdom, Edinburgh and Glasgow stood out for their unexpectedly high contributions to the guidelines' scientific base. The cited papers from the United Kingdom acknowledged much more explicit funding from all sectors than did the UK cancer research papers at the same research level.",
+    "discussion": "The UK cancer clinical guidelines are sufficient in number and variety to provide a fair window on the impact of cancer research on clinical practice, not only in the United Kingdom, but in other leading countries, particularly in western Europe. We have seen that almost all the references (88%) are to papers that are within the subfield of cancer research. Because about one-third of the research supported by Cancer Research UK, in common with that of other medical research charities working in a particular disease area, is out with this subfield (most of this would comprise basic biology), it follows that little of this work can be expected to influence clinical guidelines -hardly a surprising conclusion, but nevertheless one that is worth stating.Many of the guideline references are to papers in the US and the UK general medical journals -The Journal of the American Medical Association, New England Journal Medical, British Medical Journal and The Lancet. This is one reason, but by no means the only one, for the guideline references as a whole to be in high impact, and therefore well known, journals. It appears that if researchers want their work, particularly clinical trials, to be part of the evidence base for clinical guidelines, then it is desirable for them to publish in highly cited journals. Disproportionately, many of these papers will have been funded by government or the pharmaceutical industry, with charities also playing an enhanced role compared with cancer research overall. This highlights one pitfall of national guidelines in the context of research impact assessments; many important, high quality clinical trials -either because they are early phase or negative -will not make it into guidelines. The impact of research on national clinical guidelines is just one parameter that can describe the utility of health research {{9662045}} Table 4.When account is taken of the clinical nature of the work cited on guidelines, the big increase in the percentage of the papers that acknowledge funding -whether from government, charities or industry -is striking (Table 5). Many (37%) of these clinical papers with RLs greater than 1.5 are reports of clinical trials, and 85% of the latter acknowledge funding compared with 71% of the others. Cancer Research UK plays the biggest role, and supports over one-third of these trials, more even than the pharmaceutical industry as a whole, or the UK government.The geographical analysis of the cited papers reveals that the UK papers have a threefold higher presence among them than in world cancer research. In part, this reflects the differences in cancer management between countries. Such overcitation also occurs on other scientific papers, so it is hardly surprising that it was found here. It might be expected that the UK guidelines, which aim to show which treatments are cost-effective, would reflect in particular the different financial basis of health-care provision in this country compared with that elsewhere, and so papers concerned with economics and costs would be even more overcited if they were from the United Kingdom. In fact, this does occur, but to a very minor extent (22% from the United Kingdom compared with 19% overall; the difference not being significant).The distribution of the cited papers within the United Kingdom differs from what might have been expected based purely on overall numbers and on the extent to which the cities carry out clinical observation rather than basic research. The simple comparison of Figure 4 needs also to take account of the mean RL of papers from each area, and, when this is done ( Figure 5), a different pattern emerges, with EH \u00bc Edinburgh, OX \u00bc Oxford and CB \u00bc Cambridge forming an axis of excellence (on this indicator) and other areas' output being less cited on guidelines. The distance of the spots from this axis gives one indicator of the performance of the different centres, an imperfect one to be sure, as there will be other confounding factors not considered here, but nevertheless a useful complement to the traditional bibliometric criterion based purely on citation counts in the scientific literature.There are in the database enough cited papers from a few other countries to enable a similar evaluation to be carried out for them. However, these data are inevitably skewed by being viewed through the prism of the UK clinical recommendations. It would be highly desirable to complement them with the results of similar exercises carried out in other countries with extensive sets of clinical guidelines, or at a European or international level. Then, provided the data were collected in exactly the same way, they could be pooled and a more international perspective on the utility of cancer research would emerge that research evaluators could employ. Such an activity could appropriately be coordinated by the European Cancer Managers' Research Forum, with all data contributors having also the right to gain access to the data provided by workers in other countries.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "The abstract highlights an increased interest in assessing the impact of biomedical research, particularly in the field of cancer, over the past five years. The study focuses on examining the influence of research on clinical guidelines, specifically in the UK. The authors analyze 43 UK guidelines and associated Health Technology Assessments published across three series, and compare them to overall oncology research published in the peak years of guideline references (1999-2001).",
+          "",
+          "The study finds that UK papers were cited nearly three times more frequently than would be expected based on their presence in world oncology research. Edinburgh and Glasgow stand out for their unexpectedly high contributions to the guidelines' scientific base. Additionally, the cited papers from the UK acknowledge more explicit funding from all sectors than do UK cancer research papers at the same research level.",
+          "",
+          "This discussion raises several questions and observations:",
+          "",
+          "1. What are the potential reasons for the increased interest in biomedical research impact assessment? Could it be due to changes in funding policies, increased scrutiny of research outputs, or growing awareness of the importance of evidence-based medicine?",
+          "2. How do the findings of this study compare to other countries or regions? Are there any differences in the way research is evaluated and integrated into clinical guidelines?",
+          "3. What are the implications of this study for researchers, policymakers, and clinicians? Should they prioritize collaboration and coordination to ensure that research findings are translated into practice and improve patient outcomes?",
+          "4. How can researchers ensure that their work is properly cited and acknowledged in clinical guidelines? What are the best practices for documenting and disseminating research findings to the relevant stakeholders?",
+          "5. What are the potential limitations of this study? For example, are there any biases in the selection of guidelines or citation analysis? How can these limitations be addressed in future studies?",
+          "",
+          "Overall, this study highlights the importance of evaluating and understanding the impact of biomedical research on clinical guidelines and patient outcomes. By examining the geographical provenance and type of research, researchers and policymakers can better understand how to prioritize and coordinate research efforts to improve healthcare outcomes."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.574843168258667,
+            "R": 0.5886427164077759,
+            "F1": 0.5816611051559448
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.5066284537315369,
+            "R": 0.5569056868553162,
+            "F1": 0.5305786728858948
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          "This abstract provides an overview of the current state of biomedical research impact assessment in the UK, specifically"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.355703741312027,
+            "R": 0.5868732929229736,
+            "F1": 0.4429410398006439
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.3447100520133972,
+            "R": 0.5531009435653687,
+            "F1": 0.4247206747531891
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "]",
+          "",
+          "Discussion:",
+          "",
+          "The impact of biomedical research on clinical guidelines is a significant area of study. The analysis"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3770861029624939,
+            "R": 0.6227021217346191,
+            "F1": 0.4697241187095642
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.322668194770813,
+            "R": 0.5122805833816528,
+            "F1": 0.39594438672065735
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "9662045"
+    ]
+  },
+  {
+    "corpus_id": "100153030",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "It is well known that sigma models in symmetric spaces accept equivalent descriptions in terms of integrable systems, such as the sine\u2010Gordon equation, through Pohlmeyer reduction. In this paper, we study the mapping between known solutions of the Euclidean O(3) non\u2010linear sigma model, such as instantons, merons and elliptic solutions that interpolate between the latter, and solutions of the Pohlmeyer reduced theory, namely the sinh\u2010Gordon equation. It turns out that instantons do not have a counterpart, merons correspond to the ground state, while the class of elliptic solutions is characterized by a two to one correspondence between solutions in the two descriptions.",
+    "discussion": "We found the corresponding counterparts of meron and elliptic solutions of Euclidean O(3) non-linear sigma model in the Pohlmeyer reduced version of the same theory, namely the sinh-Gordon equation. Summarizing, we may conclude the following: Instanton solutions, which are the only finite action solutions of the O(3) model, do not have a counterpart, as they are characterized by vanishing stress-energy tensor. Therefore, not every solution of the non-linear sigma model has a counterpart in the Pohlmeyer reduced theory. Especially solutions with a well defined topological number cannot be mapped to the Pohlmeyer reduced theory, as they have to be characterized by a unique limit at complex infinity, which is inconsistent with the form of the imposed Virasoro constraint in Pohlmeyer reduction.All meron solutions correspond to the ground state of the sinh-Gordon equation. It seems that this is a more general property that singular configurations such as a meron have. In a similar manner, strings propagating into R t \u00d7 S 2 are described by a non-linear sigma model that is reducible to the sine-Gordon equation. Classical string solutions that are singular in a similar sense (the world-sheet tends to an onedimensional manifold, such as a point particle solution, or the \"hoop\" string solution) have the property of being mapped to either the stable or the unstable vacuum of the sine-Gordon equation {{12750838}}.Elliptic solutions, which can be viewed as solutions of an one-dimensional mechanical pendulum problem in the initial formulation of the theory, have also an onedimensional mechanical analogue with a hyperbolic cosine potential in the Pohlmeyer reduced description. For every periodic solution in the pendulum problem, there is a quasi-periodic solution and vice versa that has the same counterpart in the hyperbolic cosine problem. The above pair of solutions correspond to physically distinct solutions in the initial formulation of the sigma model. Furthermore, different, physically inequivalent solutions of the sigma model may correspond to the same solution in the Pohlmeyer reduced theory. This may be attributed to the fact that Pohlmeyer reduction deals with the fields and their derivatives in a symmetric way, as elements of a vector basis in an enhanced higher dimensional space, in our case R 3 .It would be interesting to generalize these results studying the correspondence between solutions of non-linear sigma models with different target space geometries or in higher dimensional target spaces.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "Title: Mapping between Solutions of Euclidean O(3) Non-Linear Sigma Model and Pohlmeyer Reduced Sinh-Gordon Equation",
+          "",
+          "Introduction:",
+          "",
+          "In this discussion, we will explore the relationship between known solutions of the Euclidean O(3) non-linear sigma model and their counterparts in the Pohlmeyer reduced sinh-Gordon equation. The Euclidean O(3) non-linear sigma model is a fundamental model in theoretical physics, which describes the dynamics of a scalar field in a curved space-time. The Pohlmeyer reduced sinh-Gordon equation, on the other hand, is a simplified version of the model that retains only the essential features of the original system.",
+          "",
+          "Mapping between Instantons and Ground State:",
+          "",
+          "The first result of the paper is the absence of a counterpart for instantons in the Pohlmeyer reduced theory. Instantons are localized solutions of the Euclidean O(3) non-linear sigma model that are important for understanding the model's behavior in the presence of defects. However, it turns out that instantons do not have a direct analogue in the Pohlmeyer reduced theory. This means that the ground state of the system, which is the trivial vacuum, is the only solution of the Pohlmeyer reduced theory that can be related to instantons.",
+          "",
+          "Mapping between Merons and Solutions of Sinh-Gordon Equation:",
+          "",
+          "The second result of the paper is the existence of a one-to-one correspondence between merons and solutions of the Pohlmeyer reduced sinh-Gordon equation. Merons are localized solutions of the Euclidean O(3) non-linear sigma model that are characterized by a non-trivial winding number around the circle of radius 1. The sinh-Gordon equation, on the other hand, is a simple integrable system that describes the dynamics of a complex scalar field in a curved space-time. The correspondence between merons and solutions of the sinh-Gordon equation is a direct result of the Pohlmeyer reduction, which maps the original system onto a simpler one.",
+          "",
+          "Mapping between Elliptic Solutions and Solutions of Sinh-Gordon Equation:",
+          "",
+          "The third result of the paper is the existence of a two-to-one correspondence between elliptic solutions of the Euclidean O(3) non-linear sigma model and solutions of the Pohlmeyer reduced sinh-Gordon equation. Elliptic solutions are localized solutions of the Euclidean O(3) non-linear sigma model that are characterized by a non-trivial elliptic symmetry. The correspondence between elliptic solutions and solutions of the sinh-Gordon equation is a consequence of the Pohlmeyer reduction, which maps the original system onto a simpler one with a simpler symmetry structure.",
+          "",
+          "Conclusion:",
+          "",
+          "In conclusion, the paper provides a detailed analysis of the mapping between known solutions of the Euclidean O(3) non-linear sigma model and their counterparts in the Pohlmeyer reduced sinh-Gordon equation. The results demonstrate that the Pohlmeyer reduction provides a powerful tool for understanding the behavior of the original system in the presence of defects, and highlights the importance of the sinh-Gordon equation as a simplification of the original system. The correspondence between solutions of the two systems provides a valuable framework for understanding the behavior of the original system, and highlights the importance of the Pohlmeyer reduction as a tool for simplifying complex systems."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.6507478356361389,
+            "R": 0.7221360802650452,
+            "F1": 0.6845859289169312
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.556135892868042,
+            "R": 0.5776352882385254,
+            "F1": 0.5666817426681519
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          "Discussion:",
+          "",
+          "The abstract discusses the relationship between sigma models in symmetric spaces and the sinh-Gordon equation"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3839120864868164,
+            "R": 0.6180785894393921,
+            "F1": 0.4736328125
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.35544127225875854,
+            "R": 0.5569413900375366,
+            "F1": 0.4339406490325928
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "The instantons in the Euclidean O(3) non-linear sigma model can be mapped to"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.4160268306732178,
+            "R": 0.7228274345397949,
+            "F1": 0.5281019806861877
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.4089862108230591,
+            "R": 0.6773865222930908,
+            "F1": 0.5100307464599609
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "12750838"
+    ]
+  },
+  {
+    "corpus_id": "10020161",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "In this paper, we address the automatic induction of synonym paraphrases for the empirically challenging class of German particle verbs. Similarly to Cocos and Callison-Burch (2016), we incorporate a graph-based clustering approach for word sense discrimination into an existing paraphrase extraction system, (i) to improve the precision of synonym identification and ranking, and (ii) to enlarge the diversity of synonym senses. Our approach significantly improves over the standard system, but does not outperform an extended baseline integrating a simple distributional similarity measure.",
+    "discussion": "Overall, the distributional similarity between the target word and the synonym candidates represents the strongest extension of the basic retranslation approach, and the cluster graphs do not provide further useful information. A breakdown of the cluster analyses revealed that the cluster sizes are very unevenly distributed. Typically, there is one very large cluster and several considerably smaller clusters, as shown by the first part of  Table 4: Distribution of candidates, synonyms and senses in the largest cluster vs. all other clusters in the iterations T 1 -T 5 .proportion of candidates in the remaining clusters.In addition, we found that most correct synonyms are also in the largest cluster (middle part of table 4). Accordingly, the cluster analyses do not represent partitions of the target verb senses, but most senses are in the largest cluster (bottom part of table 4).Consequently, while the synonym features are useful for ranking the set of candidates, clusterlevel features are ineffective as they are derived from effectively meaningless cluster analyses. 4 While re-applying the clustering step gradually overcomes the uneven cluster distribution (iterations T 2 -T 5 in table 4), the sizes of the graphs decrease dramatically. For example (not depicted in table 4), on average there are only 169 candidates left in T 5 compared to 1,792 in T 1 , with an average of 2.8 correct synonyms instead of 22.5, and an average of 1.7 senses instead of 4.5.We assume that partitioning the candidate set according to senses in combination with the cluster-level measures is a valid approach to deal with the word sense problem, but based on our analysis we conclude that either (i) the context vectors are not suitable to differentiate between senses, or that (ii) the clustering algorithm is inapt for this scenario. A possible solution might be to apply the algorithms suggested in {{11942888}}. Finally, no weighting was applied to any of the properties listed in table 2. This could be improved by using a held-out data development set, and a greater number of particle verbs (we only use 138) would probably be needed as well.We hypothesized that graph-based clustering properties in addition to synonym candidate properties should improve the precision of synonym identification and ranking, and extend the diversity of synonym senses. Unfortunately, our extensions failed, and analyses of cluster properties revealed that future work should improve the vector representations and compare other clustering algorithms. One should keep in mind, however, that we focused on a specifically challenging class of multi-word expressions: highly ambiguous German particle verbs.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "Title: Automatic Induction of Synonym Paraphrases for German Particle Verbs",
+          "",
+          "Introduction:",
+          "",
+          "In this paper, the authors aim to improve the automatic induction of synonym paraphrases for the challenging class of German particle verbs. They propose an existing paraphrase extraction system that incorporates a graph-based clustering approach for word sense discrimination, which enhances the precision of synonym identification and ranking. The authors also compare their approach with an extended baseline that includes a simple distributional similarity measure.",
+          "",
+          "Methodology:",
+          "",
+          "The authors' proposed approach involves integrating a graph-based clustering method into an existing paraphrase extraction system. The graph-based clustering method is used to distinguish between different senses of a word, while the existing paraphrase extraction system is used to identify synonyms for each sense. The authors evaluate their approach on a dataset of German particle verbs and compare it with the standard system and the extended baseline.",
+          "",
+          "Results:",
+          "",
+          "The authors' proposed approach significantly improves over the standard system, but does not outperform the extended baseline. The results show that the graph-based clustering method helps to improve the precision of synonym identification and ranking, but the simple distributional similarity measure used in the extended baseline provides additional improvements.",
+          "",
+          "Discussion:",
+          "",
+          "The authors' findings suggest that incorporating a graph-based clustering approach into an existing paraphrase extraction system can improve the precision of synonym identification and ranking for German particle verbs. However, the results also indicate that additional measures, such as distributional similarity, can further enhance the performance of the system. The authors note that the challenge of identifying synonyms for German particle verbs is due to their complex grammatical structure and the need to distinguish between different senses of a word.",
+          "",
+          "Conclusion:",
+          "",
+          "In conclusion, the authors' proposed approach for automatic induction of synonym paraphrases for German particle verbs shows promising results. The incorporation of a graph-based clustering method into an existing paraphrase extraction system improves the precision of synonym identification and ranking, but additional measures, such as distributional similarity, can further enhance the performance of the system. The findings of this study have implications for improving the accuracy of paraphrase extraction systems for other challenging language classes as well."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.5492807626724243,
+            "R": 0.6128817200660706,
+            "F1": 0.5793408751487732
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.47332963347435,
+            "R": 0.5324721336364746,
+            "F1": 0.501162052154541
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          "## Step 1: Understand the abstract and its components",
+          "The abstract discusses a research paper that"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3014967441558838,
+            "R": 0.4342222511768341,
+            "F1": 0.3558875024318695
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.3139393627643585,
+            "R": 0.4656895697116852,
+            "F1": 0.3750458359718323
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "]",
+          "",
+          "Discussion:",
+          "",
+          "Word sense discrimination and paraphrase extraction are two important tasks in Natural Language Processing (N"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.32251739501953125,
+            "R": 0.47440338134765625,
+            "F1": 0.38398635387420654
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.30387386679649353,
+            "R": 0.40344899892807007,
+            "F1": 0.34665247797966003
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "11942888"
+    ]
+  },
+  {
+    "corpus_id": "10037358",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "BackgroundVentilator-acquired pneumonia (VAP) is a common reason for antimicrobial therapy in the intensive care unit (ICU). Biomarker-based diagnostics could improve antimicrobial stewardship through rapid exclusion of VAP. Bronchoalveloar lavage (BAL) fluid biomarkers have previously been shown to allow the exclusion of VAP with high confidence.Methods/DesignThis is a prospective, multi-centre, randomised, controlled trial to determine whether a rapid biomarker-based exclusion of VAP results in fewer antibiotics and improved antimicrobial management. Patients with clinically suspected VAP undergo BAL, and VAP is confirmed by growth of a potential pathogen at\u2009>\u2009104 colony-forming units per millilitre (CFU/ml). Patients are randomised 1:1, to either a \u2018biomarker-guided recommendation on antibiotics\u2019 in which BAL fluid is tested for IL-1\u03b2 and IL-8 in addition to routine microbiology testing, or to \u2018routine use of antibiotics\u2019 in which BAL undergoes routine microbiology testing only. Clinical teams are blinded to intervention until 6\u00a0hours after randomisation, when biomarker results are reported to the clinician. The primary outcome is a change in the frequency distribution of antibiotic-free days (AFD) in the 7\u00a0days following BAL. Secondary outcome measures include antibiotic use at 14 and 28\u00a0days; ventilator-free days; 28-day mortality and ICU mortality; sequential organ failure assessment (SOFA) at days 3, 7 and 14; duration of stay in critical care and the hospital; antibiotic-associated infections; and antibiotic-resistant pathogen cultures up to hospital discharge, death or 56\u00a0days. A healthcare-resource-utilisation analysis will be calculated from the duration of critical care and hospital stay. In addition, safety data will be collected with respect to performing BAL. A sample size of 210 will be required to detect a clinically significant shift in the distribution of AFD towards more patients having fewer antibiotics and therefore more AFD.DiscussionThis trial will test whether a rapid biomarker-based exclusion of VAP results in rapid discontinuation of antibiotics and therefore improves antibiotic management in patients with suspected VAP.Trial registrationISRCTN65937227. Registered on 22 August 2013. ClinicalTrials.gov, NCT01972425. Registered on 24 October 2013.",
+    "discussion": "Limitations in diagnostic techniques to correctly rule-in or rule-out infections results in many patients receiving unnecessary antibiotics. Successfully validating the use of BAL fluid IL-1\u03b2 and IL-8 to exclude VAP has been a significant step forward for developing diagnostics in this area {{17391743}}. A rapid rule-out of VAP should allow for discontinuation of antibiotics on the day of suspicion of VAP and therefore improve antibiotic management. This randomised controlled trial aims to determine the clinical utility of a rapid biomarker-based test by measuring the antibiotic use, which is expressed as AFD, in the 7 days that follow BAL.Few biomarkers are used in the ICU to guide antibiotic management, and none specifically for VAP. Due to the novelty of the biomarker and the conduct of this trial in a complex clinical environment, regular education and reinforcement of the trial protocol is necessary with participating sites. Furthermore, the trial methodology accommodates the complexity of the intervention by including elements such as the process evaluation.This trial represents a potentially important step forward for novel diagnostics in the ICU. If effective in its primary outcome it could result in an important improvement in antimicrobial stewardship in this patient group. It also represents a challenging and complex trial of novel diagnostics in a difficult clinical space. The process of conducting this trial will provide valuable information to inform future trials.The trial is currently active in all participating sites. The first patient was recruited in December 2013, and the trial is due to complete in 2016. Abbreviations AE, adverse event; AFD, antibiotic-free days; APACHE, acute physiology and chronic health evaluation; BAL, bronchoalveolar lavage; CBA, cytometric bead array; CFU, colony-forming units; CT, computed tomography; HCAI, healthcareassociated infection; ICU, intensive care unit; IL-1\u03b2, interleukin-1 beta; IL-8, interleukin-8; MRSA, methicillin-resistant Staphylococcus aureus; NCTU, Newcastle Clinical Trials Unit; NHS, National Health Service; NPV, negative predictive value; SAE, serious adverse event; SOFA, sequential organ failure assessment; SOP, standard operating procedure; VAP, ventilator-acquired pneumonia",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "The study you provided is a randomized controlled trial investigating the use of biomarker-based diagnostics to improve antimicrobial stewardship in patients with suspected ventilator-acquired pneumonia (VAP). The trial aims to determine whether a rapid biomarker-based exclusion of VAP leads to a reduction in antibiotic use and improved antimicrobial management in these patients.",
+          "",
+          "The study design is as follows: patients with clinically suspected VAP are randomized to either a 'biomarker-guided recommendation on antibiotics' or 'routine use of antibiotics' group. In the 'biomarker-guided' group, BAL fluid is tested for IL-1\u03b2 and IL-8 in addition to routine microbiology testing. The clinical teams are blinded to the intervention until 6 hours after randomization, when the biomarker results are reported to the clinician. The primary outcome is the change in the frequency distribution of antibiotic-free days (AFD) in the 7 days following BAL. Secondary outcomes include antibiotic use at 14 and 28 days, ventilator-free days, 28-day mortality and ICU mortality, SOFA scores at days 3, 7, and 14, duration of stay in critical care and the hospital, antibiotic-associated infections, and antibiotic-resistant pathogen cultures up to hospital discharge, death or 56 days. A healthcare-resource-utilization analysis will also be conducted.",
+          "",
+          "The study will enroll 210 patients and will have a sample size of 210 to detect a clinically significant shift in the distribution of AFD towards more patients having fewer antibiotics and therefore more AFD. The study will provide valuable insights into the use of biomarker-based diagnostics to improve antimicrobial stewardship in patients with suspected VAP.",
+          "",
+          "The use of biomarkers in this study is novel and has the potential to improve antimicrobial management in several ways. Firstly, the use of biomarkers can help to rapidly exclude VAP, reducing the duration of antibiotic exposure and improving patient outcomes. Secondly, the use of biomarkers can help to identify patients who are at low risk of VAP, allowing for early discontinuation of antibiotics and reducing the overall antibiotic burden. Finally, the use of biomarkers can help to identify patients who are at high risk of antibiotic resistance, allowing for targeted antibiotic therapy and reducing the risk of adverse events.",
+          "",
+          "The study has several strengths, including its prospective, multi-centre, and randomized design, which allows for a more robust assessment of the effectiveness of biomarker-based diagnostics in improving antimicrobial stewardship. Additionally, the study includes a comprehensive set of secondary outcomes, including clinical, microbiological, and economic outcomes, which will provide a more complete picture of the benefits and limitations of biomarker-based diagnostics.",
+          "",
+          "However, there are also some limitations to the study. Firstly, the study is limited to patients with suspected VAP, and it is unclear how the results will translate to other patient populations. Secondly, the study is based on a single biomarker panel, and it is possible that other biomarkers may be more useful in identifying patients at low risk of VAP. Finally, the study is conducted in a single centre, and it is unclear how the results will generalize to other healthcare settings.",
+          "",
+          "In conclusion, the study is well-designed and has the potential to provide valuable insights into the use of biomarker-based diagnostics to improve antimicrobial stewardship in patients with suspected VAP. The use of biomarkers in this study has the potential to improve patient outcomes, reduce antibiotic exposure, and reduce healthcare resource utilization. Further research is needed to confirm the results of this study and to determine the applicability of biomarker-based diagnostics in other patient populations and healthcare settings."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.6133584976196289,
+            "R": 0.6628237962722778,
+            "F1": 0.6371325254440308
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.5620063543319702,
+            "R": 0.5689353346824646,
+            "F1": 0.5654496550559998
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          ""
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.0,
+            "R": 0.0,
+            "F1": 0.0
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.0,
+            "R": 0.0,
+            "F1": 0.0
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "**Scientific Discussion**",
+          "",
+          "Rapid biomarker-based exclusion of ventilator-acquired pneumonia (V"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3615708351135254,
+            "R": 0.6069799661636353,
+            "F1": 0.4531848132610321
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.3471066355705261,
+            "R": 0.6011210680007935,
+            "F1": 0.44009071588516235
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "17391743"
+    ]
+  },
+  {
+    "corpus_id": "10040435",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "BackgroundThe purpose of this study was to examine malaria testing practices and preferences in Bo, Sierra Leone, and to ascertain interest in and willingness to take a home-based rapid diagnostic test administered by a community health volunteer (CHV) or a trained family member rather than travelling to a clinical facility for laboratory-based testing.MethodsA population-based, cross-sectional survey of 667 randomly-sampled rural households and 157 urban households was conducted in December 2013 and January 2014.ResultsAmong rural residents, 69% preferred a self/family- or CHV-conducted home-based malaria test and 20% preferred a laboratory-based test (with others indicating no preference). Among urban residents, these numbers were 38% and 44%, respectively. If offered a home-based test, 28% of rural residents would prefer a self/family-conducted test and 68% would prefer a CHV-assisted test. For urban residents, these numbers were 21% and 77%. In total, 36% of rural and 63% of urban residents reported usually taking a diagnostic test to confirm suspected malaria. The most common reasons for not seeking malaria testing were the cost of testing, waiting to see if the fever resolved on its own, and not wanting to travel to a clinical facility for a test. In total, 32% of rural and 27% of urban participants were very confident they could perform a malaria test on themselves or a family member without assistance, 50% of rural and 62% of urban participants were very confident they could perform a test after training, and 56% of rural and 33% of urban participants said they would pay more for a home-based test than a laboratory-based test.ConclusionExpanding community case management of malaria to include home testing by CHVs and family members may increase the proportion of individuals with febrile illnesses who confirm a positive diagnosis prior to initiating treatment.",
+    "discussion": "The participants in this study, especially those living in rural areas, expressed a high level of interest in homebased testing for malaria. A recent systematic review of Table 3 Characteristics of participants who indicated a consistent preference for home-based testing (by self/family or CHV) or laboratory-based testing 27 studies of CCM of malaria found consistent evidence that trained CHWs could successfully conduct RDTs and use the test results to recommend appropriate treatment {{74007}}. Studies in which community members are part of the selection process for CHVs are particularly successful in increasing access to testing {{18750996}}{{6084901}}. The primary concerns about CCM of malaria are some CHWs recommending anti-malarial medications following negative malaria tests and many febrile individuals not following through on recommended clinical consultations after negative test results {{74007}}{{10253380}}. Few studies have examined the use of home-based RDTs conducted by family members trained and supervised by CHVs rather than by the CHVs themselves, but this study suggested an openness to self/family testing in addition to CHV testing. Self/family testing with RDTs prepurchased by the household might increase malariatesting access in small farming villages that are located farther than easy walking distance from a community with a trained CHV. Home-based malaria testing, often with the assistance of a CHV, has been successfully implemented in other sub-Saharan African communities. In the rural Iganga district of Uganda, community members expressed a high level of trust in CHVs who were trained to conduct malaria RDTs and to recommend appropriate malaria treatment {{7359381}}. In villages in the South Kordofan State of Sudan, the use of CHV-conducted RDTs significantly increased access to malaria tests and malaria treatment, especially during the rainy season when travel to a clinic was often impossible {{6084901}}. In two provinces in Zambia, CHVs had a very high rate of correct recommendations for malaria treatment or referral to a healthcare facility after conducting in-home RDTs {{18750996}}. Given the substantial interest in home-based malaria testing in rural Bo district in Sierra Leone, it seems likely that CHVs in these communities could successfully test and treat malaria in homes, and perhaps even train willing and confident family members to conduct RDTs in their own households, making appropriate referrals for hospital care when necessary.The most commonly reported barriers to the uptake of home-based testing for malaria include concerns about infection transmission during blood draws {{7359381}}{{30384887}} and concerns about reliable access to RDTs for homebased testing use {{18750996}}{{10253380}}{{1841654}}. Any programme for homebased testing would need to include clear instructions about how to safely dispose of lancets and test kits. CHVs could be encouraged to collect used kits they had distributed and to ensure that they were processed as medical waste. Consistent access to RDTs would need to be supported through community partnerships with local hospitals and government health officials.This study in Sierra Leone used a cross-sectional approach with self-reported answers about febrile status and testing preferences. Participants were not asked to try conducting a malaria test on themselves or a family member, so all answers about willingness to conduct a test and confidence about the ability to conduct a test are hypothetical. This willingness-to-test survey will need to be followed by field tests of RDTs by CHVs and CHV-trained family members. Should these tests prove to be acceptable to the community, safe and valid, the programme could be expanded to include RDTs for other locally-important infections.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "Thank you for providing the abstract for discussion. Based on the findings of this study, there are several key points that can be highlighted:",
+          "",
+          "1. Preferences for malaria testing practices: The study found that the majority of rural residents in Bo, Sierra Leone preferred a self/family- or community health volunteer (CHV)-conducted home-based malaria test, while urban residents were more evenly split between home-based and laboratory-based tests. These findings suggest that there may be a preference for home-based testing among rural residents, potentially due to the convenience and accessibility of this approach.",
+          "2. Interest in home-based testing: If offered a home-based test, a significant proportion of rural residents (28%) and urban residents (21%) expressed willingness to use a self/family-conducted test, while a larger proportion (68% of rural residents and 77% of urban residents) preferred a CHV-assisted test. These findings suggest that there may be a willingness among participants to use home-based testing, particularly with the assistance of a trained CHV.",
+          "3. Confidence in performing malaria tests: Only a minority of participants (32% of rural residents and 27% of urban residents) reported being very confident in their ability to perform a malaria test on themselves or a family member without assistance. However, after training, a larger proportion of participants (50% of rural residents and 62% of urban residents) expressed confidence in their ability to perform a test. These findings suggest that while some participants may feel comfortable performing a malaria test without assistance, many may benefit from training and support to improve their confidence and accuracy.",
+          "4. Willingness to pay for home-based testing: The study found that a significant proportion of participants (56% of rural residents and 33% of urban residents) were willing to pay more for a home-based test than a laboratory-based test. This suggests that there may be a willingness among participants to pay for a more convenient and accessible testing option.",
+          "",
+          "Overall, these findings suggest that home-based malaria testing may be a viable option for increasing the proportion of individuals with febrile illnesses who confirm a positive diagnosis prior to initiating treatment. However, it is important to ensure that any home-based testing program is implemented with proper training and support for participants, as well as adequate supervision and quality control to ensure accurate test results. Additionally, the cost of home-based testing and the willingness of participants to pay for this service may be important factors to consider in the implementation of such a program."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.586287260055542,
+            "R": 0.6255897879600525,
+            "F1": 0.6053012013435364
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.5576597452163696,
+            "R": 0.5818196535110474,
+            "F1": 0.5694835782051086
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          "A discussion based on the abstract would be too lengthy and not fully address the abstract's main points"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.288597971200943,
+            "R": 0.4695616066455841,
+            "F1": 0.3574828505516052
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.31158319115638733,
+            "R": 0.48506009578704834,
+            "F1": 0.3794335126876831
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "Rural residents prefer home-based testing (69%), more than urban residents (38%). However,"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3456096351146698,
+            "R": 0.559934675693512,
+            "F1": 0.4274088442325592
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.32378968596458435,
+            "R": 0.5293210744857788,
+            "F1": 0.4017970561981201
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "74007",
+      "18750996",
+      "6084901",
+      "74007",
+      "10253380",
+      "7359381",
+      "6084901",
+      "18750996",
+      "7359381",
+      "30384887",
+      "18750996",
+      "10253380",
+      "1841654"
+    ]
+  },
+  {
+    "corpus_id": "10042502",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "Using the measurement-based quantum computation model, we construct interactive proofs with non-communicating quantum provers and a classical verifier. Our construction gives interactive proofs for all languages in BQP with a polynomial number of quantum provers, each of which, in the honest case, performs only a single measurement. \nOur techniques use self-tested graph states. In this regard we introduce two important improvements over previous work. Specifically, we derive new error bounds which scale polynomially with the size of the graph compared with exponential dependence on the size of the graph in previous work. We also extend the self-testing error bounds on measurements to a very general set which includes the adaptive measurements used for measurement-based quantum computation as a special case.",
+    "discussion": "For our result to hold, we must assume that the provers behave according to quantum mechanics. This is because we model the provers using the quantum formalism. Currently this appears to be a reasonable assumption since quantum mechanics has been a very successful theory. However, we run into a problem if we wish to use this result in certain circumstances. For example, we may wish to verify that quantum mechanics generates accurate predictions for very complex systems. In this case it becomes infeasible to classically compute predictions from the quantum model. Quantumly, this is still possible, and we might be tempted to use an interactive proof in order to verify that our quantum computer has done the computation correctly. However, if we use the arguments in this paper we run into a problem of circularity since we must assume that quantum mechanics is correct in order for the argument to go through, but quantum mechanics is exactly what we want to verify! Hence it remains an important open question whether it is possible to achieve interactive proofs for problems in BQP where the prover's actions are easy for quantum computers but for which we do not assume a priori that quantum mechanics holds.As discussed in the proof of Theorem 1, there are space-time trade-offs. In particular we may perform the gap amplification by repeating in parallel or serially, or some mixture of the two. Hence we could perform N repetitions on n provers, each of which then performs N measurements, or we can repeat in parallel with nN provers, each of which performs a single measurement.Another factor, which we have not mentioned, is the time required to build the necessary graph states. Graph states are built by applying CTRL-Z gates, one for each edge. At worst this can take no more than O(n 2 ) operations. For triangular cluster states, such as we use here, the degree of each vertex in bounded above by 6 so at most 3n 2-qubit operations are required (plus n single-qubit state preparations). These can be parallelized in a constant depth circuit by exploiting the localized structure of triangular cluster states. Regardless, the state preparation can be accomplished in a polynomial number of steps.Our construction has a somewhat remarkable property. Since triangular cluster states are universal, the state preparation depends only on the size of the calculation. By choosing a discrete set of operations (X, Z and X \u00b1 Z measurements are sufficient for universality) the quantum provers are also constant, requiring only the ability to measure in some fixed set of bases. The self-testing portion of the interactive proof then also only depends on the size of the calculation, since it depends only on the state and the measurements. Amazingly the classical verifier is also rather simple. It can be given a circuit as its input from which it reads off what gates to perform and simply looks up what angle to measure for that gate. The remaining calculations are simply XORs. This is a clear example of where the simplicity of the measurementbased quantum computing model allows for a simple analysis.Another interesting property is that no single quantum prover has enough power to convince even itself whether the input is in the language. Indeed, all the quantum parts together, including the state preparation, still cannot perform even simple calculations since they can only prepare and measure some fixed state. They lack the capacity to perform the XORs required to perform a full measurement-based calculation. It is only when we combine the verifier, provers, and state preparation together that we obtain enough power to perform any substantial calculations.It should be possible, although a bit more involved, to use the usual graph state computation model {{8839192}}{{6197709}} involving X-Y plane measurements. There is a complication since it is possible to simulate a complex measurements M by using a M * measurements instead (i.e. complex conjugate everything). In other words, the provers could complex conjugate all their states and operators, and this would preserve the expected values of all operators. However, the complex conjugation cannot be \"undone\" through an isometry. Hence the complex conjugated provers would not satisfy equation (22).As far as correctness of the calculation is concerned, complex conjugation poses no problem since the outcome of an adaptive measurement will be identical to the desired case. A workaround is possible through a suitable relaxation of (22), and details are given for the exact case in {{44939389}}. The remaining points are to make the techniques of {{44939389}} robust, and generalize to X-Y plane measurements, which can be done analogously to how X-Z plane measurements are handled here.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "Thank you for sharing the abstract with me. I'm happy to help facilitate a scientific discussion based on the given abstract.",
+          "",
+          "To begin, can you tell me more about the measurement-based quantum computation model? How does it differ from other quantum computation models, and what are its advantages?",
+          "",
+          "Also, can you elaborate on the term \"interactive proofs\"? What kind of problems can interactive proofs be used to solve, and how do they differ from other types of quantum proofs?",
+          "",
+          "I'm also curious about the term \"non-communicating quantum provers\". Can you explain why these provers are non-communicating, and how does this affect the construction of interactive proofs?",
+          "",
+          "Finally, can you provide more details on the two improvements you mentioned in the abstract? Specifically, what are the new error bounds you derived, and how do they differ from previous work?",
+          "",
+          "Thank you for your time, and I look forward to hearing your responses."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.4794420897960663,
+            "R": 0.5234854221343994,
+            "F1": 0.5004966855049133
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.4109783172607422,
+            "R": 0.4796505570411682,
+            "F1": 0.4426669478416443
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          "The abstract provides a general framework for the research. However, without specific details, it's challenging"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3515556752681732,
+            "R": 0.5406311750411987,
+            "F1": 0.4260586202144623
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.29658740758895874,
+            "R": 0.5146952867507935,
+            "F1": 0.3763229548931122
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "]",
+          "",
+          "The construction of interactive proofs relies on the ability to self-test graph states. This is a crucial"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.39385348558425903,
+            "R": 0.6195458769798279,
+            "F1": 0.4815678894519806
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.33339351415634155,
+            "R": 0.6000835299491882,
+            "F1": 0.42864248156547546
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "8839192",
+      "6197709",
+      "44939389",
+      "44939389"
+    ]
+  },
+  {
+    "corpus_id": "10051468",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "During the time of tissue repair that ensues subsequent to tissue injury, blood vessel wall fibronectin increases concomitantly with endothelial proliferation and angiogenesis. However, the source of this blood vessel fibronectin had not been delineated. In this report we have demonstrated that microvascular fibronectin is produced in situ by the proliferating vessels surrounding excisional wounds. This finding was established by extirpating 3 mm of skin from the center of a well- healed rat xenograph on the flanks of immunosuppressed mice, harvesting the injured skin sites at various stages during the healing process, and staining the specimens with reciprocal species-specific anti- fibronectin. The proliferating donor vessels that surrounded the wounded graft had increased fluorescence staining with FITC conjugated mouse anti-rat fibronectin and no staining with rat anti-mouse fibronectin. This finding was taken as direct evidence that the fibronectin was produced in situ by the rat vessels and not derived from circulating mouse plasma.",
+    "discussion": "These studies provide the first clear indication that blood vessels synthesize fibronectin in vivo in association with endothelial proliferation. Whereas plasma flbronectin can deposit in other sites and bathes the endothelium, we could detect no significant recruitment of circulating fibronectin into the matrix of these proliferating vessels, as has been shown in fibroblast matrices in vitro {{13161383}}. This suggests there might be a direct relationship between the observed endothelial proliferation and the increased production of fibronectin by cells in the vessel wall. Perhaps the increase in vessel wall fibronectin is an essential part of the reparative process of blood vessel basement membrane during wound healing or neovascularization.During the time of tissue repair that ensues subsequent to tissue injury, blood vessel wall fibronectin increases concomitantly with endothelial proliferation and angiogenesis. However, the source of this blood vessel fibronectin had not been delineated. In this report we have demonstrated that microvascular fibronectin is produced in situ by the proliferating vessels surrounding excisional wounds. This finding was established by extirpating 3 mm of skin from the center of a well-healed rat xenograph on the flanks of immunosuppressed mice, harvesting the injured skin sites at various stages during the healing process, and staining the specimens with reciprocal speciesspecific anti-fibronectin. The proliferating donor vessels that surrounded the wounded graft had increased fluorescence staining with FITC conjugated mouse anti-rat fibronectin and no staining with rat anti-mouse fibronectin. This finding was taken as direct evidence tha[~ the fibronectin was produced in situ by the rat vessels and not derived from circulating mouse plasma.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "Title: In-Situ Production of Fibronectin by Proliferating Vessels in Skin Wound Healing",
+          "",
+          "Introduction:",
+          "",
+          "Tissue repair following injury involves a complex interplay of cellular and molecular events, including angiogenesis, inflammation, and tissue remodeling. Fibronectin, a ubiquitous extracellular matrix protein, plays a crucial role in these processes by modulating cell behavior, cell-cell interactions, and tissue organization. The source of fibronectin in the context of skin wound healing has been a subject of interest, with previous studies suggesting that it is produced by endothelial cells and other cell types. However, the precise origin of fibronectin in the context of skin wound healing has not been definitively established.",
+          "",
+          "Methods:",
+          "",
+          "To investigate the source of fibronectin in skin wound healing, we employed a series of experiments using rat xenografts on immunosuppressed mice. We excised 3 mm of skin from the center of the xenograph and harvested the injured skin sites at various stages during the healing process. The specimens were then stained with reciprocal species-specific anti-fibronectin antibodies conjugated to fluorescein isothiocyanate (FITC).",
+          "",
+          "Results:",
+          "",
+          "Our findings revealed that the fibronectin produced in situ during skin wound healing is derived from the proliferating vessels surrounding the wounded graft. The fluorescence staining with FITC-conjugated mouse anti-rat fibronectin was significantly higher in the proliferating donor vessels than in the surrounding tissue, and there was no staining with rat anti-mouse fibronectin. These results provide direct evidence that the fibronectin produced in situ during skin wound healing is produced by the rat vessels and not derived from circulating mouse plasma.",
+          "",
+          "Discussion:",
+          "",
+          "Our findings have important implications for our understanding of the molecular mechanisms underlying skin wound healing. The in-situ production of fibronectin by proliferating vessels suggests that this protein plays a more prominent role in the healing process than previously thought. The fact that the fibronectin is produced by the proliferating vessels rather than by endothelial cells or other cell types suggests that the healing process is more complex and dynamic than previously appreciated.",
+          "",
+          "The mechanism by which the proliferating vessels produce fibronectin during skin wound healing is not fully understood, but it is likely to involve the expression of fibronectin genes and the secretion of the protein into the extracellular matrix. Further studies are needed to elucidate the molecular mechanisms underlying this process.",
+          "",
+          "Conclusion:",
+          "",
+          "In conclusion, our findings provide conclusive evidence that the fibronectin produced in situ during skin wound healing is derived from the proliferating vessels surrounding the wounded graft. These results have important implications for our understanding of the molecular mechanisms underlying skin wound healing and highlight the complexity and dynamism of the healing process. Further studies are needed to elucidate the molecular mechanisms underlying the in-situ production of fibronectin by proliferating vessels during skin wound healing."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.7155205011367798,
+            "R": 0.7097458839416504,
+            "F1": 0.7126214504241943
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.6842218637466431,
+            "R": 0.6320339441299438,
+            "F1": 0.657093346118927
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          "This is a scientific abstract. Below is the discussion based on the abstract.",
+          "",
+          "## Discussion",
+          "",
+          "The"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.27589181065559387,
+            "R": 0.4729606807231903,
+            "F1": 0.34849581122398376
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.2781944274902344,
+            "R": 0.38531872630119324,
+            "F1": 0.3231089413166046
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "]",
+          "",
+          "Fibronectin production by microvascular endothelial cells surrounding wounds and its relationship to angi"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.42838048934936523,
+            "R": 0.6664735078811646,
+            "F1": 0.521538496017456
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.40868186950683594,
+            "R": 0.6067219376564026,
+            "F1": 0.4883894920349121
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "13161383"
+    ]
+  },
+  {
+    "corpus_id": "1005265",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "Quantitative trait locus (QTL) analysis detects regions of a genome that are linked to a complex trait. Once a QTL is detected, the region is narrowed by positional cloning in the hope of determining the underlying candidate gene\u2014methods used include creating congenic strains, comparative genomics and gene expression analysis. Combined cross analysis may also be used for species such as the mouse, if the QTL is detected in multiple crosses. This process involves the recoding of QTL data on a per-chromosome basis, with the genotype recoded on the basis of high- and low-allele status. The data are then combined and analyzed; a successful analysis results in a narrowed and more significant QTL. Using parallel methods, we show that it is possible to narrow a QTL by combining data from two different species, the rat and the mouse. We combined standardized high-density lipoprotein phenotype values and genotype data for the rat and mouse using information from one rat cross and two mouse crosses. We successfully combined data within homologous regions from rat Chr 6 onto mouse Chr 12, and from rat Chr 10 onto mouse Chr 11. The combinations and analyses resulted in QTL with smaller confidence intervals and increased logarithm of the odds ratio scores. The numbers of candidate genes encompassed by the QTL on mouse Chr 11 and 12 were reduced from 1343 to 761 genes and from 613 to 304 genes, respectively. This is the first time that QTL data from different species were successfully combined; this method promises to be a useful tool for narrowing QTL intervals.",
+    "discussion": "Previously, genotype data from multiple mouse QTL datasets were successfully combined; if the QTL genes are the same, or close to each other with the same mode of inheritance and the same direction of the allele effect, the combined analysis results in higher LOD scores and narrower QTL. Using the same methodology, we combined HDL QTL datasets from two different species, the rat and mouse. Both combinations resulted in a successful increase in statistical significance and a narrowing of the QTL confidence interval. More importantly than the positional effects, however, this narrowing reduced the number of underlying candidate genes. The mouse QTL on Chr 11 was narrowed from a confidence interval spanning 41 cM to one spanning 17 cM, and the QTL on Chr 12 was reduced from 44 to 22 cM. The numbers of underlying candidate genes were reduced by 43 and 54 percent, respectively.These results are the first report of a successful combination of QTL data from two different species. While the methodology involved in combining cross data was not novel, the steps required to prepare the datasets for combination were thoroughly researched and tested by us and may now be repeated. It is notable that in clarifying the steps required for aligning rat and mouse QTL at the marker level, several factors normally considered in QTL analysis were omitted for simplicity and for the value of testing by assumption. We designed the data combinations so that sex, diet or any other condition were cofactors only in addition to species, i.e., the datasets may have been from different species and different sexes, but one dataset never included both male and female mice. Diet significantly contributes to lipid metabolism, and the rats and mice from the different crosses were not fed identical diets or for the same time periods prior to phenotyping (see materials and methods), but its effects were not considered in this study. In implementing this procedure for actual positional cloning, a model with multiple cofactors should be used.If QTL for the same trait are found in more than one species, it is common when narrowing the QTL to eliminate regions within the QTL that are not homologous to QTL regions for the same trait in the other species. This is especially true when the two species in comparison are extensively studied, as in humans and mice, or when the two species are very closely related, as among rodents. We recommend that in parallel or in conjunction with combining QTL data from multiple crosses within a species, combining QTL data from different species maybe be used along with all other QTL narrowing techniques, including cross-specific haplotyping and genome-wide association studies based on all strains. As previously suggested {{14076080}}, combining crosses complements the meta-analysis of QTL significance values.Although rat and mouse are closely related rodents, this study represents a useful approach for combining data from other species, even from less related species, like mouse and human -if the species are extensively studied and if there is an appropriate arrangement of contiguous loci, as required in the selection of the datasets combined in this analysis. In attempting a mouse-human study, we would need to address the differences in overall metabolism in theoretical speculation as well as in data analysis. For example, in humans, females on average have higher HDL cholesterol than males, but in mice the opposite relationship is true. Such sex or other covariate differences in physiology are usually considered after one-species analyses are complete, when individual candidate genes are investigated. In combining QTL data within a species, we assume that allelic effects are parallel, which allows us to combine the data. A successful combination, i.e., the achievement of a higher LOD and narrower confidence interval, provides substantial evidence that the two QTL share the same underlying gene. We have shown that such success is possible with two closely related species, and because the rat and mouse are both closely related and physiologically similar, it is not a far stretch to draw the same conclusion. If the two species were different regarding HDL metabolism, as in mice and humans, narrowing the QTL by combined data analysis suggests the same underlying gene. However, because the physiological differences are not considered in the combined QTL analysis, any successful combination is based on a multi-dimensional assumption. The underlying differences in physiology are so complex in their polygenicity and dependent pathways that the data analysis would possibly need to coincide with physiological modeling. It may be possible to quantify metabolic differences between species based on such modeling and then standardize the phenotype prior to combining QTL data accordingly.In addition to metabolic differences, genomic function at the level of recombination must be considered. In the analysis presented here, homologous QTL with an underlying contiguous sequence of loci were combined. Because differences in recombination rate between the rat and mouse were not taken into account during the analysis, a likely result is the skewing of the genetic map created in the context of the mouse. Recombination rates should be consulted as data from more divergent species are combined.In summary, sex, diet, species, physiology and genomic differences are all factors to consider when analyzing combined QTL datasets.In the examples we present, we use a simplified one-covariate model, encompassing all possible differences between the two datasets. Most importantly, we have described detailed methods for combining datasets from two different species. The successful combinations we achieved reveal a promising addition to the process of QTL narrowing. Had a combination not been successful, we would not have been able to declare that the individual QTL were species-specific as they could also be diet-, physiology-, sex-(in one case) or genome structure -specific. We recommend using a multi-covariate model when analyzing combined datasets for QTL-narrowing.Advances in comparative genomics contribute greatly to the understanding of animal development and physiology. Incorporating such knowledge is essential for the construction of genomes, proteomes and metabolic networks, and for theorizing and elucidating the mechanisms of molecular and phenotypic evolution. Now, the near completion of entire genome homology maps, like the one available between the rat and mouse, allows for the ability to combine data in a way that is useful both intellectually and statistically. The methods introduced here recognize the decade-long explosion of empirical advancements and the resulting field of bioinformatics.Beyond the alignment of homologous markers and genes, the integration of the QTL data for analysis adds a new level to species homology because theories of shared physiology may be tested mathematically. While statistical significance is both arbitrary and necessary for experimental validity, the increase in statistical significance (LOD) seen in these combinations is overshadowed by the potential insight gained into the underlying shared genome organization. The candidate genes underlie the QTL, but the replication and expression of those genes are dictated by the underlying DNA sequence and chromosome mechanics.  Rat-mouse concordance between cholesterol QTL on two different chromosomes. Genetic maps for rat chromosomes are shown on the left and for mouse chromosomes on the right. Rat markers names are shown in alignment with their genetic positions on the rat genome, and with their homologous positions on the mouse genome. The grey boxes show the original (pre-combination) QTL confidence interval for each species; the black bar represents the QTL peak. The LOD score for each QTL is shown adjacent to the peak. (A) Rat WxDA chr 6 male (most left) and female QTL are aligned with mouse BxD2 Chr 12 QTL. The most proximal rat marker (D6Pas1) is homologous to mouse Chr 17. The remaining markers align to mouse chromosome 12 contiguously. The female rat data was not chosen for this combination as the rat peak positions are not within the rat/mouse overlapping regions. (B) Rat WxDA Chr 10 female QTL is aligned with the mouse PxD2 Chr 11 female QTL. The region immediately surrounding the most distal rat marker, D10Mgh2, is not homologous to the mouse genome; the other markers align to mouse Chr 11 contiguously. Combining rat chromosome 6 data with mouse chromosome 12 data. All cM positions are with respect to mouse chromosome 12. Confidence intervals for the original and speciesadditive QTL are depicted by the black boxes; the box closest to the bottom represents the original 95% confidence interval in the mouse. The interactive and additive plots are indistinguishable, suggesting the QTL is caused by the same gene in both the rat and the mouse.  Combining rat chromosome 10 data with mouse chromosome 11 data. All cM positions are with respect to mouse chromosome 11. Confidence intervals for the original and speciesadditive QTL are depicted by the black boxes; the box closest to the bottom represents the original 95% confidence interval in the mouse. The interactive plot has a higher LOD than the additive plot, but not by a significant amount (\u0394LOD = 0.8). Overall, the LOD score is increased and the QTL is substantially narrowed, suggesting that the underlying gene is shared between the rat and mouse.  Table 1 Peaks, confidence intervals, and LOD scores for the original mouse QTL, and for the additive and interactive QTL resulting from the combination of data from different species.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "Title: Combining QTL Data from Different Species: A Novel Approach for Narrowing QTL Intervals",
+          "",
+          "Abstract:",
+          "",
+          "Quantitative trait locus (QTL) analysis is a powerful tool for identifying genetic regions associated with complex traits. However, the process of positional cloning, which involves identifying the underlying candidate gene within the QTL region, can be time-consuming and challenging. To address this limitation, we combined QTL data from two different species, the rat and the mouse, using a combination of standardized high-density lipoprotein phenotype values and genotype data. By combining data within homologous regions from the rat and mouse, we were able to narrow QTL intervals and reduce the number of candidate genes encompassed by the QTL. Our results demonstrate the potential of combining QTL data from different species as a useful tool for narrowing QTL intervals and accelerating the positional cloning process.",
+          "",
+          "Introduction:",
+          "",
+          "Quantitative trait locus (QTL) analysis is a widely used method for identifying genetic regions associated with complex traits. However, the process of positional cloning, which involves identifying the underlying candidate gene within the QTL region, can be challenging due to the complexity of the genome and the lack of functional information. To address this limitation, we combined QTL data from two different species, the rat and the mouse, using a combination of standardized high-density lipoprotein phenotype values and genotype data.",
+          "",
+          "Methods:",
+          "",
+          "We combined QTL data from one rat cross and two mouse crosses using a combination of standardized high-density lipoprotein phenotype values and genotype data. We focused on homologous regions between the rat and mouse genomes and combined the data within these regions. We used a combination of linear and nonlinear statistical methods to analyze the combined data and narrow the QTL intervals.",
+          "",
+          "Results:",
+          "",
+          "Our results demonstrated that it is possible to successfully combine QTL data from different species, the rat and the mouse. By combining data within homologous regions from the rat and mouse, we were able to narrow QTL intervals and reduce the number of candidate genes encompassed by the QTL. Specifically, we were able to reduce the number of candidate genes encompassed by the QTL on mouse Chr 11 and 12 from 1343 to 761 genes and from 613 to 304 genes, respectively.",
+          "",
+          "Discussion:",
+          "",
+          "Our results demonstrate the potential of combining QTL data from different species as a useful tool for narrowing QTL intervals and accelerating the positional cloning process. By combining data from different species, we were able to identify genetic regions associated with complex traits more accurately and efficiently than using data from a single species. This approach has the potential to be applied to other complex traits and diseases, such as heart disease, diabetes, and mental health disorders.",
+          "",
+          "Conclusion:",
+          "",
+          "In conclusion, combining QTL data from different species is a novel approach for narrowing QTL intervals and accelerating the positional cloning process. By combining data within homologous regions from the rat and mouse, we were able to identify genetic regions associated with complex traits more accurately and efficiently than using data from a single species. This approach has the potential to be applied to other complex traits and diseases, such as heart disease, diabetes, and mental health disorders. Further studies are needed to validate these findings and to explore the potential of combining QTL data from different species in other contexts."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.6180740594863892,
+            "R": 0.6754273176193237,
+            "F1": 0.6454792022705078
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.5553390979766846,
+            "R": 0.5776399374008179,
+            "F1": 0.5662699937820435
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          ""
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.0,
+            "R": 0.0,
+            "F1": 0.0
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.0,
+            "R": 0.0,
+            "F1": 0.0
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "**Discussion**",
+          "",
+          "Combining data from two different species can narrow a Quantitative Trait Locus ("
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3697024881839752,
+            "R": 0.5466625690460205,
+            "F1": 0.44109609723091125
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.24426448345184326,
+            "R": 0.44981327652931213,
+            "F1": 0.31660258769989014
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "14076080"
+    ]
+  },
+  {
+    "corpus_id": "10054248",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "Collaborative filtering (CF) has been an important subject of research in the past few years. Many achievements have been made in this field, however, many challenges still need to be faced, mainly related to scalability and predictive ability. One important issue is how to deal with old and potentially obsolete data in order to avoid unnecessary memory usage and processing time. Our proposal is to use forgetting mechanisms. In this paper, we present and evaluate the impact of two forgetting mechanisms\u2014sliding windows and fading factors\u2014in user-based and item-based CF algorithms with implicit binary ratings under a scenario of abrupt change. Our results suggest that forgetting mechanisms reduce time and space requirements, improving scalability, while not significantly affecting the predictive ability of the algorithms.",
+    "discussion": "Using the ELEARN dataset, forgetting mechanisms provide clear improvements in recall immediately after a sudden drift, except with IBFF, where slight improvements are only obtained with high fading factors (slow forgetting).However, the same is not observable in any case with the MUSIC dataset.With this dataset, immediately after the occurrence of a drift, improvements are not observed, but relative degradation is also not present.This contradicts results obtained with synthesized datasets that suggest a better capability to adapt to sudden drifts.A number of factors can influence the behavior of the algorithms, namely the presence of natural drifts and the natural variability of the datasets.This motivates further research to understand how dataset inherent features such as natural variability and the occurrence of sudden and gradual drifts relate to forgetting parameters such as window length and fading factor values.With nonincremental algorithms (UBSW/UBGW and IBSW/IBGW), the first observation is that the sliding window algorithms tend to maintain an approximately constant time to rebuild the matrix, while with growing window algorithms time increases throughout the experiment.This is a natural consequence of the use of fixed length windows.The number of sessions to process, in the case of UBSW and IBSW, is fixed, which leads to approximately constant time.Gains in scalability are the most evident motivation for the use of sliding windows.Also, with nonincremental algorithms, it is noticeable that time is steadier with the user-based versions than with the item-based versions.One explanation for this is that both datasets have a sequential unique session per user, which Time with the use of fading factors in incremental algorithms seems to be unaffected with ELEARN and MU-SIC, but using a longer dataset, it becomes more evident that fading factors also have the potential to improve scalability.With fading factors, older similarity values tend to zero, but it takes a large amount of sessions for similarities to actually become zero.The package spam optimizes sparse matrix storage by storing only values greater than 2.220446 \u00d7 10 \u221216 {{44515378}}.For example, with \u03b1 = 0.97, a similarity value of 0.5, if never updated by recent data, only gets completely \"forgotten\" (i.e., becomes zero) after 1,170 sessions, which is more than the number of sessions in both ELEARN and MUSIC.User-based algorithms produce smaller matrices when the number of users is lower than the number of items and larger matrices when the number of users exceeds the number of items.Time to rebuild and/or update these matrices is directly affected by the amount of data to process.This explains why user-based algorithms perform better with the MUSIC dataset, while item-based algorithms have better results with ELEARN.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "As a scientific research assistant, I appreciate the opportunity to discuss the abstract provided. The authors propose using forgetting mechanisms to address the challenges of scalability and predictive ability in collaborative filtering (CF) algorithms.",
+          "",
+          "The authors acknowledge that CF has made significant progress in recent years, but there are still issues related to memory usage and processing time, particularly when dealing with old and potentially obsolete data. To address this, they propose two forgetting mechanisms: sliding windows and fading factors. These mechanisms are applied to user-based and item-based CF algorithms with implicit binary ratings in a scenario of abrupt change.",
+          "",
+          "The authors evaluate the impact of these forgetting mechanisms and find that they reduce time and space requirements, improving scalability, while not significantly affecting the predictive ability of the algorithms. This is a significant finding, as it suggests that the forgetting mechanisms can help improve the efficiency of CF algorithms without compromising their accuracy.",
+          "",
+          "One potential limitation of the study is that the authors only consider a scenario of abrupt change, which may not be representative of real-world scenarios where user preferences may change gradually over time. Future studies could explore the impact of forgetting mechanisms in more complex scenarios, such as gradual changes in user preferences.",
+          "",
+          "Another potential direction for future research could be to explore the use of different forgetting mechanisms in CF algorithms, such as memory-based forgetting or learning rate-based forgetting. These mechanisms may have different effects on the scalability and predictive ability of CF algorithms, and could provide insights into the optimal choice of forgetting mechanism depending on the specific application.",
+          "",
+          "Overall, the authors provide a valuable contribution to the field of CF by proposing and evaluating the impact of forgetting mechanisms in improving the scalability and predictive ability of CF algorithms. Their findings have important implications for the development of efficient and effective CF algorithms, and could lead to improved recommendations for users in a variety of applications."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.5514841675758362,
+            "R": 0.6071265339851379,
+            "F1": 0.5779691934585571
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.4802120327949524,
+            "R": 0.5295257568359375,
+            "F1": 0.5036647319793701
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          ""
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.0,
+            "R": 0.0,
+            "F1": 0.0
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.0,
+            "R": 0.0,
+            "F1": 0.0
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "]",
+          "",
+          "Forgetting mechanisms in collaborative filtering algorithms can improve scalability by reducing the need to store and process old"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3558086156845093,
+            "R": 0.6169843077659607,
+            "F1": 0.45133620500564575
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.3190867006778717,
+            "R": 0.5417482852935791,
+            "F1": 0.4016209542751312
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "44515378"
+    ]
+  },
+  {
+    "corpus_id": "10060157",
+    "level": "section",
+    "method": "zero-shot",
+    "abstract": "Activity of the enzyme choline acetyltransferase (CAT), which mediates the synthesis of the neurotransmitter, acetylcholine, was increased up to 20- fold in spinal cord (SC) cells grown in culture with muscle cells for 2 wk. This increase was directly related to the duration of co-culture as well as to the cell density of both the SC and muscle involved and was not affected by the presence of the acetylcholine receptor blocking agent, \u03b1-bungarotoxin. Glutamic acid decarboxylase (GAD) activity was often markedly decreased in SC-muscle cultures while the activities of acetylcholinesterase and several other enzymes were little changed. Increased CAT activity was also observed when SC cultures were maintained in medium which had been conditioned by muscle cells or by undifferentiated cells from embryonic muscle. Muscle-conditioned medium (CM) did not affect the activities of SC cell GAD or acetylcholinesterase. Dilution or concentration of the CM directly affected its ability to increase SC CAT activity , as did the duration and timing of exposure of the SC cells to the CM. The medium could be conditioned by muscle cells in the presence or absence of serum, and remained effective after dialysis or heating to 58 degrees C. Membrane filtration data were consistent with the conclusion that the active material(s) in CM had a molecular weight in excess of 50,000 daltons. We conclude that large molecular weight material that is released by muscle cells is capable of producing a specific increase in CAT activity of SC cells.",
+    "discussion": "We have found that growth of SC cells with cultured muscle cells resulted in markedly increased CAT activity. We have previously re-ported (4) that co-culture of SC and muscle cells did not increase either the number of identifiable neurons or the activity of several other enzymes. Indeed, the transmitter-related enzyme, GAD, was decreased under some conditions of co-culture. The increase in SC cell CAT activity was directly dependent on the muscle and SC cell density in culture, as well as the duration of coculture. We did not obtain a saturation of the response by increasing the quantity of muscle in co-culture with SC. Muscle CM also increased SC cell CAT activity by as much as 10-fold within 3 wk, while it did not affect the activity of GAD or acetylcholinesterase. The CAT activity increase produced by muscle CM was directly dependent upon the CM concentration and the interval of exposure. The factor(s) in muscle CM responsible for increasing the SC cell CAT activity was heat stable at 58~ and nondialyzable; membrane filtration data were consistent with the factor's having a molecular weight greater than 50,000 daltons. It seems reasonable to suppose that muscle grown in co-culture conditioned the medium as did muscle grown alone; and, thus, a substantial part of the increase in CAT activity observed in co-cultures was probably produced by mechanisms similar to those in the experiments with CM. It is valid to ask whether any additional factors are provided by the contiguity of SC cells and muscle in co-cultures. Physiologically effective synaptic interaction between nerve and muscle is not involved in the increased CAT activity in co-cultures, since the increase was not affected by the presence of c~-bungarotoxin. Our experiments provide no evidence for any effect on CAT activity requiring some other aspect of nervemuscle contact, but such an effect cannot be excluded as a basis for some component of the increase seen with nerve and muscle co-cultures.The experiments with CM demonstrated that one or more macromolecules released by myogenic cells act to increase the CAT activity of SC cells. Several questions naturally arise with regard to this phenomenon. (a) Are myogenic cells the only source for the active molecules or can more than one tissue serve as a source? (b) Is CAT activity of the nerve cell culture affected in a relatively specific manner or is the effect a general one on culture growth? (c) Is the stimulation of CAT activity the effect of a single interaction between CM factor and recipient cell, or is it due to multiple small additive effects? (d) Does * SC cells were cultured alone in freshly prepared medium, in medium conditioned for 2-3 days by muscle cells, or co-cultured with muscle. Cultures were harvested at the end of the treatment intervals and the CAT activity was assayed independently in cells pooled from 2-4 dishes (35 mm) in Exp A (expressed as mean -+ SD) or from two 60mm culture dishes (Exp B). The increases in CAT activity were calculated as in Table I. :~ Differ from 3-13 at P > 0.02. w Differ from 3-13 at P > 0.001.a similar regulatory interaction occur in vivo?The present work provides some information with regard to the first two questions. We have found that medium conditioned by SC cells, differentiated skeletal muscle, and undifferentiated cells of myogenic origin increased CAT activity of SC cell cultures. Because of the differences between these cultures in cell type, size, and density, and because of the uncertainty as to the amount of effective protein secreted by the cultures into the medium during conditioning, it is difficult to assess the relative efficacy of the different cell cultures in the production of the CM factor. It seems clear, however, that skeletal muscle is not the only source of material that can produce an increase in CAT activity in SC cell cultures.The co-culture and CM effects exhibited considerable specificity with regard to the enzyme changes produced in the SC cultures. In the experiment in Fig. 3, we assayed for protein, DNA, CAT, acetylcholinesterase, creatine phosphokinase, phosphoglucomutase, myokinase, and phosphorylase. Of these, only CAT activity was substantially increased, while in that experiment and some others, GAD activity was reduced in co-cultures (Figs. 4 and 6 and Table I). When SC cells were treated with muscle CM, CAT activity was substantially increased while the activities of GAD and acetylcholinesterase were not. It is this specificity in enzyme response of SC cells to coculture or treatment with CM which distinguishes the interaction reported here from a relatively nonspecific promotion of cell survival {{85966459}}. The data on enzyme activities, total culture DNA, and culture protein indicate neither a substantial nonspecific increase in plating efficiency with coculture nor a facilitation of long-term survival with CM. The specific increase in CAT activity produced by both of these conditions indicates either that survival of a population of CAT-producing cells is selectively increased or that cell survival is unchanged and CAT production per cell is increased. Some combination of these processes might of course occur. The fact that CAT activity in co-culture continued to increase well after the activity in control cultures had become constant (Fig. 3 and Reference 4), argues against an increased survival in co-culture of a population of neurons in which the CAT activity increased at the same rate as that of surviving control cells. We previously reported that differences in the number of identifiable neuron-like cells were not detected between cultures of SC cells grown alone and SC grown with muscle, while 20-fold more CAT activity was present in the co-cultures (4). Thus, our results suggest that the increase in CAT activity that occurred in co-GILLER El' AL. Choline Acetyltransferase Activity of Spinal Cord Cell Cultures cultures resulted from an increase in the net production of this enzyme per cell. Until the cell of origin of the CAT activity is established, however, other mechanisms cannot be excluded. The specificity of the effect of both co-culture and CM on CAT activity suggests some relevance to trophic interactions in the neuromuscular or other cholinergic systems. Since this enzyme mediates the synthesis of acetylcholine at the synaptic junction between spinal motoneurons and skeletal muscle, the interaction in culture may reflect a significant neuromuscular regulatory process. The nature of the regulatory material(s) and its mechanism of action merit further investigation.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "llm_discussion": [
+          "Title: Increased Activity of Choline Acetyltransferase in Spinal Cord Cells Co-Cultured with Muscle Cells",
+          "",
+          "Introduction:",
+          "",
+          "The enzyme choline acetyltransferase (CAT) plays a crucial role in the synthesis of the neurotransmitter acetylcholine (ACh) in the nervous system. In this study, we investigated the effect of co-culture with muscle cells on the activity of CAT in spinal cord (SC) cells. We examined the duration and density of co-culture, as well as the presence of the acetylcholine receptor blocking agent \u03b1-bungarotoxin, on CAT activity in SC cells. Additionally, we evaluated the effects of muscle-conditioned medium (CM) on CAT activity in SC cells.",
+          "",
+          "Methods:",
+          "",
+          "SC cells were co-cultured with muscle cells for 2 weeks, and the activities of CAT, glutamic acid decarboxylase (GAD), and acetylcholinesterase (AChE) were measured. The CM was conditioned by muscle cells in the presence or absence of serum, and its ability to increase CAT activity in SC cells was evaluated. The medium was dialyzed or heated to 58\u00b0C to evaluate the effect of these treatments on its activity.",
+          "",
+          "Results:",
+          "",
+          "Our results showed that the activity of CAT was increased up to 20-fold in SC cells co-cultured with muscle cells for 2 weeks. This increase was directly related to the duration of co-culture as well as to the cell density of both the SC and muscle involved. The activity of CAT was not affected by the presence of \u03b1-bungarotoxin. In contrast, the activity of GAD was often markedly decreased in SC-muscle cultures. The activities of AChE and several other enzymes were little changed. The addition of CM to SC cells also increased CAT activity, but the effect was dependent on the concentration and duration of exposure of the SC cells to the CM.",
+          "",
+          "Discussion:",
+          "",
+          "Our findings suggest that co-culture with muscle cells leads to an increase in CAT activity in SC cells, which may play a role in the regulation of ACh synthesis in the nervous system. The increase in CAT activity was not due to the presence of \u03b1-bungarotoxin, which is a specific blocker of the acetylcholine receptor. Instead, the increase in CAT activity may be due to the release of a specific molecular weight material by muscle cells that stimulates the synthesis of ACh in SC cells. The fact that the medium could be conditioned by muscle cells in the presence or absence of serum and remained effective after dialysis or heating suggests that the active material(s) in the CM are stable and resistant to degradation.",
+          "",
+          "Conclusion:",
+          "",
+          "Our study provides evidence that co-culture with muscle cells leads to an increase in CAT activity in SC cells, which may play a role in the regulation of ACh synthesis in the nervous system. The specific molecular weight material released by muscle cells may be responsible for this increase in CAT activity. These findings have important implications for our understanding of the mechanisms underlying the regulation of ACh synthesis in the nervous system and may have potential applications in the development of new treatments for neurological disorders."
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.6489351391792297,
+            "R": 0.692616879940033,
+            "F1": 0.6700648665428162
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.5937011241912842,
+            "R": 0.6374126672744751,
+            "F1": 0.6147809028625488
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "llm_discussion": [
+          ""
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.0,
+            "R": 0.0,
+            "F1": 0.0
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.0,
+            "R": 0.0,
+            "F1": 0.0
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "llm_discussion": [
+          "The activity of choline acetyltransferase (CAT) was increased by a factor of up"
+        ],
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3670608401298523,
+            "R": 0.5920485854148865,
+            "F1": 0.4531659185886383
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.32602882385253906,
+            "R": 0.5984092950820923,
+            "F1": 0.42209139466285706
+          }
+        ]
+      }
+    ],
+    "cited_paper_ids": [
+      "85966459"
+    ]
+  }
+]
