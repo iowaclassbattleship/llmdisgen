@@ -1,0 +1,1374 @@
+[
+  {
+    "corpus_id": "10009609",
+    "title": "Effectiveness of biomarker-based exclusion of ventilator-acquired pneumonia to reduce antibiotic use (VAPrapid-2): study protocol for a randomised controlled trial",
+    "externalids": {
+      "ACL": "",
+      "ArXiv": "",
+      "CorpusId": "10037358",
+      "DBLP": "",
+      "DOI": "10.1186/s13063-016-1442-x",
+      "MAG": "2473068687",
+      "PubMed": "27422026",
+      "PubMedCentral": "4947254"
+    },
+    "year": "2016",
+    "level": "section",
+    "sections": [
+      {
+        "header": "X",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "X",
+            "paragraphs": [
+              "It is increasingly being recognised that the quantitative evaluation of biomedical research cannot depend only on the counting of citations in the serial literature. They may measure academic influence, but the funders of such research are usually more concerned to see if it has had a practical benefit, especially to patients. One of the ways in which research can influence practice is through its contribution to the evidence base supporting clinical guidelines {{12990900}}{{not_in_s2orc}}{{not_in_s2orc}}{{4992451}}{{42067051}}. These are increasingly being used across many countries in the routine clinical care of cancer patients. Most of them are published by national professional medical associations (e.g., {{6130785}}{{45033792}}{{30394593}}, but some are developed by governmental bodies (e.g., {{20079372}}.",
+              "It is normal for such guidelines to have lists of references that comprise their evidence base. However, the quality of the evidence is sometimes doubtful {{3065283}}{{19332737}}{{21492156}}, and schemes have been devised to grade the quality of the clinical trials, which form a large part of the evidence base (e.g., {{22091521}}{{39213437}}{{not_in_s2orc}}{{8284450}}{{22721728}}. Even when the guidelines have been published, they are sometimes criticised as inadequate {{not_in_s2orc}}{{not_in_s2orc}}{{40677359}}, insufficient {{38413898}} or they may become outdated {{23806012}}. There is also the question of whether the guidelines will actually be followed in clinical practice {{42615096}}{{9589309}}{{25848593}}{{1814188}}. The breadth of oncology practice (both patients and treatment modalities), the rapid evolution of new treatments and the often diverse interpretation of 'evidence' by health-care professionals mean many patients are treated with hospitalspecific protocols rather than national guidelines. This situation is particularly acute in certain site-specific cancers, for example, lung {{15135204}}.",
+              "A further cause of disagreement is the question of cost: a new drug may be clinically effective and better than existing drugs or a placebo, but so costly that an equivalent or greater health gain may be achievable by other means, for example, better screening to detect the disease at an early stage. This can cause considerable dissension and lead to lawsuits to make the drug available for particularly articulate patients {{39207487}}, or from companies and patients' advocacy groups, which sometimes receive their subsidies {{26204397}}. Lobbying of the UK National Institute for Health and Clinical Excellence (NICE) by pharmaceutical firms is now rife {{27084170}}, and a US politician has adopted bully-boy tactics in his efforts to subvert evidence-based medicine {{72875227}}. The cost basis of NICE's recommendations has also been criticised: the figure of d30 000 (h40 000, $60 000) per quality-adjusted life year appears not to have a scientific basis or to take account of the social costs of disease {{47554094}}.",
+              "Despite all these criticisms, clinical guidelines are nevertheless gaining increasing recognition as the way forward. It does, therefore, seem worthwhile to treat them as an outcome indicator, even though a partial one, of the clinical impact of the research they cite. Several studies have analysed the evidence base of selected clinical guidelines {{154559501}}{{10747489}}{{not_in_s2orc}}. They have established that the papers cited are very clinical (when positioned on a scale from clinical observation to basic research); that the UK guidelines overcite the UK research papers; and that the cited papers are quite recent, with a temporal distribution comparable to that of the papers cited on biomedical research papers. Research from other European countries seems to be cited about as much as would be expected on the UK clinical guidelines, but that from Japan and from most developing countries is almost totally ignored.",
+              "In this study, we examined three sets of the UK guidelines on a single subject, cancer, and the references on 43 different guidelines, almost all concerned with treatment rather than with prevention. The bibliographic details of the references were assembled in a file and compared with those of cancer research publications in the three peak years {{not_in_s2orc}}. The objective was to answer several policy-related questions:",
+              "how do countries' relative presences among the cited references compare with their presences in cancer research? how many of the cited references are actually classifiable as cancer research? what is the research level (RL) distribution of these cited references compared with that of cancer research papers? are the cited references published in journals of high citation impact? how does the funding of the cited papers compare with that of cancer research overall?",
+              "The latter two questions need to take account of the finding that the references on clinical guidelines are much more clinical than other biomedical research."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "MATERIALS AND METHODS",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "MATERIALS AND METHODS",
+            "paragraphs": []
+          },
+          {
+            "header": "UK cancer guidelines and the analysis of their references",
+            "paragraphs": [
+              "There are three sets of clinical guidelines commonly used in the United Kingdom:",
+              "Published by the British Medical Association in Clinical Evidence. This takes the form of a book that is revised and extended every 6 months, but is also accessible on the Web (to people in the United Kingdom); Developed by the National Institute for Health and Clinical Excellence (NICE) for the National Health Service (NHS) in England and Wales, based on Health Technology Assessments (HTAs). Most of these last are available on the Web, but not all (although it is intended by NICE that they should be). They were used in the present study, because the references on the actual guidelines were usually not visible; Developed by the Scottish Intercollegiate Guidelines Network (SIGN) for use by the NHS in Scotland. All these are freely available on the Web Only a minority of these guidelines and HTAs are applicable to cancer. The numbers are, respectively, 15, 18 and 10. Each of these 43 documents has a set of references, most of which are articles in peer-reviewed journals. A total of 3217 references were found and their details downloaded to file. Their addresses were parsed by means of a special macro so that the integer and fractional counts of each country were listed for each paper (a paper with two addresses in the United Kingdom and one in France would count unity for each on an integer count basis, but 0.67 for the United Kingdom and 0.33 for France using fractional counting). The RL of each paper was determined using the new system developed by {{7942963}}, in which each journal is assigned an RL based on the presence of 'clinical' and 'basic' words in the titles of papers it has published on a scale from 1 \u00bc clinical to 4 \u00bc basic. In addition, the RL of groups of individual cited papers could be calculated with reference to their individual titles, and the presence of 'clinical' or 'basic' words within them. The potential citation impact (PCI) of each cited paper was also determined with reference to a file of Journal Expected Citation Rates provided by Thomson Scientific (London, UK). This gave the mean number of citations for papers published in a journal in a given year and cited in the year of publication and the 4 subsequent years.",
+              "Funding data for virtually all the UK papers (790 out of 796) were obtained from inspection of the acknowledgements to their funding sources in the British Library. Many of the papers had previously been looked up for the Research Outputs Database {{not_in_s2orc}} or for other projects, and only 151 needed to be sought anew. The main comparator used to normalise the results of the analysis of the cited references was a file of world oncology research papers {{27557788}}. For the years 1999 -2001, there were over 100 000 such papers, and their characteristics were used to see how the cited references compared with them, with due account being taken of the differences expected in mean RLs (the cited references being more clinical than oncology papers overall). Of the references classed as 'articles' or 'reviews', 88% were within the subfield of oncology as defined by Cancer Research UK {{27557788}}. This percentage remained sensibly constant over the period, 1994 -2004. However, the references were in much more clinical journals than world oncology papers for the year 2000, the peak year for the numbers of references, see Figure 2. This result was obtained earlier {{10747489}}{{not_in_s2orc}} but with a much simplified (and less accurate) method of categorisation of journals by RL. Of the 3217 papers, 2747 titles (86%) had either a 'clinical' or a 'basic' keyword, and the mean RL was 1.07, which is very close to the lower end of the scale (RL \u00bc 1.0), and much below the mean RL based on all the papers in the individual journals (RL \u00bc 1.43). This shows that the references were being published in journals that were relatively more basic than the papers themselves, and reinforces the message that the papers were, therefore, almost entirely clinical observation."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "RESULTS",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "RESULTS",
+            "paragraphs": []
+          },
+          {
+            "header": "Time and research level distributions",
+            "paragraphs": []
+          },
+          {
+            "header": "Geographical analysis",
+            "paragraphs": [
+              "The presence of 20 leading countries in oncology research for 2000 and in the references from the clinical guidelines is shown in Table 1, where the data have been shown on a fractional count basis. Figure 3 presents the ratio between a country's presence in the guideline references and its presence in oncology research, that is, the values shown in the last column of Table 1. As would be expected, the UK oncology research is cited more than expected from its presence in world oncology by a factor of almost 3, but several other European countries' work is also relatively overcited, notably that of Denmark, Ireland and Sweden. Although Italy, which is strong in clinical trials, shows to advantage, Germany is relatively much undercited compared with its presence in cancer research in recent years. Japanese work is almost ignored, but it is likely that the Science Citation Index, where most of the references were found, does not cover Japanese clinical journals. This, however, is only a small part of the reason for the paucity of Japanese references.",
+              "Within the United Kingdom, certain cities showed relatively to advantage in terms of their percentage presence within the fractional UK total of 605 papers cited by the guidelines, compared with that in the 2332 UK oncology papers published in 2000. The analysis is conveniently carried out on the basis of postcode area, the first one or two letters of the UK postcode system, for example, B \u00bc Birmingham, CB \u00bc Cambridge. Figure 4 shows a scatter plot for the 26 leading areas (out of 124), accounting for about two-thirds of both totals. The spots above the diagonal line represent areas that are more frequently cited than expected, and vice versa. Among the former, EH \u00bc Edinburgh and G \u00bc Glasgow are prominent, in part because the SIGN guidelines overcite Scottish research papers, together with SM \u00bc Sutton and Cheam (the location of the Institute of Cancer Research) and OX \u00bc Oxford.",
+              "Table1 and Figure 3 show overall values, but an analysis can also be made of subsets of papers for groups of 2 or 3 years, chosen so that the four periods each have about 20% of the total cited references, see Table 2. For nearly all the countries, there are close similarities between the time trends, which suggest that the guidelines are rather consistent in the geography of their citing behaviour. Thus, Australia, Canada, Sweden, the United Kingdom  Figure 3.  Table 1. and the United States have all shown a reducing presence in oncology research, and a reducing presence in the guideline references; Germany, on the other hand, has increased its presence in both (but is still much undercited). France and Japan increased their presence in both sets of papers, but it went down slightly during the latest period."
+            ]
+          },
+          {
+            "header": "Journal citation impact scores",
+            "paragraphs": [
+              "The references cited tend to be published in high-impact journals. Table 3 shows that in each RL grouping, the guideline references are published in journals with a higher mean citation score (the PCI, of the papers) than world oncology papers from the year 2000.",
+              "The overall mean is higher, too, at 19.9 cites in 5 years compared with 13.4. The 'superior performance' of the guideline references occurs because a large number of them are published in the highimpact general journals, The Lancet (138 of them), New England Journal of Medicine (133), British Medical Journal (78) and Journal of the American Medical Association (50)."
+            ]
+          },
+          {
+            "header": "The funding of the UK cited references",
+            "paragraphs": [
+              "Of the 796 UK papers, all but 6 were found and inspected to determine their funding sources. These were taken both from the addresses (as for some organisations this is an indication of funding) and from the formal acknowledgements. For the purposes of this analysis, funding sources were grouped into five main sectors:",
+              "UK government, both departments and agencies; UK private nonprofit, including collecting charities, endowed foundations, hospital trustees, mixed (academic) and other nonprofit. A subset of this sector is Cancer Research UK, and its two predecessors, the Cancer Research Campaign and the Imperial Cancer Research Fund; pharmaceutical industry, both domestic and foreign (it is often difficult to distinguish as some subsidiaries have considerable autonomy in the use of research funds), and including biotech companies; nonpharma industry; no funding acknowledged.",
+              "The remaining funding organisations are foreign governmental and private nonprofit sources, and international organisations,    {{not_in_s2orc}}   Impact of cancer research G Lewison and R Sullivan such as the European Commission (EC) and the World Health Organization (WHO). The funding sources vary with the RL of the papers: the more clinical papers have fewer sources and the more basic papers have more. Table 4 shows the analysis for the UK papers in oncology in {{not_in_s2orc}} Table 5 shows the results for the UK papers cited on cancer clinical guidelines. For each RL group, an estimate has been made of the funding that would have been expected had they been typical of the UK cancer research, and in the last row there are given the ratios of observed-to-expected numbers of papers (integer counts) on the assumption that the cancer clinical guideline citations are typical of oncology, but with due allowance for the different RL distributions.",
+              "For example, the UK oncology papers in the first group (RL from 1.0 to 1.5) have the UK government funding on 11.1% of them, so it might be expected that there would be 0.111 \u00c2 544 \u00bc 60.4 government-funded papers among the corre-sponding group cited on cancer clinical guidelines. In fact, there were 149 such papers, showing that many more are government funded than might have been expected. When the totals for each of the six groups are added, it can be seen that the observed number of the UK government-funded papers is almost twice the predicted number. The observed total is still higher ( \u00c2 2.5) for the pharma industry-funded papers, and a little lower for Cancer Research UK papers ( \u00c2 1.8), for nonpharma industry papers ( \u00c2 1.6) and the UK private nonprofit papers ( \u00c2 1.3). Not surprisingly, there are many fewer 'unfunded' papers, the ratio of observed-to-expected numbers of papers being only just over half."
+            ]
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "DISCUSSION",
+      "papers_cited_discussion": [
+        "9662045"
+      ],
+      "subsections": [
+        {
+          "header": "DISCUSSION",
+          "paragraphs": [
+            "The UK cancer clinical guidelines are sufficient in number and variety to provide a fair window on the impact of cancer research on clinical practice, not only in the United Kingdom, but in other leading countries, particularly in western Europe. We have seen that almost all the references (88%) are to papers that are within the subfield of cancer research. Because about one-third of the research supported by Cancer Research UK, in common with that of other medical research charities working in a particular disease area, is out with this subfield (most of this would comprise basic biology), it follows that little of this work can be expected to influence clinical guidelines -hardly a surprising conclusion, but nevertheless one that is worth stating.",
+            "Many of the guideline references are to papers in the US and the UK general medical journals -The Journal of the American Medical Association, New England Journal Medical, British Medical Journal and The Lancet. This is one reason, but by no means the only one, for the guideline references as a whole to be in high impact, and therefore well known, journals. It appears that if researchers want their work, particularly clinical trials, to be part of the evidence base for clinical guidelines, then it is desirable for them to publish in highly cited journals. Disproportionately, many of these papers will have been funded by government or the pharmaceutical industry, with charities also playing an enhanced role compared with cancer research overall. This highlights one pitfall of national guidelines in the context of research impact assessments; many important, high quality clinical trials -either because they are early phase or negative -will not make it into guidelines. The impact of research on national clinical guidelines is just one parameter that can describe the utility of health research {{9662045}} Table 4."
+          ]
+        },
+        {
+          "header": "Impact of cancer research G Lewison and R Sullivan",
+          "paragraphs": [
+            "When account is taken of the clinical nature of the work cited on guidelines, the big increase in the percentage of the papers that acknowledge funding -whether from government, charities or industry -is striking (Table 5). Many (37%) of these clinical papers with RLs greater than 1.5 are reports of clinical trials, and 85% of the latter acknowledge funding compared with 71% of the others. Cancer Research UK plays the biggest role, and supports over one-third of these trials, more even than the pharmaceutical industry as a whole, or the UK government.",
+            "The geographical analysis of the cited papers reveals that the UK papers have a threefold higher presence among them than in world cancer research. In part, this reflects the differences in cancer management between countries. Such overcitation also occurs on other scientific papers, so it is hardly surprising that it was found here. It might be expected that the UK guidelines, which aim to show which treatments are cost-effective, would reflect in particular the different financial basis of health-care provision in this country compared with that elsewhere, and so papers concerned with economics and costs would be even more overcited if they were from the United Kingdom. In fact, this does occur, but to a very minor extent (22% from the United Kingdom compared with 19% overall; the difference not being significant).",
+            "The distribution of the cited papers within the United Kingdom differs from what might have been expected based purely on overall numbers and on the extent to which the cities carry out clinical observation rather than basic research. The simple comparison of Figure 4 needs also to take account of the mean RL of papers from each area, and, when this is done ( Figure 5), a different pattern emerges, with EH \u00bc Edinburgh, OX \u00bc Oxford and CB \u00bc Cambridge forming an axis of excellence (on this indicator) and other areas' output being less cited on guidelines. The distance of the spots from this axis gives one indicator of the performance of the different centres, an imperfect one to be sure, as there will be other confounding factors not considered here, but nevertheless a useful complement to the traditional bibliometric criterion based purely on citation counts in the scientific literature.",
+            "There are in the database enough cited papers from a few other countries to enable a similar evaluation to be carried out for them. However, these data are inevitably skewed by being viewed through the prism of the UK clinical recommendations. It would be highly desirable to complement them with the results of similar exercises carried out in other countries with extensive sets of clinical guidelines, or at a European or international level. Then, provided the data were collected in exactly the same way, they could be pooled and a more international perspective on the utility of cancer research would emerge that research evaluators could employ. Such an activity could appropriately be coordinated by the European Cancer Managers' Research Forum, with all data contributors having also the right to gain access to the data provided by workers in other countries."
+          ]
+        },
+        {
+          "header": "Figure 1",
+          "paragraphs": []
+        },
+        {
+          "header": "Figure 3",
+          "paragraphs": []
+        },
+        {
+          "header": "Figure 2",
+          "paragraphs": []
+        },
+        {
+          "header": "Figure 4",
+          "paragraphs": []
+        },
+        {
+          "header": "Figure 5",
+          "paragraphs": []
+        },
+        {
+          "header": "Table 1",
+          "paragraphs": []
+        },
+        {
+          "header": "Table 2",
+          "paragraphs": []
+        },
+        {
+          "header": "Table 3 Mean",
+          "paragraphs": []
+        },
+        {
+          "header": "Table 5",
+          "paragraphs": []
+        }
+      ]
+    },
+    "discussion_txt": "The UK cancer clinical guidelines are sufficient in number and variety to provide a fair window on the impact of cancer research on clinical practice, not only in the United Kingdom, but in other leading countries, particularly in western Europe. We have seen that almost all the references (88%) are to papers that are within the subfield of cancer research. Because about one-third of the research supported by Cancer Research UK, in common with that of other medical research charities working in a particular disease area, is out with this subfield (most of this would comprise basic biology), it follows that little of this work can be expected to influence clinical guidelines -hardly a surprising conclusion, but nevertheless one that is worth stating.Many of the guideline references are to papers in the US and the UK general medical journals -The Journal of the American Medical Association, New England Journal Medical, British Medical Journal and The Lancet. This is one reason, but by no means the only one, for the guideline references as a whole to be in high impact, and therefore well known, journals. It appears that if researchers want their work, particularly clinical trials, to be part of the evidence base for clinical guidelines, then it is desirable for them to publish in highly cited journals. Disproportionately, many of these papers will have been funded by government or the pharmaceutical industry, with charities also playing an enhanced role compared with cancer research overall. This highlights one pitfall of national guidelines in the context of research impact assessments; many important, high quality clinical trials -either because they are early phase or negative -will not make it into guidelines. The impact of research on national clinical guidelines is just one parameter that can describe the utility of health research {{9662045}} Table 4.When account is taken of the clinical nature of the work cited on guidelines, the big increase in the percentage of the papers that acknowledge funding -whether from government, charities or industry -is striking (Table 5). Many (37%) of these clinical papers with RLs greater than 1.5 are reports of clinical trials, and 85% of the latter acknowledge funding compared with 71% of the others. Cancer Research UK plays the biggest role, and supports over one-third of these trials, more even than the pharmaceutical industry as a whole, or the UK government.The geographical analysis of the cited papers reveals that the UK papers have a threefold higher presence among them than in world cancer research. In part, this reflects the differences in cancer management between countries. Such overcitation also occurs on other scientific papers, so it is hardly surprising that it was found here. It might be expected that the UK guidelines, which aim to show which treatments are cost-effective, would reflect in particular the different financial basis of health-care provision in this country compared with that elsewhere, and so papers concerned with economics and costs would be even more overcited if they were from the United Kingdom. In fact, this does occur, but to a very minor extent (22% from the United Kingdom compared with 19% overall; the difference not being significant).The distribution of the cited papers within the United Kingdom differs from what might have been expected based purely on overall numbers and on the extent to which the cities carry out clinical observation rather than basic research. The simple comparison of Figure 4 needs also to take account of the mean RL of papers from each area, and, when this is done ( Figure 5), a different pattern emerges, with EH \u00bc Edinburgh, OX \u00bc Oxford and CB \u00bc Cambridge forming an axis of excellence (on this indicator) and other areas' output being less cited on guidelines. The distance of the spots from this axis gives one indicator of the performance of the different centres, an imperfect one to be sure, as there will be other confounding factors not considered here, but nevertheless a useful complement to the traditional bibliometric criterion based purely on citation counts in the scientific literature.There are in the database enough cited papers from a few other countries to enable a similar evaluation to be carried out for them. However, these data are inevitably skewed by being viewed through the prism of the UK clinical recommendations. It would be highly desirable to complement them with the results of similar exercises carried out in other countries with extensive sets of clinical guidelines, or at a European or international level. Then, provided the data were collected in exactly the same way, they could be pooled and a more international perspective on the utility of cancer research would emerge that research evaluators could employ. Such an activity could appropriately be coordinated by the European Cancer Managers' Research Forum, with all data contributors having also the right to gain access to the data provided by workers in other countries.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "Title: Analysis of Biomedical Research Impact Assessment in Cancer Guidelines",
+                "Introduction:\nIn recent years, there has been a growing interest in assessing the impact of biomedical research on clinical guidelines. This study aims to investigate the influence of biomedical research on cancer guidelines in the United Kingdom (UK) using a systematic approach.",
+                "Methods:\nThe study analyzed 43 UK guidelines and associated Health Technology Assessments (HTAs) published across three series up to October 2006. The evidence base of these guidelines was identified and analyzed to determine their geographical provenance and type of research. The study compared the UK papers with overall oncology research published in the peak years of guideline references (1999-2001).",
+                "Results:\nThe study found that UK papers were cited nearly three times as frequently as would have been expected from their presence in world oncology research (6.5%). Edinburgh and Glasgow stood out for their unexpectedly high contributions to the guidelines' scientific base. The cited papers from the UK acknowledged much more explicit funding from all sectors than did the UK cancer research papers at the same research level.",
+                "Discussion:\nThe findings of this study highlight the significant impact of biomedical research on cancer guidelines in the UK. The increased citation rate of UK papers suggests that they have a greater influence on clinical decision-making than would be expected based on their share of global oncology research. The geographical distribution of the papers also reveals that Edinburgh and Glasgow are notable contributors to the guidelines' scientific base.",
+                "The study's findings have important implications for the evaluation of biomedical research impact. The higher citation rate of UK papers may indicate that they are more relevant to clinical practice and, therefore, more valuable for guidelines development. The recognition of funding sources in the cited papers may also suggest that transparency and accountability are important factors in the research evaluation process.",
+                "Conclusion:\nThis study demonstrates the importance of assessing the impact of biomedical research on clinical guidelines. The findings highlight the need for a systematic approach to evaluating the influence of biomedical research on guideline development and suggest that geographical and funding-related factors may play a significant role in determining the impact of research on clinical practice. Further research is needed to explore these factors in more detail and to develop effective strategies for evaluating the impact of biomedical research on cancer guidelines."
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.5754127502441406,
+            "R": 0.6250954866409302,
+            "F1": 0.5992260575294495
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.4991591274738312,
+            "R": 0.5653284788131714,
+            "F1": 0.5301872491836548
+          }
+        ],
+        "P_mean": 0.5372859388589859
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "The discussion should focus on the methodology, results, and implications of the study, without including any extr"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.346449077129364,
+            "R": 0.5111602544784546,
+            "F1": 0.4129875898361206
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.31533992290496826,
+            "R": 0.5275058746337891,
+            "F1": 0.39471909403800964
+          }
+        ],
+        "P_mean": 0.33089450001716614
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "The increased interest in biomedical research impact assessment over the past 5 years has led to a reevaluation"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3442334532737732,
+            "R": 0.510624885559082,
+            "F1": 0.4112357795238495
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.32974618673324585,
+            "R": 0.5411271452903748,
+            "F1": 0.40978315472602844
+          }
+        ],
+        "P_mean": 0.3369898200035095
+      }
+    ]
+  },
+  {
+    "corpus_id": "100153030",
+    "title": "Revisiting the O(3) Non\u2010linear Sigma Model and Its Pohlmeyer Reduction",
+    "externalids": {
+      "ACL": "",
+      "ArXiv": "1612.03840",
+      "CorpusId": "100153030",
+      "DBLP": "",
+      "DOI": "10.1002/prop.201700067",
+      "MAG": "2950529231",
+      "PubMed": "",
+      "PubMedCentral": ""
+    },
+    "year": "2016",
+    "level": "section",
+    "sections": [
+      {
+        "header": "Introduction",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Introduction",
+            "paragraphs": [
+              "Meron solutions of two-dimensional non-linear sigma models {{not_in_s2orc}} are interesting singular solutions that are characterized by topological charge equal to 1/2 and logarithmically divergent action. Instanton solutions in this class of models can be understood as being composed by two merons. These have been studied especially in the context of the relation of two-dimensional sigma models to four-dimensional Yang-Mills theories {{121804459}}, (for a review on the subject see {{123579404}} and the references therein), which are also characterized by such solutions which dominate the path integral at strong coupling providing a qualitative picture for the confined phase of these theories {{10443315}}.",
+              "Elliptic solutions that interpolate between instanton and meron solutions have also been discovered {{not_in_s2orc}}. These solutions can be understood as the intermediate stages of the dissociation of meron pairs, supporting the relation between meron pairs and instantons.",
+              "There is an alternative approach to study non-linear sigma models in symmetric spaces, the so called Pohlmeyer reduction {{123165375}}{{123761193}}{{119534683}}{{not_in_s2orc}}{{not_in_s2orc}}{{123345148}}{{not_in_s2orc}}. The critical element of this approach is a non-local coordinate transformation that manifestly satisfies the Virasoro constraints, thus leaving only the physical degrees of freedom. In the case of the O (3) model, this method leads to the relation of the sigma model to the sine-Gordon equation {{123165375}}, while for higher dimensional symmetric spaces one results in multi-component generalizations of the latter.",
+              "Whether the reduced theory can be obtained from a local action is a non-trivial question in this approach, since the degrees of freedom of the reduced theory are connected to the original ones in a non-local way. It turns out that the reduced theory can be considered as a gauged WZW model with an integrable potential in a specific gauge {{119380056}}{{18830993}}{{18368480}}, allowing a systematic method to find the Lagrangian of the reduced theory.",
+              "The reduced theory has an integrable structure, allowing the construction of interesting solitonic solutions. However, the construction of the corresponding solution in the original sigma model is non-trivial due to the non-trivial relation between the original and reduced degrees of freedom. Such constructions have been of particular interest in the context of AdS/CFT correspondence in which case the non-linear sigma model describes the dynamics of strings propagating in AdS spaces {{2450039}}{{118514287}}{{2284875}}{{16004701}}{{not_in_s2orc}}.",
+              "Since several aspects of the relation between the sigma model and the reduced integrable theory have not been understood yet, mapping the solutions of the reduced theories to instanton, meron and elliptic solutions or the original sigma model may provide interesting insights to the properties of Pohlmeyer reduction.",
+              "The structure of this paper is as following: In section 2 we review basic facts of the O (3) non-linear sigma model. In section 3 we review the instanton, meron and elliptic solutions of the model. In section 4 we study the Pohlmeyer reduction of the Euclidean O (3) model resulting in the sinh-Gordon equation. In section 5, we study the mapping between the solutions of the sigma model in the original formulation, as reviewed in section 2, and solutions of the sinh-Gordon equation. Finally, in section 6 we discuss our results. There is also en appendix with properties of Jacobi elliptic functions that are used throughout the text."
+            ]
+          },
+          {
+            "header": "The Euclidean O(3) Non-linear Sigma Model",
+            "paragraphs": []
+          },
+          {
+            "header": "The Model",
+            "paragraphs": [
+              "The Euclidean O(3) non-linear sigma model describes the dynamics of a three component vector field X i (\u03c3 0 , \u03c3 1 ) with unit norm. Its action is given by",
+              "Index i takes the values 1, 2, 3, while index m takes the values 0, 1 and is contracted with the Euclidean metric \u03b4 mn . We first introduce the complex coordinate z,",
+              "Then, the action of the Euclidean O(3) model is written as",
+              "The constraint can be easily satisfied introducing angular field variables \u0398 and \u03a6 as",
+              "Then, the action is written as",
+              "Finally, we can define the \"stereographic projection\" complex field variable W as,",
+              "and the action is written as",
+              "(2.9)",
+              "Any field configuration describes a mapping from the complex plane to the sphere S 2 . Any finite action configuration must have a unique limit as the magnitude of the complex number z tends to infinity. In such cases, the complex plane can be compactified to the sphere S 2 and the finite action field configurations are mappings from S 2 to S 2 , thus, they are classified by the homotopy classes of these mappings, which are trivially the elements of the group of integers Z. One can define the topological number density as the Jacobian of the mapping",
+              "(2.10)"
+            ]
+          },
+          {
+            "header": "The Equations of Motion and the Stress-energy Tensor",
+            "paragraphs": [
+              "It will turn out that all the formulations of the Euclidean O(3) non-linear sigma model presented in section 2.1, given by equations (2.3), (2.7) and (2.9) will be useful for different points of view of the model solutions. For this reason we will derive the equations of motion and the stress-energy tensor in all these formulations."
+            ]
+          },
+          {
+            "header": "Scalar Fields Triplet Formulation",
+            "paragraphs": [
+              "Starting from action (2.3), the equations of motion for the fields X m are",
+              "while the equation of motion for the Lagrange multiplier \u03bb is the constraint equation",
+              "Acting with \u2202\u2202 on the constraint equation we get",
+              "The latter, using both equations of motion for X i and the constraint, can be written as",
+              "implying that we can write down the equations of motion for the fields X i decoupled from the Lagrange multiplier as",
+              "We can also calculate the stress-energy tensor and find it equal to",
+              "The stress-energy tensor in the angular field variables formulation equals"
+            ]
+          },
+          {
+            "header": "Stereographic Complex Field Formulation",
+            "paragraphs": [
+              "The equations of motion derived from action (2.9) are",
+              "The stress-energy tensor equals",
+              "As expected, T zz vanishes identically as a result of conformal symmetry in all three formulations."
+            ]
+          },
+          {
+            "header": "Solutions of the O(3) Non-linear Sigma Model",
+            "paragraphs": [
+              "The O(3) non-linear Sigma Model is known to have several interesting solutions. We will distinguish three classes of solutions: solutions of integer topological charge, i.e. instantons, solutions of half-integer topological charge, i.e. merons and solutions that interpolate between merons and instantons. For the analysis in this section, we will use the formulation of the sigma model in terms of the complex field variable W ."
+            ]
+          },
+          {
+            "header": "Instantons",
+            "paragraphs": [
+              "Clearly, any holomorphic function W or antiholomorphic functionW",
+              "is a solution of the equations of motion (2.24). If one wants to restrict to solutions that are characterized by finite action, i.e. solutions that become single valued at infinity, the general solution has to be written as product of factors of the form z\u2212a \u2212 z\u2212a + , for instantons and as product of factors of the formz \u2212a \u2212 z\u2212a + , for antiinstantons {{118103020}},",
+              "It is easy to show that upon substitution of (3.3) and {{not_in_s2orc}} to the expression for the topological charge (2.10), we find",
+              "Studying the form of the action for the solutions (3.3) and (3.4) and having found the corresponding topological charges, it is natural to interpret these solutions as Ninstanton or N -antiinstanton solutions respectively, localized at positions 1 2 a + i + a \u2212 i . Instantons and antiinstantons are the only finite action solutions of the sigma model {{121034572}}. Further details are beyond the scope of this work.",
+              "Equations (2.25) and (2.26) imply that the instanton and anti-instanton solutions are characterized by vanishing stress-energy tensor."
+            ]
+          },
+          {
+            "header": "Merons",
+            "paragraphs": [
+              "Meron solutions are solutions characterized by vanishing topological charge except for singular points. Since the topological charge density is simply the Jacobian of the mapping defined by the fields X i , merons correspond to degenerate solutions that map the complex plane to one-dimensional submanifolds of the sphere. Demanding the above, it turns out that the general meron solution of equations (2.24) is of the form",
+              "where f (z) is an arbitrary meromorphic function of z. Furthermore, the demand that the solution is single valued at infinity results in a specific selection of function f (z),",
+              "which corresponds to a 2N meron configuration, with merons localized at a \u2212 i and a + i . For more details on merons, the reader is encouraged to read {{not_in_s2orc}}.",
+              "Substituting (3.9) to (2.25) and (2.26), it is simple to find that the stress-energy tensor elements corresponding to the solution (3.9) are",
+              "(3.12)"
+            ]
+          },
+          {
+            "header": "Elliptic Solutions",
+            "paragraphs": [
+              "Although, the instanton and meron solutions are both infinite families of solutions, many more solutions have been neglected due to the demand of localized topological charge. In this section, we will abandon this demand, and following {{not_in_s2orc}}, we will find solutions interpolating between the single meron solution W = z/z and the single instanton solution W = z. To do so, we substitute in equations (2.24) the ansatz",
+              "It is a matter of simple algebra to find that substituting (3.13) in equations (2.9), (2.10), (2.25) and (2.26), yields",
+              "and",
+              "Equation {{not_in_s2orc}} implies that the unspecified function \u03c8 (t) obeys the equation",
+              "which is the one-dimensional sine-Gordon equation or in other words the equation of motion of the pendulum with time having been substituted with the spacial variable t and potential equal to V = cos \u03c8 \u2212 1. {{not_in_s2orc}} Thus, this effective one-dimensional problem has a stable equilibrium that lies at \u03c8 = \u03c0 and an unstable one at \u03c8 = 0. It has to be pointed out that this one-dimensional sine-Gordon has nothing to do with the sine-Gordon that occurs after the Pohlmeyer reduction 1 . Unlike the connection between the NLSM degrees of freedom and the Pohlmeyer reduced field, which is nonlocal, as we will see in section 4, in this special case \u03c8 is locally connected to the degrees of freedom of the NLSM through {{not_in_s2orc}}. This kind of mapping of the O(3) NLSM to the sine-Gordon equation is a property of the particular model only and it greatly facilitates the study of its elliptic solutions.",
+              "Simple solutions of this effective problem can give us an idea about how the general solution of this problem interpolates between the single meron and single instanton solutions. The unstable vacuum solution \u03c8 = 0 corresponds to the trivial solution W = 0. The kink solution \u03c8 = 4tan \u22121 e t = 4tan \u22121 |z| corresponds to the one-instanton solution W = z. Finally the stable vacuum solution \u03c8 = \u03c0 corresponds to the onemeron solution W = z/z. Thus, the general solution to be found should have the limits of the stable vacuum solution and the kink solution.",
+              "It is a direct consequence of the equation of motion (3.19) that",
+              "In the language of the pendulum the above would be simply energy conservation. We can categorize the solutions in the following classes",
+              "The integral (3.21) of the equations of motion, allows the expression of the general solution in terms of the Jacobi elliptic functions (see also {{14507301}}). Several useful definitions and properties of Jacobi elliptic functions are summarized in appendix A. If one defines \u03c8 = 2\u03a8 + \u03c0, equation (3.21) is written as",
+              "Assuming an initial condition of the form \u03c8 (t 0 ) = \u03c0 (or \u03a8 (t 0 ) = 0), the above expression can be integrated using the definition of the incomplete elliptic integral of the first kind (A.1)",
+              "where F (x; k) is the incomplete elliptic integral of the first kind with modulus k and am (x; k) is its inverse function, namely the amplitude of Jacobi elliptic functions. It is a matter of simple algebra to find that",
+              "As physically expected from the pendulum mechanical analog of the problem, the above solutions are periodic for E < 0, and quasi-periodic for E > 0, thus the indices in expressions (3.25) and {{not_in_s2orc}}. Periodic properties of Jacobi elliptic functions (A.17) allow the specification of the corresponding periods,",
+              "where K (x) is the complete elliptic integral of the first kind. Property (A.11) of Jacobi elliptic functions implies that at the limit E \u2192 \u22122 one recovers the single meron solution",
+              "as expected. On the other hand, property (A.14) of Jacobi elliptic functions implies that at the limit E \u2192 0 both periodic and quasi-periodic solutions tend to the instanton solution lim",
+              "In figure 1, the surfaces in S 2 corresponding to the periodic elliptic solutions and the meron and instanton limits are displayed. It can be seen that indeed the elliptic solutions interpolate between the degenerate mapping of the meron configuration to the identity mapping from S 2 to S 2 that corresponds to a single instanton.",
+              "We would also like to comment that the topological charge, as implied by equation (3.16), is not well defined for the elliptic solutions due to the non-existence of the limit lim t\u2192\u221e \u03c8 (t). Of course at the limits E \u2192 \u22122 and E \u2192 0, corresponding to the stable equilibrium and kink solutions respectively, the solution is neither periodic nor quasiperiodic and the limit lim t\u2192\u221e \u03c8 (t) is well defined, giving rise to a well defined topological charge number, as required for meron and instanton solutions.",
+              "For solutions (3.25) and (3.26), as can be easily seen from equations (3.17) (3.18), the existence of the integral (3.21) implies that the stress-energy tensor components are equal to",
+              "It is easy to check that the above expressions agree with the fact that the instanton solutions are characterized by vanishing stress-energy tensor, as well the formulas (3.11) and (3.12), giving the stress-energy tensor components for a meron configuration at the appropriate limit E \u2192 \u22122 and f (z) \u2192 z."
+            ]
+          },
+          {
+            "header": "Reduction of the Euclidean O(3) Non-linear Sigma Model",
+            "paragraphs": [
+              "The Pohlmeyer reduced theory is derived based on the formulation of the sigma model in terms of the scalar fields triplet X i , that take values in a symmetric target space, namely S 2 . The most known example of such reduction is for the Lorentzian version of the model under study, leading to the sine-Gordon equation {{123165375}}. Here we will follow closely the analysis of {{123165375}} in the reduction of the Euclidean version of O(3) non-linear sigma model."
+            ]
+          },
+          {
+            "header": "Definition of the Reduced Theory Field",
+            "paragraphs": [
+              "First, we would like to observe that by definition of the O(3) sigma model, the scalar fields obey the constraint X i X i = 1. It is a direct consequence that the vector X i is perpendicular to the vectors \u2202X i and\u2202X i .",
+              "An important feature of the sigma model that is critical for Pohlmeyer reduction is the fact that the T zz component of the stress-energy tensor is a function solely of z, while the Tzz component is a function solely ofz. Indeed, using expression (2.16) for T zz , the equations of motion (2.11) and the orthogonality between X i and \u2202X i , we find",
+              "The stress-energy tensor for meron solutions (3.11) and (3.12), for elliptic solutions (3.30) and (3.31), as well as the fact that the stress-energy tensor for instanton solutions vanishes, are all in accordance with this property. The above fact implies that there is an appropriate redefinition of the complex coordinate z, z = z (w) andz =z (w) that allows setting the stress-energy tensor elements to a real and positive constant 2",
+              "(4.4)",
+              "Notice that (4.4) implies that the fields do not acquire a given value as |w| \u2192 \u221e and thus, such boundary conditions should be abandoned when the Pohlmeyer reduced theory is considered.",
+              "In the traditional Pohlmeyer reduction of the Lorentzian O(3) sigma model, the reduced field is defined as the angle between the vectors \u2202 + X i and \u2202 \u2212 X i , where x \u00b1 are light cone coordinates x \u00b1 = x 0 \u00b1x 1 . In this case, it is a natural definition for the reduced degrees of freedom to set \u2202 + X i \u2202 \u2212 X i = \u00b5 2 cos \u03d5, since \u2202 \u00b1 X i are real vectors with norm equal to \u00b5, as a consequence of the stress-energy tensor being equal to T ++ = T \u2212\u2212 = \u00b5 2 , similarly to our case. However, in the Euclidean scenario under study, the inner product of \u2202X i and\u2202X i is always positive and larger than the absolute value of \u00b5 2 . If we define the real and imaginary parts of w as x and y and remembering that we have performed an appropriate coordinate redefinition such that \u00b5 2 is real, it is true that",
+              "Thus, \u2202X m\u2202 X m \u2265 \u00b5 2 and a natural definition for the reduced degrees of freedom in the case of the Euclidean sigma model is",
+              "Notice that since \u2202X m\u2202 X m is both positive and larger than the absolute value of T zz , equation (4.7) is a good definition for the reduced field \u03d5 only if \u00b5 2 has been selected to be positive. Thus, one has to be careful when defining the complex variable w, so that T ww is not only constant and real, but also positive."
+            ]
+          },
+          {
+            "header": "The Basis in Enhanced Space and the Reduced Theory",
+            "paragraphs": [
+              "We would like to specify the dynamics of the field \u03d5. In order to do so, we need to calculate the derivative \u2202\u2202 cosh \u03d5. Using the definition (4.7) of the field \u03d5, we get",
+              "The first term turns out to be the most complicated to calculate. Finding a base in the enhanced, flat, three-dimensional target space of the theory would be convenient, in order to express the second derivatives of X i in that base and calculate the desired term.",
+              "As explained in section 4.1, the vector X i is perpendicular to the vectors \u2202X i and\u2202X i . Consequently, unless a degeneracy between the real and imaginary parts of \u2202X i occurs, the three vectors X i , \u2202X i and\u2202X i form a basis in the three-dimensional enhanced flat target space of the sigma model and thus, any vector can be written as a linear combination of the above.",
+              "Let's take advantage of this fact and write the second derivative of X i as such a linear combination,",
+              "Then, equation (4.1) and the definition of the field \u03d5 (4.7) imply that \u2202 2 X i X i = a, (4.10)",
+              "The vectors X i and \u2202X i are orthogonal. It is a direct consequence that",
+              "The vector \u2202X i has constant magnitude and thus,",
+              "Finally, from the definition of the field variable \u03d5, we get",
+              "Thus, we have all necessary information to specify the coefficients a, b and c. We find",
+              "It is now straightforward to calculate the inner product \u2202 2 X i \u2202 2 X i , \u2202 2 X i\u22022 X i = a\u0101 + \u00b5 2 bc +bc + \u00b5 2 bb + cc cosh \u03d5 = \u00b5 4 + \u00b5 2 cosh \u03d5\u2202\u03d5\u2202\u03d5 .",
+              "(4.20)",
+              "The second and third terms of (4.8) can be easily calculated with the help of the equations of motion (2.15), expressed with the help of field \u03d5,",
+              "(4.21)",
+              "Differentiating the above and taking the appropriate inner product we find",
+              "Finally, the last term of (4.8) can be calculated directly from the equations of motion",
+              "All four terms required for the calculation of the derivative \u2202\u2202 cosh \u03d5 through equation (4.8) have been specified and we get \u00b5 2 \u2202\u2202 cosh \u03d5 = \u00b5 2 cosh \u03d5\u2202\u03d5\u2202\u03d5 \u2212 \u00b5 4 sinh 2 \u03d5, {{not_in_s2orc}} implying that \u2202\u2202\u03d5 = \u2212\u00b5 2 sinh \u03d5, We would like to point out here that in an obvious way, Pohlmeyer reduction cannot be performed if the stress-energy tensor is vanishing. Thus, it is expected that instanton solutions, which are the only finite-action solutions, do not have a counterpart within the solutions of the sinh-Gordon equation. Consequently, we expect that the counterparts of the elliptic solutions must also become problematic at the E \u2192 0 limit."
+            ]
+          },
+          {
+            "header": "Meron Solutions in the Reduced Theory",
+            "paragraphs": [
+              "The stress-energy tensor elements in the case of meron solutions are given by equations {{not_in_s2orc}} and {{not_in_s2orc}}. We desire performing a conformal transformation z = z (w) so that the stress-energy tensor elements are set to a positive constant. After such a conformal transformation, the new stress-energy tensor ww component is equal to",
+              "So if we demand that g 2 T ww = \u00b5 2 , the appropriate conformal transformation should obey",
+              "In terms of the new coordinate w, the meron solution is written as",
+              "Thus, the corresponding solution of the Pohlmeyer reduced theory is",
+              "This implies that all meron solutions are mapped through Pohlmeyer reduction to the ground state of the sinh-Gordon equation."
+            ]
+          },
+          {
+            "header": "The Elliptic Solutions in the Reduced Theory",
+            "paragraphs": [
+              "We have seen in Section 3.3, that the Euclidean O(3) NLSM accepts a family of solutions that correspond to solutions of the one-dimensional pendulum with potential V = cos \u03c8 \u2212 1, characterized by the value of the energy integral E. The stress-energy tensor for these solutions is given by equations (3.30) and (3.31)."
+            ]
+          },
+          {
+            "header": "Quasi-Periodic Elliptic Solutions",
+            "paragraphs": [
+              "As for merons, the reduction of the theory requires the performance of a conformal transformation in order to set the stress-energy tensor equal to a positive constant. For quasi-periodic elliptic solutions, for whom E > 0, such an appropriate conformal transformation is z = e w a . (5.6)",
+              "Then, the stress-energy tensor takes the form",
+              "Defining the real and imaginary parts of the complex variable w to be x and y respectively,",
+              "It turns out that these solutions have a simpler expression in terms of the angular field coordinates \u0398 and \u03a6. Specifically,",
+              "Since \u0398 depends only on the real part of w and \u03a6 depends only on the imaginary part of w, we acquire the following simple formulas using equations (2.21) and (2.7)",
+              "Thus, the counterpart of the quasi-periodic elliptic solution (3.25) in the Pohlmeyer reduced theory is",
+              "(5.14)",
+              "Since the reduced field solution depends only on the real part of the complex variable w, the solutions belong to a special subset of the solutions of the Euclidean sinh-Gordon equation that depend on only one real variable, \u03d5 = \u03d5 (x) and consequently they obey",
+              "These solutions have an one-dimensional mechanical analog of a \"hyperbolic pendulum\" with potential V = 4\u00b5 2 cosh \u03d5, {{not_in_s2orc}} which from energy conservation obey",
+              "It is a matter of simple algebra to show that equation (5.14) implies"
+            ]
+          },
+          {
+            "header": "Periodic Elliptic Solutions",
+            "paragraphs": [
+              "For periodic elliptic solutions, for whom E < 0, an appropriate conformal transformation to set the stress-energy tensor to a constant is",
+              "Then, the stress-energy tensor takes the form",
+              "Defining the real and imaginary parts of the complex variable w to be x and y respectively,",
+              "This implies that the solution in terms of the angular field coordinates is written as {{not_in_s2orc}} and similarly to the case of quasi-periodic solutions we can acquire the following simple expressions",
+              "Thus, the counterpart of the periodic elliptic solution (3.26) in the reduced theory is",
+              "As in the case of the quasi-periodic elliptic solution, the reduced field solution depends only on the imaginary part of the complex variable w, and, thus, the solutions belong to a special subset of the solutions of the Euclidean sinh-Gordon equation that depend only on one real variable, \u03d5 = \u03d5 (y) and therefore obey d 2 \u03d5 dy 2 = \u22124\u00b5 2 sinh \u03d5, {{not_in_s2orc}} being the same ordinary differential equation as in the case of quasi-periodic solutions.",
+              "Consequently, there is also the same one-dimensional mechanical analog of a \"hyperbolic pendulum\" with potential given by equation {{not_in_s2orc}}. Energy conservation in this one-dimensional mechanical analog implies that the counterparts of periodic elliptic solutions in the Pohlmeyer reduced theory obey",
+              "It is a matter of simple algebra to show that equation (5.27) implies that",
+              "which is the exact same formula as in the case of quasi-periodic solutions."
+            ]
+          },
+          {
+            "header": "Comparison of the Initial and Reduced Formulations",
+            "paragraphs": [
+              "In the process of deriving the form of the counterparts of the NLSM solutions in the Pohlmeyer reduced theory, we performed a conformal transformation that sets the stress-energy tensor to a real and positive constant. Although equation (4.2) ensures that there is always such a transformation, it is not the case that this is the same transformation for all NLSM solutions. This becomes evident comparing the appropriate conformal transformations in the case of meron and elliptic solutions, given by equations (5.2), (5.6) and {{not_in_s2orc}}. Even in the case of the family of elliptic solutions, the same conformal transformation manages to set the stress-energy tensor components to a real and positive constant for the whole family, but a different one for each member of the family. Since this constant enters into the reduced problem as the mass scale of the sinh-Gordon equation, each solution of the elliptic family has been mapped to a solution of a different version of the sinh-Gordon equation.",
+              "In order to better understand the correspondence between the elliptic solutions of the NLSM and the solutions of the sinh-Gordon equation, we would like to make a more specific conformal transformation for each solution, so that the mass scale of the sinh-Gordon equation is always the same. This can be achieved by taking advantage of the freedom to select the parameter a appearing in the conformal transformations {{not_in_s2orc}} and {{not_in_s2orc}}. Choosing",
+              "the potential of the one-dimensional effective mechanical problem equals V = cosh \u03d5 (5.32) in all cases. Then, the corresponding energy constant in the reduced one-dimensional mechanical problem (the \"hyperbolic\" pendulum problem) is related with the energy constant in the initial one-dimensional mechanical problem (the pendulum problem) as",
+              "Notice that E diverges as E \u2192 0. This is expected since for E \u2192 0 the elliptic solutions tend to the instanton limit, which cannot have a Pohlmeyer counterpart. In figure 2, we can see the correspondence of the energy levels between the initial and reduced problems. Interestingly, for every energy level corresponding to a periodic solution of the initial pendulum problem, there is another energy level corresponding to a quasi-periodic solution and vice versa, such that the two solutions correspond to the same energy level in the reduced \"hyperbolic pendulum\" problem. This is evident in figure 3, which depicts the relation between the energy levels in the original and reduced problems. Since the reduced problem solution is characterized only by its energy level (up to a shift in the \"time\" variable), the two solutions of the reduced problem are actually the same solution. One can easily check that equations (5.18) and (5.30), together with the appropriate setting of the parameter a (5.31), imply that two energy levels E 1 < 0 and E 2 > 0 in the original problem corresponding to the same energy level in the reduced theory E 1 = E 2 obey E 1 E 2 + 2 (E 1 + E 2 ) = 0. and thus, the two solutions would be connected with the modular transformation k \u2192 1/k. On the other hand, the two solutions in the initial formulation of the theory are not identical. The periodic solution corresponds to a surface that covers part of the whole sphere as shown in figure 1, while the quasi-periodic solution covers the whole sphere, but it is singular at the poles, as the derivatives of the fields do not vanish there. Actually, the discontinuity of the surface corresponding to the periodic solution is similar to the discontinuity to the longitudinal tangential vector of the surface corresponding to the quasi-periodic solution; one can show that",
+              "One may suggest that the two distinct NLSM solutions correspond to the same solution in the reduced theory, as Pohlmeyer reduction deals with the position vector and tangential vector in a symmetric way, as two elements of the basis defined in the enhanced flat three-dimensional target space."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Acknowledgments",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Acknowledgments",
+            "paragraphs": [
+              "This work is dedicated to the memory of Prof. Ioannis Bakas. His unexpected loss deprived the scientific community of a member with an elegant way of thinking, infinite organization skills and integrity. This paper is the outcome of uncountable discussions on the connection between geometry and physics and it was built alongside our previous joint work."
+            ]
+          },
+          {
+            "header": "A Useful Formulas for Jacobi's Elliptic Functions",
+            "paragraphs": [
+              "The incomplete elliptic integral of the first kind is defined as"
+            ]
+          },
+          {
+            "header": "For",
+            "paragraphs": []
+          },
+          {
+            "header": "Figure 1 .",
+            "paragraphs": []
+          },
+          {
+            "header": "Figure 2 .",
+            "paragraphs": []
+          },
+          {
+            "header": "Figure 3 .",
+            "paragraphs": []
+          },
+          {
+            "header": "F",
+            "paragraphs": []
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "Discussion",
+      "papers_cited_discussion": [
+        "12750838"
+      ],
+      "subsections": [
+        {
+          "header": "Discussion",
+          "paragraphs": [
+            "We found the corresponding counterparts of meron and elliptic solutions of Euclidean O(3) non-linear sigma model in the Pohlmeyer reduced version of the same theory, namely the sinh-Gordon equation. Summarizing, we may conclude the following: Instanton solutions, which are the only finite action solutions of the O(3) model, do not have a counterpart, as they are characterized by vanishing stress-energy tensor. Therefore, not every solution of the non-linear sigma model has a counterpart in the Pohlmeyer reduced theory. Especially solutions with a well defined topological number cannot be mapped to the Pohlmeyer reduced theory, as they have to be characterized by a unique limit at complex infinity, which is inconsistent with the form of the imposed Virasoro constraint in Pohlmeyer reduction.",
+            "All meron solutions correspond to the ground state of the sinh-Gordon equation. It seems that this is a more general property that singular configurations such as a meron have. In a similar manner, strings propagating into R t \u00d7 S 2 are described by a non-linear sigma model that is reducible to the sine-Gordon equation. Classical string solutions that are singular in a similar sense (the world-sheet tends to an onedimensional manifold, such as a point particle solution, or the \"hoop\" string solution) have the property of being mapped to either the stable or the unstable vacuum of the sine-Gordon equation {{12750838}}.",
+            "Elliptic solutions, which can be viewed as solutions of an one-dimensional mechanical pendulum problem in the initial formulation of the theory, have also an onedimensional mechanical analogue with a hyperbolic cosine potential in the Pohlmeyer reduced description. For every periodic solution in the pendulum problem, there is a quasi-periodic solution and vice versa that has the same counterpart in the hyperbolic cosine problem. The above pair of solutions correspond to physically distinct solutions in the initial formulation of the sigma model. Furthermore, different, physically inequivalent solutions of the sigma model may correspond to the same solution in the Pohlmeyer reduced theory. This may be attributed to the fact that Pohlmeyer reduction deals with the fields and their derivatives in a symmetric way, as elements of a vector basis in an enhanced higher dimensional space, in our case R 3 .",
+            "It would be interesting to generalize these results studying the correspondence between solutions of non-linear sigma models with different target space geometries or in higher dimensional target spaces."
+          ]
+        }
+      ]
+    },
+    "discussion_txt": "We found the corresponding counterparts of meron and elliptic solutions of Euclidean O(3) non-linear sigma model in the Pohlmeyer reduced version of the same theory, namely the sinh-Gordon equation. Summarizing, we may conclude the following: Instanton solutions, which are the only finite action solutions of the O(3) model, do not have a counterpart, as they are characterized by vanishing stress-energy tensor. Therefore, not every solution of the non-linear sigma model has a counterpart in the Pohlmeyer reduced theory. Especially solutions with a well defined topological number cannot be mapped to the Pohlmeyer reduced theory, as they have to be characterized by a unique limit at complex infinity, which is inconsistent with the form of the imposed Virasoro constraint in Pohlmeyer reduction.All meron solutions correspond to the ground state of the sinh-Gordon equation. It seems that this is a more general property that singular configurations such as a meron have. In a similar manner, strings propagating into R t \u00d7 S 2 are described by a non-linear sigma model that is reducible to the sine-Gordon equation. Classical string solutions that are singular in a similar sense (the world-sheet tends to an onedimensional manifold, such as a point particle solution, or the \"hoop\" string solution) have the property of being mapped to either the stable or the unstable vacuum of the sine-Gordon equation {{12750838}}.Elliptic solutions, which can be viewed as solutions of an one-dimensional mechanical pendulum problem in the initial formulation of the theory, have also an onedimensional mechanical analogue with a hyperbolic cosine potential in the Pohlmeyer reduced description. For every periodic solution in the pendulum problem, there is a quasi-periodic solution and vice versa that has the same counterpart in the hyperbolic cosine problem. The above pair of solutions correspond to physically distinct solutions in the initial formulation of the sigma model. Furthermore, different, physically inequivalent solutions of the sigma model may correspond to the same solution in the Pohlmeyer reduced theory. This may be attributed to the fact that Pohlmeyer reduction deals with the fields and their derivatives in a symmetric way, as elements of a vector basis in an enhanced higher dimensional space, in our case R 3 .It would be interesting to generalize these results studying the correspondence between solutions of non-linear sigma models with different target space geometries or in higher dimensional target spaces.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "Title: A Comparison of Solutions between the Euclidean O(3) Non-linear Sigma Model and its Pohlmeyer Reduced Form",
+                "Introduction:\nIn this study, we aim to explore the relationship between known solutions of the Euclidean O(3) non-linear sigma model and their counterparts in the Pohlmeyer reduced theory. Specifically, we investigate the mapping between instantons, merons, and elliptic solutions in the former and their corresponding solutions in the latter, the sinh-Gordon equation.",
+                "Background:\nThe Euclidean O(3) non-linear sigma model is a well-known model in theoretical physics, which describes the dynamics of a scalar field in a three-dimensional space. The model admits various types of solutions, including instantons, merons, and elliptic solutions. These solutions have been studied extensively in the literature, and they play a crucial role in understanding the properties of the model.",
+                "Pohlmeyer Reduction:\nThe Pohlmeyer reduced theory, on the other hand, is a simplified version of the original model, which is obtained by integrating out one of the degrees of freedom of the scalar field. The resulting theory, the sinh-Gordon equation, is a non-linear wave equation that describes the dynamics of the remaining degree of freedom. The Pohlmeyer reduction is a powerful tool for studying the properties of the original model, as it allows for a simplified analysis of the system.",
+                "Main Results:\nOur main findings can be summarized as follows:",
+                "1. Instantons do not have a direct counterpart in the Pohlmeyer reduced theory. This is because the instantons are topologically nontrivial solutions that are not preserved under the Pohlmeyer reduction.\n2. Merons correspond to the ground state of the Pohlmeyer reduced theory. This is because the merons are the solutions that minimize the energy of the system, and they are preserved under the Pohlmeyer reduction.\n3. The class of elliptic solutions is characterized by a two-to-one correspondence between solutions in the two descriptions. This means that every elliptic solution in the Euclidean O(3) non-linear sigma model has a unique counterpart in the Pohlmeyer reduced theory, and vice versa.",
+                "Discussion:\nOur results provide a deeper understanding of the relationship between the Euclidean O(3) non-linear sigma model and its Pohlmeyer reduced form. The absence of a direct counterpart for instantons in the Pohlmeyer reduced theory highlights the limitations of the simplified theory in capturing the full complexity of the original model. On the other hand, the correspondence between merons and the ground state of the Pohlmeyer reduced theory suggests that the simplified theory can provide useful insights into the properties of the original model.",
+                "The two-to-one correspondence between elliptic solutions in the two descriptions is a intriguing result that underscores the rich structure of the Euclidean O(3) non-linear sigma model. It suggests that the model admits a wide range of solutions that can be related to each other in a precise manner.",
+                "Conclusion:\nIn conclusion, our study provides a detailed comparison between the solutions of the Euclidean O(3) non-linear sigma model and their counterparts in the Pohlmeyer reduced theory. Our findings highlight the limitations and advantages of each description, and they provide a deeper understanding of the relationship between these two important theories in theoretical physics."
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.6590701341629028,
+            "R": 0.7021211981773376,
+            "F1": 0.6799148917198181
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.5803591012954712,
+            "R": 0.5797669887542725,
+            "F1": 0.5800628662109375
+          }
+        ],
+        "P_mean": 0.619714617729187
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "The abstract describes a study on the mapping between two different representations of the same physical system, namely the"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.34155023097991943,
+            "R": 0.5413586497306824,
+            "F1": 0.41884544491767883
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.35559338331222534,
+            "R": 0.5800839066505432,
+            "F1": 0.44090843200683594
+          }
+        ],
+        "P_mean": 0.3485718071460724
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "The Pohlmeyer reduction of the Euclidean O(3) non-linear sigma model leads to the"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.4199128746986389,
+            "R": 0.6936321258544922,
+            "F1": 0.523131251335144
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.40758180618286133,
+            "R": 0.6557020545005798,
+            "F1": 0.5026921629905701
+          }
+        ],
+        "P_mean": 0.4137473404407501
+      }
+    ]
+  },
+  {
+    "corpus_id": "10020161",
+    "title": "Effectiveness of biomarker-based exclusion of ventilator-acquired pneumonia to reduce antibiotic use (VAPrapid-2): study protocol for a randomised controlled trial",
+    "externalids": {
+      "ACL": "",
+      "ArXiv": "",
+      "CorpusId": "10037358",
+      "DBLP": "",
+      "DOI": "10.1186/s13063-016-1442-x",
+      "MAG": "2473068687",
+      "PubMed": "27422026",
+      "PubMedCentral": "4947254"
+    },
+    "year": "2016",
+    "level": "section",
+    "sections": [
+      {
+        "header": "Introduction",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Introduction",
+            "paragraphs": [
+              "Alignments in parallel corpora provide a straightforward basis for the extraction of paraphrases by means of re-translating pivots and then ranking the obtained set of candidates. For example, if the German verb aufsteigen is aligned with the English pivot verbs rise and climb up, and the two English verbs are in turn aligned with the German verbs aufsteigen, ansteigen and hochklettern, then ansteigen and hochklettern represent two paraphrase candidates for the German verb aufsteigen. {{15728911}} were the first to apply this method to gather paraphrases for individual words and multi-word expressions, using translation probabilities as criteria for ranking the obtained paraphrase candidates.",
+              "This standard re-translation approach however suffers from a major re-translation sense problem, because the paraphrase candidates cannot distinguish between the various senses of the target word or phrase. Consequently, (i) the different senses of the original word or phrase are merged,  when the back translations of all pivot words are collected within one set of paraphrase candidates; and (ii) the ranking step does not guarantee that all senses of a target are covered by the top-ranked candidates, as more frequent senses amass higher translation probabilities and are favoured.",
+              "Recently, {{11942888}} proposed two approaches to distinguish between paraphrase senses (i.e., aiming to solve problem (i) above). In this paper, we address both facets (i) and (ii) of the re-translation sense problem, while focusing on an emprically challenging class of multi-word expressions, i.e., German particle verbs (PVs). German PVs can appear morphologically joint or separated (such as steigt . . . auf ), and are often highly ambiguous. For example, the 138 PVs we use in this paper have an average number of 5.3 senses according to the Duden 1 dictionary. Table 1 illustrates the re-translation sense problem for German PVs. It lists the 10 top-ranked paraphrases for the target verb ausrichten obtained with the standard method. Four synonyms in the 10 top-ranked candidates were judged valid according to the Duden, covering three out of five senses listed in the Duden. Synonyms for a fourth sense \"to tell\" (sagen,\u00fcbermitteln, weitergeben) existed in the candidate list, but were ranked low.",
+              "Our approach to incorporate word senses into the standard paraphrase extraction applies a graph-based clustering to the set of paraphrase candidates, based on a method described in {{13272287}}{{718563}}. It divides the set of candidates into clusters by reducing edges in an originally fully-connected graph to those exceeding a dynamic similarity threshold. The resulting clusters are taken as paraphrase senses, and different parameters from the graphical clustering (such as connectedness in clusters; cluster centroid positions; etc.) are supposed to enhance the paraphrase ranking step. With this setting, we aim to achieve higher precision in the top-ranked candidates, and to cover a wider range of senses as the original re-translation method. {{15728911}} introduced the idea of extracting paraphrases with the retranslation method. Their work controls for word senses regarding specific test sentences, but not on the type level. Subsequent approaches improved the basic re-translation method, including {{2755801}} who restrict paraphrases by syntactic type; and Wittmann et al. (2014) who add distributional similarity between paraphrase candidate and target word as a ranking feature. Approaches that applied extracted paraphrases relying on the re-translation method include the evaluation of SMT {{16241846}} and query expansion in Q-A systems {{2713391}}."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Related Work",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Related Work",
+            "paragraphs": [
+              "Most recently, {{11942888}} proposed two clustering algorithms to address one of the sense problems: They discriminate between target word senses, exploiting hierarchical graph factorization clustering and spectral clustering. The approaches cluster all words in the Paraphrase Database {{6067240}} and focus on English nouns in their evaluation.",
+              "A different line of research on synonym extraction has exploited distributional models, by relying on the contextual similarity of two words or phrases, e.g. {{not_in_s2orc}}, van der Plas and Tiedemann (2006), {{7747235}}, {{1588782}}. Typically, these methods do not incorporate word sense discrimination."
+            ]
+          },
+          {
+            "header": "Synonym Extraction Pipeline",
+            "paragraphs": [
+              "This section lays out the process of extracting, clustering and ranking synonym candidates."
+            ]
+          },
+          {
+            "header": "Synonym Candidate Extraction",
+            "paragraphs": [
+              "Following the basic approach for synonym extraction outlined by {{15728911}}, we gather all translations (i.e., pivots) of an input particle verb, and then re-translate the pivots. The back translations constitute the set of synonym candidates for the target particle verb.",
+              "In order to rank the candidates according to how likely they represent synonyms, each candidate is assigned a probability. The synonym probability p(e 2 |e 1 ) e2 =e1 for a synonym candidate verb e 2 given a target particle verb e 1 is calculated as the product of two translation probabilities: the pivot probability p(f i |e 1 ), i.e. the probability of the English pivot f i being a translation of the particle verb e 1 , and the return probability p(e 2 |f i ), i.e. the probability that the synonym candidate e 2 is a translation of the English pivot f i . The final synonym score for e 2 is the sum over all pivots f 1..n that re-translate into the candidate:",
+              "The translation probabilities are based on relative frequencies of the counts in a parallel corpus, cf. section 4.1.",
+              "Filtering We apply filtering heuristics at the pivot probability step and the return probability step: obviously useless pivots containing only stop-words (e.g. articles) or punctuation are discarded. In the back-translation step, synonym candidates that did not include a verb are removed. Furthermore, we removed pivots (pivot probability step) and synonym candidates (return probability step) consisting only of light verbs, due to their lack of semantic content and tendency to be part of multi-word expressions. If left unfiltered, light verbs often become super-nodes in the graphs later on (see section 3.2) due to their high distributional similarity with a large number of other synonym candidates. This makes it difficult to partition the graphs into meaningful clusters with the algorithm used here.",
+              "Distributional Similarity We add distributional information as an additional feature for the ranking of synonym candidates, because weighting the score from equation (1) by simple multiplication with the distributional similarity between the candidate and the target (as obtained from large corpus data, cf. section 4.1), has been found to improve the ranking {{1998986}}.",
+              "Properties of the clusters: C(#(cand)) number of synonym candidates in a cluster C(av-sim(cand,c)) average distributional similarity between synonym candidates in a cluster and the cluster centroid C(av(#(e))) average number of edges in the clusters of the cluster analyses C(#(e)) total number of edges in a cluster C(av-sim(cand,v)) average distributional similariy between synonym candidates in a cluster and the target PV C(av-sim(cand,gc)) average distributional similariy between all synonym candidates and the global centroid C(sim(c,v)) distributional similarity between a cluster centroid and the target PV C(con) connectedness of a cluster Properties of the synonym candidates: S(tr) translation probability of a synonym candidate S(#(e)) number of edges of a synonym candidate S(cl%(#(e))) proportion of cluster edges for a synonym candidate S(sim(cand,v)) distributional similarity between a synonym candidate and the target PV S(sim(cand,c)) distributional similarity between a synonym candidate and the cluster centroid S(sim(cand,gc)) distributional similarity between a synonym candidate and the global centroid Table 2: Properties of synonym candidates and clusters."
+            ]
+          },
+          {
+            "header": "Graph-Based Clustering of Candidates",
+            "paragraphs": [
+              "The clustering algorithm suggested by {{718563}} is adopted for clustering all extracted synonym candidates for a specific particle verb target. In a first step, a fully connected undirected graph of all synonym candidates is created as a starting point, with nodes corresponding to synonym candidates and edges connecting two candidates; edge weights are set according to their distributional similarity. In a second step, a similarity threshold is calculated, in order to delete edges with weights below the threshold. The threshold is initialized with the mean value between all edge weights in the fully connected graph. Subsequently, the threshold is updated iteratively:",
+              "1. The synonym candidate pairs are partitioned into two groups: P 1 contains pairs with similarities below the current threshold, and P 2 contains pairs with similarities above the current threshold and sharing at least one pivot."
+            ]
+          },
+          {
+            "header": "A new threshold is set: T =",
+            "paragraphs": [
+              "A P 1 +A P 2 2 , where A P i is the mean over all similarities in P i .",
+              "After convergence, the resulting graph consists of disconnected clusters of synonym candidates. Singleton clusters are ignored. The sub-graphs represent the cluster analysis to be used in the ranking of synonyms for the target particle verb."
+            ]
+          },
+          {
+            "header": "Iterative Application of Clustering Algorithm",
+            "paragraphs": [
+              "Because the resulting clusterings of the synonym candidates typically contain one very large (and many small) clusters, we extend the original algorithm and iteratively re-apply the clustering: After one pass of the clustering algorithm as described above (T 1 ), the resulting set of connected synonym candidates becomes the input to another iteration of the algorithm (T 2...n ). Each iteration of the algorithm results in a smaller and more strongly partitioned sub-graph of the initially fully connected graph because the similarity threshold for edges becomes successively higher."
+            ]
+          },
+          {
+            "header": "Synonym Candidate Ranking",
+            "paragraphs": [
+              "Assuming that clusters represent senses, we hypothesize that combining properties of individual synonym candidates with properties of the graphbased clusters of synonym candidates results in a ranking of the synonym candidates that overcomes both facets of the re-translation sense problem: Including synonym candidates from various clusters should ensure more senses of the target particle verbs in the top-ranked list; and identifying salient clusters should improve the ranking. Table 2 lists the properties of the individual synonym candidates S and the properties of the graph-based cluster analyses C that we consider potentially useful. For the experiments in section 4, we use all combinations of S and C properties."
+            ]
+          },
+          {
+            "header": "Experiments, Results and Discussion",
+            "paragraphs": []
+          },
+          {
+            "header": "Data and Evaluation",
+            "paragraphs": [
+              "For the extraction of synonym candidates, we use the German-English version of Europarl (1.5M parallel sentences) with GIZA++ word alignments for the extraction of synonym candidates. In the alignments, the German data is lemmatized and reordered in order to treat split occurrences of particle and verb as a single word {{441443}}{{1540169}} (2) S(tr) \u00b7 S(sim(cand,v)) \u00b7 C(av-sim(cand,gc)) 38.26 27.90 2.04 46.89 5 clustering + ranking (3) S(tr) \u00b7 S(sim(cand,v)) 38.19 27.90 2.04 46.89 6 clustering + ranking (4) S(tr) \u00b7 S(sim(cand,v)) \u00b7 C(sim(cand,v)) 38.12 27.90 2.04 46.89 7 clustering + ranking (5) S(tr) \u00b7 S(sim(cand,v)) \u00b7 C(con) 37.97 27.83 2.03 46.65 Table 3: Evaluation of basic approaches and best five rankings: precision & no./proportion of senses.",
+              "The distributional similarity sim is determined by cosine similarities between vectors relying on co-occurrences in a window of 20 words. We use the German web corpus DECOW14AX {{7987482}}{{51844671}} containing 12 billion tokens, with the 10,000 most common nouns as vector dimensions. The feature values are calculated as Local Mutual Information (LMI), cf. {{not_in_s2orc}}.",
+              "Our dataset contains the same 138 German particle verbs from Europarl as in previous work {{1998986}}, all PVs with a frequency f \u2265 15 and at least 30 synonyms listed in the Duden dictionary. For the evaluation, we also rely on the Duden, which provides synonyms for the target particle verbs and groups the synonyms by word sense. We consider four evaluation measures, and compare the ranking formulas by macro-averaging each of the evaluation measures over all 138 particle verbs:",
+              "\u2022 Precision among the 10/20 top-ranked synonym candidates.",
+              "\u2022 Number and proportion of senses represented among the 10 top-ranked synonyms."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Results",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Results",
+            "paragraphs": [
+              "The basic system (line 1 in table 3) only relies on the translation probabilities (S(tr)). It is extended by incorporating the distributional similarity between the target particle verb and the synonym candidates (line 2). Our five best rankings with one iteration of graphical clustering (T 1 ) are shown in lines 3-7. All of these include the translation probability and the distributional similarity between candidate and particle verb; only one makes use of cluster information. Thus, the simple distributional extension is so powerful that additional cluster information cannot improve the system any further. The most relevant cluster measure is the number of edges of the cluster C(#(e)), an indication of cluster size and connectedness.",
+              "While the best three clustering systems 2 outperform the extended basic system (line 2) in terms of top-10/top-20 precision, none of the improvements is significant. {{not_in_s2orc}} Also, the number and proportion of senses remain the same as in the basic approach with distributional extension. Further iterations of the clustering step (T 2...n ) up to n = 8 lead to increasingly worse precision scores and sense detection, cf. figure 1 for T 1...5 ."
+            ]
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "Discussion",
+      "papers_cited_discussion": [
+        "11942888"
+      ],
+      "subsections": [
+        {
+          "header": "Discussion",
+          "paragraphs": [
+            "Overall, the distributional similarity between the target word and the synonym candidates represents the strongest extension of the basic retranslation approach, and the cluster graphs do not provide further useful information. A breakdown of the cluster analyses revealed that the cluster sizes are very unevenly distributed. Typically, there is one very large cluster and several considerably smaller clusters, as shown by the first part of  Table 4: Distribution of candidates, synonyms and senses in the largest cluster vs. all other clusters in the iterations T 1 -T 5 .",
+            "proportion of candidates in the remaining clusters.",
+            "In addition, we found that most correct synonyms are also in the largest cluster (middle part of table 4). Accordingly, the cluster analyses do not represent partitions of the target verb senses, but most senses are in the largest cluster (bottom part of table 4).",
+            "Consequently, while the synonym features are useful for ranking the set of candidates, clusterlevel features are ineffective as they are derived from effectively meaningless cluster analyses. 4 While re-applying the clustering step gradually overcomes the uneven cluster distribution (iterations T 2 -T 5 in table 4), the sizes of the graphs decrease dramatically. For example (not depicted in table 4), on average there are only 169 candidates left in T 5 compared to 1,792 in T 1 , with an average of 2.8 correct synonyms instead of 22.5, and an average of 1.7 senses instead of 4.5.",
+            "We assume that partitioning the candidate set according to senses in combination with the cluster-level measures is a valid approach to deal with the word sense problem, but based on our analysis we conclude that either (i) the context vectors are not suitable to differentiate between senses, or that (ii) the clustering algorithm is inapt for this scenario. A possible solution might be to apply the algorithms suggested in {{11942888}}. Finally, no weighting was applied to any of the properties listed in table 2. This could be improved by using a held-out data development set, and a greater number of particle verbs (we only use 138) would probably be needed as well."
+          ]
+        },
+        {
+          "header": "Summary",
+          "paragraphs": [
+            "We hypothesized that graph-based clustering properties in addition to synonym candidate properties should improve the precision of synonym identification and ranking, and extend the diversity of synonym senses. Unfortunately, our extensions failed, and analyses of cluster properties revealed that future work should improve the vector representations and compare other clustering algorithms. One should keep in mind, however, that we focused on a specifically challenging class of multi-word expressions: highly ambiguous German particle verbs."
+          ]
+        },
+        {
+          "header": "Figure 1 :",
+          "paragraphs": []
+        },
+        {
+          "header": "Table 1 :",
+          "paragraphs": []
+        },
+        {
+          "header": "table 4 ,",
+          "paragraphs": []
+        }
+      ]
+    },
+    "discussion_txt": "Overall, the distributional similarity between the target word and the synonym candidates represents the strongest extension of the basic retranslation approach, and the cluster graphs do not provide further useful information. A breakdown of the cluster analyses revealed that the cluster sizes are very unevenly distributed. Typically, there is one very large cluster and several considerably smaller clusters, as shown by the first part of  Table 4: Distribution of candidates, synonyms and senses in the largest cluster vs. all other clusters in the iterations T 1 -T 5 .proportion of candidates in the remaining clusters.In addition, we found that most correct synonyms are also in the largest cluster (middle part of table 4). Accordingly, the cluster analyses do not represent partitions of the target verb senses, but most senses are in the largest cluster (bottom part of table 4).Consequently, while the synonym features are useful for ranking the set of candidates, clusterlevel features are ineffective as they are derived from effectively meaningless cluster analyses. 4 While re-applying the clustering step gradually overcomes the uneven cluster distribution (iterations T 2 -T 5 in table 4), the sizes of the graphs decrease dramatically. For example (not depicted in table 4), on average there are only 169 candidates left in T 5 compared to 1,792 in T 1 , with an average of 2.8 correct synonyms instead of 22.5, and an average of 1.7 senses instead of 4.5.We assume that partitioning the candidate set according to senses in combination with the cluster-level measures is a valid approach to deal with the word sense problem, but based on our analysis we conclude that either (i) the context vectors are not suitable to differentiate between senses, or that (ii) the clustering algorithm is inapt for this scenario. A possible solution might be to apply the algorithms suggested in {{11942888}}. Finally, no weighting was applied to any of the properties listed in table 2. This could be improved by using a held-out data development set, and a greater number of particle verbs (we only use 138) would probably be needed as well.We hypothesized that graph-based clustering properties in addition to synonym candidate properties should improve the precision of synonym identification and ranking, and extend the diversity of synonym senses. Unfortunately, our extensions failed, and analyses of cluster properties revealed that future work should improve the vector representations and compare other clustering algorithms. One should keep in mind, however, that we focused on a specifically challenging class of multi-word expressions: highly ambiguous German particle verbs.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "Title: Automatic Induction of Synonym Paraphrases for German Particle Verbs: A Graph-Based Clustering Approach",
+                "Introduction:\nIn this study, we aim to improve the automatic induction of synonym paraphrases for the challenging class of German particle verbs. Previous research has shown that incorporating a graph-based clustering approach for word sense discrimination into an existing paraphrase extraction system can significantly improve the precision of synonym identification and ranking (Cocos & Callison-Burch, 2016). In this paper, we build upon this previous work and explore the integration of a simple distributional similarity measure to further enhance the performance of our approach.",
+                "Methodology:\nOur approach consists of two stages. In the first stage, we use a graph-based clustering algorithm to group similar words together based on their semantic meaning. This allows us to identify and distinguish between different senses of a given word. In the second stage, we use the clustered words to induce synonym paraphrases for the particle verbs. We compare the performance of our approach with a standard paraphrase extraction system and an extended baseline that incorporates a simple distributional similarity measure.",
+                "Results:\nOur results show that incorporating the graph-based clustering approach significantly improves the precision of synonym identification and ranking compared to the standard system. The extended baseline that incorporates the distributional similarity measure outperforms our approach, but only marginally. We also observe that the clustered words tend to be more diverse and cover a wider range of senses compared to the standard system.",
+                "Discussion:\nOur findings demonstrate the effectiveness of incorporating a graph-based clustering approach for word sense discrimination into an existing paraphrase extraction system for German particle verbs. The improved precision of synonym identification and ranking achieved by our approach is promising, especially given the challenges of working with the German language. However, the marginal improvement achieved by the extended baseline suggests that there may be room for further improvement in the area of distributional similarity measures.",
+                "Conclusion:\nIn conclusion, our study demonstrates the potential of incorporating a graph-based clustering approach for word sense discrimination into an existing paraphrase extraction system for German particle verbs. While the extended baseline outperforms our approach, the results suggest that the graph-based clustering approach is a promising direction for future research. Further investigation into the use of distributional similarity measures may lead to even more accurate and diverse synonym paraphrases for this challenging class of words."
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.5734186172485352,
+            "R": 0.6122616529464722,
+            "F1": 0.5922039151191711
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.490323543548584,
+            "R": 0.5383520126342773,
+            "F1": 0.5132166147232056
+          }
+        ],
+        "P_mean": 0.5318710803985596
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "## Step 1: Identify the research question\nThe research question is to improve the accuracy of synonym"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3381590247154236,
+            "R": 0.5235826969146729,
+            "F1": 0.41092175245285034
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.3204919993877411,
+            "R": 0.5092277526855469,
+            "F1": 0.3933940529823303
+          }
+        ],
+        "P_mean": 0.32932551205158234
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "The use of graph-based clustering for word sense discrimination in paraphrase extraction systems has been explored in previous"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.35459429025650024,
+            "R": 0.5785893201828003,
+            "F1": 0.4397086799144745
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.3576441705226898,
+            "R": 0.5849322080612183,
+            "F1": 0.44388464093208313
+          }
+        ],
+        "P_mean": 0.35611923038959503
+      }
+    ]
+  },
+  {
+    "corpus_id": "10037358",
+    "title": "Graph-based Clustering of Synonym Senses for German Particle Verbs",
+    "externalids": {
+      "ACL": "W16-1805",
+      "ArXiv": "",
+      "CorpusId": "10020161",
+      "DBLP": "conf/mwe/WittmannMW16",
+      "DOI": "10.18653/v1/W16-1805",
+      "MAG": "2513477335",
+      "PubMed": "",
+      "PubMedCentral": ""
+    },
+    "year": "2016",
+    "level": "section",
+    "sections": [
+      {
+        "header": "S T U D Y P R O T O C O L Open Access",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "S T U D Y P R O T O C O L Open Access",
+            "paragraphs": [
+              "Effectiveness of biomarker-based exclusion of ventilator-acquired pneumonia to reduce antibiotic use (VAPrapid-2): study protocol for a randomised controlled trial Background Patients admitted to the intensive care unit (ICU) constitute a group vulnerable to healthcare-associated infection (HCAI), and consistent with that, antibiotic consumption in the ICU is considerably higher than in other hospital environments {{16152062}}. The growing global challenge of antimicrobial-resistance requires improved antibiotic stewardship. This judgment is, however, challenging in critically ill patients in whom clinical signs of infection are non-specific and where the consequences of missing a treatable infection may be significant.",
+              "Ventilator-acquired pneumonia (VAP) is a common ICU HCAI and highlights the challenges of antibiotic stewardship. Few clinical features have a specificity of greater than 60 % {{not_in_s2orc}}{{8340831}}{{8178883}}, and infection is confirmed in approximately 40 % of patients with suspected VAP {{17391743}}. The majority of patients with suspected VAP have antibiotics started at the point of clinical suspicion and de-escalation or discontinuation of antibiotics is possible after 2-3 days, when culture information becomes available. During this period, a significant proportion of patients will receive antibiotics that may not be indicated, and furthermore, if antibiotics are not discontinued in light of negative cultures, a full course of unnecessary antibiotics may be administered.",
+              "Addressing limitations in diagnostic methods for infections has the potential to improve antibiotic management by expediting the diagnostic process. Biomarkers of infection can act as rapid surrogate markers. In a recent multi-centre observational study {{17391743}}, we validated the findings of a single-centrederivation study {{5156253}}{{2617662}}, showing that bronchoalveolar lavage (BAL) fluid biomarkers could form a reliable test to exclude VAP. Low concentrations of BAL fluid interleukin 1-beta (IL-1\u03b2) consistently have a strong negative predictive value (NPV) in both the derivation and validation cohorts. Furthermore, in the validation cohort, a combination of IL-1\u03b2 and IL-8 could be used as a biomarker test to rule out VAP with high confidence, with a NPV of 1 and a post-test probability of 0 % (95 % confidence interval 0-9.2 %). These biomarkers are measured by cytometric bead array (CBA), which is a multi-plex, flow cytometric application that can be performed in approximately 6 hours, offering the potential for a rapid biomarker-based test in the ICU.",
+              "The aim of this randomised trial is to determine if, in adult patients with suspected VAP, the use of the additional rule-out biomarker test will improve antibiotic management and reduce antimicrobial use in comparison to decision making based on microbiology results alone."
+            ]
+          },
+          {
+            "header": "Methods/Design",
+            "paragraphs": [
+              "This protocol outlines a multi-centre, prospective, controlled trial in which patients with suspected VAP are randomised 1:1 to a rapid biomarker-rule-out test in addition to standard care, compared to standard care alone (clinical judgment plus standard microbiological culture). The primary outcome measure is antibiotic-free days (AFD) in the 7 days following BAL. This clinical trial adheres to the Consolidated Standards of Reporting Trials statement (Fig. 1) {{5387743}} and principles of Good Clinical Practice."
+            ]
+          },
+          {
+            "header": "Study population",
+            "paragraphs": [
+              "Participants are being recruited from the ICUs of 17 National Health Service (NHS) Trusts in the UK, for a total of 22 ICUs. These ICUs cover a broad case mix of medical, surgical and trauma patients, who are representative of current practice across the NHS.",
+              "Patients with suspected VAP who are at least 18 years of age, intubated and mechanically ventilated for 48 hours or more are considered eligible for inclusion in the trial. VAP is suspected based on the presence of a new or worsening chest X-ray or computed tomography (CT) changes consistent with pneumonia in the context of at least two of the following: temperature < 35\u00b0C or > 38\u00b0C; a white cell count of < 4 \u00d7 10 9 / L or > 11 \u00d7 10 9 / L; or purulent tracheal secretions {{14907563}}. Patients must also be considered suitable for early discontinuation of antibiotics by the clinical team (i.e. have no extra-pulmonary source of infection that mandates the use of continued antibiotics).",
+              "Patients are excluded on the basis of previously published criteria {{39264424}} that predict poor tolerance of the bronchoscopy and BAL that have been previously applied in our studies {{17391743}}{{2617662}}. These are: PaO 2 < 8kPa on a FiO 2 > 0.7; positive end-expiratory pressure of > 15 cm H 2 O; peak airway pressure > 35 cm H 2 O; heart rate > 140 beats per minute; mean arterial pressure < 65 mmHg; bleeding diathesis including platelet count < 20 \u00d7 10 9 /L or international normalised ratio (INR) > 3; poorly controlled intracranial pressure (>20 mmHg); or ICU consultant deems the procedure not to be safe. Patients may only be randomised to the study once (i.e. they are excluded if they have had previous BAL as part of the study). Patients are also excluded if assent/ consent is declined.",
+              "Co-enrolment is allowed with observational studies. Co-enrolment with interventional studies is allowed following consideration of any scientific or statistical interactions in accordance with current UK recommendations {{72495254}}."
+            ]
+          },
+          {
+            "header": "Biomarker assay and laboratory set up",
+            "paragraphs": [
+              "The biomarker assay is performed in six NHS or university laboratories that act as testing 'hubs'. Participating ICUs had to be within an expected travel time of 1.5 hours of a hub. BAL fluid samples are transported to the laboratory on ice immediately after sampling and measurement of BAL fluid IL-1\u03b2 and IL-8 by cytometric bead array is performed with minimal delay on arrival. IL-1\u03b2 and IL-8 are combined by logistic regression by the equation, established in the validation study {{17391743}}:",
+              "VAP is excluded if the regression output falls below a defined level (-1.7616). All equipment, reagents and ongoing maintenance are supplied by the study's industry partner, Becton Dickinson Biosciences (Franklin Lakes, NJ, USA). Each hub has been issued an Accuri C6 flow cytometer. This is a benchtop flow cytometer designed for its ease of use. The biomarker assay and all Accuri standard operating procedures (SOPs) have been designed such that they can be carried out by healthcare service laboratory technicians with limited flow cytometry experience. Centralised training in the biomarker assay and Accuri C6 was provided by investigators and scientists from Newcastle University and Becton Dickinson.",
+              "Accuri quality control tests are performed once a week by each hub, and these data are monitored by the flow cytometry core facility in Newcastle University. Technical support is provided by the investigators at Newcastle University and by Becton Dickinson."
+            ]
+          },
+          {
+            "header": "Intervention",
+            "paragraphs": [
+              "All patients enrolled in the trial have suspected VAP and undergo the same clinical procedures of bronchoscopy and BAL. The BAL is performed according to a previously described SOP {{17391743}}.",
+              "Patients are randomised to have BAL samples analysed by either the biomarker test in addition to semiquantitative culture (the intervention arm) or semiquantitative cultures alone (the control arm). The intervention arm is referred to as the 'biomarker-guided recommendation on antibiotics' group and the control arm the 'routine use of antibiotics' group. All semiquantitative cultures are performed in a NHS or Public Health England laboratory and handled by a SOP in accordance with the UK Standards for Microbiological Investigation {{not_in_s2orc}}. VAP is confirmed by the widely used threshold of growth of a potential pathogen at > 10 4 colony-forming units per ml (CFU/ml) {{1369998}}.",
+              "Biomarker results are reported to the clinical team by the technician using a standard script after approximately 6 hours. It is anticipated that all patients would have antibiotics started at the point of suspicion of VAP. In the event of a biomarker result that falls below the cut-off value, the clinical team is advised that VAP is excluded with high confidence and that early discontinuation of antibiotics is advised. If the biomarker value is above the threshold the clinical team is advised that VAP cannot be excluded and that standard care should continue."
+            ]
+          },
+          {
+            "header": "Risk to participants",
+            "paragraphs": [
+              "Patients enrolled in this trial are by definition critically unwell, and minimising the risk to these patients is of paramount importance. BAL is an established and widely used technique for sampling the alveolar regions in ICU patients {{1369998}}{{11640076}}. Not only do eligibility criteria exclude patients who would poorly tolerate a BAL, but patients can be excluded based on the clinicians' judgment of the risk profile.",
+              "The second consideration of risk is around the early discontinuation of antibiotics. The risk exists that antibiotics may be incorrectly discontinued in the face of undetected infection (i.e. in the setting of a false negative biomarker test). The validation study demonstrated that the threshold for excluding VAP using BAL IL-1\u03b2 and IL-8 had an NPV of 1 which gives confidence in the test's performance, but with a 95 % confidence interval of 0.92-1.0 false negatives remaining possible. Decisions around antibiotic prescribing are not dictated by the trial protocol, and these ultimately remain at the discretion of the treating clinician. This allows the clinician to restart antibiotics if it is felt they were discontinued inappropriately. This minimises the risk to patients and also makes the trial more pragmatic, testing its use in 'real life' clinical practice."
+            ]
+          },
+          {
+            "header": "Primary outcome and sample size",
+            "paragraphs": [
+              "The primary outcome measure is the frequency distribution of AFD in the 7 days following BAL. This interval was used as this is the average reported duration of antibiotic therapy for suspected VAP in UK practice {{17287844}}. For the purposes of study design, AFD can be considered to be an integer value with patients in one of eight categories (0-7 AFD). Fewer days of antibiotic treatment will be detected as an increase in the proportion of patients with higher numbers of AFD and fewer patients having zero AFD. Antimicrobials delivered for prophylaxis will be excluded from analysis.",
+              "The sample size is based on the frequency distribution of AFD in the 7 days after BAL in our previous validation study. This baseline distribution of AFD showed a skew towards patients with suspected VAP having few or no AFD (with this effect manifest both in those with ultimately confirmed VAP and those in whom BAL microbiology did not confirm VAP). We modelled changes in the distribution of AFD from baseline to a distribution with more patients having higher numbers of AFD. Table 1 gives examples of the different frequency distributions and their effect sizes. We judged a distribution that equates to effect sizes above 0.07 would represent a clinically important difference. By way of illustration, this would be equivalent to a change from a baseline median of 0 AFD (interquartile range 0-2.5 AFD) to a median of 1.5 AFD (interquartile range 0-3.5 AFD) under biomarker-guided treatment. An effect size of 0.0797 requires 90 patients per trial arm and allowing for a 15 % drop out, the total sample size is 210. This outcome measure and effect size was presented for national stakeholder peer review and judged to be appropriate (UK Critical Care Research Forum, July 2013). Figure 2 illustrates the changes in the AFD distribution between baseline and model 3 from Table 1."
+            ]
+          },
+          {
+            "header": "Secondary outcome measures",
+            "paragraphs": [
+              "Secondary outcome measures will include antibiotic days and AFD, expressed as continuous variables, at 7, 14 and 28 days; ventilator-free days at 28 days; 28-day mortality and ICU mortality; sequential organ failure assessment (SOFA) score at days 3, 7 and 14; duration of level 2 (high dependency unit) care, level 3 (intensive care unit) care and hospital stay; Clostridium difficile and MRSA infections up to hospital discharge, death or 56 days; and antibiotic-resistant pathogen cultures up to hospital discharge, death or 56 days. A healthcare-resource-utilisation analysis will be calculated from the duration of level 2 care, level 3 care and hospital stay up to discharge, death or 56 days.",
+              "Since this is a trial of a complex intervention, a process evaluation will be carried out in parallel with this trial. This will evaluate the process of conducting the trial and will aim to determine reasons for potential discrepancies in the expected and observed trial outcome, as well as providing information on the potential implementation of the intervention after trial completion. Additional files outline the detailed study protocol for the process evaluation (see Additional files 1 and 2)."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Data collection",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Data collection",
+            "paragraphs": [
+              "Data are collected on the day of enrolment (day 0); day 3; day 7; day 14; day 28; and date of discharge, death or at 56 days. Clinical data collected include the age, gender, date of admission to the hospital and ICU, reason for admission to the hospital and ICU, functional comorbidities index, acute physiology and chronic health Table 1 Models of different frequency distribution of AFD. Standard care distribution is based on data obtained from our validation cohort. The different models demonstrate increasing shifts in the frequency distribution towards more AFD in the sample. These distributions are illustrative, and different proportions in each category could give the same effect size. AFD antibiotic-free days  . 2 Graphical representation of the shift in distribution in antibiotic-free days (AFD) between baseline and model 3 evaluation (APACHE) 2 score at admission, SOFA score, time from MV to suspected VAP, and pathogens cultured from BAL. Safety measures will be recorded relative to the bronchoscopy and BAL. These will include SaO 2 , heart rate, blood pressure and PaO 2 :FiO 2 . Biological data will include concentrations of IL-1\u03b2 and IL-8 in the BAL fluid for patients who are randomised to the intervention arm."
+            ]
+          },
+          {
+            "header": "Recruitment process and consent",
+            "paragraphs": [
+              "All patients on the participating ICUs are screened on weekdays for eligibility. Potentially eligible patients are discussed with the ICU consultant to determine the appropriateness of early discontinuation of antibiotics and whether any other safety concerns are present that would exclude the patient.",
+              "Consent and assent procedures are in keeping with the legal framework of England, Northern Ireland (Mental Capacity Act, 2005) or Scotland (Adults with Incapacity (Scotland) Act, 2000) for consent/assent of adults without capacity. In England and Northern Ireland informed assent is obtained, where possible, following discussion with the patient's next of kin (personal consultee). Where a personal consultee is unavailable, assent is provided by a nominated consultee, usually the ICU consultant, providing they are not also a member of the research team. In circumstances where the next of kin are unable to attend the ICU promptly, eliciting their opinion is possible by telephone to inform nominated assent.",
+              "In Scotland the patient's relative or welfare attorney provides the informed consent. If the patient's relative or welfare attorney is unable to attend the ICU, consent may be provided in a telephone conversation, providing a second member of staff witnesses the discussion.",
+              "Patients who recover capacity will be approached to provide retrospective informed consent. The decision as to whether that patient has regained capacity will reside with the treating team. The patient will be given sufficient time to consider the trial information before providing their consent to continued trial involvement."
+            ]
+          },
+          {
+            "header": "Randomisation and blinding",
+            "paragraphs": [
+              "Once consent/assent is obtained, the clinical team informs the laboratory technician who will perform the biomarker test, and the technician then initiates randomisation through the Newcastle Clinical Trials Unit (NCTU). Randomisation is performed using a webbased randomisation service. Patients are randomised to the intervention arm or control arm in a 1:1 ratio by permuted blocks of variable length and stratified by site. The randomisation service generates either an instruction that the patient is randomised to 'biomarker-guided recommendation on antibiotics: analyse sample on arrival' or to 'routine use of antibiotics: do not analyse sample on arrival'. This message is emailed to the technician.",
+              "The clinical team is initially blinded to the trial arm since all trial procedures are performed in all participants. Unblinding occurs when the biomarker result is called back to the clinical team after approximately 6 hours. To ensure consistency in unblinding, after this period, the clinical team are also informed if the patient was randomised to the control arm. The technician contacts the clinical team with the results according to local arrangements, which include contacting the on-call ICU consultant, ICU resident or the local principal investigator."
+            ]
+          },
+          {
+            "header": "Statistical analysis",
+            "paragraphs": [
+              "Baseline clinical data will be compared between trial arms for balance using graphical and summary statistics appropriate for the data type of each variable. No formal tests of equality will be carried out. The primary outcome measure will be analysed by a chi-squared test on a 2 \u00d7 8 table of study arm versus AFD categories. Secondary outcome measures will be analysed by fitting appropriate generalised linear models with intervention and centre as covariates. Link functions will be determined by the type of outcome variable. A sub-group analysis for patients with trauma or head injury will be included as will a sub-group analysis based on clinician assessment of likelihood of VAP. Data analysis will be performed on an intention-to-treat basis, although other exploratory analyses including per-protocol analysis will be considered. A per-protocol analysis will be performed excluding patients who were randomised to the biomarker-guided recommendation on antibiotics arm, but who had a technical issue with the assay and therefore defaulted to standard care.",
+              "A within-trial cost analysis will be undertaken to assess the hospital resource use from the point of randomisation until hospital discharge or death, whichever occurs first, for a maximum of 56 days. Patient-level hospital resource use will be estimated from length of ICU stay and length of hospital stay. Multiple regression analyses will be performed to examine patient factors, which are potentially associated with costs. The robustness of the results will be evaluated using sensitivity analyses."
+            ]
+          },
+          {
+            "header": "Monitoring and adverse event reporting",
+            "paragraphs": [
+              "A Data Monitoring and Ethics Committee will have oversight of the trial. This is an independent body that has oversight of safety data. They will make recommendations to the sponsor as to whether the trial should progress, be modified or terminated.",
+              "NCTU will monitor adherence to the trial protocol and completeness of the data collection. Adverse events (AE) and serious adverse events (SAE) that occur within 2 hours of BAL are reported to NCTU. Site investigators are able to report an AE/SAE outside of this period if they feel an AE/SAE is related to the study."
+            ]
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "Discussion",
+      "papers_cited_discussion": [
+        "17391743"
+      ],
+      "subsections": [
+        {
+          "header": "Discussion",
+          "paragraphs": [
+            "Limitations in diagnostic techniques to correctly rule-in or rule-out infections results in many patients receiving unnecessary antibiotics. Successfully validating the use of BAL fluid IL-1\u03b2 and IL-8 to exclude VAP has been a significant step forward for developing diagnostics in this area {{17391743}}. A rapid rule-out of VAP should allow for discontinuation of antibiotics on the day of suspicion of VAP and therefore improve antibiotic management. This randomised controlled trial aims to determine the clinical utility of a rapid biomarker-based test by measuring the antibiotic use, which is expressed as AFD, in the 7 days that follow BAL.",
+            "Few biomarkers are used in the ICU to guide antibiotic management, and none specifically for VAP. Due to the novelty of the biomarker and the conduct of this trial in a complex clinical environment, regular education and reinforcement of the trial protocol is necessary with participating sites. Furthermore, the trial methodology accommodates the complexity of the intervention by including elements such as the process evaluation.",
+            "This trial represents a potentially important step forward for novel diagnostics in the ICU. If effective in its primary outcome it could result in an important improvement in antimicrobial stewardship in this patient group. It also represents a challenging and complex trial of novel diagnostics in a difficult clinical space. The process of conducting this trial will provide valuable information to inform future trials."
+          ]
+        },
+        {
+          "header": "Trial status",
+          "paragraphs": [
+            "The trial is currently active in all participating sites. The first patient was recruited in December 2013, and the trial is due to complete in 2016. Abbreviations AE, adverse event; AFD, antibiotic-free days; APACHE, acute physiology and chronic health evaluation; BAL, bronchoalveolar lavage; CBA, cytometric bead array; CFU, colony-forming units; CT, computed tomography; HCAI, healthcareassociated infection; ICU, intensive care unit; IL-1\u03b2, interleukin-1 beta; IL-8, interleukin-8; MRSA, methicillin-resistant Staphylococcus aureus; NCTU, Newcastle Clinical Trials Unit; NHS, National Health Service; NPV, negative predictive value; SAE, serious adverse event; SOFA, sequential organ failure assessment; SOP, standard operating procedure; VAP, ventilator-acquired pneumonia"
+          ]
+        },
+        {
+          "header": "Additional files",
+          "paragraphs": []
+        },
+        {
+          "header": "Fig. 1",
+          "paragraphs": []
+        },
+        {
+          "header": "Additional file 1 :",
+          "paragraphs": []
+        }
+      ]
+    },
+    "discussion_txt": "Limitations in diagnostic techniques to correctly rule-in or rule-out infections results in many patients receiving unnecessary antibiotics. Successfully validating the use of BAL fluid IL-1\u03b2 and IL-8 to exclude VAP has been a significant step forward for developing diagnostics in this area {{17391743}}. A rapid rule-out of VAP should allow for discontinuation of antibiotics on the day of suspicion of VAP and therefore improve antibiotic management. This randomised controlled trial aims to determine the clinical utility of a rapid biomarker-based test by measuring the antibiotic use, which is expressed as AFD, in the 7 days that follow BAL.Few biomarkers are used in the ICU to guide antibiotic management, and none specifically for VAP. Due to the novelty of the biomarker and the conduct of this trial in a complex clinical environment, regular education and reinforcement of the trial protocol is necessary with participating sites. Furthermore, the trial methodology accommodates the complexity of the intervention by including elements such as the process evaluation.This trial represents a potentially important step forward for novel diagnostics in the ICU. If effective in its primary outcome it could result in an important improvement in antimicrobial stewardship in this patient group. It also represents a challenging and complex trial of novel diagnostics in a difficult clinical space. The process of conducting this trial will provide valuable information to inform future trials.The trial is currently active in all participating sites. The first patient was recruited in December 2013, and the trial is due to complete in 2016. Abbreviations AE, adverse event; AFD, antibiotic-free days; APACHE, acute physiology and chronic health evaluation; BAL, bronchoalveolar lavage; CBA, cytometric bead array; CFU, colony-forming units; CT, computed tomography; HCAI, healthcareassociated infection; ICU, intensive care unit; IL-1\u03b2, interleukin-1 beta; IL-8, interleukin-8; MRSA, methicillin-resistant Staphylococcus aureus; NCTU, Newcastle Clinical Trials Unit; NHS, National Health Service; NPV, negative predictive value; SAE, serious adverse event; SOFA, sequential organ failure assessment; SOP, standard operating procedure; VAP, ventilator-acquired pneumonia",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "The abstract presents a prospective, multi-center, randomized, controlled trial to evaluate the effectiveness of biomarker-based diagnostics in improving antimicrobial stewardship in patients with suspected ventilator-acquired pneumonia (VAP). The study aims to determine whether a rapid biomarker-based exclusion of VAP results in fewer antibiotics and improved antimicrobial management.",
+                "The study design is as follows: patients with clinically suspected VAP undergo bronchoalveolar lavage (BAL), and VAP is confirmed by growth of a potential pathogen at >104 colony-forming units per milliliter (CFU/ml). Patients are then randomized 1:1 to either a 'biomarker-guided recommendation on antibiotics' or 'routine use of antibiotics' group. In the biomarker-guided group, BAL fluid is tested for IL-1\u03b2 and IL-8 in addition to routine microbiology testing. The clinical teams are blinded to the intervention until 6 hours after randomization, when the biomarker results are reported to the clinician. The primary outcome is a change in the frequency distribution of antibiotic-free days (AFD) in the 7 days following BAL.",
+                "The study has several secondary outcome measures, including antibiotic use at 14 and 28 days, ventilator-free days, 28-day mortality and ICU mortality, sequential organ failure assessment (SOFA) at days 3, 7, and 14, duration of stay in critical care and the hospital, antibiotic-associated infections, and antibiotic-resistant pathogen cultures up to hospital discharge, death or 56 days. A healthcare-resource-utilization analysis will also be calculated from the duration of critical care and hospital stay.",
+                "The sample size of 210 will be required to detect a clinically significant shift in the distribution of AFD towards more patients having fewer antibiotics and therefore more AFD. The study will provide valuable insights into the effectiveness of biomarker-based diagnostics in improving antimicrobial stewardship in patients with suspected VAP.",
+                "The study has several strengths, including its prospective design, multi-center collaboration, and randomized controlled trial structure. The use of biomarkers to guide antibiotic therapy has the potential to improve antimicrobial stewardship by reducing the unnecessary use of antibiotics and promoting the appropriate use of these drugs.",
+                "However, there are also some limitations to consider. The study focuses on patients with suspected VAP, and it is unclear how the findings might apply to other patient populations. Additionally, the study only evaluates the effectiveness of biomarker-based diagnostics in improving antimicrobial stewardship and does not examine other potential benefits, such as improved patient outcomes or reduced healthcare costs.",
+                "In conclusion, the study aims to evaluate the effectiveness of biomarker-based diagnostics in improving antimicrobial stewardship in patients with suspected VAP. The study has several strengths, including its prospective design and multi-center collaboration. However, there are also some limitations to consider, including the focus on patients with suspected VAP and the lack of examination of other potential benefits of biomarker-based diagnostics."
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.6222600340843201,
+            "R": 0.6545687317848206,
+            "F1": 0.6380056142807007
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.5772199034690857,
+            "R": 0.5770320892333984,
+            "F1": 0.5771259665489197
+          }
+        ],
+        "P_mean": 0.5997399687767029
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "Here is a scientific discussion based on the abstract:",
+                "**Background**: Ventilator-acquired pneumonia ("
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3461599051952362,
+            "R": 0.5298664569854736,
+            "F1": 0.41875115036964417
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.3269292712211609,
+            "R": 0.5317325592041016,
+            "F1": 0.40490666031837463
+          }
+        ],
+        "P_mean": 0.33654458820819855
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "The use of biomarker-based diagnostics in ventilator-acquired pneumonia (VAP) diagnosis can improve"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3921005427837372,
+            "R": 0.6847621202468872,
+            "F1": 0.4986626207828522
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.40641385316848755,
+            "R": 0.7180875539779663,
+            "F1": 0.5190579891204834
+          }
+        ],
+        "P_mean": 0.39925719797611237
+      }
+    ]
+  },
+  {
+    "corpus_id": "10040435",
+    "title": "Attitudes toward home-based malaria testing in rural and urban Sierra Leone",
+    "externalids": {
+      "ACL": "",
+      "ArXiv": "",
+      "CorpusId": "10040435",
+      "DBLP": "",
+      "DOI": "10.1186/s12936-015-0582-x",
+      "MAG": "2145843270",
+      "PubMed": "25880198",
+      "PubMedCentral": "4334841"
+    },
+    "year": "2015",
+    "level": "section",
+    "sections": [
+      {
+        "header": "Background",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Background",
+            "paragraphs": [
+              "Presumptive treatment of suspected cases of malaria based on symptoms is common in many endemic areas. In Bo, Sierra Leone, more than half of adults who think they have malaria make presumptive self-diagnoses and then treat at home, usually with herbs or with pharmaceuticals purchased without prescriptions in local markets {{1437023}}. The 2013 Malaria Indicator Survey in Sierra Leone found that 29% of urban children and 41% of rural children were not taken to a healthcare facility when they had fevers {{not_in_s2orc}}. These statistics indicate a high rate of malaria treatment without testing. Treating suspected malaria without first confirming the presence of Plasmodium parasites may lead to a variety of negative individual and community health outcomes due to the misuse of anti-parasitic medications, money wasted on ineffective or unnecessary treatments, and delayed therapy for the actual cause of the fever when the illness is not due to malaria {{20700141}}. The World Health Organization and global health partnerships recommend the use of diagnostic testing to avoid unnecessary treatment {{not_in_s2orc}}. Initiatives such as 'test-treat-track' promote testing all persons suspected to have malaria, treating with antimalarial drugs only those who have a positive malaria test result, and tracking progress toward malaria control through health surveillance systems {{14536605}}.",
+              "Two main types of malaria tests are currently available, microscopy and rapid diagnostic tests (RDTs). Microscopic diagnosis is based on visualizing Plasmodium parasites in stained and magnified blood smears. Although microscopy is still considered the gold standard for malaria testing because it shows the actual presence or absence of the parasites and allows the parasite load to be quantified {{33198901}}, microscopes are usually only available at clinical laboratories. Microscopy is also dependent on the skill of the laboratory technician, and the sensitivity and specificity of the test may vary considerably depending on the person performing the examination {{33198901}}{{10844924}}.",
+              "RDTs do not visualize the parasite but instead detect antigens present in a small sample of blood applied to a test strip {{33198901}}{{10844924}}. Within about five to 20 minutes of applying the blood of a person with malaria to a test strip, one or more lines will appear in the window of the test kit indicating if parasitic antigens have been detected {{33198901}}{{10844924}}. One line usually indicates a negative test result, and two (or more) lines indicate the presence of the antigen {{33198901}}. The results may also indicate an invalid result, which would require the test to be re-administered with a new kit. RDTs are a type of point-of-care test (POCT) or point-of-need test {{30808505}}. While RDTs are most often used at clinical facilities, they can also be used in home and community settings by community health workers (CHWs) and community health volunteers (CHVs). POCTs are useful when they are cost-effective and accurate tools for providing rapid diagnostic results {{30808505}}. Studies in a variety of settings have demonstrated that malaria RDTs have adequately high sensitivity and specificity {{33198901}} and can be cost-effective when compared to microscopy {{17043489}}{{18750996}}{{9123380}}{{3054915}}.",
+              "Although diagnosis prior to treatment is strongly encouraged by clinical guidelines, there are a variety of factors that limit access to and uptake of malaria testing. Cultural and community beliefs about blood and perceptions of healthcare providers may discourage testing {{6263749}}, lower-income households may not be able to afford testing or may not prioritize testing when budgeting for healthcare expenses {{20700141}}{{1219402}}, and rural residents may delay seeking care from the formal medical system because of the costs and time associated with travelling to a healthcare facility {{20889255}}{{35364155}}. The lack of physical or geographical access to testing is one that can be at least partly addressed by programmes offering community case management (CCM) of malaria. CCM may also overcome some cultural and economic barriers {{not_in_s2orc}}{{6084901}}.",
+              "CCM programmes empower CHWs and CHVs to offer basic, low-cost healthcare services to households that might not otherwise have routine access to medical assistance. CHWs and CHVs participating in CCM programmes for malaria perform two key functions: using RDTs to confirm suspected malaria cases and then dispensing anti-malarial drugs to those who test positive for malaria with an RDT {{74007}}. The RDT kits used by CHWs and CHVs generally include disposable gloves, alcohol swabs, a lancet for drawing a small amount of blood, the test kit itself, any buffer solutions necessary for the test, and a small container for safely disposing of the lancet and other hazardous materials {{not_in_s2orc}}. CHWs and CHVs also maintain stocks of commonly needed medications. The ability to use RDTs outside of a laboratory-based setting may increase the number of febrile persons willing to take a malaria test.",
+              "The purpose of this study was to use a cross-sectional population-based sampling approach to examine malaria testing practices, attitudes towards malaria testing, and preferences for testing location in rural and urban Bo, Sierra Leone."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Methods",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Methods",
+            "paragraphs": []
+          },
+          {
+            "header": "Study area",
+            "paragraphs": [
+              "This study was conducted in the city of Bo, Sierra Leone's second largest urban area, and in surrounding rural areas within the Bo District. Sierra Leone is located on the coast of West Africa, and Bo District is located in the nation's Southern Province. Falciparum malaria is endemic in Sierra Leone, and the country has one of the highest prevalence rates of malaria in the world {{not_in_s2orc}}. Malaria diagnosis (usually through microscopy rather than RDTs) and artemisinin-based combination therapy (ACT) are available free to users of all ages from public providers {{not_in_s2orc}}. There are few healthcare facilities in rural areas, but the city of Bo is home to a diversity of public and private outpatient clinics and several hospitals offering both inpatient and outpatient services {{not_in_s2orc}}{{1027998}}."
+            ]
+          },
+          {
+            "header": "Study population",
+            "paragraphs": [
+              "In 2009, Mercy Hospital Research Laboratory (MHRL) used a participatory geographic information system (GIS) process to map the entire city of Bo, including the locations of all residential, public and commercial structures {{14590349}}. The GIS has been regularly updated since then. This database enabled MHRL to use a geographybased sampling method to recruit households from Bo city for this study. A two-stage cluster (neighbourhoodbased) sampling method was used to identify urban participants. First, seven of 68 sections (neighbourhoods) in the city of Bo were randomly sampled, and then 30 households from each of those seven sections were randomly sampled for participation. In the rural areas, 23 rural communities (villages) were randomly sampled for participation from a list of the 1,266 villages in Bo District. Interviewers visited these communities to recruit participants. When fewer than 30 households were located within the community, interviewers visited residences at the periphery of the villages until they had contacted 30 households. In total, 824 of the 900 (91.6%) contacted households participated in the study, including 667 of 690 (96.7%) rural households and 157 of 210 (74.8%) urban households.",
+              "In each of the 824 participating households, one adult representative (age 18 or older) was asked to participate in a study of attitudes and practices related to malaria testing. The interviewers preferentially recruited household members who said they were febrile at the time of data collection. In both the urban and rural areas, the interviewers alternated between asking to interview a female household member and requesting an interview with a male household member. If an adult of the preferred gender was not available, a household member of the opposite gender was interviewed instead. Responses to interviewer questions were recorded in an OpenData-Kit questionnaire installed on smartphones. All interviews were completed between 14 December, 2013 and 31 January, 2014."
+            ]
+          },
+          {
+            "header": "Questionnaire",
+            "paragraphs": [
+              "Each participant was asked whether he or she was currently febrile or without fever. Based on this response, the next questions related to either the current fever or to the most recent febrile illness the participant had experienced. The first set of questions asked whether a diagnostic test had been performed to determine the cause of the fever. Participants who did not complete a diagnostic test during the current or most recent febrile illness were asked a series of yes/no questions about their reasons for not seeking a microbiologicallyconfirmed diagnosis. The next set of questions asked whether the participant consulted a doctor or other healthcare professional about the fever and, if so, asked about the clinician's recommendations for testing. Participants were asked about their attitudes about homebased self-testing, CHV-assisted home-based testing and laboratory-based malaria testing. Data were also collected about demographics, socio-economic status and self-rated quality of life."
+            ]
+          },
+          {
+            "header": "Ethical considerations",
+            "paragraphs": [
+              "The study was approved by the institutional review boards of Njala University, George Mason University, the Liverpool School of Tropical Medicine, the US Naval Research Laboratory, and the Office of the Sierra Leone Ethics and Scientific Review Committee (SLESRC). Participation was voluntary, and no incentives or compensation for participation were provided. All participants provided a thumbprint as documentation of their informed consent."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Analysis",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Analysis",
+            "paragraphs": [
+              "The primary variable of interest for this analysis was a preference for home-based testing, whether conducted by self/family or by a CHV, over laboratory-based testing for suspected cases of malaria. Participants who answered both the \"self/family vs. laboratory\" and \"CHV vs. laboratory\" questions with a preference for homebased testing were considered to have a strong preference for home-based testing, and participants who answered both of these questions with a preference for laboratory-based testing were considered to have a strong preference for laboratory-based testing. Participants indicating no preference, those who would not take the test at either venue, and those who preferred home-based testing for one of the paired-comparison questions and laboratory-based testing for the other were not considered to have a strong preference for home-based or laboratory-based testing and were excluded from the analyses that focused on only participants with consistent preference for one of the two testing settings. Participant characteristics and testing preferences were compared using two-sided Pearson's Chi-squared tests. Because there were significant differences in the characteristics of rural and urban participants, most analyses were conducted separately by location. The statistical analysis was conducted using SPSS version 22 with a significance level of \u03b1 = 0.05."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Results",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Results",
+            "paragraphs": [
+              "The age and gender distributions of rural and urban participants were similar ( Table 1). The mean age of the participants was 40.9 years (standard deviation: 18.3), with half of the participants male and half female, as per the study design. However, there were significant socioeconomic differences by location, with rural residents reporting lower levels of education (p < 0.001), lower rates of literacy (p < 0.001) and less ownership of mobile phones (p < 0.001). Rural residents were also more likely than urban residents to rate their quality of life and their health status as poor (p < 0.01). Because of these significant differences by location, all analyses were conducted separately for rural and urban participants.",
+              "Participant answers to the paired-comparison questions about preferred malaria testing location expressed a significant preference for home-based testing over laboratory-based testing in rural areas (Table 2). Among the 660 rural residents who responded to these questions, 68.8% (n = 454) preferred home-based testing by self/family or by a CHV over laboratory-based testing; {{not_in_s2orc}}.8% (131) preferred laboratory-based testing over home-based testing; 4.2% (28) rated laboratory-based  testing as better than CHV-assisted testing but worse than self/family testing; 2.6% (17) rated laboratory-based testing as better than self/family testing but worse than CHV-assisted testing; and 4.5% (30) indicated no preference or said they would decline all of these testing options. Among the 154 urban residents who responded, 38.3% (59) preferred home-based testing over laboratory-based testing and 43.5% (67) preferred laboratory-based testing over home-based testing. In both rural and urban areas, CHV-assisted home-based testing was preferred over self/ family-conducted home-based testing. In rural areas, 68.1% (450) preferred CHV-assisted testing compared to only 28.1% (186) who preferred self/family-conducted testing. In urban areas, 76.8% (119) preferred testing by a CHV and 21.3% (33) preferred testing by self or a family member.",
+              "In total, 47.8% (n = 308/644) of the rural participants and 75.3% (116/154) of the urban participants said they usually consult with a healthcare provider about suspected malaria (Table 3). Among rural and urban participants, 37.1% (247/666) and 55.8% (87/156), respectively, reported having had a diagnostic test to determine the cause of the most recent febrile illness, 35.6% (231/649) and 62.7% (94/150) reported usually taking a diagnostic test to confirm suspected malaria, and 89.5% (578/646) and 88.2% (125/153) said that they usually bought medications or herbs to treat malaria without first consulting with a healthcare provider.",
+              "Rates of preference for home-based testing and for laboratory-based testing were similar in rural and urban areas by gender (p = 0.488 and 0.713, respectively), age (p = 0.670 and 0.605), and years of education (p = 0.094 and 0.039, with urban residents with more education more likely to prefer laboratory-based testing). There was no difference in testing location preference by fever status at the time of the survey (p = 0.929). Among rural residents, a preference for home-based testing over laboratory-testing was especially high among those who were not comfortable reading a newspaper (p = 0.006), those not owning a mobile phone (p = 0.031), those who reported usually self-treating suspected malaria rather than consulting with a healthcare provider (p < 0.001), and those who believe that adult fevers are always caused by malaria (p < 0.001). Among urban residents, a preference for home-based testing over laboratorytesting was especially high among those who were able to read English (p = 0.003) and comfortable reading a newspaper (p = 0.001), those who did not usually take a diagnostic test to confirm suspected malaria (p < 0.001), and those who reported being very confident about their ability to perform a malaria self-test after training (p < 0.001). Those who indicated a preference for home-based testing were significantly more likely than those preferring laboratory-based testing to say that they would be willing to pay extra for the option of a homebased test, and this was found in both rural (p < 0.001) and urban (p = 0.005) areas.",
+              "In total, 31.7% (198/625) of rural participants and 27.3% (42/154) of urban participants said they were very confident they could perform a malaria test on themselves or a family member without assistance. Among those indicating a preference for self/family-conducted home-based testing over CHV-assisted testing, 74.2% (138/186) of rural residents and 33.3% (11/33) of urban residents were very confident in their ability to conduct a test on themselves or a family member. Reported selfconfidence was lower among participants indicating a preference for a home-based tested administered by a CHV rather than self/family, with only 14.0% (60/428) of rural residents and 26.1% (31/119) or urban residents with this preference saying they were very confident in their self-testing ability. In total, 50.1% (314/627) of the rural participants were very confident they could perform a test if they had been trained on how to use a test kit, including 88.7% (165/186) with a preference for self/family-conducted home-based testing and 34.0% (146/430) with a preference for testing administered by a CHV. Among the urban participants, 61.7% (95/154) were very confident in their testing abilities if trained, including 75.8% (25/33) with a preference for self/familyconducted home-based testing and 58.8% (70/119) with a preference for testing administered by a CHV.",
+              "Among the 488 participants who did not seek a diagnostic test for their most recent febrile illness, 330 (67.6%) preferred a home-based test and 95 (19.5%) preferred a laboratory-based test ( Table 4). The most common reasons for not seeking testing were similar for both testing preference and location groups: not wanting to spend money on the test (68.0%), waiting to see if the fever resolved within a few days (45.0%), not wanting to travel to a clinical facility for a test (41.0%) and assuming that a formal diagnosis was not needed because adults could presumptively diagnose the cause of the fever (37.4%). Those with a preference for home-based testing were more likely than those with a preference for laboratory-based testing to say that they did not need a test because they already knew the cause of the fever (p = 0.025). Urban non-testers were significantly more likely than rural non-testers to assume that they already knew the cause of the fever (p = <0.001) and to say that they did not want to wait for test results (p = 0.010). A dislike of blood draws was not a common reason not to seek testing (15.6%)."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Conclusions",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Conclusions",
+            "paragraphs": [
+              "Expanded access to CCM might improve access to diagnosis and appropriate, timely and cost-efficient treatment. Existing CHV networks in Sierra Leone could provide a foundation for intensifying CCM. The success of home-based testing in these communities would likely be dependent on (1) a high level of respect for and trust in new and existing CHVs by the communities they support; (2) the availability of a strong network of CHVs who are confident in their own RDT skills and are able to conduct tests themselves as well as teach others to conduct tests; (3) sufficient public health resources to support 'train-the-trainer' sessions to teach CHVs how to coach their neighbours through their first self/family malaria tests; and, (4) a competitive price point for home test kits when compared to the out-of-pocket costs of laboratory-based testing.",
+              "The possible importance of home-based self-testing has been highlighted by the recent Ebola outbreak. In the months after this survey was conducted, hundreds of cases of Ebola occurred in Bo district {{26074854}}{{not_in_s2orc}}. Many clinics and hospitals in Bo closed their doors rather than risk exposing their staff to the Ebola virus, and others were forced to temporarily close because of quarantines. Laboratory-based testing for febrile illnesses became more difficult to conduct and more costly due to the need to assume that all biological specimens could be from a patient with Ebola, even when the most likely diagnosis was something more common and much less fatal. Quarantines meant that some CHVs in rural areas could not travel from their home villages to neighbouring ones or stopped volunteering because they feared contracting Ebola. Thus, access to routine medical care, including diagnosis and treatment of common infections such as malaria, decreased significantly, especially in rural areas that already had limited access to health services. Home-based testing that allows trained individuals with suspected malaria to test themselves and family members at home, thus limiting the exposure of others to their blood, could improve the home-based care that has become necessary for many households as a result of the strain Ebola put on the entire healthcare system of Sierra Leone."
+            ]
+          },
+          {
+            "header": "Table 1",
+            "paragraphs": []
+          },
+          {
+            "header": "Table 2",
+            "paragraphs": []
+          },
+          {
+            "header": "Table 4",
+            "paragraphs": []
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "Discussion",
+      "papers_cited_discussion": [
+        "10253380",
+        "1841654",
+        "18750996",
+        "30384887",
+        "6084901",
+        "7359381",
+        "74007"
+      ],
+      "subsections": [
+        {
+          "header": "Discussion",
+          "paragraphs": [
+            "The participants in this study, especially those living in rural areas, expressed a high level of interest in homebased testing for malaria. A recent systematic review of Table 3 Characteristics of participants who indicated a consistent preference for home-based testing (by self/family or CHV) or laboratory-based testing 27 studies of CCM of malaria found consistent evidence that trained CHWs could successfully conduct RDTs and use the test results to recommend appropriate treatment {{74007}}. Studies in which community members are part of the selection process for CHVs are particularly successful in increasing access to testing {{18750996}}{{6084901}}. The primary concerns about CCM of malaria are some CHWs recommending anti-malarial medications following negative malaria tests and many febrile individuals not following through on recommended clinical consultations after negative test results {{74007}}{{10253380}}. Few studies have examined the use of home-based RDTs conducted by family members trained and supervised by CHVs rather than by the CHVs themselves, but this study suggested an openness to self/family testing in addition to CHV testing. Self/family testing with RDTs prepurchased by the household might increase malariatesting access in small farming villages that are located farther than easy walking distance from a community with a trained CHV. Home-based malaria testing, often with the assistance of a CHV, has been successfully implemented in other sub-Saharan African communities. In the rural Iganga district of Uganda, community members expressed a high level of trust in CHVs who were trained to conduct malaria RDTs and to recommend appropriate malaria treatment {{7359381}}. In villages in the South Kordofan State of Sudan, the use of CHV-conducted RDTs significantly increased access to malaria tests and malaria treatment, especially during the rainy season when travel to a clinic was often impossible {{6084901}}. In two provinces in Zambia, CHVs had a very high rate of correct recommendations for malaria treatment or referral to a healthcare facility after conducting in-home RDTs {{18750996}}. Given the substantial interest in home-based malaria testing in rural Bo district in Sierra Leone, it seems likely that CHVs in these communities could successfully test and treat malaria in homes, and perhaps even train willing and confident family members to conduct RDTs in their own households, making appropriate referrals for hospital care when necessary.",
+            "The most commonly reported barriers to the uptake of home-based testing for malaria include concerns about infection transmission during blood draws {{7359381}}{{30384887}} and concerns about reliable access to RDTs for homebased testing use {{18750996}}{{10253380}}{{1841654}}. Any programme for homebased testing would need to include clear instructions about how to safely dispose of lancets and test kits. CHVs could be encouraged to collect used kits they had distributed and to ensure that they were processed as medical waste. Consistent access to RDTs would need to be supported through community partnerships with local hospitals and government health officials.",
+            "This study in Sierra Leone used a cross-sectional approach with self-reported answers about febrile status and testing preferences. Participants were not asked to try conducting a malaria test on themselves or a family member, so all answers about willingness to conduct a test and confidence about the ability to conduct a test are hypothetical. This willingness-to-test survey will need to be followed by field tests of RDTs by CHVs and CHV-trained family members. Should these tests prove to be acceptable to the community, safe and valid, the programme could be expanded to include RDTs for other locally-important infections."
+          ]
+        }
+      ]
+    },
+    "discussion_txt": "The participants in this study, especially those living in rural areas, expressed a high level of interest in homebased testing for malaria. A recent systematic review of Table 3 Characteristics of participants who indicated a consistent preference for home-based testing (by self/family or CHV) or laboratory-based testing 27 studies of CCM of malaria found consistent evidence that trained CHWs could successfully conduct RDTs and use the test results to recommend appropriate treatment {{74007}}. Studies in which community members are part of the selection process for CHVs are particularly successful in increasing access to testing {{18750996}}{{6084901}}. The primary concerns about CCM of malaria are some CHWs recommending anti-malarial medications following negative malaria tests and many febrile individuals not following through on recommended clinical consultations after negative test results {{74007}}{{10253380}}. Few studies have examined the use of home-based RDTs conducted by family members trained and supervised by CHVs rather than by the CHVs themselves, but this study suggested an openness to self/family testing in addition to CHV testing. Self/family testing with RDTs prepurchased by the household might increase malariatesting access in small farming villages that are located farther than easy walking distance from a community with a trained CHV. Home-based malaria testing, often with the assistance of a CHV, has been successfully implemented in other sub-Saharan African communities. In the rural Iganga district of Uganda, community members expressed a high level of trust in CHVs who were trained to conduct malaria RDTs and to recommend appropriate malaria treatment {{7359381}}. In villages in the South Kordofan State of Sudan, the use of CHV-conducted RDTs significantly increased access to malaria tests and malaria treatment, especially during the rainy season when travel to a clinic was often impossible {{6084901}}. In two provinces in Zambia, CHVs had a very high rate of correct recommendations for malaria treatment or referral to a healthcare facility after conducting in-home RDTs {{18750996}}. Given the substantial interest in home-based malaria testing in rural Bo district in Sierra Leone, it seems likely that CHVs in these communities could successfully test and treat malaria in homes, and perhaps even train willing and confident family members to conduct RDTs in their own households, making appropriate referrals for hospital care when necessary.The most commonly reported barriers to the uptake of home-based testing for malaria include concerns about infection transmission during blood draws {{7359381}}{{30384887}} and concerns about reliable access to RDTs for homebased testing use {{18750996}}{{10253380}}{{1841654}}. Any programme for homebased testing would need to include clear instructions about how to safely dispose of lancets and test kits. CHVs could be encouraged to collect used kits they had distributed and to ensure that they were processed as medical waste. Consistent access to RDTs would need to be supported through community partnerships with local hospitals and government health officials.This study in Sierra Leone used a cross-sectional approach with self-reported answers about febrile status and testing preferences. Participants were not asked to try conducting a malaria test on themselves or a family member, so all answers about willingness to conduct a test and confidence about the ability to conduct a test are hypothetical. This willingness-to-test survey will need to be followed by field tests of RDTs by CHVs and CHV-trained family members. Should these tests prove to be acceptable to the community, safe and valid, the programme could be expanded to include RDTs for other locally-important infections.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "Thank you for providing the abstract. Based on the findings, it is clear that there is a preference for home-based malaria testing among the population in Bo, Sierra Leone. The majority of rural residents prefer a self/family- or community health volunteer (CHV)-conducted home-based test, while urban residents have a slightly different preference. The study also found that a significant proportion of the population does not usually take a diagnostic test to confirm suspected malaria, with the most common reasons being the cost of testing, waiting to see if the fever resolves on its own, and not wanting to travel to a clinical facility for a test.",
+                "One of the key findings of the study is the high level of confidence in performing a malaria test on oneself or a family member without assistance. This suggests that training and support may be necessary to ensure accurate test results and effective case management. Additionally, the willingness to pay more for a home-based test than a laboratory-based test suggests that there is a preference for more convenient and accessible testing options.",
+                "The study also highlights the potential for expanding community case management of malaria to include home testing by CHVs and family members. This approach could increase the proportion of individuals with febrile illnesses who confirm a positive diagnosis prior to initiating treatment. This could lead to improved malaria control and treatment outcomes in the region.",
+                "In terms of limitations, the study relied on a cross-sectional survey design, which may not capture long-term trends or changes in testing practices. Additionally, the study was conducted in a limited geographic area, and the findings may not be generalizable to the entire country or region.",
+                "Overall, the study provides valuable insights into malaria testing practices and preferences in Bo, Sierra Leone. The findings suggest that there is a need for more convenient and accessible testing options, as well as training and support for individuals to perform malaria tests accurately and effectively. Expanding community case management of malaria to include home testing by CHVs and family members may be a promising approach to improve malaria control and treatment outcomes in the region."
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.5935481786727905,
+            "R": 0.6366682648658752,
+            "F1": 0.6143525242805481
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.5575771331787109,
+            "R": 0.6052846908569336,
+            "F1": 0.5804523229598999
+          }
+        ],
+        "P_mean": 0.5755626559257507
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "**Discussion**",
+                "The study provides insight into the preferences and behaviors of malaria testing in rural and urban communities"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.35829365253448486,
+            "R": 0.5532305240631104,
+            "F1": 0.4349176585674286
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.35728490352630615,
+            "R": 0.5492680072784424,
+            "F1": 0.4329480528831482
+          }
+        ],
+        "P_mean": 0.3577892780303955
+      },
+      {
+        "model": "meta-llama/Llama-3.2-3B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "The study found a significant difference in malaria testing preferences between rural and urban populations in Bo, Sierra Leone"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "model": "bert-base-uncased",
+            "P": 0.3678017854690552,
+            "R": 0.6447528600692749,
+            "F1": 0.46840187907218933
+          },
+          {
+            "model": "microsoft/deberta-large-mnli",
+            "P": 0.3527677059173584,
+            "R": 0.5986781716346741,
+            "F1": 0.44394394755363464
+          }
+        ],
+        "P_mean": 0.3602847456932068
+      }
+    ]
+  }
+]

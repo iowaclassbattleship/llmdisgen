@@ -11,9 +11,10 @@
 <body>
     <main>
         <section class="paper-links">
-            {% for metadata_file in metadata_files %}
-            <a class="row" href="/{{ metadata_file }}">
-                <div>{{ metadata_file }}</div>
+            {% for paper in papers %}
+            <a class="row" href="/{{ file_id }}/{{ paper.corpus_id }}">
+                <div>{{ paper.title }}</div>
+                <div>{{ paper.year }}</div>
             </a>
             {% endfor %}
         </section>

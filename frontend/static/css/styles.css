@@ -13,9 +13,14 @@ body {
     margin: 0;
 }
 
+main {
+    display: flex;
+}
+
 .paper-links {
     display: flex;
     flex-direction: column;
+    padding: 1em;
 }
 
 .paper-links .row {
