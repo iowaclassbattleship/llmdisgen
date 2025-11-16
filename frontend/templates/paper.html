@@ -38,12 +38,23 @@
             {% endfor %}
             {% endfor %}
         </div>
+        {% for evaluation in paper.evaluations %}
         <div class="paper">
+            <div class="tag">
+                <span>{{ evaluation.model }}</span>
+                <span>P: {{ evaluation.P_mean }}</span>
+            </div>
             <h2>Discussion</h2>
-            {% for paragraph in paper.evaluations[0].llm_discussion %}
+            {% for subsection in evaluation.discussion.subsections %}
+            {% if subsection.header != paper.discussion.header %}
+            <h3>{{ subsection.header }}</h3>
+            {% endif %}
+            {% for paragraph in subsection.paragraphs %}
             <p>{{ paragraph }}</p>
             {% endfor %}
+            {% endfor %}
         </div>
+        {% endfor %}
     </section>
 
     <script src="static/js/main.js"></script>

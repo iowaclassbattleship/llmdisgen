@@ -13,13 +13,25 @@ body {
     margin: 0;
 }
 
+.paper-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.paper-links .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .paper-view {
     background: lightgrey;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     padding: 3em 3em 0 3em;
-    display: flex;
     gap: 3em;
 }
 
@@ -33,17 +45,15 @@ body {
     background: white;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     overflow-y: scroll;
-    flex: 1;
+    position: relative;
 }
 
-.paper-links {
-    display: flex;
-    flex-direction: column;
-}
-
-.paper-links .row {
-    width: 100%;
+.paper-view .paper .tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    color: lightgrey;
 }

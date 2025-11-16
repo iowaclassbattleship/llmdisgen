@@ -8,19 +8,32 @@ from mistral_common.protocol.instruct.request import ChatCompletionRequest
 from huggingface_hub import snapshot_download
 from pathlib import Path
 
-mistral_models_path = Path.home().joinpath('mistral_models', '7B-Instruct-v0.3')
-mistral_models_path.mkdir(parents=True, exist_ok=True)
+available_models = [
+    "mistralai/Mistral-7B-Instruct-v0.3"
+]
 
-snapshot_download(repo_id="mistralai/Mistral-7B-Instruct-v0.3", allow_patterns=["params.json", "consolidated.safetensors", "tokenizer.model.v3"], local_dir=mistral_models_path)
+class Mistral():
+    def __init__(self, model_name):
+        self.model_name = model_name
 
-tokenizer = MistralTokenizer.from_file(f"{mistral_models_path}/tokenizer.model.v3")
-model = Transformer.from_folder(mistral_models_path)
+        mistral_models_path = Path.home().joinpath('mistral_models', model_name.split("/")[1])
+        if not mistral_models_path.exists():
+            self.download_model(mistral_models_path, model_name)
 
-completion_request = ChatCompletionRequest(messages=[UserMessage(content="Explain Machine Learning to me in a nutshell.")])
+        self.tokenizer = MistralTokenizer.from_file(f"{mistral_models_path}/tokenizer.model.v3")
+        self.model = Transformer.from_folder(mistral_models_path)
 
-tokens = tokenizer.encode_chat_completion(completion_request).tokens
+    def prompt(self, user_prompt):
+        completion_request = ChatCompletionRequest(messages=[UserMessage(content=user_prompt)])
 
-out_tokens, _ = generate([tokens], model, max_tokens=64, temperature=0.0, eos_id=tokenizer.instruct_tokenizer.tokenizer.eos_id)
-result = tokenizer.instruct_tokenizer.tokenizer.decode(out_tokens[0])
+        tokens = self.tokenizer.encode_chat_completion(completion_request).tokens
 
-print(result)
+        out_tokens, _ = generate([tokens], self.model, max_tokens=64, temperature=0.0, eos_id=self.tokenizer.instruct_tokenizer.tokenizer.eos_id)
+        result = self.tokenizer.instruct_tokenizer.tokenizer.decode(out_tokens[0])
+
+        return result
+
+    def download_model(self, mistral_models_path: Path, model_name: str):
+        mistral_models_path.mkdir(parents=True, exist_ok=True)
+
+        snapshot_download(repo_id=model_name, allow_patterns=["params.json", "consolidated.safetensors", "tokenizer.model.v3"], local_dir=mistral_models_path)
