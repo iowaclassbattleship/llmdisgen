@@ -161,12 +161,12 @@
               "header": "Discussion",
               "paragraphs": [
                 "Title: Assessing the Impact of Biomedical Research on Clinical Guidelines: A Study of Cancer Guidelines in the UK",
-                "Introduction:\nThe interest in biomedical research impact assessment has significantly increased over the past five years, and this study aims to investigate the influence of research on clinical guidelines, particularly in the context of cancer. We analyzed 43 UK guidelines and associated Health Technology Assessments published up to October 2006 across three series, examining their geographical provenance and type of research.",
-                "Methods:\nWe identified and analyzed the UK guidelines and associated Health Technology Assessments using a systematic approach. The geographical provenance of the guidelines was determined by the location of the authoring institution, while the type of research was classified as either basic, translational, or clinical research. The citation impact of the UK papers was calculated as the number of citations divided by the expected number of citations based on their presence in world oncology research published in the peak years of guideline references (1999-2001).",
-                "Results:\nOur analysis revealed that the UK papers were cited nearly three times as frequently as would have been expected from their presence in world oncology research (6.5%). Edinburgh and Glasgow stood out for their unexpectedly high contributions to the guidelines' scientific base. The cited papers from the United Kingdom acknowledged much more explicit funding from all sectors than did the UK cancer research papers at the same research level.",
-                "Discussion:\nThis study demonstrates the significant impact of biomedical research on clinical guidelines in the UK, particularly in the context of cancer. The findings suggest that the geographical location of the authoring institution and the type of research conducted are important factors in determining the citation impact of guidelines. The high citation rate of UK papers may be attributed to the acknowledgment of funding sources, which can increase the credibility and transparency of the research.",
-                "The study highlights the importance of conducting impact assessments of biomedical research on clinical guidelines. By examining the geographical provenance and type of research, researchers and policymakers can better understand the factors that influence the citation impact of guidelines. This information can be used to inform decisions on resource allocation and research prioritization, ensuring that research investments are maximized to improve patient outcomes.",
-                "Conclusion:\nIn conclusion, this study demonstrates the significant impact of biomedical research on clinical guidelines in the UK, particularly in the context of cancer. The findings suggest that the geographical location of the authoring institution and the type of research conducted are important factors in determining the citation impact of guidelines. The study highlights the importance of conducting impact assessments of biomedical research on clinical guidelines to inform decisions on resource allocation and research prioritization."
+                "Introduction:\nThe interest in assessing the impact of biomedical research on clinical guidelines has significantly increased over the past five years. This study aims to investigate the influence of biomedical research on cancer guidelines in the UK by analyzing the geographical provenance and type of research of 43 UK guidelines and associated Health Technology Assessments published up to October 2006.",
+                "Methods:\nThe study identified and analyzed the UK guidelines and associated Health Technology Assessments published in the peak years of guideline references (1999-2001). The geographical provenance and type of research of the guidelines were determined, and the cited papers from the UK were analyzed to determine their funding sources.",
+                "Results:\nThe study found that the UK papers were cited nearly three times as frequently as would have been expected from their presence in world oncology research (6.5%). Edinburgh and Glasgow stood out for their unexpectedly high contributions to the guidelines' scientific base. The cited papers from the UK acknowledged much more explicit funding from all sectors than did the UK cancer research papers at the same research level.",
+                "Discussion:\nThe findings of this study suggest that biomedical research has a significant impact on cancer guidelines in the UK. The high citation rate of UK papers and the acknowledgement of funding from various sectors indicate that researchers in the UK are actively contributing to the development of clinical guidelines. The prominent role of Edinburgh and Glasgow in the guidelines' scientific base is noteworthy, as these cities have a strong reputation for cancer research.",
+                "The study highlights the importance of assessing the impact of biomedical research on clinical guidelines. By analyzing the geographical provenance and type of research of guidelines, researchers can identify areas of strength and weakness in cancer research and develop strategies to address these gaps. Moreover, the study emphasizes the need for explicit funding disclosure to ensure transparency and accountability in cancer research.",
+                "Conclusion:\nIn conclusion, this study demonstrates the significant impact of biomedical research on cancer guidelines in the UK. The findings suggest that researchers in the UK are actively contributing to the development of clinical guidelines, and the high citation rate of UK papers and the acknowledgement of funding from various sectors indicate that the research is of high quality. The study highlights the importance of assessing the impact of biomedical research on clinical guidelines and emphasizes the need for explicit funding disclosure to ensure transparency and accountability in cancer research."
               ]
             }
           ]
@@ -174,18 +174,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.5786181688308716,
-            "R": 0.6166770458221436,
-            "F1": 0.5970417261123657
+            "P": 0.5670071840286255,
+            "R": 0.6206781268119812,
+            "F1": 0.5926299691200256
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.49951162934303284,
-            "R": 0.5511975288391113,
-            "F1": 0.5240833759307861
+            "P": 0.48745477199554443,
+            "R": 0.5500948429107666,
+            "F1": 0.516883909702301
           }
         ],
-        "P_mean": 0.5390648990869522
+        "P_mean": 0.527230978012085
       },
       {
         "model": "meta-llama/Llama-3.2-1B-Instruct",
@@ -195,7 +195,7 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                ""
+                "The study found that the UK biomedical research impact assessment has increased substantially over the past 5 years,"
               ]
             }
           ]
@@ -203,18 +203,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.0,
-            "R": 0.0,
-            "F1": 0.0
+            "P": 0.3502722382545471,
+            "R": 0.5566998720169067,
+            "F1": 0.42999449372291565
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.0,
-            "R": 0.0,
-            "F1": 0.0
+            "P": 0.3296357989311218,
+            "R": 0.569035530090332,
+            "F1": 0.4174484610557556
           }
         ],
-        "P_mean": 0.0
+        "P_mean": 0.3399540185928345
       },
       {
         "model": "meta-llama/Llama-3.2-3B-Instruct",
@@ -224,10 +224,7 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "]",
-                "**Discussion**",
-                "1. **Cancer Research and Biomedical Research Impact Assessment**",
-                "Cancer research"
+                "The increased interest in biomedical research impact assessment over the past 5 years is reflected in the substantial increase"
               ]
             }
           ]
@@ -235,18 +232,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.3165295124053955,
-            "R": 0.5142035484313965,
-            "F1": 0.3918481469154358
+            "P": 0.3522496819496155,
+            "R": 0.5696561336517334,
+            "F1": 0.4353182017803192
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.26662158966064453,
-            "R": 0.40178894996643066,
-            "F1": 0.32053837180137634
+            "P": 0.3369029462337494,
+            "R": 0.520228922367096,
+            "F1": 0.4089607894420624
           }
         ],
-        "P_mean": 0.29157555103302
+        "P_mean": 0.34457631409168243
       }
     ]
   },
@@ -539,19 +536,20 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "Title: A Discussion of the Mapping between Sigma Model Solutions and Pohlmeyer Reduced Theory Solutions",
+                "Title: Mapping between Solutions of Euclidean O(3) Non-Linear Sigma Model and Pohlmeyer Reduced Theory",
                 "Abstract:",
-                "In this paper, we explore the relationship between known solutions of the Euclidean O(3) non-linear sigma model (NLSM) and their counterparts in the Pohlmeyer reduced theory. Specifically, we investigate the mapping between instantons, merons, and elliptic solutions in the NLSM and their corresponding solutions in the sinh-Gordon equation, which is obtained through Pohlmeyer reduction. Our findings reveal a complex relationship between these solutions, with instantons lacking a direct counterpart in the reduced theory, merons corresponding to the ground state, and elliptic solutions exhibiting a two-to-one correspondence between solutions in the two descriptions.",
+                "In this paper, we investigate the relationship between known solutions of the Euclidean O(3) non-linear sigma model and their counterparts in the Pohlmeyer reduced theory, which is an integrable system, specifically the sinh-Gordon equation. We find that instantons do not have a direct counterpart in the reduced theory, while merons correspond to the ground state and elliptic solutions are characterized by a two-to-one correspondence between solutions in the two descriptions.",
                 "Introduction:",
-                "The Euclidean O(3) NLSM is a fundamental model in theoretical physics, which describes the dynamics of a scalar field in three-dimensional space. In recent years, there has been growing interest in studying the relationship between this model and its reduced version, the sinh-Gordon equation, which is obtained through Pohlmeyer reduction. In this paper, we contribute to this effort by exploring the mapping between known solutions of the NLSM and their counterparts in the reduced theory.",
-                "Mapping between Instantons and Solutions of the Sinh-Gordon Equation:",
-                "One of the most intriguing aspects of our study is the absence of a direct counterpart for instantons in the reduced theory. Instantons are topologically nontrivial solutions of the NLSM that are characterized by a non-trivial winding number around the space-time circle. However, upon applying Pohlmeyer reduction, these instantons do not appear to have a direct counterpart in the sinh-Gordon equation. This suggests that the reduced theory does not capture the topological properties of the original model.",
-                "Mapping between Merons and the Ground State of the Sinh-Gordon Equation:",
-                "On the other hand, merons, which are solutions of the NLSM that are characterized by a finite winding number around the space-time circle, do have a direct counterpart in the reduced theory. Specifically, we find that merons correspond to the ground state of the sinh-Gordon equation. This result highlights the importance of considering the topological properties of the original model when reducing the theory to a simpler description.",
-                "Mapping between Elliptic Solutions and Solutions of the Sinh-Gordon Equation:",
-                "Finally, we find that the class of elliptic solutions of the NLSM, which are characterized by a non-trivial ratio of the scalar field to the space-time derivative, exhibit a two-to-one correspondence between solutions in the two descriptions. This means that every elliptic solution of the NLSM corresponds to two solutions of the sinh-Gordon equation, and vice versa. This result provides a deeper understanding of the relationship between these two descriptions and highlights the importance of considering the full range of solutions when reducing the theory.",
+                "The Euclidean O(3) non-linear sigma model is a well-known model in theoretical physics, which describes the dynamics of a scalar field in a curved spacetime. The model has been studied extensively in the context of quantum field theory and has been found to be solvable using various techniques, including the Pohlmeyer reduction. The Pohlmeyer reduction is a method for reducing the order of the theory by introducing a new variable, which allows for a simpler analysis of the model.",
+                "In this paper, we explore the relationship between known solutions of the Euclidean O(3) non-linear sigma model and their counterparts in the Pohlmeyer reduced theory. Specifically, we investigate the mapping between instantons, merons, and elliptic solutions of the original model and their counterparts in the reduced theory, which is the sinh-Gordon equation.",
+                "Results:",
+                "Our analysis reveals that instantons do not have a direct counterpart in the reduced theory. This is because the Pohlmeyer reduction does not preserve the instanton solutions, which are localized in space and time. On the other hand, merons, which are global solutions of the original model, correspond to the ground state of the reduced theory. This means that the merons in the original model are equivalent to the vacuum state in the reduced theory.",
+                "Furthermore, we find that the class of elliptic solutions of the original model is characterized by a two-to-one correspondence between solutions in the two descriptions. This means that every elliptic solution of the original model corresponds to two solutions of the reduced theory. This result provides a deeper understanding of the relationship between the two descriptions and highlights the importance of the Pohlmeyer reduction in revealing the underlying structure of the model.",
+                "Discussion:",
+                "Our results provide new insights into the relationship between the Euclidean O(3) non-linear sigma model and its Pohlmeyer reduced theory. We have shown that while instantons do not have a direct counterpart in the reduced theory, merons correspond to the ground state of the reduced theory. Additionally, we have found that the class of elliptic solutions of the original model is characterized by a two-to-one correspondence between solutions in the two descriptions.",
+                "These results demonstrate the power of the Pohlmeyer reduction in providing a simplified description of a complex model. By reducing the order of the theory, the Pohlmeyer reduction allows for a more straightforward analysis of the model and provides a deeper understanding of its underlying structure.",
                 "Conclusion:",
-                "In conclusion, our study provides a detailed analysis of the mapping between known solutions of the Euclidean O(3) NLSM and their counterparts in the Pohlmeyer reduced theory. Our findings reveal a complex relationship between these solutions, with instantons lacking a direct counterpart in the reduced theory, merons corresponding to the ground state, and elliptic solutions exhibiting a two-to-one correspondence between solutions in the two descriptions. These results highlight the importance of considering the topological properties of the original model when reducing the theory to a simpler description. Further studies of this nature can provide valuable insights into the structure of non-linear sigma models and their reduced versions, and can help to deepen our understanding of the fundamental principles of theoretical physics."
+                "In conclusion, our paper has explored the mapping between known solutions of the Euclidean O(3) non-linear sigma model and their counterparts in the Pohlmeyer reduced theory. Our results provide new insights into the relationship between the two descriptions and highlight the importance of the Pohlmeyer reduction in revealing the underlying structure of the model. Future research could focus on extending these results to other models and exploring the implications of the Pohlmeyer reduction for our understanding of quantum field theory."
               ]
             }
           ]
@@ -559,18 +557,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.6587328910827637,
-            "R": 0.7006615996360779,
-            "F1": 0.6790505647659302
+            "P": 0.6553270220756531,
+            "R": 0.7089740037918091,
+            "F1": 0.6810957789421082
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.5713328123092651,
-            "R": 0.5698282718658447,
-            "F1": 0.5705795288085938
+            "P": 0.5618717074394226,
+            "R": 0.5722150802612305,
+            "F1": 0.5669962167739868
           }
         ],
-        "P_mean": 0.6150328516960144
+        "P_mean": 0.6085993647575378
       },
       {
         "model": "meta-llama/Llama-3.2-1B-Instruct",
@@ -580,7 +578,7 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "Please respond as a scientist, but keep the discussion grounded in established knowledge and avoid unnecessary elaborations"
+                "The abstract describes a study on the mapping between sigma models, specifically the sine-Gordon equation and the"
               ]
             }
           ]
@@ -588,18 +586,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.28326523303985596,
-            "R": 0.3829350471496582,
-            "F1": 0.3256443738937378
+            "P": 0.3860173225402832,
+            "R": 0.6236982941627502,
+            "F1": 0.47688350081443787
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.29325395822525024,
-            "R": 0.4482647478580475,
-            "F1": 0.35455721616744995
+            "P": 0.38128048181533813,
+            "R": 0.5896588563919067,
+            "F1": 0.4631090760231018
           }
         ],
-        "P_mean": 0.2882595956325531
+        "P_mean": 0.38364890217781067
       },
       {
         "model": "meta-llama/Llama-3.2-3B-Instruct",
@@ -609,7 +607,7 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "The correspondence between the O(3) non-linear sigma model and the sinh-Gordon equation can"
+                "The Pohlmeyer reduction of the Euclidean O(3) non-linear sigma model results in the"
               ]
             }
           ]
@@ -617,18 +615,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.4128713607788086,
-            "R": 0.7238589525222778,
-            "F1": 0.5258250832557678
+            "P": 0.41712331771850586,
+            "R": 0.6908555030822754,
+            "F1": 0.5201759338378906
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.4060319662094116,
-            "R": 0.6550604701042175,
-            "F1": 0.501323938369751
+            "P": 0.40376442670822144,
+            "R": 0.6513005495071411,
+            "F1": 0.4984944462776184
           }
         ],
-        "P_mean": 0.4094516634941101
+        "P_mean": 0.41044387221336365
       }
     ]
   },
@@ -793,13 +791,13 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "Title: Automatic Induction of Synonym Paraphrases for German Particle Verbs",
-                "Introduction:\nIn this study, we aim to improve the automatic induction of synonym paraphrases for the challenging class of German particle verbs. Previous research has shown that incorporating a graph-based clustering approach for word sense discrimination into an existing paraphrase extraction system can significantly improve the precision of synonym identification and ranking (Cocos & Callison-Burch, 2016). However, our study shows that integrating a simple distributional similarity measure can further enhance the performance of the system.",
-                "Methods:\nWe developed an existing paraphrase extraction system and incorporated a graph-based clustering approach for word sense discrimination into the system. The system was trained on a dataset of German sentences and their corresponding paraphrases. We evaluated the performance of the system using a set of evaluation metrics, including precision, recall, and F-score.",
-                "Results:\nOur results show that the incorporation of the graph-based clustering approach significantly improves the precision of synonym identification and ranking compared to the standard system. The system was able to identify and rank synonyms more accurately, with a higher F-score. However, integrating a simple distributional similarity measure further improved the performance of the system, with an even higher F-score.",
-                "Discussion:\nOur findings are in line with previous research on the importance of word sense discrimination in paraphrase extraction (Cocos & Callison-Burch, 2016). The graph-based clustering approach provides a more accurate way of identifying and distinguishing between different senses of a word, which in turn improves the precision of synonym identification and ranking. The integration of a simple distributional similarity measure adds an additional layer of complexity to the system, which further enhances the performance of the system.",
-                "Conclusion:\nIn conclusion, our study demonstrates the importance of incorporating a graph-based clustering approach for word sense discrimination into an existing paraphrase extraction system for the challenging class of German particle verbs. The integration of a simple distributional similarity measure further improves the performance of the system. These findings have implications for the development of more accurate and efficient paraphrase extraction systems, which can be used in a variety of applications, including machine translation, text summarization, and question answering.",
-                "References:\nCocos, A., & Callison-Burch, C. (2016). Word sense disambiguation with graph-based clustering. In Proceedings of the 2016 Conference on Empirical Methods in Natural Language Processing, 2879\u20132889."
+                "The abstract presents a research study aimed at improving the automatic induction of synonym paraphrases for German particle verbs, a challenging class of words. The study builds upon previous work by Cocos and Callison-Burch (2016), which incorporated a graph-based clustering approach for word sense discrimination into an existing paraphrase extraction system. The main goals of the study are to improve the precision of synonym identification and ranking, and to increase the diversity of synonym senses.",
+                "The study's approach involves incorporating the graph-based clustering approach into an existing paraphrase extraction system. This allows the system to better distinguish between different senses of a word, leading to more accurate synonym identification and ranking. The study finds that the proposed approach significantly improves over the standard system, but does not outperform an extended baseline that integrates a simple distributional similarity measure.",
+                "The findings of the study have important implications for the field of natural language processing. By improving the accuracy of synonym identification and ranking, the proposed approach can help to improve the performance of various NLP tasks, such as machine translation, question answering, and text summarization. Additionally, the study highlights the importance of considering the diversity of synonym senses when inducing paraphrases, as this can lead to a more comprehensive and accurate understanding of the language.",
+                "The study's methodology is based on the use of a graph-based clustering approach, which is a common technique in machine learning and data mining. The approach represents words as nodes in a graph, where the edges between nodes represent the similarity between the words. The graph is then clustered using a clustering algorithm, such as k-means or hierarchical clustering, to group similar words together. The resulting clusters can then be used to identify synonyms and rank them according to their similarity to the target word.",
+                "The study's findings demonstrate the effectiveness of the proposed approach in improving the accuracy of synonym identification and ranking. The results show that the proposed approach significantly outperforms the standard system, with a 10% improvement in precision and a 5% improvement in recall. Additionally, the study finds that the proposed approach leads to a more diverse set of synonyms, with a 20% increase in the number of unique synonyms identified.",
+                "However, the study also notes that the proposed approach does not outperform an extended baseline that integrates a simple distributional similarity measure. This suggests that other factors, such as the distribution of words in the language, may also play a role in determining the accuracy of synonym identification and ranking.",
+                "Overall, the study provides a valuable contribution to the field of natural language processing, demonstrating the effectiveness of a graph-based clustering approach for inducing synonym paraphrases for German particle verbs. The findings of the study have important implications for the development of more accurate and comprehensive NLP systems, and highlight the importance of considering the diversity of synonym senses when inducing paraphrases."
               ]
             }
           ]
@@ -807,18 +805,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.5605149865150452,
-            "R": 0.5896110534667969,
-            "F1": 0.5746949911117554
+            "P": 0.566068172454834,
+            "R": 0.6115374565124512,
+            "F1": 0.5879249572753906
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.47633036971092224,
-            "R": 0.5091560482978821,
-            "F1": 0.49219653010368347
+            "P": 0.5076099038124084,
+            "R": 0.5457302927970886,
+            "F1": 0.5259802937507629
           }
         ],
-        "P_mean": 0.5184226781129837
+        "P_mean": 0.5368390381336212
       },
       {
         "model": "meta-llama/Llama-3.2-1B-Instruct",
@@ -828,10 +826,8 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "To answer the question:",
-                "What is the abstract of the given text?",
-                "The abstract is:",
-                "In"
+                "**Discussion**",
+                "This study addresses the challenge of inducing synonym paraphrases for a specific class of German particle"
               ]
             }
           ]
@@ -839,18 +835,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.3186201751232147,
-            "R": 0.4810333251953125,
-            "F1": 0.38333332538604736
+            "P": 0.3508366048336029,
+            "R": 0.48196935653686523,
+            "F1": 0.406078964471817
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.28758686780929565,
-            "R": 0.38071408867836,
-            "F1": 0.3276618719100952
+            "P": 0.32405126094818115,
+            "R": 0.5442495346069336,
+            "F1": 0.4062296152114868
           }
         ],
-        "P_mean": 0.3031035214662552
+        "P_mean": 0.33744393289089203
       },
       {
         "model": "meta-llama/Llama-3.2-3B-Instruct",
@@ -860,9 +856,7 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "]",
-                "Discussion:",
-                "Graph-based clustering can be used to identify word sense distinctions in a word, and this"
+                "The incorporation of graph-based clustering into paraphrase extraction systems has shown promise in improving the precision of synonym"
               ]
             }
           ]
@@ -870,18 +864,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.35947418212890625,
-            "R": 0.5941308736801147,
-            "F1": 0.447931170463562
+            "P": 0.362754762172699,
+            "R": 0.5930225849151611,
+            "F1": 0.45015037059783936
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.33386707305908203,
-            "R": 0.5391532182693481,
-            "F1": 0.4123741686344147
+            "P": 0.3605162501335144,
+            "R": 0.5868233442306519,
+            "F1": 0.44663888216018677
           }
         ],
-        "P_mean": 0.34667062759399414
+        "P_mean": 0.3616355061531067
       }
     ]
   },
@@ -1055,13 +1049,11 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "The abstract presents a study protocol for a randomized controlled trial aimed at evaluating the effectiveness of biomarker-based diagnostics in improving antimicrobial stewardship in patients with suspected ventilator-acquired pneumonia (VAP). The study will enroll patients with clinically suspected VAP and will compare the outcomes of those randomized to a \"biomarker-guided recommendation on antibiotics\" versus \"routine use of antibiotics.\" The primary outcome of the study is the change in the frequency distribution of antibiotic-free days (AFD) in the 7 days following bronchoalveolar lavage (BAL).",
-                "The use of biomarkers in the diagnosis of VAP has the potential to improve antimicrobial stewardship by allowing for rapid exclusion of VAP and reducing the unnecessary use of antibiotics. The study will evaluate the effectiveness of this approach by comparing the antibiotic use and clinical outcomes between the two groups.",
-                "The study design is prospective, multi-center, and randomized, which will help to minimize bias and ensure that the results are generalizable to other ICUs. The sample size of 210 is sufficient to detect a clinically significant shift in the distribution of AFD towards more patients having fewer antibiotics and therefore more AFD.",
-                "The study will also evaluate secondary outcomes such as antibiotic use at 14 and 28 days, ventilator-free days, 28-day mortality and ICU mortality, sequential organ failure assessment (SOFA) at days 3, 7, and 14, duration of stay in critical care and the hospital, antibiotic-associated infections, and antibiotic-resistant pathogen cultures up to hospital discharge, death or 56 days.",
-                "The use of biomarkers in this study will provide valuable insights into the effectiveness of rapid biomarker-based exclusion of VAP in improving antimicrobial stewardship. The results of this study will have important implications for the management of VAP in critically ill patients and may help to reduce the emergence of antibiotic resistance.",
-                "It is important to note that the study will only be conducted in patients with clinically suspected VAP, and not in those with proven VAP. This is because the diagnosis of VAP is based on clinical criteria and not on microbiological evidence, and the use of biomarkers in this setting may not be able to accurately diagnose VAP.",
-                "In conclusion, this study will evaluate the effectiveness of biomarker-based diagnostics in improving antimicrobial stewardship in patients with suspected VAP. The results of this study will provide valuable insights into the use of biomarkers in the diagnosis of VAP and may help to improve the management of this common complication of critical illness."
+                "The abstract presents a prospective, multi-center, randomized, controlled trial aimed at evaluating the impact of biomarker-based diagnostics on antimicrobial stewardship in patients with suspected ventilator-acquired pneumonia (VAP). The trial compares the clinical outcomes and antibiotic use between patients who undergo bronchoalveloar lavage (BAL) with biomarker-guided antibiotic recommendations and those who receive routine antibiotic therapy based solely on microbiology testing results.",
+                "The primary outcome of the study is the change in the frequency distribution of antibiotic-free days (AFD) in the 7 days following BAL. Secondary outcomes include antibiotic use at 14 and 28 days, ventilator-free days, 28-day mortality and ICU mortality, sequential organ failure assessment (SOFA) scores at days 3, 7, and 14, duration of stay in critical care and the hospital, antibiotic-associated infections, and antibiotic-resistant pathogen cultures up to hospital discharge, death or 56 days. A healthcare-resource-utilization analysis will also be conducted to assess the economic benefits of the biomarker-based approach.",
+                "The study population will include patients aged 18 years or older who are admitted to the ICU with clinically suspected VAP and undergo BAL. Patients will be randomized 1:1 to either the biomarker-guided recommendation group or the routine antibiotic use group. The biomarker-guided group will receive antibiotic recommendations based on the levels of interleukin-1\u03b2 (IL-1\u03b2) and interleukin-8 (IL-8) in their BAL fluid, in addition to routine microbiology testing. The routine antibiotic use group will receive antibiotics based solely on the results of routine microbiology testing.",
+                "The study will assess the safety of BAL by collecting data on adverse events related to the procedure. The sample size of 210 will be calculated to detect a clinically significant shift in the distribution of AFD towards more patients having fewer antibiotics and therefore more AFD.",
+                "The results of this trial will provide valuable insights into the effectiveness of biomarker-based diagnostics in improving antimicrobial stewardship in patients with suspected VAP. If the biomarker-guided approach is shown to result in faster discontinuation of antibiotics and improved clinical outcomes, it may lead to changes in clinical practice guidelines and improve patient care."
               ]
             }
           ]
@@ -1069,18 +1061,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.6121499538421631,
-            "R": 0.6739113926887512,
-            "F1": 0.641547679901123
+            "P": 0.6123166084289551,
+            "R": 0.6579327583312988,
+            "F1": 0.6343055963516235
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.5681183338165283,
-            "R": 0.6026613116264343,
-            "F1": 0.5848802328109741
+            "P": 0.5784904956817627,
+            "R": 0.5892053842544556,
+            "F1": 0.5837988257408142
           }
         ],
-        "P_mean": 0.5901341438293457
+        "P_mean": 0.5954035520553589
       },
       {
         "model": "meta-llama/Llama-3.2-1B-Instruct",
@@ -1090,7 +1082,8 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                ""
+                "**Discussion**",
+                "The study aims to determine whether a rapid biomarker-based exclusion of ventilator-acquired"
               ]
             }
           ]
@@ -1098,18 +1091,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.0,
-            "R": 0.0,
-            "F1": 0.0
+            "P": 0.3857921361923218,
+            "R": 0.6453233957290649,
+            "F1": 0.4828958213329315
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.0,
-            "R": 0.0,
-            "F1": 0.0
+            "P": 0.3579068183898926,
+            "R": 0.6508879661560059,
+            "F1": 0.4618525803089142
           }
         ],
-        "P_mean": 0.0
+        "P_mean": 0.3718494772911072
       },
       {
         "model": "meta-llama/Llama-3.2-3B-Instruct",
@@ -1119,8 +1112,7 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "**Discussion**",
-                "Rapid biomarker-based exclusion of VAP could reduce antibiotic use and improve antim"
+                "The proposed trial aims to investigate the effectiveness of biomarker-based diagnostics in excluding ventilator-acquired pneumonia"
               ]
             }
           ]
@@ -1128,18 +1120,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.3889327645301819,
-            "R": 0.631094217300415,
-            "F1": 0.48126813769340515
+            "P": 0.4005982279777527,
+            "R": 0.7160307168960571,
+            "F1": 0.5137618184089661
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.35729098320007324,
-            "R": 0.5840867161750793,
-            "F1": 0.44336915016174316
+            "P": 0.4018286466598511,
+            "R": 0.7474431991577148,
+            "F1": 0.5226684808731079
           }
         ],
-        "P_mean": 0.37311187386512756
+        "P_mean": 0.4012134373188019
       }
     ]
   },
@@ -1298,13 +1290,10 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "Thank you for providing the abstract. Based on the findings, I will provide a scientific discussion on the study's objectives, methods, results, and conclusions.",
-                "Objectives:\nThe study aimed to investigate malaria testing practices and preferences among rural and urban populations in Bo, Sierra Leone. The study also assessed the willingness of participants to take a home-based rapid diagnostic test (RDT) administered by a community health volunteer (CHV) or a trained family member, rather than traveling to a clinical facility for laboratory-based testing.",
-                "Methods:\nThe study used a population-based, cross-sectional survey design to collect data from 667 randomly-sampled rural households and 157 urban households in December 2013 and January 2014. A structured questionnaire was used to collect information on demographics, malaria testing practices, and preferences for home-based testing.",
-                "Results:\nThe study found that among rural residents, 69% preferred a self/family- or CHV-conducted home-based malaria test, while 20% preferred a laboratory-based test. Among urban residents, these numbers were 38% and 44%, respectively. If offered a home-based test, 28% of rural residents and 68% of urban residents would prefer a self/family-conducted test, while 36% of rural and 63% of urban residents reported usually taking a diagnostic test to confirm suspected malaria. The most common reasons for not seeking malaria testing were the cost of testing, waiting to see if the fever resolved on its own, and not wanting to travel to a clinical facility for a test.",
-                "In terms of confidence in performing a malaria test, 32% of rural and 27% of urban participants were very confident they could perform a test on themselves or a family member without assistance. After training, 50% of rural and 62% of urban participants were very confident they could perform a test. Additionally, 56% of rural and 33% of urban participants said they would pay more for a home-based test than a laboratory-based test.",
-                "Conclusion:\nThe study suggests that expanding community case management of malaria to include home testing by CHVs and family members may increase the proportion of individuals with febrile illnesses who confirm a positive diagnosis prior to initiating treatment. The findings suggest that rural and urban residents have varying preferences for malaria testing, with a preference for home-based testing among rural residents and a preference for laboratory-based testing among urban residents. The study also highlights the importance of training and support for CHVs and family members in performing home-based tests.",
-                "Overall, the study provides valuable insights into the malaria testing practices and preferences among rural and urban populations in Bo, Sierra Leone. The findings suggest that home-based testing may be a viable alternative to laboratory-based testing, particularly in rural areas where access to clinical facilities may be limited. However, further research is needed to determine the feasibility and effectiveness of home-based testing in different settings and to identify the most effective strategies for expanding community case management of malaria."
+                "Thank you for providing the abstract for discussion. Based on the findings of this study, it appears that there is a significant preference among rural and urban residents in Bo, Sierra Leone for home-based malaria testing, particularly when conducted by a community health volunteer (CHV) or a trained family member. The study found that 69% of rural residents and 38% of urban residents preferred a self/family- or CHV-conducted home-based malaria test, with the majority of these individuals indicating that they would prefer a home-based test over a laboratory-based test.",
+                "The study also found that the most common reasons for not seeking malaria testing were the cost of testing, waiting to see if the fever resolved on its own, and not wanting to travel to a clinical facility for a test. These findings suggest that while there is a need for malaria testing in Bo, there are also significant barriers to seeking testing, particularly among rural residents who may have limited access to healthcare facilities and resources.",
+                "The study also examined the confidence of participants in their ability to perform a malaria test on themselves or a family member without assistance, as well as their willingness to pay for a home-based test. The findings showed that 50% of rural and 62% of urban participants were very confident they could perform a malaria test after training, and 56% of rural and 33% of urban participants said they would pay more for a home-based test than a laboratory-based test. These findings suggest that there is a strong potential for home-based malaria testing to increase access to malaria diagnosis and treatment, particularly in rural areas where access to healthcare facilities may be limited.",
+                "Overall, the study suggests that expanding community case management of malaria to include home testing by CHVs and family members may be an effective strategy for increasing the proportion of individuals with febrile illnesses who confirm a positive diagnosis prior to initiating treatment. This approach could help to improve access to malaria diagnosis and treatment, particularly in rural areas where access to healthcare facilities may be limited. However, it will be important to ensure that the quality of home-based testing is maintained and that appropriate follow-up and referral mechanisms are in place to ensure that individuals who test positive receive appropriate treatment."
               ]
             }
           ]
@@ -1312,18 +1301,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.5926281809806824,
-            "R": 0.625083327293396,
-            "F1": 0.6084232926368713
+            "P": 0.6063847541809082,
+            "R": 0.6668274402618408,
+            "F1": 0.6351714134216309
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.5799692869186401,
-            "R": 0.5859279036521912,
-            "F1": 0.5829333662986755
+            "P": 0.5754787921905518,
+            "R": 0.6269305944442749,
+            "F1": 0.6001039147377014
           }
         ],
-        "P_mean": 0.5862987339496613
+        "P_mean": 0.59093177318573
       },
       {
         "model": "meta-llama/Llama-3.2-1B-Instruct",
@@ -1333,7 +1322,8 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                ""
+                "**Discussion**",
+                "The study examined the preference and willingness to use a home-based malaria test among rural and"
               ]
             }
           ]
@@ -1341,18 +1331,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.0,
-            "R": 0.0,
-            "F1": 0.0
+            "P": 0.37376290559768677,
+            "R": 0.5698626041412354,
+            "F1": 0.45143651962280273
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.0,
-            "R": 0.0,
-            "F1": 0.0
+            "P": 0.37739843130111694,
+            "R": 0.5860947370529175,
+            "F1": 0.45914435386657715
           }
         ],
-        "P_mean": 0.0
+        "P_mean": 0.37558066844940186
       },
       {
         "model": "meta-llama/Llama-3.2-3B-Instruct",
@@ -1362,7 +1352,7 @@
             {
               "header": "Discussion",
               "paragraphs": [
-                "Discussion\nRural residents are more likely to prefer self/family or CHV-conducted home"
+                "The findings of this study suggest that there is a preference for home-based rapid diagnostic tests administered by community"
               ]
             }
           ]
@@ -1370,18 +1360,18 @@
         "accuracy_scores": [
           {
             "model": "bert-base-uncased",
-            "P": 0.3465440273284912,
-            "R": 0.5955686569213867,
-            "F1": 0.4381445348262787
+            "P": 0.36415040493011475,
+            "R": 0.6545732617378235,
+            "F1": 0.46796420216560364
           },
           {
             "model": "microsoft/deberta-large-mnli",
-            "P": 0.3340514302253723,
-            "R": 0.5501406192779541,
-            "F1": 0.4156908392906189
+            "P": 0.3520575165748596,
+            "R": 0.6134951114654541,
+            "F1": 0.44738227128982544
           }
         ],
-        "P_mean": 0.34029772877693176
+        "P_mean": 0.3581039607524872
       }
     ]
   }

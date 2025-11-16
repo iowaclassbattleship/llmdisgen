@@ -46,9 +46,6 @@
             </div>
             <h2>Discussion</h2>
             {% for subsection in evaluation.discussion.subsections %}
-            {% if subsection.header != paper.discussion.header %}
-            <h3>{{ subsection.header }}</h3>
-            {% endif %}
             {% for paragraph in subsection.paragraphs %}
             <p>{{ paragraph }}</p>
             {% endfor %}

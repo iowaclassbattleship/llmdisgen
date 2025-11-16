@@ -7,6 +7,9 @@ out.mkdir(exist_ok=True)
 
 filename = f"metadata-{int(time.time())}.json"
 
+# cited paper ids are noted as {{corpus_id}}
+pattern = r"\{\{(.*?)\}\}"
+
 def write_json(obj):
     out_path = out / filename
 

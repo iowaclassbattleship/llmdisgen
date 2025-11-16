@@ -6,7 +6,7 @@ import json
 app = Flask(__name__)
 
 base = Path("..") / "runs"
-filename = "metadata-1763260455.json"
+filename = "metadata.json"
 
 
 def get_papers():

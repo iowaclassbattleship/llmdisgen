@@ -1,5 +1,6 @@
 from datasets import load_dataset
-import llms.llama as llama
+import llms.llama2 as llama2
+import llms.llama3 as llama3
 import llms.mistral as mistral
 import compare
 import utils
@@ -11,11 +12,20 @@ import metric
 levels = ["sentence", "section"]
 level = 1
 
-pattern = r"\{\{(.*?)\}\}"
-
 ds = load_dataset(f"annamkiepura99/{levels[level]}-diss-gen-combined")
 papers = ds["train"]
 # cited_papers = load_dataset(f"annamkiepura99/{levels[level]}-cited-papers-combined")
+
+modelconfigs = [
+    {
+        "interface": llama2.Llama2LLM,
+        "models": llama2.available_models
+    },
+    {
+        "interface": llama3.Llama3LLM,
+        "models": llama3.available_models
+    },
+]
 
 for i in tqdm(range(5), desc=f"Processing papers"):
     corpus_id = papers["corpus_id"][i]
@@ -29,81 +39,45 @@ for i in tqdm(range(5), desc=f"Processing papers"):
     discussion_txt = utils.build_discussion_txt(discussion_section)
 
     evaluations = []
-    for llama_model in llama.available_models:
-        llama_wrapper = llama.Llama(model_name=llama_model)
+    for modelconfig in modelconfigs:
+        for model in modelconfig["models"]:
+            wrapper = modelconfig["interface"](model)
 
-        prompt = f"Write the discussion based on the following abstract: {abstract}"
+            prompt = f"Write the discussion based on the following abstract: {abstract}"
 
-        llm_dis = llama_wrapper.prompt(prompt)
-        ollama_model_name = llama_wrapper.model_name
+            llm_dis = wrapper.prompt(prompt)
+            ollama_model_name = wrapper.model_name
 
-        del llama_wrapper
-        torch.cuda.empty_cache()
+            del wrapper
+            torch.cuda.empty_cache()
 
-        accuracy_scores = []
-        for model_type in compare.available_models:
-            c = compare.TextComparator(model_type)
-            P, R, F1 = c.score(discussion_txt, llm_dis)
-            accuracy_scores.append({
-                "model": c.model_name,
-                "P": P.item(),
-                "R": R.item(),
-                "F1": F1.item()
+            accuracy_scores = []
+            for model_type in compare.available_models:
+                c = compare.TextComparator(model_type)
+                P, R, F1 = c.score(discussion_txt, llm_dis)
+                accuracy_scores.append({
+                    "model": c.model_name,
+                    "P": P.item(),
+                    "R": R.item(),
+                    "F1": F1.item()
+                })
+
+            evaluations.append({
+                "model": ollama_model_name,
+                "discussion": {
+                    "header": "Discussion",
+                    "subsections": [
+                        {
+                            "header": "Discussion",
+                            "paragraphs": llm_dis.split("\n\n")
+                        }
+                    ]
+                },
+                "accuracy_scores": accuracy_scores,
+                "P_mean": metric.bagged_score(accuracy_scores)
             })
 
-        evaluations.append({
-            "model": ollama_model_name,
-            "discussion": {
-                "header": "Discussion",
-                "subsections": [
-                    {
-                        "header": "Discussion",
-                        "paragraphs": llm_dis.split("\n\n")
-                    }
-                ]
-            },
-            "accuracy_scores": accuracy_scores,
-            "P_mean": metric.bagged_score(accuracy_scores)
-        })
-
-    for mistral_model in mistral.available_models:
-        llama_wrapper = mistral.Mistral(mistral_model)
-
-        prompt = f"Write the discussion based on the following abstract: {abstract}"
-
-        llm_dis = llama_wrapper.prompt(prompt)
-        llm_model_name = llama_wrapper.model_name
-
-        del llama_wrapper
-        torch.cuda.empty_cache()
-
-        accuracy_scores = []
-        for model_type in compare.available_models:
-            c = compare.TextComparator(model_type)
-            P, R, F1 = c.score(discussion_txt, llm_dis)
-            accuracy_scores.append({
-                "model": c.model_name,
-                "P": P.item(),
-                "R": R.item(),
-                "F1": F1.item()
-            })
-
-        evaluations.append({
-            "model": llm_model_name,
-            "discussion": {
-                "header": "Discussion",
-                "subsections": [
-                    {
-                        "header": "Discussion",
-                        "paragraphs": llm_dis.split("\n\n")
-                    }
-                ]
-            },
-            "accuracy_scores": accuracy_scores,
-            "P_mean": metric.bagged_score(accuracy_scores)
-        })
-
-    cited_paper_ids = re.findall(pattern, discussion_txt)
+    cited_paper_ids = re.findall(utils.pattern, discussion_txt)
     citations = papers["citations"][i]
 
     utils.write_json({

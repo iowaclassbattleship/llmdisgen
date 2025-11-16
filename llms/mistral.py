@@ -12,7 +12,7 @@ available_models = [
     "mistralai/Mistral-7B-Instruct-v0.3"
 ]
 
-class Mistral():
+class MistralLLM():
     def __init__(self, model_name):
         self.model_name = model_name
 
