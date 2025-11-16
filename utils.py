@@ -29,8 +29,10 @@ def write_json(obj):
         json.dump(data, f, indent=2)
 
 
-def log_run(corpus_id, ollama_model, scorer_model):
-    print("Running:")
-    print(f"corpus_id: {corpus_id}")
-    print(f"ollama model: {ollama_model}")
-    print(f"comparison model: {scorer_model}")
+def build_discussion_txt(section):
+    txt = ""
+    for subsection in section["subsections"]:
+        paragraphs = subsection["paragraphs"]
+        if len(paragraphs):
+            txt += "".join(subsection["paragraphs"])
+    return txt

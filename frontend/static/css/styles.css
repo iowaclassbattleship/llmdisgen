@@ -1,0 +1,49 @@
+:root {
+    --page-width: 210mm;
+    --page-height: 297mm;
+    --page-margin: 16mm;
+    --bg: #e6eef8;
+    --paper: #ffffff;
+    --shadow: 0 12px 30px rgba(2, 6, 23, 0.35);
+    --gutter: 20px;
+}
+
+html,
+body {
+    margin: 0;
+}
+
+.paper-view {
+    background: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 3em 0 3em;
+    display: flex;
+    gap: 3em;
+}
+
+.paper-view .paper {
+    max-width: 21cm;
+    /* max-height: 29.7cm; */
+    max-height: 20cm;
+    padding: 2cm;
+    border: 1px #D3D3D3 solid;
+    border-radius: 5px;
+    background: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow-y: scroll;
+    flex: 1;
+}
+
+.paper-links {
+    display: flex;
+    flex-direction: column;
+}
+
+.paper-links .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

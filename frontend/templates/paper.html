@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/css/styles.css">
+    <title>LLM Discussion Benchmark</title>
+</head>
+<body>
+    <section class="paper-view">
+        <div class="paper">
+            <h1>{{ paper.title }}</h1>
+            {% for section in paper.sections %}
+            {% if section.header != "X" %}
+            <h2>{{ section.header }}</h2>
+            {% endif %}
+            {% for subsection in section.subsections %}
+            {% if subsection.header != "X" and subsection.header != section.header %}
+            <h3>{{ subsection.header }}</h3>
+            {% endif %}
+            {% for paragraph in subsection.paragraphs %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+            {% endfor %}
+            {% endfor %}
+        </div>
+    </section>
+
+    <section class="paper-view">
+        <div class="paper">
+            <h2>Discussion</h2>
+            {% for subsection in paper.discussion.subsections %}
+            {% if subsection.header != paper.discussion.header %}
+            <h3>{{ subsection.header }}</h3>
+            {% endif %}
+            {% for paragraph in subsection.paragraphs %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+            {% endfor %}
+        </div>
+        <div class="paper">
+            <h2>Discussion</h2>
+            {% for paragraph in paper.evaluations[0].llm_discussion %}
+            <p>{{ paragraph }}</p>
+            {% endfor %}
+        </div>
+    </section>
+
+    <script src="static/js/main.js"></script>
+</body>
+</html>

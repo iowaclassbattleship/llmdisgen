@@ -11,16 +11,6 @@ level = 1
 
 pattern = r"\{\{(.*?)\}\}"
 
-def build_discussion_txt(sections):
-    txt = ""
-    for section in sections:
-        if section["header"].lower() == "discussion":
-            for subsection in section["subsections"]:
-                paragraphs = subsection["paragraphs"]
-                if len(paragraphs):
-                    txt += "".join(subsection["paragraphs"])
-    return txt
-
 
 ds = load_dataset(f"annamkiepura99/{levels[level]}-diss-gen-combined")
 papers = ds["train"]
@@ -29,7 +19,13 @@ papers = ds["train"]
 for i in tqdm(range(10), desc=f"Processing papers"):
     corpus_id = papers["corpus_id"][i]
     abstract = papers["abstract"][i]
-    discussion_txt = build_discussion_txt(papers["sections"][i])
+    sections = papers["sections"][i]
+
+    discussion_section = {}
+    for i, section in enumerate(sections):
+        if section["header"].lower() == "discussion":
+            discussion_section = sections.pop(i)
+    discussion_txt = utils.build_discussion_txt(discussion_section)
 
     evaluations = []
     for llama_model in llama.available_models:
@@ -44,7 +40,6 @@ for i in tqdm(range(10), desc=f"Processing papers"):
         accuracy_scores = []
         for model_type in compare.available_models:
             c = compare.TextComparator(model_type)
-            utils.log_run(corpus_id, ollama_model_name, c.model_name)
             P, R, F1 = c.score(discussion_txt, llm_dis)
             accuracy_scores.append({
                 "model": c.model_name,
@@ -59,12 +54,17 @@ for i in tqdm(range(10), desc=f"Processing papers"):
             "accuracy_scores": accuracy_scores
         })
 
+    cited_paper_ids = re.findall(pattern, discussion_txt)
+    citations = papers["citations"][i]
+
     utils.write_json({
         "corpus_id": corpus_id,
+        "title": papers["title"][i],
+        "externalids": papers["externalids"][i],
+        "year": papers["year"][i],
         "level": levels[level],
-        "method": "zero-shot",
-        "abstract": abstract,
-        "discussion": discussion_txt,
+        "sections": sections,
+        "discussion": discussion_section,
+        "discussion_txt": discussion_txt,
         "evaluations": evaluations,
-        "cited_paper_ids": re.findall(pattern, discussion_txt)
     })
