@@ -1,4 +1,4 @@
-from transformers import AutoTokenizer, LlamaForCausalLM
+import transformers
 import torch
 
 available_models = [
@@ -9,40 +9,45 @@ available_models = [
 class Llama3LLM:
     def __init__(self, model_name):
         self.model_name = model_name
-        self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = LlamaForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16, device_map="auto")
         self.system_prompt = (
             "You are a scientific research assistant. Always answer as helpfully as possible, "
             "while being safe and unbiased. If a question is unclear or false, clarify or correct it."
             "Write a scientific discussion based on the given abstract with no fluff, just the discussion"
         )
 
+        self.pipeline = transformers.pipeline(
+            "text-generation",
+            model=self.model_name,
+            model_kwargs={
+                "dtype": torch.float8_e4m3fn,
+                "quantization_config": {"load_in_4bit": True},
+                "low_cpu_mem_usage": True,
+            },
+        )
+
     def prompt(self, user_prompt):
-        inputs = self.tokenizer(
-            self.format_prompt(user_prompt),
-            return_tensors="pt",
-            return_attention_mask=True
-        ).to(self.model.device)
+        messages = [
+            { "role": "system", "content": self.system_prompt },
+            { "role": "user", "content": user_prompt }
+        ]
 
-        input_ids = inputs["input_ids"]
+        prompt = self.pipeline.tokenizer.apply_chat_template(
+            messages,
+            tokenize=False,
+            add_generation_prompt=True
+        )
 
-        outputs = self.model.generate(
-            input_ids=input_ids,
-            attention_mask=inputs["attention_mask"],
-            temperature=0.7,
+        terminators = [
+            self.pipeline.tokenizer.eos_token_id,
+            self.pipeline.tokenizer.convert_tokens_to_ids("<|eot_id|>")
+        ]
+        
+        outputs = self.pipeline(
+            prompt,
+            eos_token_id=terminators,
             do_sample=True,
+            temperature=0.6,
+            top_p=0.9,
         )
-
-        new_tokens = outputs[0][input_ids.shape[1]:]
-
-        return self.tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
-    
-    def format_prompt(self, user_prompt):
-        return (
-            "<|begin_of_text|>"
-            "<|start_header_id|>system<|end_header_id|>\n"
-            f"{self.system_prompt}\n"
-            "<|start_header_id|>user<|end_header_id|>\n"
-            f"{user_prompt}\n"
-            "<|start_header_id|>assistant<|end_header_id|>\n"
-        )
+        
+        return outputs[0]["generated_text"][len(prompt):]

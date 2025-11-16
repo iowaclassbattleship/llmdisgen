@@ -39,3 +39,10 @@ def build_discussion_txt(section):
         if len(paragraphs):
             txt += "".join(subsection["paragraphs"])
     return txt
+
+
+def split_discussion(sections):
+    for i, section in enumerate(sections):
+        if section["header"].lower() == "discussion":
+            discussion = sections.pop(i)
+            return sections, discussion

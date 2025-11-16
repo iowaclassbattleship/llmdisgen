@@ -9,7 +9,7 @@ class Llama2LLM:
     def __init__(self, model_name):
         self.model_name = model_name
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
-        self.model = LlamaForCausalLM.from_pretrained(model_name, torch_dtype=torch.float16, device_map="auto")
+        self.model = LlamaForCausalLM.from_pretrained(model_name, dtype=torch.float16, device_map="auto")
         self.system_prompt = (
             "You are a scientific research assistant. Always answer as helpfully as possible, "
             "while being safe and unbiased. If a question is unclear or false, clarify or correct it."
