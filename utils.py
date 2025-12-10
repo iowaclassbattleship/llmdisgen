@@ -1,9 +1,6 @@
 import json
 from pathlib import Path
 
-out = Path("runs")
-out.mkdir(exist_ok=True)
-
 def write_json(path: str, obj):
     if path.exists():
         try:
@@ -40,9 +37,9 @@ def split_discussion(sections):
             return sections, discussion
         
 
-def get_runs():
+def get_runs(path):
     return sorted([
-        f.name.removeprefix("metadata-").removesuffix(".json")
-        for f in out.iterdir()
-        if f.is_file() and f.name.startswith("metadata-") and f.name.endswith(".json")
+        f.name.removesuffix(".json")
+        for f in path.iterdir()
+        if f.is_file() and f.name.endswith(".json")
     ])

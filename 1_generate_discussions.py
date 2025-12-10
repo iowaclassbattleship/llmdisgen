@@ -45,7 +45,7 @@ def generate_dp(llm, excerpt: str, br="\n\n"):
     }
 
 def generate_dp_for_n_papers(n, level):
-    filename = f"{level}-{int(time.time())}.json"
+    filename = f"{int(time.time())}.json"
     path = Path("runs") / level / "raw"
     path.mkdir(exist_ok=True, parents=True)
 
