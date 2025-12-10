@@ -1,11 +1,11 @@
 from transformers import AutoTokenizer, LlamaForCausalLM
 import torch
 
-available_models = [
-    "meta-llama/Llama-2-7b-chat-hf",
-]
-
-class Llama2LLM:
+class Llama2:
+    available_models = [
+        "meta-llama/Llama-2-7b-chat-hf",
+    ]
+    
     def __init__(self, model_name, max_new_tokens=300):
         self.model_name = model_name
         self.tokenizer = AutoTokenizer.from_pretrained(model_name)
@@ -45,3 +45,5 @@ class Llama2LLM:
             f"<</SYS>>\n\n"
             f"{user_prompt} [/INST]"
         )
+
+LLMClass = Llama2

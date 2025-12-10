@@ -17,8 +17,8 @@ class BlockMatch:
         return np.pad(M,padding,mode='constant',constant_values=val)
 
     def metric(self, prediction, reference, m):
-        P = prediction
-        R = reference
+        P = prediction.split("\n\n")
+        R = reference.split("\n\n")
         C = np.zeros(shape=(len(R), len(P)))
 
         for i, r in enumerate(R):

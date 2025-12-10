@@ -4,14 +4,22 @@ from mistral_common.tokens.tokenizers.mistral import MistralTokenizer
 from mistral_common.protocol.instruct.messages import UserMessage
 from mistral_common.protocol.instruct.request import ChatCompletionRequest
 
-available_models = [
-    "mistralai/Mistral-7B-Instruct-v0.2"
-]
-
-class MistralLLM:
+class Mistral:
+    available_models = [
+        "mistralai/Mistral-7B-Instruct-v0.2"
+    ]
     system_prompt = ""
 
-    def __init__(self, model_name, device="cuda"):
+    def __init__(
+            self,
+            model_name,
+            device="cuda",
+            system_prompt=(
+                "You are a scientific research assistant. Always answer as helpfully as possible, "
+                "while being safe and unbiased. If a question is unclear or false, clarify or correct it."
+                "Write a scientific discussion based on the given abstract with no fluff, just the discussion"
+            )
+        ):
         self.device = device
         self.model_name = model_name
         
@@ -24,12 +32,7 @@ class MistralLLM:
             self.model.to("cpu")
 
         self.tokenizer = MistralTokenizer.v1()
-        self.system_prompt = (
-            "You are a scientific research assistant. Always answer as helpfully as possible, "
-            "while being safe and unbiased. If a question is unclear or false, clarify or correct it."
-            "Write a scientific discussion based on the given abstract with no fluff, just the discussion"
-        )
-
+        self.system_prompt = system_prompt
 
     def prompt(self, user_prompt: str, system_prompt: str):
         completion_request = ChatCompletionRequest(
@@ -57,3 +60,5 @@ class MistralLLM:
             f"<</SYS>>\n\n"
             f"{user_prompt} [/INST]"
         )
+    
+LLMClass = Mistral

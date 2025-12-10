@@ -1,12 +1,12 @@
 import transformers
 import torch
 
-available_models = [
-    "meta-llama/Llama-3.2-1B-Instruct",
-    # "meta-llama/Llama-3.2-3B-Instruct"
-]
-
-class Llama3LLM:
+class Llama3:
+    available_models = [
+        "meta-llama/Llama-3.2-1B-Instruct",
+        # "meta-llama/Llama-3.2-3B-Instruct"
+    ]
+    
     def __init__(self, model_name, max_new_tokens=300):
         self.model_name = model_name
         self.system_prompt = (
@@ -51,3 +51,5 @@ class Llama3LLM:
         )
         
         return outputs[0]["generated_text"][len(prompt):]
+    
+LLMClass = Llama3
