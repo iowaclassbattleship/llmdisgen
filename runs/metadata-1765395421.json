@@ -1,0 +1,535 @@
+[
+  {
+    "corpus_id": "10009609",
+    "title": "The impact of cancer research: how publications influence UK cancer clinical guidelines",
+    "externalids": {
+      "ACL": "",
+      "ArXiv": "",
+      "CorpusId": "10009609",
+      "DBLP": "",
+      "DOI": "10.1038/sj.bjc.6604405",
+      "MAG": "2034321615",
+      "PubMed": "18521087",
+      "PubMedCentral": "2441955"
+    },
+    "year": "2008",
+    "level": "section",
+    "sections": [
+      {
+        "header": "X",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "X",
+            "paragraphs": [
+              "It is increasingly being recognised that the quantitative evaluation of biomedical research cannot depend only on the counting of citations in the serial literature. They may measure academic influence, but the funders of such research are usually more concerned to see if it has had a practical benefit, especially to patients. One of the ways in which research can influence practice is through its contribution to the evidence base supporting clinical guidelines {{12990900}}{{not_in_s2orc}}{{not_in_s2orc}}{{4992451}}{{42067051}}. These are increasingly being used across many countries in the routine clinical care of cancer patients. Most of them are published by national professional medical associations (e.g., {{6130785}}{{45033792}}{{30394593}}, but some are developed by governmental bodies (e.g., {{20079372}}.",
+              "It is normal for such guidelines to have lists of references that comprise their evidence base. However, the quality of the evidence is sometimes doubtful {{3065283}}{{19332737}}{{21492156}}, and schemes have been devised to grade the quality of the clinical trials, which form a large part of the evidence base (e.g., {{22091521}}{{39213437}}{{not_in_s2orc}}{{8284450}}{{22721728}}. Even when the guidelines have been published, they are sometimes criticised as inadequate {{not_in_s2orc}}{{not_in_s2orc}}{{40677359}}, insufficient {{38413898}} or they may become outdated {{23806012}}. There is also the question of whether the guidelines will actually be followed in clinical practice {{42615096}}{{9589309}}{{25848593}}{{1814188}}. The breadth of oncology practice (both patients and treatment modalities), the rapid evolution of new treatments and the often diverse interpretation of 'evidence' by health-care professionals mean many patients are treated with hospitalspecific protocols rather than national guidelines. This situation is particularly acute in certain site-specific cancers, for example, lung {{15135204}}.",
+              "A further cause of disagreement is the question of cost: a new drug may be clinically effective and better than existing drugs or a placebo, but so costly that an equivalent or greater health gain may be achievable by other means, for example, better screening to detect the disease at an early stage. This can cause considerable dissension and lead to lawsuits to make the drug available for particularly articulate patients {{39207487}}, or from companies and patients' advocacy groups, which sometimes receive their subsidies {{26204397}}. Lobbying of the UK National Institute for Health and Clinical Excellence (NICE) by pharmaceutical firms is now rife {{27084170}}, and a US politician has adopted bully-boy tactics in his efforts to subvert evidence-based medicine {{72875227}}. The cost basis of NICE's recommendations has also been criticised: the figure of d30 000 (h40 000, $60 000) per quality-adjusted life year appears not to have a scientific basis or to take account of the social costs of disease {{47554094}}.",
+              "Despite all these criticisms, clinical guidelines are nevertheless gaining increasing recognition as the way forward. It does, therefore, seem worthwhile to treat them as an outcome indicator, even though a partial one, of the clinical impact of the research they cite. Several studies have analysed the evidence base of selected clinical guidelines {{154559501}}{{10747489}}{{not_in_s2orc}}. They have established that the papers cited are very clinical (when positioned on a scale from clinical observation to basic research); that the UK guidelines overcite the UK research papers; and that the cited papers are quite recent, with a temporal distribution comparable to that of the papers cited on biomedical research papers. Research from other European countries seems to be cited about as much as would be expected on the UK clinical guidelines, but that from Japan and from most developing countries is almost totally ignored.",
+              "In this study, we examined three sets of the UK guidelines on a single subject, cancer, and the references on 43 different guidelines, almost all concerned with treatment rather than with prevention. The bibliographic details of the references were assembled in a file and compared with those of cancer research publications in the three peak years {{not_in_s2orc}}. The objective was to answer several policy-related questions:",
+              "how do countries' relative presences among the cited references compare with their presences in cancer research? how many of the cited references are actually classifiable as cancer research? what is the research level (RL) distribution of these cited references compared with that of cancer research papers? are the cited references published in journals of high citation impact? how does the funding of the cited papers compare with that of cancer research overall?",
+              "The latter two questions need to take account of the finding that the references on clinical guidelines are much more clinical than other biomedical research."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "MATERIALS AND METHODS",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "MATERIALS AND METHODS",
+            "paragraphs": []
+          },
+          {
+            "header": "UK cancer guidelines and the analysis of their references",
+            "paragraphs": [
+              "There are three sets of clinical guidelines commonly used in the United Kingdom:",
+              "Published by the British Medical Association in Clinical Evidence. This takes the form of a book that is revised and extended every 6 months, but is also accessible on the Web (to people in the United Kingdom); Developed by the National Institute for Health and Clinical Excellence (NICE) for the National Health Service (NHS) in England and Wales, based on Health Technology Assessments (HTAs). Most of these last are available on the Web, but not all (although it is intended by NICE that they should be). They were used in the present study, because the references on the actual guidelines were usually not visible; Developed by the Scottish Intercollegiate Guidelines Network (SIGN) for use by the NHS in Scotland. All these are freely available on the Web Only a minority of these guidelines and HTAs are applicable to cancer. The numbers are, respectively, 15, 18 and 10. Each of these 43 documents has a set of references, most of which are articles in peer-reviewed journals. A total of 3217 references were found and their details downloaded to file. Their addresses were parsed by means of a special macro so that the integer and fractional counts of each country were listed for each paper (a paper with two addresses in the United Kingdom and one in France would count unity for each on an integer count basis, but 0.67 for the United Kingdom and 0.33 for France using fractional counting). The RL of each paper was determined using the new system developed by {{7942963}}, in which each journal is assigned an RL based on the presence of 'clinical' and 'basic' words in the titles of papers it has published on a scale from 1 \u00bc clinical to 4 \u00bc basic. In addition, the RL of groups of individual cited papers could be calculated with reference to their individual titles, and the presence of 'clinical' or 'basic' words within them. The potential citation impact (PCI) of each cited paper was also determined with reference to a file of Journal Expected Citation Rates provided by Thomson Scientific (London, UK). This gave the mean number of citations for papers published in a journal in a given year and cited in the year of publication and the 4 subsequent years.",
+              "Funding data for virtually all the UK papers (790 out of 796) were obtained from inspection of the acknowledgements to their funding sources in the British Library. Many of the papers had previously been looked up for the Research Outputs Database {{not_in_s2orc}} or for other projects, and only 151 needed to be sought anew. The main comparator used to normalise the results of the analysis of the cited references was a file of world oncology research papers {{27557788}}. For the years 1999 -2001, there were over 100 000 such papers, and their characteristics were used to see how the cited references compared with them, with due account being taken of the differences expected in mean RLs (the cited references being more clinical than oncology papers overall). Of the references classed as 'articles' or 'reviews', 88% were within the subfield of oncology as defined by Cancer Research UK {{27557788}}. This percentage remained sensibly constant over the period, 1994 -2004. However, the references were in much more clinical journals than world oncology papers for the year 2000, the peak year for the numbers of references, see Figure 2. This result was obtained earlier {{10747489}}{{not_in_s2orc}} but with a much simplified (and less accurate) method of categorisation of journals by RL. Of the 3217 papers, 2747 titles (86%) had either a 'clinical' or a 'basic' keyword, and the mean RL was 1.07, which is very close to the lower end of the scale (RL \u00bc 1.0), and much below the mean RL based on all the papers in the individual journals (RL \u00bc 1.43). This shows that the references were being published in journals that were relatively more basic than the papers themselves, and reinforces the message that the papers were, therefore, almost entirely clinical observation."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "RESULTS",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "RESULTS",
+            "paragraphs": []
+          },
+          {
+            "header": "Time and research level distributions",
+            "paragraphs": []
+          },
+          {
+            "header": "Geographical analysis",
+            "paragraphs": [
+              "The presence of 20 leading countries in oncology research for 2000 and in the references from the clinical guidelines is shown in Table 1, where the data have been shown on a fractional count basis. Figure 3 presents the ratio between a country's presence in the guideline references and its presence in oncology research, that is, the values shown in the last column of Table 1. As would be expected, the UK oncology research is cited more than expected from its presence in world oncology by a factor of almost 3, but several other European countries' work is also relatively overcited, notably that of Denmark, Ireland and Sweden. Although Italy, which is strong in clinical trials, shows to advantage, Germany is relatively much undercited compared with its presence in cancer research in recent years. Japanese work is almost ignored, but it is likely that the Science Citation Index, where most of the references were found, does not cover Japanese clinical journals. This, however, is only a small part of the reason for the paucity of Japanese references.",
+              "Within the United Kingdom, certain cities showed relatively to advantage in terms of their percentage presence within the fractional UK total of 605 papers cited by the guidelines, compared with that in the 2332 UK oncology papers published in 2000. The analysis is conveniently carried out on the basis of postcode area, the first one or two letters of the UK postcode system, for example, B \u00bc Birmingham, CB \u00bc Cambridge. Figure 4 shows a scatter plot for the 26 leading areas (out of 124), accounting for about two-thirds of both totals. The spots above the diagonal line represent areas that are more frequently cited than expected, and vice versa. Among the former, EH \u00bc Edinburgh and G \u00bc Glasgow are prominent, in part because the SIGN guidelines overcite Scottish research papers, together with SM \u00bc Sutton and Cheam (the location of the Institute of Cancer Research) and OX \u00bc Oxford.",
+              "Table1 and Figure 3 show overall values, but an analysis can also be made of subsets of papers for groups of 2 or 3 years, chosen so that the four periods each have about 20% of the total cited references, see Table 2. For nearly all the countries, there are close similarities between the time trends, which suggest that the guidelines are rather consistent in the geography of their citing behaviour. Thus, Australia, Canada, Sweden, the United Kingdom  Figure 3.  Table 1. and the United States have all shown a reducing presence in oncology research, and a reducing presence in the guideline references; Germany, on the other hand, has increased its presence in both (but is still much undercited). France and Japan increased their presence in both sets of papers, but it went down slightly during the latest period."
+            ]
+          },
+          {
+            "header": "Journal citation impact scores",
+            "paragraphs": [
+              "The references cited tend to be published in high-impact journals. Table 3 shows that in each RL grouping, the guideline references are published in journals with a higher mean citation score (the PCI, of the papers) than world oncology papers from the year 2000.",
+              "The overall mean is higher, too, at 19.9 cites in 5 years compared with 13.4. The 'superior performance' of the guideline references occurs because a large number of them are published in the highimpact general journals, The Lancet (138 of them), New England Journal of Medicine (133), British Medical Journal (78) and Journal of the American Medical Association (50)."
+            ]
+          },
+          {
+            "header": "The funding of the UK cited references",
+            "paragraphs": [
+              "Of the 796 UK papers, all but 6 were found and inspected to determine their funding sources. These were taken both from the addresses (as for some organisations this is an indication of funding) and from the formal acknowledgements. For the purposes of this analysis, funding sources were grouped into five main sectors:",
+              "UK government, both departments and agencies; UK private nonprofit, including collecting charities, endowed foundations, hospital trustees, mixed (academic) and other nonprofit. A subset of this sector is Cancer Research UK, and its two predecessors, the Cancer Research Campaign and the Imperial Cancer Research Fund; pharmaceutical industry, both domestic and foreign (it is often difficult to distinguish as some subsidiaries have considerable autonomy in the use of research funds), and including biotech companies; nonpharma industry; no funding acknowledged.",
+              "The remaining funding organisations are foreign governmental and private nonprofit sources, and international organisations,    {{not_in_s2orc}}   Impact of cancer research G Lewison and R Sullivan such as the European Commission (EC) and the World Health Organization (WHO). The funding sources vary with the RL of the papers: the more clinical papers have fewer sources and the more basic papers have more. Table 4 shows the analysis for the UK papers in oncology in {{not_in_s2orc}} Table 5 shows the results for the UK papers cited on cancer clinical guidelines. For each RL group, an estimate has been made of the funding that would have been expected had they been typical of the UK cancer research, and in the last row there are given the ratios of observed-to-expected numbers of papers (integer counts) on the assumption that the cancer clinical guideline citations are typical of oncology, but with due allowance for the different RL distributions.",
+              "For example, the UK oncology papers in the first group (RL from 1.0 to 1.5) have the UK government funding on 11.1% of them, so it might be expected that there would be 0.111 \u00c2 544 \u00bc 60.4 government-funded papers among the corre-sponding group cited on cancer clinical guidelines. In fact, there were 149 such papers, showing that many more are government funded than might have been expected. When the totals for each of the six groups are added, it can be seen that the observed number of the UK government-funded papers is almost twice the predicted number. The observed total is still higher ( \u00c2 2.5) for the pharma industry-funded papers, and a little lower for Cancer Research UK papers ( \u00c2 1.8), for nonpharma industry papers ( \u00c2 1.6) and the UK private nonprofit papers ( \u00c2 1.3). Not surprisingly, there are many fewer 'unfunded' papers, the ratio of observed-to-expected numbers of papers being only just over half."
+            ]
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "DISCUSSION",
+      "papers_cited_discussion": [
+        "9662045"
+      ],
+      "subsections": [
+        {
+          "header": "DISCUSSION",
+          "paragraphs": [
+            "The UK cancer clinical guidelines are sufficient in number and variety to provide a fair window on the impact of cancer research on clinical practice, not only in the United Kingdom, but in other leading countries, particularly in western Europe. We have seen that almost all the references (88%) are to papers that are within the subfield of cancer research. Because about one-third of the research supported by Cancer Research UK, in common with that of other medical research charities working in a particular disease area, is out with this subfield (most of this would comprise basic biology), it follows that little of this work can be expected to influence clinical guidelines -hardly a surprising conclusion, but nevertheless one that is worth stating.",
+            "Many of the guideline references are to papers in the US and the UK general medical journals -The Journal of the American Medical Association, New England Journal Medical, British Medical Journal and The Lancet. This is one reason, but by no means the only one, for the guideline references as a whole to be in high impact, and therefore well known, journals. It appears that if researchers want their work, particularly clinical trials, to be part of the evidence base for clinical guidelines, then it is desirable for them to publish in highly cited journals. Disproportionately, many of these papers will have been funded by government or the pharmaceutical industry, with charities also playing an enhanced role compared with cancer research overall. This highlights one pitfall of national guidelines in the context of research impact assessments; many important, high quality clinical trials -either because they are early phase or negative -will not make it into guidelines. The impact of research on national clinical guidelines is just one parameter that can describe the utility of health research {{9662045}} Table 4."
+          ]
+        },
+        {
+          "header": "Impact of cancer research G Lewison and R Sullivan",
+          "paragraphs": [
+            "When account is taken of the clinical nature of the work cited on guidelines, the big increase in the percentage of the papers that acknowledge funding -whether from government, charities or industry -is striking (Table 5). Many (37%) of these clinical papers with RLs greater than 1.5 are reports of clinical trials, and 85% of the latter acknowledge funding compared with 71% of the others. Cancer Research UK plays the biggest role, and supports over one-third of these trials, more even than the pharmaceutical industry as a whole, or the UK government.",
+            "The geographical analysis of the cited papers reveals that the UK papers have a threefold higher presence among them than in world cancer research. In part, this reflects the differences in cancer management between countries. Such overcitation also occurs on other scientific papers, so it is hardly surprising that it was found here. It might be expected that the UK guidelines, which aim to show which treatments are cost-effective, would reflect in particular the different financial basis of health-care provision in this country compared with that elsewhere, and so papers concerned with economics and costs would be even more overcited if they were from the United Kingdom. In fact, this does occur, but to a very minor extent (22% from the United Kingdom compared with 19% overall; the difference not being significant).",
+            "The distribution of the cited papers within the United Kingdom differs from what might have been expected based purely on overall numbers and on the extent to which the cities carry out clinical observation rather than basic research. The simple comparison of Figure 4 needs also to take account of the mean RL of papers from each area, and, when this is done ( Figure 5), a different pattern emerges, with EH \u00bc Edinburgh, OX \u00bc Oxford and CB \u00bc Cambridge forming an axis of excellence (on this indicator) and other areas' output being less cited on guidelines. The distance of the spots from this axis gives one indicator of the performance of the different centres, an imperfect one to be sure, as there will be other confounding factors not considered here, but nevertheless a useful complement to the traditional bibliometric criterion based purely on citation counts in the scientific literature.",
+            "There are in the database enough cited papers from a few other countries to enable a similar evaluation to be carried out for them. However, these data are inevitably skewed by being viewed through the prism of the UK clinical recommendations. It would be highly desirable to complement them with the results of similar exercises carried out in other countries with extensive sets of clinical guidelines, or at a European or international level. Then, provided the data were collected in exactly the same way, they could be pooled and a more international perspective on the utility of cancer research would emerge that research evaluators could employ. Such an activity could appropriately be coordinated by the European Cancer Managers' Research Forum, with all data contributors having also the right to gain access to the data provided by workers in other countries."
+          ]
+        },
+        {
+          "header": "",
+          "paragraphs": []
+        }
+      ]
+    },
+    "discussion_txt": "The UK cancer clinical guidelines are sufficient in number and variety to provide a fair window on the impact of cancer research on clinical practice, not only in the United Kingdom, but in other leading countries, particularly in western Europe. We have seen that almost all the references (88%) are to papers that are within the subfield of cancer research. Because about one-third of the research supported by Cancer Research UK, in common with that of other medical research charities working in a particular disease area, is out with this subfield (most of this would comprise basic biology), it follows that little of this work can be expected to influence clinical guidelines -hardly a surprising conclusion, but nevertheless one that is worth stating.\n\nMany of the guideline references are to papers in the US and the UK general medical journals -The Journal of the American Medical Association, New England Journal Medical, British Medical Journal and The Lancet. This is one reason, but by no means the only one, for the guideline references as a whole to be in high impact, and therefore well known, journals. It appears that if researchers want their work, particularly clinical trials, to be part of the evidence base for clinical guidelines, then it is desirable for them to publish in highly cited journals. Disproportionately, many of these papers will have been funded by government or the pharmaceutical industry, with charities also playing an enhanced role compared with cancer research overall. This highlights one pitfall of national guidelines in the context of research impact assessments; many important, high quality clinical trials -either because they are early phase or negative -will not make it into guidelines. The impact of research on national clinical guidelines is just one parameter that can describe the utility of health research {{9662045}} Table 4.When account is taken of the clinical nature of the work cited on guidelines, the big increase in the percentage of the papers that acknowledge funding -whether from government, charities or industry -is striking (Table 5). Many (37%) of these clinical papers with RLs greater than 1.5 are reports of clinical trials, and 85% of the latter acknowledge funding compared with 71% of the others. Cancer Research UK plays the biggest role, and supports over one-third of these trials, more even than the pharmaceutical industry as a whole, or the UK government.\n\nThe geographical analysis of the cited papers reveals that the UK papers have a threefold higher presence among them than in world cancer research. In part, this reflects the differences in cancer management between countries. Such overcitation also occurs on other scientific papers, so it is hardly surprising that it was found here. It might be expected that the UK guidelines, which aim to show which treatments are cost-effective, would reflect in particular the different financial basis of health-care provision in this country compared with that elsewhere, and so papers concerned with economics and costs would be even more overcited if they were from the United Kingdom. In fact, this does occur, but to a very minor extent (22% from the United Kingdom compared with 19% overall; the difference not being significant).\n\nThe distribution of the cited papers within the United Kingdom differs from what might have been expected based purely on overall numbers and on the extent to which the cities carry out clinical observation rather than basic research. The simple comparison of Figure 4 needs also to take account of the mean RL of papers from each area, and, when this is done ( Figure 5), a different pattern emerges, with EH \u00bc Edinburgh, OX \u00bc Oxford and CB \u00bc Cambridge forming an axis of excellence (on this indicator) and other areas' output being less cited on guidelines. The distance of the spots from this axis gives one indicator of the performance of the different centres, an imperfect one to be sure, as there will be other confounding factors not considered here, but nevertheless a useful complement to the traditional bibliometric criterion based purely on citation counts in the scientific literature.\n\nThere are in the database enough cited papers from a few other countries to enable a similar evaluation to be carried out for them. However, these data are inevitably skewed by being viewed through the prism of the UK clinical recommendations. It would be highly desirable to complement them with the results of similar exercises carried out in other countries with extensive sets of clinical guidelines, or at a European or international level. Then, provided the data were collected in exactly the same way, they could be pooled and a more international perspective on the utility of cancer research would emerge that research evaluators could employ. Such an activity could appropriately be coordinated by the European Cancer Managers' Research Forum, with all data contributors having also the right to gain access to the data provided by workers in other countries.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "As a scientific research assistant, I must first commend the authors of this abstract for their comprehensive analysis of biomedical research impact assessment in the field of cancer. The study provides valuable insights into the geographical distribution of cancer research and its influence on clinical guidelines.",
+                "The authors note that there has been a substantial increase in interest in biomedical research impact assessment over the past 5 years, and this trend is particularly evident in the field of cancer research. They identify 43 UK guidelines and associated Health Technology Assessments published across three series, each with an evidence base in the form of references, many of which are papers in peer-reviewed journals.",
+                "The authors then analyze the geographical provenance and type of research for these guidelines, comparing them to overall oncology research published in the peak years of guideline references (1999-2001). They find that the UK papers were cited nearly three times as frequently as would have been expected from their presence in world oncology research (6.5%). This suggests that UK-based researchers are making a significant contribution to the scientific base of cancer guidelines.",
+                "Interestingly, the authors also find that Edinburgh and Glasgow stood out for their unexpectedly high contributions to the guidelines' scientific base. This could suggest that these cities have a particularly strong research culture or infrastructure,"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "method": "BERTScore",
+            "result": 0.5368296205997467
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "**Discussion:**",
+                "The abstract highlights an increasing interest in biomedical research impact assessment in the UK over the past five years. To investigate this trend, we can analyze the UK guidelines and Health Technology Assessments (HTAs) published between 2006 and October 2006. This period is significant as it coincides with the peak years of guideline publication.",
+                "A closer examination of the guidelines reveals that they can be categorized into two groups: those with a strong evidence base and those with a weaker one. The evidence base for these guidelines is primarily composed of peer-reviewed papers, which have been identified and analyzed to assess their geographical provenance and type of research.",
+                "The UK papers published during this period were found to be cited nearly three times as frequently as would have been expected, indicating a significant impact on clinical guidelines. However, the citation rates differ between the UK cancer research papers and those published in world oncology research.",
+                "The UK papers were found to have a higher citation rate compared to their counterparts in world oncology research, suggesting that the UK guidelines may be more influential than initially thought. Furthermore, the citation rates reveal that UK cancer research papers were cited more frequently than expected, which may indicate a high level of research support from various sectors.",
+                "The findings also highlight the importance of funding"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "method": "BERTScore",
+            "result": 0.40634092688560486
+          }
+        ]
+      },
+      {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "[INST] [INST] <<SYS>>\nYou are a scientific research assistant. Always answer as helpfully as possible, while being safe and unbiased. If a question is unclear or false, clarify or correct it.Write a scientific discussion based on the given abstract with no fluff, just the discussion\n<</SYS>>",
+                "Write the discussion based on the following abstract: There has been a substantially increased interest in biomedical research impact assessment over the past 5 years. This can be studied by a number of methods, but its influence on clinical guidelines must rank as one of the most important. In cancer, there are 43 UK guidelines (and associated Health Technology Assessments) published (up to October 2006) across three series, each of which has an evidence base in the form of references, many of which are papers in peer-reviewed journals. These have all been identified and analysed to determine their geographical provenance and type of research, in comparison with overall oncology research published in the peak years of guideline references (1999\u20132001). The UK papers were cited nearly three times as frequently as would have been expected from their presence in world oncology research (6.5%). Within the United Kingdom, Edinburgh and Glasgow stood out for their unexpectedly high contributions to the guidelines' scientific base. The cited papers from the United Kingdom acknowledged much more explicit funding from all sectors than did the UK cancer research papers at the same research level. [/INST] [/INST] The abstract describes a study examining the geographical provenance and type of research contributing to biomedical guidelines, specifically in cancer, within the United Kingdom (UK). Between 1999 and 2001, a total of 43 UK guidelines were published, along with associated Health Technology Assessments. The authors identified and analyzed these guidelines' evidence bases to compare with overall oncology research published during those peak years.",
+                "The UK research papers were cited nearly three times more frequently in these guidelines than would have been expected based on their presence in global oncology research (6.5%). Two cities, Edinburgh and Glasgow, had unexpectedly high contributions to the guidelines' scientific base. Furthermore, the cited UK papers acknowledged more explicit funding from various sectors compared to UK cancer research papers at the same level.",
+                "These findings suggest that UK research, particularly from Edinburgh and Glasgow, has a disproportionate influence on cancer guidelines. The reasons behind this higher influence could be attributed to several factors, including the quality and impact of UK cancer research, funding availability, or other contextual factors that may be unique to these cities.",
+                "The study's results highlight the importance of understanding the research underpinning clinical guidelines"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "method": "BERTScore",
+            "result": 0.5135811686515808
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "corpus_id": "100153030",
+    "title": "Revisiting the O(3) Non\u2010linear Sigma Model and Its Pohlmeyer Reduction",
+    "externalids": {
+      "ACL": "",
+      "ArXiv": "1612.03840",
+      "CorpusId": "100153030",
+      "DBLP": "",
+      "DOI": "10.1002/prop.201700067",
+      "MAG": "2950529231",
+      "PubMed": "",
+      "PubMedCentral": ""
+    },
+    "year": "2016",
+    "level": "section",
+    "sections": [
+      {
+        "header": "Introduction",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Introduction",
+            "paragraphs": [
+              "Meron solutions of two-dimensional non-linear sigma models {{not_in_s2orc}} are interesting singular solutions that are characterized by topological charge equal to 1/2 and logarithmically divergent action. Instanton solutions in this class of models can be understood as being composed by two merons. These have been studied especially in the context of the relation of two-dimensional sigma models to four-dimensional Yang-Mills theories {{121804459}}, (for a review on the subject see {{123579404}} and the references therein), which are also characterized by such solutions which dominate the path integral at strong coupling providing a qualitative picture for the confined phase of these theories {{10443315}}.",
+              "Elliptic solutions that interpolate between instanton and meron solutions have also been discovered {{not_in_s2orc}}. These solutions can be understood as the intermediate stages of the dissociation of meron pairs, supporting the relation between meron pairs and instantons.",
+              "There is an alternative approach to study non-linear sigma models in symmetric spaces, the so called Pohlmeyer reduction {{123165375}}{{123761193}}{{119534683}}{{not_in_s2orc}}{{not_in_s2orc}}{{123345148}}{{not_in_s2orc}}. The critical element of this approach is a non-local coordinate transformation that manifestly satisfies the Virasoro constraints, thus leaving only the physical degrees of freedom. In the case of the O (3) model, this method leads to the relation of the sigma model to the sine-Gordon equation {{123165375}}, while for higher dimensional symmetric spaces one results in multi-component generalizations of the latter.",
+              "Whether the reduced theory can be obtained from a local action is a non-trivial question in this approach, since the degrees of freedom of the reduced theory are connected to the original ones in a non-local way. It turns out that the reduced theory can be considered as a gauged WZW model with an integrable potential in a specific gauge {{119380056}}{{18830993}}{{18368480}}, allowing a systematic method to find the Lagrangian of the reduced theory.",
+              "The reduced theory has an integrable structure, allowing the construction of interesting solitonic solutions. However, the construction of the corresponding solution in the original sigma model is non-trivial due to the non-trivial relation between the original and reduced degrees of freedom. Such constructions have been of particular interest in the context of AdS/CFT correspondence in which case the non-linear sigma model describes the dynamics of strings propagating in AdS spaces {{2450039}}{{118514287}}{{2284875}}{{16004701}}{{not_in_s2orc}}.",
+              "Since several aspects of the relation between the sigma model and the reduced integrable theory have not been understood yet, mapping the solutions of the reduced theories to instanton, meron and elliptic solutions or the original sigma model may provide interesting insights to the properties of Pohlmeyer reduction.",
+              "The structure of this paper is as following: In section 2 we review basic facts of the O (3) non-linear sigma model. In section 3 we review the instanton, meron and elliptic solutions of the model. In section 4 we study the Pohlmeyer reduction of the Euclidean O (3) model resulting in the sinh-Gordon equation. In section 5, we study the mapping between the solutions of the sigma model in the original formulation, as reviewed in section 2, and solutions of the sinh-Gordon equation. Finally, in section 6 we discuss our results. There is also en appendix with properties of Jacobi elliptic functions that are used throughout the text."
+            ]
+          },
+          {
+            "header": "The Euclidean O(3) Non-linear Sigma Model",
+            "paragraphs": []
+          },
+          {
+            "header": "The Model",
+            "paragraphs": [
+              "The Euclidean O(3) non-linear sigma model describes the dynamics of a three component vector field X i (\u03c3 0 , \u03c3 1 ) with unit norm. Its action is given by",
+              "Index i takes the values 1, 2, 3, while index m takes the values 0, 1 and is contracted with the Euclidean metric \u03b4 mn . We first introduce the complex coordinate z,",
+              "Then, the action of the Euclidean O(3) model is written as",
+              "The constraint can be easily satisfied introducing angular field variables \u0398 and \u03a6 as",
+              "Then, the action is written as",
+              "Finally, we can define the \"stereographic projection\" complex field variable W as,",
+              "and the action is written as",
+              "(2.9)",
+              "Any field configuration describes a mapping from the complex plane to the sphere S 2 . Any finite action configuration must have a unique limit as the magnitude of the complex number z tends to infinity. In such cases, the complex plane can be compactified to the sphere S 2 and the finite action field configurations are mappings from S 2 to S 2 , thus, they are classified by the homotopy classes of these mappings, which are trivially the elements of the group of integers Z. One can define the topological number density as the Jacobian of the mapping",
+              "(2.10)"
+            ]
+          },
+          {
+            "header": "The Equations of Motion and the Stress-energy Tensor",
+            "paragraphs": [
+              "It will turn out that all the formulations of the Euclidean O(3) non-linear sigma model presented in section 2.1, given by equations (2.3), (2.7) and (2.9) will be useful for different points of view of the model solutions. For this reason we will derive the equations of motion and the stress-energy tensor in all these formulations."
+            ]
+          },
+          {
+            "header": "Scalar Fields Triplet Formulation",
+            "paragraphs": [
+              "Starting from action (2.3), the equations of motion for the fields X m are",
+              "while the equation of motion for the Lagrange multiplier \u03bb is the constraint equation",
+              "Acting with \u2202\u2202 on the constraint equation we get",
+              "The latter, using both equations of motion for X i and the constraint, can be written as",
+              "implying that we can write down the equations of motion for the fields X i decoupled from the Lagrange multiplier as",
+              "We can also calculate the stress-energy tensor and find it equal to",
+              "The stress-energy tensor in the angular field variables formulation equals"
+            ]
+          },
+          {
+            "header": "Stereographic Complex Field Formulation",
+            "paragraphs": [
+              "The equations of motion derived from action (2.9) are",
+              "The stress-energy tensor equals",
+              "As expected, T zz vanishes identically as a result of conformal symmetry in all three formulations."
+            ]
+          },
+          {
+            "header": "Solutions of the O(3) Non-linear Sigma Model",
+            "paragraphs": [
+              "The O(3) non-linear Sigma Model is known to have several interesting solutions. We will distinguish three classes of solutions: solutions of integer topological charge, i.e. instantons, solutions of half-integer topological charge, i.e. merons and solutions that interpolate between merons and instantons. For the analysis in this section, we will use the formulation of the sigma model in terms of the complex field variable W ."
+            ]
+          },
+          {
+            "header": "Instantons",
+            "paragraphs": [
+              "Clearly, any holomorphic function W or antiholomorphic functionW",
+              "is a solution of the equations of motion (2.24). If one wants to restrict to solutions that are characterized by finite action, i.e. solutions that become single valued at infinity, the general solution has to be written as product of factors of the form z\u2212a \u2212 z\u2212a + , for instantons and as product of factors of the formz \u2212a \u2212 z\u2212a + , for antiinstantons {{118103020}},",
+              "It is easy to show that upon substitution of (3.3) and {{not_in_s2orc}} to the expression for the topological charge (2.10), we find",
+              "Studying the form of the action for the solutions (3.3) and (3.4) and having found the corresponding topological charges, it is natural to interpret these solutions as Ninstanton or N -antiinstanton solutions respectively, localized at positions 1 2 a + i + a \u2212 i . Instantons and antiinstantons are the only finite action solutions of the sigma model {{121034572}}. Further details are beyond the scope of this work.",
+              "Equations (2.25) and (2.26) imply that the instanton and anti-instanton solutions are characterized by vanishing stress-energy tensor."
+            ]
+          },
+          {
+            "header": "Merons",
+            "paragraphs": [
+              "Meron solutions are solutions characterized by vanishing topological charge except for singular points. Since the topological charge density is simply the Jacobian of the mapping defined by the fields X i , merons correspond to degenerate solutions that map the complex plane to one-dimensional submanifolds of the sphere. Demanding the above, it turns out that the general meron solution of equations (2.24) is of the form",
+              "where f (z) is an arbitrary meromorphic function of z. Furthermore, the demand that the solution is single valued at infinity results in a specific selection of function f (z),",
+              "which corresponds to a 2N meron configuration, with merons localized at a \u2212 i and a + i . For more details on merons, the reader is encouraged to read {{not_in_s2orc}}.",
+              "Substituting (3.9) to (2.25) and (2.26), it is simple to find that the stress-energy tensor elements corresponding to the solution (3.9) are",
+              "(3.12)"
+            ]
+          },
+          {
+            "header": "Elliptic Solutions",
+            "paragraphs": [
+              "Although, the instanton and meron solutions are both infinite families of solutions, many more solutions have been neglected due to the demand of localized topological charge. In this section, we will abandon this demand, and following {{not_in_s2orc}}, we will find solutions interpolating between the single meron solution W = z/z and the single instanton solution W = z. To do so, we substitute in equations (2.24) the ansatz",
+              "It is a matter of simple algebra to find that substituting (3.13) in equations (2.9), (2.10), (2.25) and (2.26), yields",
+              "and",
+              "Equation {{not_in_s2orc}} implies that the unspecified function \u03c8 (t) obeys the equation",
+              "which is the one-dimensional sine-Gordon equation or in other words the equation of motion of the pendulum with time having been substituted with the spacial variable t and potential equal to V = cos \u03c8 \u2212 1. {{not_in_s2orc}} Thus, this effective one-dimensional problem has a stable equilibrium that lies at \u03c8 = \u03c0 and an unstable one at \u03c8 = 0. It has to be pointed out that this one-dimensional sine-Gordon has nothing to do with the sine-Gordon that occurs after the Pohlmeyer reduction 1 . Unlike the connection between the NLSM degrees of freedom and the Pohlmeyer reduced field, which is nonlocal, as we will see in section 4, in this special case \u03c8 is locally connected to the degrees of freedom of the NLSM through {{not_in_s2orc}}. This kind of mapping of the O(3) NLSM to the sine-Gordon equation is a property of the particular model only and it greatly facilitates the study of its elliptic solutions.",
+              "Simple solutions of this effective problem can give us an idea about how the general solution of this problem interpolates between the single meron and single instanton solutions. The unstable vacuum solution \u03c8 = 0 corresponds to the trivial solution W = 0. The kink solution \u03c8 = 4tan \u22121 e t = 4tan \u22121 |z| corresponds to the one-instanton solution W = z. Finally the stable vacuum solution \u03c8 = \u03c0 corresponds to the onemeron solution W = z/z. Thus, the general solution to be found should have the limits of the stable vacuum solution and the kink solution.",
+              "It is a direct consequence of the equation of motion (3.19) that",
+              "In the language of the pendulum the above would be simply energy conservation. We can categorize the solutions in the following classes",
+              "The integral (3.21) of the equations of motion, allows the expression of the general solution in terms of the Jacobi elliptic functions (see also {{14507301}}). Several useful definitions and properties of Jacobi elliptic functions are summarized in appendix A. If one defines \u03c8 = 2\u03a8 + \u03c0, equation (3.21) is written as",
+              "Assuming an initial condition of the form \u03c8 (t 0 ) = \u03c0 (or \u03a8 (t 0 ) = 0), the above expression can be integrated using the definition of the incomplete elliptic integral of the first kind (A.1)",
+              "where F (x; k) is the incomplete elliptic integral of the first kind with modulus k and am (x; k) is its inverse function, namely the amplitude of Jacobi elliptic functions. It is a matter of simple algebra to find that",
+              "As physically expected from the pendulum mechanical analog of the problem, the above solutions are periodic for E < 0, and quasi-periodic for E > 0, thus the indices in expressions (3.25) and {{not_in_s2orc}}. Periodic properties of Jacobi elliptic functions (A.17) allow the specification of the corresponding periods,",
+              "where K (x) is the complete elliptic integral of the first kind. Property (A.11) of Jacobi elliptic functions implies that at the limit E \u2192 \u22122 one recovers the single meron solution",
+              "as expected. On the other hand, property (A.14) of Jacobi elliptic functions implies that at the limit E \u2192 0 both periodic and quasi-periodic solutions tend to the instanton solution lim",
+              "In figure 1, the surfaces in S 2 corresponding to the periodic elliptic solutions and the meron and instanton limits are displayed. It can be seen that indeed the elliptic solutions interpolate between the degenerate mapping of the meron configuration to the identity mapping from S 2 to S 2 that corresponds to a single instanton.",
+              "We would also like to comment that the topological charge, as implied by equation (3.16), is not well defined for the elliptic solutions due to the non-existence of the limit lim t\u2192\u221e \u03c8 (t). Of course at the limits E \u2192 \u22122 and E \u2192 0, corresponding to the stable equilibrium and kink solutions respectively, the solution is neither periodic nor quasiperiodic and the limit lim t\u2192\u221e \u03c8 (t) is well defined, giving rise to a well defined topological charge number, as required for meron and instanton solutions.",
+              "For solutions (3.25) and (3.26), as can be easily seen from equations (3.17) (3.18), the existence of the integral (3.21) implies that the stress-energy tensor components are equal to",
+              "It is easy to check that the above expressions agree with the fact that the instanton solutions are characterized by vanishing stress-energy tensor, as well the formulas (3.11) and (3.12), giving the stress-energy tensor components for a meron configuration at the appropriate limit E \u2192 \u22122 and f (z) \u2192 z."
+            ]
+          },
+          {
+            "header": "Reduction of the Euclidean O(3) Non-linear Sigma Model",
+            "paragraphs": [
+              "The Pohlmeyer reduced theory is derived based on the formulation of the sigma model in terms of the scalar fields triplet X i , that take values in a symmetric target space, namely S 2 . The most known example of such reduction is for the Lorentzian version of the model under study, leading to the sine-Gordon equation {{123165375}}. Here we will follow closely the analysis of {{123165375}} in the reduction of the Euclidean version of O(3) non-linear sigma model."
+            ]
+          },
+          {
+            "header": "Definition of the Reduced Theory Field",
+            "paragraphs": [
+              "First, we would like to observe that by definition of the O(3) sigma model, the scalar fields obey the constraint X i X i = 1. It is a direct consequence that the vector X i is perpendicular to the vectors \u2202X i and\u2202X i .",
+              "An important feature of the sigma model that is critical for Pohlmeyer reduction is the fact that the T zz component of the stress-energy tensor is a function solely of z, while the Tzz component is a function solely ofz. Indeed, using expression (2.16) for T zz , the equations of motion (2.11) and the orthogonality between X i and \u2202X i , we find",
+              "The stress-energy tensor for meron solutions (3.11) and (3.12), for elliptic solutions (3.30) and (3.31), as well as the fact that the stress-energy tensor for instanton solutions vanishes, are all in accordance with this property. The above fact implies that there is an appropriate redefinition of the complex coordinate z, z = z (w) andz =z (w) that allows setting the stress-energy tensor elements to a real and positive constant 2",
+              "(4.4)",
+              "Notice that (4.4) implies that the fields do not acquire a given value as |w| \u2192 \u221e and thus, such boundary conditions should be abandoned when the Pohlmeyer reduced theory is considered.",
+              "In the traditional Pohlmeyer reduction of the Lorentzian O(3) sigma model, the reduced field is defined as the angle between the vectors \u2202 + X i and \u2202 \u2212 X i , where x \u00b1 are light cone coordinates x \u00b1 = x 0 \u00b1x 1 . In this case, it is a natural definition for the reduced degrees of freedom to set \u2202 + X i \u2202 \u2212 X i = \u00b5 2 cos \u03d5, since \u2202 \u00b1 X i are real vectors with norm equal to \u00b5, as a consequence of the stress-energy tensor being equal to T ++ = T \u2212\u2212 = \u00b5 2 , similarly to our case. However, in the Euclidean scenario under study, the inner product of \u2202X i and\u2202X i is always positive and larger than the absolute value of \u00b5 2 . If we define the real and imaginary parts of w as x and y and remembering that we have performed an appropriate coordinate redefinition such that \u00b5 2 is real, it is true that",
+              "Thus, \u2202X m\u2202 X m \u2265 \u00b5 2 and a natural definition for the reduced degrees of freedom in the case of the Euclidean sigma model is",
+              "Notice that since \u2202X m\u2202 X m is both positive and larger than the absolute value of T zz , equation (4.7) is a good definition for the reduced field \u03d5 only if \u00b5 2 has been selected to be positive. Thus, one has to be careful when defining the complex variable w, so that T ww is not only constant and real, but also positive."
+            ]
+          },
+          {
+            "header": "The Basis in Enhanced Space and the Reduced Theory",
+            "paragraphs": [
+              "We would like to specify the dynamics of the field \u03d5. In order to do so, we need to calculate the derivative \u2202\u2202 cosh \u03d5. Using the definition (4.7) of the field \u03d5, we get",
+              "The first term turns out to be the most complicated to calculate. Finding a base in the enhanced, flat, three-dimensional target space of the theory would be convenient, in order to express the second derivatives of X i in that base and calculate the desired term.",
+              "As explained in section 4.1, the vector X i is perpendicular to the vectors \u2202X i and\u2202X i . Consequently, unless a degeneracy between the real and imaginary parts of \u2202X i occurs, the three vectors X i , \u2202X i and\u2202X i form a basis in the three-dimensional enhanced flat target space of the sigma model and thus, any vector can be written as a linear combination of the above.",
+              "Let's take advantage of this fact and write the second derivative of X i as such a linear combination,",
+              "Then, equation (4.1) and the definition of the field \u03d5 (4.7) imply that \u2202 2 X i X i = a, (4.10)",
+              "The vectors X i and \u2202X i are orthogonal. It is a direct consequence that",
+              "The vector \u2202X i has constant magnitude and thus,",
+              "Finally, from the definition of the field variable \u03d5, we get",
+              "Thus, we have all necessary information to specify the coefficients a, b and c. We find",
+              "It is now straightforward to calculate the inner product \u2202 2 X i \u2202 2 X i , \u2202 2 X i\u22022 X i = a\u0101 + \u00b5 2 bc +bc + \u00b5 2 bb + cc cosh \u03d5 = \u00b5 4 + \u00b5 2 cosh \u03d5\u2202\u03d5\u2202\u03d5 .",
+              "(4.20)",
+              "The second and third terms of (4.8) can be easily calculated with the help of the equations of motion (2.15), expressed with the help of field \u03d5,",
+              "(4.21)",
+              "Differentiating the above and taking the appropriate inner product we find",
+              "Finally, the last term of (4.8) can be calculated directly from the equations of motion",
+              "All four terms required for the calculation of the derivative \u2202\u2202 cosh \u03d5 through equation (4.8) have been specified and we get \u00b5 2 \u2202\u2202 cosh \u03d5 = \u00b5 2 cosh \u03d5\u2202\u03d5\u2202\u03d5 \u2212 \u00b5 4 sinh 2 \u03d5, {{not_in_s2orc}} implying that \u2202\u2202\u03d5 = \u2212\u00b5 2 sinh \u03d5, We would like to point out here that in an obvious way, Pohlmeyer reduction cannot be performed if the stress-energy tensor is vanishing. Thus, it is expected that instanton solutions, which are the only finite-action solutions, do not have a counterpart within the solutions of the sinh-Gordon equation. Consequently, we expect that the counterparts of the elliptic solutions must also become problematic at the E \u2192 0 limit."
+            ]
+          },
+          {
+            "header": "Meron Solutions in the Reduced Theory",
+            "paragraphs": [
+              "The stress-energy tensor elements in the case of meron solutions are given by equations {{not_in_s2orc}} and {{not_in_s2orc}}. We desire performing a conformal transformation z = z (w) so that the stress-energy tensor elements are set to a positive constant. After such a conformal transformation, the new stress-energy tensor ww component is equal to",
+              "So if we demand that g 2 T ww = \u00b5 2 , the appropriate conformal transformation should obey",
+              "In terms of the new coordinate w, the meron solution is written as",
+              "Thus, the corresponding solution of the Pohlmeyer reduced theory is",
+              "This implies that all meron solutions are mapped through Pohlmeyer reduction to the ground state of the sinh-Gordon equation."
+            ]
+          },
+          {
+            "header": "The Elliptic Solutions in the Reduced Theory",
+            "paragraphs": [
+              "We have seen in Section 3.3, that the Euclidean O(3) NLSM accepts a family of solutions that correspond to solutions of the one-dimensional pendulum with potential V = cos \u03c8 \u2212 1, characterized by the value of the energy integral E. The stress-energy tensor for these solutions is given by equations (3.30) and (3.31)."
+            ]
+          },
+          {
+            "header": "Quasi-Periodic Elliptic Solutions",
+            "paragraphs": [
+              "As for merons, the reduction of the theory requires the performance of a conformal transformation in order to set the stress-energy tensor equal to a positive constant. For quasi-periodic elliptic solutions, for whom E > 0, such an appropriate conformal transformation is z = e w a . (5.6)",
+              "Then, the stress-energy tensor takes the form",
+              "Defining the real and imaginary parts of the complex variable w to be x and y respectively,",
+              "It turns out that these solutions have a simpler expression in terms of the angular field coordinates \u0398 and \u03a6. Specifically,",
+              "Since \u0398 depends only on the real part of w and \u03a6 depends only on the imaginary part of w, we acquire the following simple formulas using equations (2.21) and (2.7)",
+              "Thus, the counterpart of the quasi-periodic elliptic solution (3.25) in the Pohlmeyer reduced theory is",
+              "(5.14)",
+              "Since the reduced field solution depends only on the real part of the complex variable w, the solutions belong to a special subset of the solutions of the Euclidean sinh-Gordon equation that depend on only one real variable, \u03d5 = \u03d5 (x) and consequently they obey",
+              "These solutions have an one-dimensional mechanical analog of a \"hyperbolic pendulum\" with potential V = 4\u00b5 2 cosh \u03d5, {{not_in_s2orc}} which from energy conservation obey",
+              "It is a matter of simple algebra to show that equation (5.14) implies"
+            ]
+          },
+          {
+            "header": "Periodic Elliptic Solutions",
+            "paragraphs": [
+              "For periodic elliptic solutions, for whom E < 0, an appropriate conformal transformation to set the stress-energy tensor to a constant is",
+              "Then, the stress-energy tensor takes the form",
+              "Defining the real and imaginary parts of the complex variable w to be x and y respectively,",
+              "This implies that the solution in terms of the angular field coordinates is written as {{not_in_s2orc}} and similarly to the case of quasi-periodic solutions we can acquire the following simple expressions",
+              "Thus, the counterpart of the periodic elliptic solution (3.26) in the reduced theory is",
+              "As in the case of the quasi-periodic elliptic solution, the reduced field solution depends only on the imaginary part of the complex variable w, and, thus, the solutions belong to a special subset of the solutions of the Euclidean sinh-Gordon equation that depend only on one real variable, \u03d5 = \u03d5 (y) and therefore obey d 2 \u03d5 dy 2 = \u22124\u00b5 2 sinh \u03d5, {{not_in_s2orc}} being the same ordinary differential equation as in the case of quasi-periodic solutions.",
+              "Consequently, there is also the same one-dimensional mechanical analog of a \"hyperbolic pendulum\" with potential given by equation {{not_in_s2orc}}. Energy conservation in this one-dimensional mechanical analog implies that the counterparts of periodic elliptic solutions in the Pohlmeyer reduced theory obey",
+              "It is a matter of simple algebra to show that equation (5.27) implies that",
+              "which is the exact same formula as in the case of quasi-periodic solutions."
+            ]
+          },
+          {
+            "header": "Comparison of the Initial and Reduced Formulations",
+            "paragraphs": [
+              "In the process of deriving the form of the counterparts of the NLSM solutions in the Pohlmeyer reduced theory, we performed a conformal transformation that sets the stress-energy tensor to a real and positive constant. Although equation (4.2) ensures that there is always such a transformation, it is not the case that this is the same transformation for all NLSM solutions. This becomes evident comparing the appropriate conformal transformations in the case of meron and elliptic solutions, given by equations (5.2), (5.6) and {{not_in_s2orc}}. Even in the case of the family of elliptic solutions, the same conformal transformation manages to set the stress-energy tensor components to a real and positive constant for the whole family, but a different one for each member of the family. Since this constant enters into the reduced problem as the mass scale of the sinh-Gordon equation, each solution of the elliptic family has been mapped to a solution of a different version of the sinh-Gordon equation.",
+              "In order to better understand the correspondence between the elliptic solutions of the NLSM and the solutions of the sinh-Gordon equation, we would like to make a more specific conformal transformation for each solution, so that the mass scale of the sinh-Gordon equation is always the same. This can be achieved by taking advantage of the freedom to select the parameter a appearing in the conformal transformations {{not_in_s2orc}} and {{not_in_s2orc}}. Choosing",
+              "the potential of the one-dimensional effective mechanical problem equals V = cosh \u03d5 (5.32) in all cases. Then, the corresponding energy constant in the reduced one-dimensional mechanical problem (the \"hyperbolic\" pendulum problem) is related with the energy constant in the initial one-dimensional mechanical problem (the pendulum problem) as",
+              "Notice that E diverges as E \u2192 0. This is expected since for E \u2192 0 the elliptic solutions tend to the instanton limit, which cannot have a Pohlmeyer counterpart. In figure 2, we can see the correspondence of the energy levels between the initial and reduced problems. Interestingly, for every energy level corresponding to a periodic solution of the initial pendulum problem, there is another energy level corresponding to a quasi-periodic solution and vice versa, such that the two solutions correspond to the same energy level in the reduced \"hyperbolic pendulum\" problem. This is evident in figure 3, which depicts the relation between the energy levels in the original and reduced problems. Since the reduced problem solution is characterized only by its energy level (up to a shift in the \"time\" variable), the two solutions of the reduced problem are actually the same solution. One can easily check that equations (5.18) and (5.30), together with the appropriate setting of the parameter a (5.31), imply that two energy levels E 1 < 0 and E 2 > 0 in the original problem corresponding to the same energy level in the reduced theory E 1 = E 2 obey E 1 E 2 + 2 (E 1 + E 2 ) = 0. and thus, the two solutions would be connected with the modular transformation k \u2192 1/k. On the other hand, the two solutions in the initial formulation of the theory are not identical. The periodic solution corresponds to a surface that covers part of the whole sphere as shown in figure 1, while the quasi-periodic solution covers the whole sphere, but it is singular at the poles, as the derivatives of the fields do not vanish there. Actually, the discontinuity of the surface corresponding to the periodic solution is similar to the discontinuity to the longitudinal tangential vector of the surface corresponding to the quasi-periodic solution; one can show that",
+              "One may suggest that the two distinct NLSM solutions correspond to the same solution in the reduced theory, as Pohlmeyer reduction deals with the position vector and tangential vector in a symmetric way, as two elements of the basis defined in the enhanced flat three-dimensional target space."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Acknowledgments",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Acknowledgments",
+            "paragraphs": [
+              "This work is dedicated to the memory of Prof. Ioannis Bakas. His unexpected loss deprived the scientific community of a member with an elegant way of thinking, infinite organization skills and integrity. This paper is the outcome of uncountable discussions on the connection between geometry and physics and it was built alongside our previous joint work."
+            ]
+          },
+          {
+            "header": "A Useful Formulas for Jacobi's Elliptic Functions",
+            "paragraphs": [
+              "The incomplete elliptic integral of the first kind is defined as"
+            ]
+          },
+          {
+            "header": "",
+            "paragraphs": []
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "Discussion",
+      "papers_cited_discussion": [
+        "12750838"
+      ],
+      "subsections": [
+        {
+          "header": "Discussion",
+          "paragraphs": [
+            "We found the corresponding counterparts of meron and elliptic solutions of Euclidean O(3) non-linear sigma model in the Pohlmeyer reduced version of the same theory, namely the sinh-Gordon equation. Summarizing, we may conclude the following: Instanton solutions, which are the only finite action solutions of the O(3) model, do not have a counterpart, as they are characterized by vanishing stress-energy tensor. Therefore, not every solution of the non-linear sigma model has a counterpart in the Pohlmeyer reduced theory. Especially solutions with a well defined topological number cannot be mapped to the Pohlmeyer reduced theory, as they have to be characterized by a unique limit at complex infinity, which is inconsistent with the form of the imposed Virasoro constraint in Pohlmeyer reduction.",
+            "All meron solutions correspond to the ground state of the sinh-Gordon equation. It seems that this is a more general property that singular configurations such as a meron have. In a similar manner, strings propagating into R t \u00d7 S 2 are described by a non-linear sigma model that is reducible to the sine-Gordon equation. Classical string solutions that are singular in a similar sense (the world-sheet tends to an onedimensional manifold, such as a point particle solution, or the \"hoop\" string solution) have the property of being mapped to either the stable or the unstable vacuum of the sine-Gordon equation {{12750838}}.",
+            "Elliptic solutions, which can be viewed as solutions of an one-dimensional mechanical pendulum problem in the initial formulation of the theory, have also an onedimensional mechanical analogue with a hyperbolic cosine potential in the Pohlmeyer reduced description. For every periodic solution in the pendulum problem, there is a quasi-periodic solution and vice versa that has the same counterpart in the hyperbolic cosine problem. The above pair of solutions correspond to physically distinct solutions in the initial formulation of the sigma model. Furthermore, different, physically inequivalent solutions of the sigma model may correspond to the same solution in the Pohlmeyer reduced theory. This may be attributed to the fact that Pohlmeyer reduction deals with the fields and their derivatives in a symmetric way, as elements of a vector basis in an enhanced higher dimensional space, in our case R 3 .",
+            "It would be interesting to generalize these results studying the correspondence between solutions of non-linear sigma models with different target space geometries or in higher dimensional target spaces."
+          ]
+        }
+      ]
+    },
+    "discussion_txt": "We found the corresponding counterparts of meron and elliptic solutions of Euclidean O(3) non-linear sigma model in the Pohlmeyer reduced version of the same theory, namely the sinh-Gordon equation. Summarizing, we may conclude the following: Instanton solutions, which are the only finite action solutions of the O(3) model, do not have a counterpart, as they are characterized by vanishing stress-energy tensor. Therefore, not every solution of the non-linear sigma model has a counterpart in the Pohlmeyer reduced theory. Especially solutions with a well defined topological number cannot be mapped to the Pohlmeyer reduced theory, as they have to be characterized by a unique limit at complex infinity, which is inconsistent with the form of the imposed Virasoro constraint in Pohlmeyer reduction.\n\nAll meron solutions correspond to the ground state of the sinh-Gordon equation. It seems that this is a more general property that singular configurations such as a meron have. In a similar manner, strings propagating into R t \u00d7 S 2 are described by a non-linear sigma model that is reducible to the sine-Gordon equation. Classical string solutions that are singular in a similar sense (the world-sheet tends to an onedimensional manifold, such as a point particle solution, or the \"hoop\" string solution) have the property of being mapped to either the stable or the unstable vacuum of the sine-Gordon equation {{12750838}}.\n\nElliptic solutions, which can be viewed as solutions of an one-dimensional mechanical pendulum problem in the initial formulation of the theory, have also an onedimensional mechanical analogue with a hyperbolic cosine potential in the Pohlmeyer reduced description. For every periodic solution in the pendulum problem, there is a quasi-periodic solution and vice versa that has the same counterpart in the hyperbolic cosine problem. The above pair of solutions correspond to physically distinct solutions in the initial formulation of the sigma model. Furthermore, different, physically inequivalent solutions of the sigma model may correspond to the same solution in the Pohlmeyer reduced theory. This may be attributed to the fact that Pohlmeyer reduction deals with the fields and their derivatives in a symmetric way, as elements of a vector basis in an enhanced higher dimensional space, in our case R 3 .\n\nIt would be interesting to generalize these results studying the correspondence between solutions of non-linear sigma models with different target space geometries or in higher dimensional target spaces.",
+    "evaluations": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "Title: A Mapping between Solutions of the Euclidean O(3) Non-Linear Sigma Model and the Pohlmeyer Reduced Sinh-Gordon Equation",
+                "Introduction:\nThe Euclidean O(3) non-linear sigma model is a well-known model in theoretical physics, which describes the dynamics of a scalar field in a curved space-time. In this paper, we aim to explore the relationship between the known solutions of the Euclidean O(3) non-linear sigma model and the Pohlmeyer reduced sinh-Gordon equation. Specifically, we investigate the mapping between instantons, merons, and elliptic solutions of the Euclidean O(3) non-linear sigma model and their counterparts in the Pohlmeyer reduced theory.",
+                "Mapping between Instantons and the Pohlmeyer Reduced Theory:\nThe Euclidean O(3) non-linear sigma model admits instantons as solutions, which are topologically non-trivial configurations of the scalar field. However, we find that instantons do not have a direct counterpart in the Pohlmeyer reduced sinh-Gordon equation. This is because the Pohlmeyer reduced theory is a simplified version of the original equation, which does not retain the full complexity of the instantons. Therefore, we conclude that instantons are not directly related to any solution in the Pohl"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "method": "BERTScore",
+            "result": 0.5259451270103455
+          }
+        ]
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "**Discussion**",
+                "The abstract presents a study on the relationship between sigma models in symmetric spaces, specifically in the context of the Euclidean O(3) non-linear sigma model. The authors investigate the mapping between known solutions of the sigma model, namely the sine-Gordon equation, and its reduction to the sinh-Gordon equation.",
+                "Firstly, the authors highlight the equivalence between the sigma model and the sine-Gordon equation, which is a well-known system in mathematical physics. This equivalence is achieved through the Pohlmeyer reduction, a method that allows for the transformation of the sigma model into a more manageable form.",
+                "The study focuses on three types of solutions: instantons, merons, and elliptic solutions. In the context of the sine-Gordon equation, the authors analyze the correspondence between these solutions and the corresponding solutions in the reduced theory, namely the sinh-Gordon equation.",
+                "The authors observe that instantons do not have a direct equivalent in the sinh-Gordon equation, while merons correspond to the ground state. This suggests a two-to-one correspondence between the two systems. On the other hand, the elliptic solutions in the sinh-Gordon equation are characterized by a one-to-one correspondence between the corresponding solutions in the two systems.",
+                "The authors' findings have important implications for"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "method": "BERTScore",
+            "result": 0.28744910657405853
+          }
+        ]
+      },
+      {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "[INST] [INST] <<SYS>>\nYou are a scientific research assistant. Always answer as helpfully as possible, while being safe and unbiased. If a question is unclear or false, clarify or correct it.Write a scientific discussion based on the given abstract with no fluff, just the discussion\n<</SYS>>",
+                "Write the discussion based on the following abstract: It is well known that sigma models in symmetric spaces accept equivalent descriptions in terms of integrable systems, such as the sine\u2010Gordon equation, through Pohlmeyer reduction. In this paper, we study the mapping between known solutions of the Euclidean O(3) non\u2010linear sigma model, such as instantons, merons and elliptic solutions that interpolate between the latter, and solutions of the Pohlmeyer reduced theory, namely the sinh\u2010Gordon equation. It turns out that instantons do not have a counterpart, merons correspond to the ground state, while the class of elliptic solutions is characterized by a two to one correspondence between solutions in the two descriptions. [/INST] [/INST] The abstract discusses the relationship between solutions of the Euclidean O(3) non-linear sigma model and the sinh-Gordon equation in the context of sigma models in symmetric spaces.",
+                "The Euclidean O(3) non-linear sigma model is a mathematical theory used to describe the interaction of fields in physics. It is known that this model has equivalent descriptions through integrable systems, such as the sine-Gordon and sinh-Gordon equations, via Pohlmeyer reduction.",
+                "In this study, the authors focus on the mapping between known solutions of the Euclidean O(3) model, including instantons, merons, and elliptic solutions, and their corresponding solutions in the Pohlmeyer reduced theory. The findings reveal that instantons do not have a counterpart in the sinh-Gordon equation. Merons, on the other hand, correspond to the ground state in the sinh-Gordon equation. The class of elliptic solutions exhibits a two-to-one correspondence between solutions in the two descriptions.",
+                "In summary, the authors demonstrate that the relationship between solutions of the Euclidean O(3) non-linear"
+              ]
+            }
+          ]
+        },
+        "accuracy_scores": [
+          {
+            "method": "BERTScore",
+            "result": 0.3896281599998474
+          }
+        ]
+      }
+    ]
+  }
+]

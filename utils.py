@@ -32,12 +32,12 @@ def write_json(obj):
         json.dump(data, f, indent=2)
 
 
-def build_discussion_txt(section):
+def build_discussion_txt(section, br="\n\n"):
     txt = ""
     for subsection in section["subsections"]:
         paragraphs = subsection["paragraphs"]
         if len(paragraphs):
-            txt += "".join(subsection["paragraphs"])
+            txt += br.join(paragraphs)
     return txt
 
 
@@ -46,3 +46,11 @@ def split_discussion(sections):
         if section["header"].lower() == "discussion":
             discussion = sections.pop(i)
             return sections, discussion
+        
+
+def get_runs():
+    return sorted([
+        f.name.removeprefix("metadata-").removesuffix(".json")
+        for f in out.iterdir()
+        if f.is_file() and f.name.startswith("metadata-") and f.name.endswith(".json")
+    ])

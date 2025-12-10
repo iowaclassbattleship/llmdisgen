@@ -1,0 +1,21 @@
+- how to work on sentence/paragraph level with ordering
+- give paragraphs as context ("these are the previous paragraphs")
+- get rid of sentence level
+
+report:
+    - introduction
+        - problem statement
+        - tasks
+        - preliminaries
+        - related work (published papers, scientific text generation, automatic evaluation)
+    - methodology & materials (models, metrics) & hardware
+    - results & discussion
+        - quantitative (all the numbers, tables, plots)
+            - comparator metrics
+            - length of outputs between llm output and discussion
+        - qualitative
+            - example of real text versus generated text, describe observations
+    - conclusion
+        - main conclusion
+    - limitations & future directions
+        - based on results, where could this go in the future

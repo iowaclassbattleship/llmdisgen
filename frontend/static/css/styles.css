@@ -36,13 +36,13 @@ main {
     grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
-    padding: 3em 3em 0 3em;
+    padding: 3em;
     gap: 3em;
 }
 
 .paper-view .paper {
+    height: 100%;
     max-width: 21cm;
-    /* max-height: 29.7cm; */
     max-height: 20cm;
     padding: 2cm;
     border: 1px #D3D3D3 solid;

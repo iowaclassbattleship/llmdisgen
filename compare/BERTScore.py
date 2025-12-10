@@ -6,13 +6,17 @@ available_models = [
     "microsoft/deberta-large-mnli"
 ]
 
-class TextComparator():
+class BERTScore:
     def __init__(self, model_type):
         self.model_name = model_type
         self.scorer = BERTScorer(model_type=model_type)
 
-    def score(self, candidate: str, reference: str):
-        P, R, F1 = self.scorer.score([candidate], [reference])
+    def metric(self, prediction: str, reference: str):
+        print(prediction[:10])
+        print(reference[:10])
+        if len(prediction) == 0 or len(reference) == 0:
+            return 0, 0, 0
+        P, R, F1 = self.scorer.score([prediction], [reference])
 
         # Precision, Recall, F1
         return P, R, F1
