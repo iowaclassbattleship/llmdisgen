@@ -24,8 +24,17 @@ for d in data:
 models = list(b.keys())
 binned_score = [np.mean(b[m]) for m in models]
 
-plt.bar(models, binned_score)
+sorted_indices = np.argsort(binned_score)[::-1]
+sorted_models = [models[i] for i in sorted_indices]
+sorted_scores = [binned_score[i] for i in sorted_indices]
+
+display_models = [m.rsplit("/", 1)[-1] for m in sorted_models]
+
+plt.figure(figsize=(12, 6))
+plt.bar(display_models, sorted_scores)
 plt.ylim(0, 1)
-plt.xticks(rotation=45, ha='right')
-plt.title("mean BlockMatch BERTScore result for multiple LLM")
+plt.xticks(rotation=45, ha="right")
+plt.title("Mean BlockMatch BERTScore result for multiple LLM")
+plt.tight_layout()
 plt.savefig(out / f"{last_run}.png")
+plt.show()

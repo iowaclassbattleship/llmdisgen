@@ -51,7 +51,7 @@ class Mistral:
             temperature=0.7
         )
         
-        return self.tokenizer.decode(generated_ids[0].tolist())
+        return self.tokenizer.decode(generated_ids[0].tolist())[len(system_prompt):]
     
     def format_prompt(self, user_prompt, system_prompt):
         return (

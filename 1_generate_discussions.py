@@ -71,4 +71,4 @@ def generate_dp_for_n_papers(n, level):
         })
 
 if __name__ == "__main__":
-    generate_dp_for_n_papers(2, level="section")
+    generate_dp_for_n_papers(10, level="section")

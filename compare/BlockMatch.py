@@ -16,25 +16,31 @@ class BlockMatch:
             padding=((0,b-a),(0,0))
         return np.pad(M,padding,mode='constant',constant_values=val)
 
-    def metric(self, prediction, reference, m):
-        P = prediction.split("\n\n")
-        R = reference.split("\n\n")
+    def metric(self, P, R, m):
         C = np.zeros(shape=(len(R), len(P)))
 
         for i, r in enumerate(R):
             for j, p in enumerate(P):
                 C[i][j] = m(p, r)[0]
-        
-        C = self.squarify(C)
-        C_copy = copy.deepcopy(C)
+
+        C_square = self.squarify(C)
+
+        cost_matrix = -C_square
 
         mnkrs = Munkres()
-        best_idxs = mnkrs.compute(C)
+        best_pairs = mnkrs.compute(cost_matrix.tolist())
 
-        t = np.sum([C_copy[r][p] for r, p in best_idxs])
+        total_score = 0
+        for r, p in best_pairs:
+            if r < len(R) and p < len(P):
+                total_score += C[r][p]
 
-        precision = t / len(P)
-        recall = t / len(R)
-        F1 = 2 * precision * recall / (precision + recall)
-        
+        precision = total_score / len(P)
+        recall = total_score / len(R)
+
+        if precision + recall == 0:
+            F1 = 0
+        else:
+            F1 = 2 * precision * recall / (precision + recall)
+
         return precision, recall, F1
