@@ -1,0 +1,407 @@
+[
+  {
+    "corpus_id": "10000487",
+    "title": "Collaborative Decoding: Partial Hypothesis Re-ranking Using Translation Consensus between Decoders",
+    "externalids": {
+      "ACL": "P09-1066",
+      "ArXiv": "",
+      "CorpusId": "10000487",
+      "DBLP": "conf/acl/LiDZLZ09",
+      "DOI": "10.3115/1690219.1690228",
+      "MAG": "2117164663",
+      "PubMed": "",
+      "PubMedCentral": ""
+    },
+    "year": "2009",
+    "level": "paragraph",
+    "sections": [
+      {
+        "header": "Introduction",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Introduction",
+            "paragraphs": [
+              "Recent research has shown substantial improvements can be achieved by utilizing consensus statistics obtained from outputs of multiple machine translation systems. Translation consensus can be measured either at sentence level or at word level. For example, Minimum Bayes Risk (MBR) {{11706155}} decoding over n-best list tries to find a hypothesis with lowest expected loss with respect to all the other translations, which can be viewed as sentence-level consensus-based decoding. Word based methods proposed range from straightforward consensus voting {{60593850}}{{15034416}} to more complicated word-based system combination model {{14570741}}{{7061405}}. Typically, the resulting systems take outputs of individual machine translation systems as input, and build a new confusion network for second-pass decoding.",
+              "There have been many efforts dedicated to advance the state-of-the-art performance by combining multiple systems' outputs. Most of the work focused on seeking better word alignment for consensus-based confusion network decoding {{15034416}} or word-level system combination {{not_in_s2orc}}{{2305418}}. In addition to better alignment, {{1101652}} introduced an incremental strategy for confusion network construction; and Hildebrand and Vogel (2008) proposed a hypotheses reranking model for multiple systems' outputs with more features including word translation probability and n-gram agreement statistics.",
+              "A common property of all the work mentioned above is that the combination models work on the basis of n-best translation lists (full hypotheses) of existing machine translation systems. However, the n-best list only presents a very small portion of the entire search space of a Statistical Machine Translation (SMT) model while a majority of the space, within which there are many potentially good translations, is pruned away in decoding. In fact, due to the limitations of present-day computational resources, a considerable number of promising possibilities have to be abandoned at the early stage of the decoding process. It is therefore expected that exploring additional possibilities beyond n-best hypotheses lists for full sentences could bring improvements to consensus-based decoding.",
+              "In this paper, we present collaborative decoding (or co-decoding), a new SMT decoding scheme to leverage consensus information between multiple machine translation systems. In this scheme, instead of using a post-processing step, multiple machine translation decoders collaborate during the decoding process, and translation consensus statistics are taken into account to improve ranking not only for full translations, but also for partial hypotheses. In this way, we expect to reduce search errors caused by partial hypotheses pruning, maximize the contribution of translation consensus, and result in better final translations.",
+              "We will discuss the general co-decoding model, requirements for decoders that enable collaborative decoding and describe the updated model structures. We will present experimental results on the data sets of NIST Chinese-to-English machine translation task, and demonstrate that co-decoding can bring significant improvements to baseline systems. We also conduct extensive investigations when different settings of codecoding are applied, and make comparisons with related methods such as word-level system combination of hypothesis selection from multiple n-best lists.",
+              "The rest of the paper is structured as follows. Section 2 gives a formal description of the codecoding model, the strategy to apply consensus information and hypotheses ranking in decoding. In Section 3, we make detailed comparison between co-decoding and related work such as system combination and hypotheses selection out of multiple systems. Experimental results and discussions are presented in Section 4. Section 5 concludes the paper."
+            ]
+          },
+          {
+            "header": "Collaborative Decoding",
+            "paragraphs": []
+          }
+        ]
+      },
+      {
+        "header": "Overview",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Overview",
+            "paragraphs": [
+              "Collaborative decoding does not present a full SMT model as other SMT decoders do such as Pharaoh  or Hiero {{384994}}. Instead, it provides a framework that accommodates and coordinates multiple MT decoders. Conceptually, collaborative decoding incorporates the following four constituents:",
+              "1. Co-decoding model. A co-decoding model consists of a set of member models, which are a set of augmented baseline models. We call decoders based on member models member decoders, and those based on baseline models baseline decoders. In our work, any Maximum A Posteriori (MAP) SMT model with log-linear formulation {{284436}} can be a qualified candidate for a baseline model. The requirement for a loglinear model aims to provide a natural way to integrate the new co-decoding features.",
+              "2. Co-decoding features. Member models are built by adding additional translation consensus -based co-decoding features to baseline models. A baseline model can be viewed as a special case of member model with all codecoding feature values set to 0. Accordingly, a baseline decoder can be viewed as a special setting of a member decoder.",
+              "3. Decoder coordinating. In co-decoding, each member decoder cannot proceed solely based on its own agenda. To share consensus statistics with others, the decoding must be performed in a coordinated way.",
+              "4. Model training. Since we use multiple interrelated decoders and introduce more features in member models, we also need to address the parameter estimation issue in the framework of co-decoding.",
+              "In the following sub-sections we first establish a general model for co-decoding, and then present details of feature design and decoder implementation, as well as parameter estimation in the codecoding framework. We leave the investigation of using specific member models to the experiment section."
+            ]
+          },
+          {
+            "header": "Generic Collaborative Decoding Model",
+            "paragraphs": [
+              "For a given source sentence f, a member model in co-decoding finds the best translation * among the set of possible candidate translations \u210b( ) based on a scoring function : * = argmax \u2208\u210b( ) ( )",
+              "In the following, we will use to denote the \u210e member decoder, and also use the notation \u210b ( ) for the translation hypothesis space of f determined by . The \u210e member model can be written as:",
+              "where \u03a6 ( , ) is the score function of the \u210e baseline model, and each \u03a8 ( , \u210b ( )) is a partial consensus score function with respect to and is defined over e and \u210b :",
+              "where each \u210e , ( , \u210b ) is a feature function based on a consensus measure between e and \u210b , and , is the corresponding feature weight. Feature index l ranges over all consensus-based features in Equation 3."
+            ]
+          },
+          {
+            "header": "Decoder Coordination",
+            "paragraphs": [
+              "Before discussing the design and computation of translation consensus -based features, we first describe the multiple decoder coordination issue in co-decoding. Note that in Equation 2, though the baseline score function \u03a6 , can be computed inside each decoder, the case of \u03a8 ( , \u210b ( )) is more complicated. Because usually it is not feasible to enumerate the entire hypothesis space for machine translation, we approximate \u210b with n-best hypotheses by convention. Then there is a circular dependency between co-decoding features and \u210b ( ) : on one hand, searching for n-best approximation of \u210b ( ) requires using Equation 2 to select topranked hypotheses; while on the other hand, Equation 2 cannot be computed until every \u210b ( ) is available.",
+              "We address this issue by employing a bootstrapping method, in which the key idea is that we can use baseline models' n-best hypotheses as seeds, and iteratively refine member models' n-best hypotheses with co-decoding. Similar to a typical phrase-based decoder , we associate each hypothesis with a coverage vector c to track translated source words in it. We will use \u210b ( , ) for the set of hypotheses associated with c, and we also denote with \u210b ( ) = \u210b ( , ) the set of all hypotheses generated by member decoder in decoding. The codecoding process can be described as follows:",
+              "1. For each member decoder , perform decoding with a baseline model, and memorize all translation hypotheses generated during decoding in \u210b ( );",
+              "2. Re-group translation hypotheses in \u210b ( ) into a set of buckets \u210b , by the coverage vector c associated with each hypothesis;",
+              "3. Use member decoders to re-decode source sentence with member models. For member decoder , consensus-based features of any hypotheses associated with coverage vector c are computed based on current setting of \u210b , for all s but k. New hypotheses generated by in re-decoding are cached in \u210b \u2032 ( ); 4. Update all \u210b ( ) with \u210b \u2032 ( ); 5. Iterate from step 2 to step 4 until a preset iteration limit is reached.",
+              "In the iterative decoding procedure described above, hypotheses of different decoders can be mutually improved. For example, given two decoders 1 and 2 with hypotheses sets \u210b 1 and \u210b 2 , improvements on \u210b 1 enable 2 to improve \u210b 2 , and in turn \u210b 1 benefits from improved \u210b 2 , and so forth.",
+              "Step 2 is used to facilitate the computation of feature functions \u210e , ( , \u210b \u2022 ) , which require both e and every hypothesis in \u210b \u2022 should be translations of the same set of source words. This step seems to be redundant for CKY-style MT decoders {{6832980}}{{384994}} since the grouping is immediately available from decoders because all hypotheses spanning the same range of source sentence have been stacked together in the same chart cell. But to be a general framework, this step is necessary for some state-of-the-art phrase-based decoders {{794019}}{{1272090}} because in these decoders, hypotheses with different coverage vectors can co-exist in the same bin, or hypotheses associated with the same coverage vector might appear in different bins.",
+              "Note that a member model does not enlarge the theoretical search space of its baseline model, the only change is hypothesis scoring. By rerunning a complete decoding process, member model can be applied to re-score all hypotheses explored by a decoder. Therefore step 3 can be viewed as full-scale hypothesis re-ranking because the re-ranking scope is beyond the limited n-best hypotheses currently cached in \u210b .",
+              "In the implementation of member decoders, there are two major modifications compared to their baseline decoders. One is the support for co-decoding features, including computation of feature values and the use of augmented codecoding score function (Equation 2) for hypothesis ranking and pruning. The other is hypothesis grouping based on coverage vector and a mechanism to effectively access grouped hypotheses in step 2 and step 3."
+            ]
+          },
+          {
+            "header": "Co-decoding Features",
+            "paragraphs": [
+              "We now present the consensus-based feature functions \u210e , ( , \u210b ) introduced in Equation 3. In this work all the consensus-based features have the following formulation:",
+              "where e is a translation of f by decoder ( \u2260 ), \u2032 is a translation in \u210b and \u2032 is the posterior probability of translation \u2032 determined by decoder",
+              "given source sentence f. ( , \u2032) is a consensus measure defined on e and \u2032, by varying which different feature functions can be obtained.",
+              "Referring to the log-linear model formulation, the translation posterior \u2032 can be computed as:",
+              "where (\u2022) is the score function given in Equation 2, and is a scaling factor following the work of {{7657227}} To compute the consensus measures, we further decompose each , \u2032 into n-gram matching statistics between e and \u2032. Here we do not discriminate among different lexical n-grams and are only concerned with statistics aggregation of all n-grams of the same order. For each ngram of order n, we introduce a pair of complementary consensus measure functions + , \u2032 and \u2212 , \u2032 described as follows: + , \u2032 is the n-gram agreement measure function which counts the number of occurrences in \u2032 of n-grams in e. So the corresponding feature value will be the expected number of occurrences in \u210b of all n-grams in e:",
+              "where (\u2022,\u2022) is a binary indicator function -+ \u22121 , \u2032 is 1 if the n-gram + \u22121 occurs in \u2032 and 0 otherwise. \u2212 , \u2032 is the n-gram disagreement measure function which is complementary to",
+              "This feature is designed because + , \u2032 does not penalize long translation with low precision. Obviously we have the following:",
+              "So if the weights of agreement and disagreement features are equal, the disagreement-based features will be equivalent to the translation length features. Using disagreement measures instead of translation length there could be two potential advantages: 1) a length feature has been included in the baseline model and we do not need to add one; 2) we can scale disagreement features independently and gain more modeling flexibility.",
+              "Similar to a language model score, n-gram consensus -based feature values cannot be summed up from smaller hypotheses. Instead, it must be re-computed when building each new hypothesis."
+            ]
+          },
+          {
+            "header": "Model Training",
+            "paragraphs": [
+              "We adapt the Minimum Error Rate Training (MERT) {{5474833}} algorithm to estimate parameters for each member model in co-decoding. Let be the feature weight vector for member decoder , the training procedure proceeds as follows:",
+              "1. Choose initial values for 1 , \u2026 , 2. Perform co-decoding using all member decoders on a development set D with 1 , \u2026 , . For each decoder , find a new feature weight vector \u2032 which optimizes the specified evaluation criterion L on D using the MERT algorithm based on the n-best list \u210b generated by",
+              "where T denotes the translations selected by re-ranking the translations in \u210b using a new feature weight vector 3. Let 1 = 1 \u2032 , \u2026 , = \u2032 and repeat step 2 until convergence or a preset iteration limit is reached. In step 2, there is no global criterion to optimize the co-decoding parameters across member models. Instead, parameters of different member models are tuned to maximize the evaluation criteria on each member decoder's own n-best output. Figure 1 illustrates the training process of co-decoding with 2 member decoders."
+            ]
+          },
+          {
+            "header": "Output Selection",
+            "paragraphs": [
+              "Since there is more than one model in codecoding, we cannot rely on member model's score function to choose one best translation from multiple decoders' outputs because the model scores are not directly comparable. We will examine the following two system combination -based solutions to this task:",
+              "\uf0b7 Word-level system combination {{14570741}} of member decoders' n-best outputs \uf0b7 Hypothesis selection from combined n-best lists as proposed in {{14542264}} "
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Experiments",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Experiments",
+            "paragraphs": [
+              "In this section we present experiments to evaluate the co-decoding method. We first describe the data sets and baseline systems."
+            ]
+          },
+          {
+            "header": "Data and Metric",
+            "paragraphs": [
+              "We We use the parallel data available for the NIST 2008 constrained track of Chinese-to-English machine translation task as bilingual training data, which contains 5.1M sentence pairs, 128M Chinese words and 147M English words after pre-processing. GIZA++ is used to perform word alignment in both directions with default settings, and the intersect-diag-grow method is used to generate symmetric word alignment refinement.",
+              "The language model used for all models (include decoding models and system combination models described in Section 2.6) is a 5-gram model trained with the English part of bilingual data and xinhua portion of LDC English Gigaword corpus version 3."
+            ]
+          },
+          {
+            "header": "Member Decoders",
+            "paragraphs": [
+              "We use three baseline decoders in the experiments. The first one (SYS1) is re-implementation of Hiero, a hierarchical phrase-based decoder. Phrasal rules are extracted from all bilingual sentence pairs, while rules with variables are extracted only from selected data sets including LDC2003E14, LDC2003E07, LDC2005T06 and LDC2005T10, which contain around 350,000 sentence pairs, 8.8M Chinese words and 10.3M English words. The second one (SYS2) is a BTG decoder with lexicalized reordering model based on maximum entropy principle as proposed by {{6832980}}. We use all the bilingual data to extract phrases up to length 3. The third one (SYS3) is a string-to-dependency tree -based decoder as proposed by {{832217}}. For rule extraction we use the same setting as in SYS1. We parsed the language model training data with Berkeley parser, and then trained a dependency language model based on the parsing output. All baseline decoders are extended with n-gram consensus -based co-decoding features to construct member decoders. By default, the beam size of 20 is used for all decoders in the experiments. We run two iterations of decoding for each member decoder, and hold the value of in Equation 5 as a constant 0.05, which is tuned on the test data of NIST 2004 Chinese-to-English machine translation task."
+            ]
+          },
+          {
+            "header": "Translation Results",
+            "paragraphs": [
+              "We first present the overall results of codecoding on both test sets using the settings as we described. For member decoders, up to 4gram agreement and disagreement features are used. We also implemented the word-level system combination {{14570741}} and the hypothesis selection method {{14542264}}. 20-best translations from all decoders are used in the experiments for these two combination methods. Parameters for both system combination and hypothesis selection are also tuned on NIST 2003 test data. The results are shown in Table 2  In the Table 2, the results of a member decoder and its corresponding baseline decoder are grouped together with the later one for the member decoders. On both test sets, every member decoder performs significantly better than its baseline decoder (using the method proposed in  for statistical significance test).",
+              "We apply system combination methods to the n-best outputs of both baseline decoders and member decoders. We notice that we can achieve even better performance by applying system combination methods to member decoders' nbest outputs. However, the improvement margins are smaller than those of baseline decoders on both test sets. This could be the result of less diversified outputs from co-decoding than those from baseline decoders. In particular, the results for hypothesis selection are only slightly better than the best system in co-decoding.",
+              "We also evaluate the performance of system combination using different n-best sizes, and the results on NIST 2005 data set are shown in Figure 2, where bl-and co-legends denote combination results of baseline decoding and co-decoding respectively. From the results we can see that combination based on co-decoding's outputs performs consistently better than that based on baseline decoders' outputs for all n-best sizes we experimented with. However, we did not observe any significant improvements for both combination schemes when n-best size is larger than 20.  Table 2 is that the performance gap between baseline decoders is narrowed through co-decoding. For example, the 1.5 points gap between SYS2 and SYS3 on NIST 2008 data set is narrowed to 0.5. Actually we find that the TER score between two member decoders' outputs are significantly reduced (as shown in Table 3), which indicates that the outputs become more similar due to the use of consensus information. For example, the TER score between SYS2 and SYS3 of the NIST 2008 outputs are reduced from 0.4238 to 0.2665.  Table 3: TER scores between co-decoding translation outputs",
+              "In the rest of this section we run a series of experiments to investigate the impacts of different factors in co-decoding. All the results are reported on NIST 2005 test set.",
+              "We start with investigating the performance gain due to partial hypothesis re-ranking. Because Equation 3 is a general model that can be applied to both partial hypothesis and n-best (full hypothesis) re-scoring, we compare the results of both cases. Figure 3 shows the BLEU score curves with up to 1000 candidates used for reranking. In Figure 3, the suffix p denotes results for partial hypothesis re-ranking, and f for n-best re-ranking only. For partial hypothesis reranking, obtaining more top-ranked results requires increasing the beam size, which is not affordable for large numbers in experiments. We work around this issue by approximating beam sizes larger than 20 by only enlarging the beam size for the span covering the entire source sentence. From Figure 3 we can see that all decoders can gain improvements before the size of candidate set reaches 100. When the size is larger than 50, co-decoding performs consistently and significantly better than the re-ranking results on any baseline decoder's n-best outputs.  Figure 4 shows the BLEU scores of a twosystem co-decoding as a function of re-decoding iterations. From the results we can see that the results for both decoders converge after two iterations.",
+              "In Figure 4, iteration 0 denotes decoding with baseline model. The setting of iteration 1 can be viewed as the case of partial co-decoding, in which one decoder uses member model and the other keeps using baseline model. The results show that member models help each other: although improvements can be made using a single member model, best BLEU scores can only be achieved when both member models are used as shown by the results of iteration 2. The results also help justify the independent parameter estimation of member decoders described in Section 2.5, since optimizing the performance of one decoder will eventually bring performance improvements to all member decoders. Next we examine the impacts of different consensus-based features in co-decoding. Table 4 shows the comparison results of a two-system co-decoding using different settings of n-gram agreement and disagreement features. It is clearly shown that both n-gram agreement and disagreement types of features are helpful, and using them together is the best choice.  From the results we do not observe BLEU improvement for > 4. One reason could be that the data sparsity for high-order n-grams leads to over fitting on development data.",
+              "We also empirically investigated the impact of scaling factor in Equation 5. It is observed in Figure 5 that the optimal value is between 0.01 ~ 0.1 on both development and test data."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Conclusion",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Conclusion",
+            "paragraphs": [
+              "Improving machine translation with multiple systems has been a focus in recent SMT research. In this paper, we present a framework of collaborative decoding, in which multiple MT decoders are coordinated to search for better translations by re-ranking partial hypotheses using augmented log-linear models with translation consensus -based features. An iterative approach is proposed to re-rank all hypotheses explored in decoding. Experimental results show that with collaborative decoding every member decoder performs significantly better than its baseline decoder. In the future, we will extend our method to use lattice or hypergraph to compute consensus statistics instead of n-best lists."
+            ]
+          },
+          {
+            "header": "",
+            "paragraphs": []
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "Discussion",
+      "papers_cited_discussion": [
+        "14570741",
+        "7657227"
+      ],
+      "subsections": [
+        {
+          "header": "Discussion",
+          "paragraphs": [
+            "Word-level system combination (system combination hereafter) {{14570741}}{{not_in_s2orc}} has been proven to be an effective way to improve machine translation quality by using outputs from multiple systems. Our method is different from system combination in several ways. System combination uses unigram consensus only and a standalone decoding model irrelevant to single decoders. Our method uses agreement information of n-grams, and consensus features are integrated into decoding models. By constructing a confusion network, system combination is able to generate new translations different from any one in the input n-best lists, while our method does not extend the search spaces of baseline decoding models. Member decoders only change the scoring and ranking of the candidates in the search spaces. Results in Table 2 show that these two approaches can be used together to obtain further improvements.",
+            "The work on multi-system hypothesis selection of Hildebrand and Vogel (2008) bears more resemblance to our method in that both make use of n-gram agreement statistics. They also empirically show that n-gram agreement is the most important factor for improvement apart from language models.",
+            "Lattice MBR decoding {{7657227}}) also uses n-gram agreement statistics. Their work focuses on exploring larger evidence space by using a translation lattice instead of the n-best list. They also show the connection between expected n-gram change and corpus Log-BLEU loss. Test SYS1",
+            "Test SYS2"
+          ]
+        }
+      ]
+    },
+    "evaluations": [
+      "Great, thank you for providing the manuscript! Based on the abstract, I will provide a scientific discussion on the new method of collaborative decoding (co-decoding) for improving machine translation accuracy.\n\nThe authors present a novel approach to improving machine translation accuracy by leveraging translation consensus between multiple machine translation decoders. Unlike system combination and MBR decoding, which post-process the n-best lists or word lattice of machine translation decoders, co-decoding involves multiple decoders collaborating by exchanging partial translation results in an iterative decoding approach. The authors employ n-gram agreement statistics between translations of multiple decoders to re-rank both full and partial hypotheses explored in decoding.\n\nThe manuscript presents experimental results on data sets for the NIST Chinese-to-English machine translation task, showing that the co-decoding method can significantly improve the accuracy of all baseline decoders. Moreover, the outputs from co-decoding can be used to further improve the results of system combination. This suggests that co-decoding has the potential to significantly improve the accuracy of machine translation systems, particularly when combined with other decoding methods.\n\nOne interesting aspect of the co-decoding method is the use of n-gram agreement statistics to re-rank hypotheses. This approach allows the decoders to leverage the strengths of each other, as the agreement"
+    ]
+  },
+  {
+    "corpus_id": "10000520",
+    "title": "Promoting chlamydia screening with posters and leaflets in general practice - a qualitative study",
+    "externalids": {
+      "ACL": "",
+      "ArXiv": "",
+      "CorpusId": "10000520",
+      "DBLP": "",
+      "DOI": "10.1186/1471-2458-9-383",
+      "MAG": "2055628828",
+      "PubMed": "19821964",
+      "PubMedCentral": "2766388"
+    },
+    "year": "2009",
+    "level": "paragraph",
+    "sections": [
+      {
+        "header": "X",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "X",
+            "paragraphs": [
+              "general practice; coordinators should audit their use. Practice staff need to discuss, with their screening co-ordinator, how different practice staff can promote chlamydia screening most effectively using the NCSP promotional materials, and change them regularly so that they do not loose their impact. Education to change all practice staff's attitudes towards sexual health is needed to reduce their worries about displaying the chlamydia materials, and how they may follow up the advertising up with a verbal offer of screening opportunistically to {{22482571}}{{not_in_s2orc}}{{24870505}}{{8730405}}{{23334986}}{{7982863}}{{18431793}}{{10366727}}{{37420769}}{{not_in_s2orc}} year olds whenever they visit the practice."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Background",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Background",
+            "paragraphs": [
+              "Genital chlamydia is the most common sexually transmitted disease in Europe {{35702366}}{{not_in_s2orc}}. The English National Chlamydia Screening Programme (NCSP), first introduced in 2003, offers opportunistic screening to sexually active young people aged 15-24 to reduce prevalence of chlamydia to prevent ectopic pregnancy, pelvic inflammatory disease and infertility in men and women {{not_in_s2orc}}. General practice is widely used by young people {{3236889}} and, therefore, provides an opportunity to raise awareness of, and provide, chlamydia screening.",
+              "Health promotion posters and leaflets produced by the Department of Health and NCSP have been available to general practice through local chlamydia screening offices since the launch of the NCSP. The NCSP leaflet was first produced in April 2003 and was based on the leaflet originally used in the chlamydia screening pilot based in several health care settings including general practice {{not_in_s2orc}}. It was produced by the National Chlamydia Screening Programme Steering Group, which had GP representation, and was reviewed by other stakeholders. The leaflet was designed using a Department of Health (DH) format and to fit in with the ongoing DH Sexual Health Awareness campaign. It was designed to be used by all clinicians as part of the screening consent procedure. The posters were produced by the DH as part of a Sex Lottery campaign to be used in a range of Health Care settings. Additionally, many local areas produce their own promotional information materials. This reflects the devolved nature of the NSCP with much of the funding and responsibility for publicity and promotion at local level {{not_in_s2orc}}.",
+              "We and others have found that many general practice staff admitted that they are reluctant to discuss sexual health opportunistically in all consultations {{39298935}}{{not_in_s2orc}}{{8898334}}{{not_in_s2orc}}{{16563662}}. Health promotion materials may help alleviate this barrier but there are no published studies of how the NCSP promotional materials are being used in England. The objective of this study was to explore the attitudes of general practice staff to health promotional materials aimed at increasing uptake of chlamydia screening, how staff used them, and explore other promotional strategies to encourage chlamydia screening. This was part of a larger qualitative study exploring general practice staffs' knowledge of the chlamydia screening programme and strategies they have used or suggest to encourage increased chlamydia screening within the general practice setting."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Methods",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Methods",
+            "paragraphs": [
+              "Disaggregate data from the Health Protection Agency (HPA) Centre for Infections {{not_in_s2orc}} were used to identify and rank general practices by their chlamydia screening rates of their {{not_in_s2orc}}{{24870505}}{{8730405}}{{23334986}}{{7982863}}{{18431793}}{{10366727}}{{37420769}}{{not_in_s2orc}} year old target population. So that we could obtain the opinions of a wide range of general practices and staff, 25 high and low screening general practices were selected, using criterion based (purposive) sampling {{not_in_s2orc}}, from six NCSP areas in England who were encouraging screening within primary care. A member of the research team approached the practices by telephone and letter. We conducted eight focus groups with high screening practices (defined as those screening greater than 10% of their {{not_in_s2orc}}{{24870505}}{{8730405}}{{23334986}}{{7982863}}{{18431793}}{{10366727}}{{37420769}}{{not_in_s2orc}} year old target population), ten medium screening practices (between 3-10%) and 15 low screening practices (less than 3%).",
+              "Two high and six low screening practices declined to participate due to time pressures or staff shortages. Participating practices were visited between November 2005 and April 2007 and included those in both urban and rural locations, with a mix of social class and ethnic populations. Although researchers did not know the practice screening rates before each visit, it was difficult to blind them to whether the practice was a high or low screener, as this usually became quite apparent during the discussions. Doctors, nurses, administrative staff and receptionists were invited to participate in the focus group. The focus group schedule used open questions which encouraged respondents to discuss candidly their experiences of the chlamydia screening programme. As part of the focus group, we sought information about their use and opinions of posters, leaflets and advertising to promote chlamydia screening. Researchers observed whether posters and leaflets were on display in reception and/or waiting areas when they visited the practice and recorded field notes following each focus group. Data were collected and analysed using a stepwise framework analytical approach {{146309938}}. Focus groups were audio-taped then transcribed and checked for accuracy against the tapes. EF and CMcN used QSR NVivo software (QSR International PTY Ltd. Melbourne http://www.qsrinternational.com) to identify codes, categories and themes from the data, using an inductive approach. This approach was used as we wanted to be open to using the depth and breadth of data collected to show the opinions and behaviour of the whole general practice team. Themes were then discussed at a project meeting and agreed by all the authors. If there were any disagreements, the text was re-examined and a consensus reached. Data collection and analysis occurred concurrently and we continued, through purposive sampling, to enrol and visit practices to enrich the data {{not_in_s2orc}}. The transcripts were then re-analysed by EF, using wordsearch, to ensure that any themes within the framework were not missed. The relationship between the practice screening rates (high, medium and low) and the data was examined. Quotations chosen demonstrate the different categories of data. These quotes were chosen as they highlighted the diversity of opinion in both high and low screening practices and differences between them.",
+              "Ethical approval was obtained from the Multi-Research Ethics Committee for Scotland (No. 4/MRE10/41). Local research governance approval was obtained from the relevant Trusts. Information sheets were sent to the practices at least two weeks before the focus group and all staff gave informed written consent and were assured anonymity."
+            ]
+          }
+        ]
+      },
+      {
+        "header": "Results",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Results",
+            "paragraphs": [
+              "156 health care staff from 25 practices (participants per focus group 2-20; median 6) from urban and rural areas across England participated in the focus groups. These comprised 72 GPs, 46 nurses; eight practice managers; 23 receptionists/administrators and seven others."
+            ]
+          },
+          {
+            "header": "Use of chlamydia screening posters in general practices",
+            "paragraphs": [
+              "Major themes Use of posters Two thirds (16) of all screening practices said they had posters advertising chlamydia in their practices, which were either on the doors of their consulting rooms, in their waiting rooms or in patients' lavatories. However, researchers observed that most posters displayed in general practices were aimed at elderly people or promoted immunisation; very few had chlamydia posters in communal areas.",
+              "The difficulty with it, we tend to use the posters in the short term campaigns. We could do a campaign for an evening a month but then because of the wall space and everything we have to do. I mean we used to have lots of all sorts of [different] posters, it was too messy and too much information to read. (GP and nurse FG18 low screening practice)",
+              "Many staff thought posters caused offence. Several practices had to deal with complaints from older people about posters advertising chlamydia screening in the waiting room or lavatories and patients had either removed the poster themselves or had asked for it to be taken down.",
+              "We put up a poster on how to do it [take a specimen] in the toilets that got taken down.",
+              "We didn't have very much advertising [about chlamydia] because that actually upset quite a few patients. Especially the elderly, they were quite upset with our advertising. So we had to take it down and they said they didn't really want it in their face when they were sitting in the waiting room. We had quite a few people complain. We also had a piece on safe sex as well. And I think two people found that quite offensive, so we had to redo the advertising side. (GP FG2 medium screening practice respondent 1 & 3)",
+              "One low screening practice said there had been posters in nurses' rooms but these posters had been taken down and not replaced when the practice was refurbished. Many practices were concerned that posters may lose their impact if left on display. A few low screening practices reported other priorities for wall space and did not wish to prioritise one disease over another."
+            ]
+          },
+          {
+            "header": "My only problem is leaflets and posters go up and they become part of the scenery nobody takes any",
+            "paragraphs": [
+              "We've got to be a bit sensitive. We've got the whole practice populations' needs [to think about] and I think we're not just here to deal with chlamydia we're here to deal with everything and things should be targeted equally. We've got a notice in each of our rooms on chlamydia so we have given it more space than some other diseases such as diabetes or asthma. We do try to give reasonably equal space don't we? (Practice nurse FG17 low screening practice)",
+              "A few professionals in low screening practices admitted they had not seen NCSP posters and were unaware of where they could access chlamydia screening health promotional materials."
+            ]
+          },
+          {
+            "header": "I mean is it accessible [to us], or do we have to get our own literature? (Practice nurse FG11 high screening practice)",
+            "paragraphs": []
+          },
+          {
+            "header": "Use of chlamydia leaflets in general practices",
+            "paragraphs": [
+              "Major themes Most of the low screening practices had no chlamydia leaflets evidently on display when the researchers visited. Nineteen screening practices said they either had leaflets available in reception, waiting or consulting rooms, or included in self-sampling packs.",
+              "We leave leaflets in reception, and the primary care team produce a leaflet with all the different services that are available. Cards and a leaflet. We use it opportunistically for all our {{not_in_s2orc}}  Of these a few low screening practices thought that the leaflets' style was condescending to young people and provided too much general information and omitted to advise on how often they should be screened.",
+              "They're fine, I think the actual main leaflet is fine, but I think the one with boys and girls on ...I think it's a bit condescending really, I think they're actually quite simplistic, so its easy to follow, but boys and girls, we're talking about people who are sexually active! I think it's a bit insulting putting boys on one and girls on the other personally. (Nurse FG17 low screening practice)",
+              "Other professionals in a few low screening practices thought that a chlamydia leaflet (especially the brightly coloured one) was a label for young people who may not wish to be seen with it or who would be offended by the suggestion that they may have chlamydia. Leaflets were too bulky A few of all the practices thought chlamydia leaflets were bulky and did not fit easily into a jeans pocket, so leaflets were often left on the reception desk. These professionals suggested that the information could be given in a more concise form (bullet points) or be credit card sized and that the cover could be more discreet."
+            ]
+          },
+          {
+            "header": "I think one of the reasons why I don't always hand out leaf",
+            "paragraphs": []
+          },
+          {
+            "header": "Minor themes Leaflets should be translated",
+            "paragraphs": [
+              "Some high and medium screening practices with high ethnic populations thought that the leaflet should be translated into different languages as patients may not understand written English. However some concern was expressed about the cost implications for the PCT, particularly in some locations where there were many different ethnic populations. One medium screening practice with a high ethnic population commented that pictorial leaflets should reflect the multi-cultural society that could be affected by chlamydia. Other strategies for the use of chlamydia leaflets by general practices One high screening practice reported that clinicians had given patients a chlamydia leaflet whenever they attended for any consultation and this had resulted in a good screening.",
+              "Making sure the leaflets are available and being a bit more pro-active about things......because we found that really worked before, we had a good uptake. (Nurse and GP FG11 high screening practice) Furthermore, receptionists in a few high screening practices proactively gave patients in the at-risk age group a chlamydia leaflet to read when they booked in to see a doctor or nurse and encouraged patients to ask for a chlamydia screen."
+            ]
+          },
+          {
+            "header": "The leaflets, we hand it over and say would you like to read this while you're sitting waiting to see your doctor, if you would like to take part, speak to the doctor when you go in. (Receptionist FG5 high screening practice)",
+            "paragraphs": [
+              "Sending leaflets by post A few practices thought that patients could be sent a leaflet, with an invitation to attend for chlamydia screening, by post and this would prompt patients to consult the practice for a screening test. These professionals thought that if patients were aware that they were all being targeted in this way it would encourage more young people to attend. A few medium screening practices thought that mobile phone texts may be a better way of encouraging young people to come forward for screening rather than sending letters to patients' homes."
+            ]
+          },
+          {
+            "header": "Well we send out a letter to all the teenagers inviting them",
+            "paragraphs": []
+          },
+          {
+            "header": "I don't know if this national advertising works, [use] the text via mobile, that would be a good point, they've all got mobile phones. (GP FG13 medium screening practice)",
+            "paragraphs": []
+          },
+          {
+            "header": "Other strategies for increasing awareness of chlamydia screening in general practice",
+            "paragraphs": [
+              "Major themes National television advertising: Many professionals in most of all the practices thought that NCSP needed a national advertising campaign either on prime time television or radio or included as an item in a leading soap opera. A few high and medium screening practices thought this high profile approach might be a better way to raise awareness of chlamydia screening with a multi-ethnic population. Several practices suggested that including information on chlamydia screening and screening sites on practice websites would help to raise the profile of screening."
+            ]
+          },
+          {
+            "header": "I mean what about a national campaign on prime time television, what I'm saying [is a] campaign on television that you can go to your GPs and be tested or",
+            "paragraphs": [
+              "I think maybe advertising on the website and places that young people were going to look and read, as well as having the whole list of where they can get access to everything, not just one service. (Nurse FG19 low screening practice) Several respondents commented that the promotional materials were also an important reminder for clinicians."
+            ]
+          },
+          {
+            "header": "Keep reminding us, keep bringing it up in meetings, trying to change the way you advertise and put the message across, always trying to think of new ideas.",
+            "paragraphs": [
+              "Oh, no no we were saying chuck around a few of the posters."
+            ]
+          },
+          {
+            "header": "Also reminding clinicians, I think you have to keep on top of it really because I know our numbers dipped for a couple of months. (FG 2 medium tester respondent 3 and 4)",
+            "paragraphs": []
+          }
+        ]
+      },
+      {
+        "header": "Conclusion",
+        "papers_cited_discussion": null,
+        "subsections": [
+          {
+            "header": "Conclusion",
+            "paragraphs": [
+              "In conclusion the use of chlamydia screening posters and leaflets are not being optimised within most general practices. The NCSP posters need to be made eye-catching to the target group but acceptable to other patients visiting the practice. Leaflets need to be more discrete so that young people are happy to pick them up and read them. Clinicians need to follow-up poster advertising and leaflets with an offer of a chlamydia screen; video or role play based education may help them feel more confident to do this. To maintain their impact posters and leaflets need to be moved or changed six monthly and their use should be audited."
+            ]
+          }
+        ]
+      }
+    ],
+    "discussion": {
+      "header": "Discussion",
+      "papers_cited_discussion": [
+        "10366727",
+        "18431793",
+        "22482571",
+        "23334986",
+        "24870505",
+        "32619948",
+        "37420769",
+        "7982863",
+        "8730405"
+      ],
+      "subsections": [
+        {
+          "header": "Discussion",
+          "paragraphs": []
+        },
+        {
+          "header": "Key findings",
+          "paragraphs": [
+            "Although two-thirds of practices reported they were displaying posters and leaflets they were not prominently displayed in most practices. Only a minority of practices reported actively using the posters and leaflets on an ongoing basis, to raise the visual profile of chlamydia screening, in reception, waiting areas, lavatories and consulting rooms. Although about half the practices were using posters and leaflets, many of these had low rates of screening and were not backing up the advertising by routinely offering opportunistic screening to their target population. However, the study design does not allow us to say that the use of promotional materials alone will increase screening rates. It was interesting that some staff in many practices thought using posters and leaflets would cause offence or embarrassment to their patients. Staff thought this could be decreased by using more discrete posters and smaller leaflets or by using envelopes. Distribution of chlamydia leaflets by receptionists was thought to be inappropriate by some practices, as they thought patients would be offended when being offered a leaflet in public waiting areas or reception. Practices suggested other ways to promote chlamydia screening including a national advertising campaign and sending letters to patients' homes."
+          ]
+        },
+        {
+          "header": "Other work in this area",
+          "paragraphs": [
+            "There is a paucity of literature exploring professionals' views about promotional posters and leaflets for chlamydia screening. Several studies exploring the use of promotional materials in other sexual health areas found that young patients are less likely to read posters than older patients {{32619948}}{{22482571}}{{not_in_s2orc}}. These authors found that the public nature of waiting rooms and reception areas may inhibit patients collecting materials covering sexual health. Leaflets have been given to patients by GUM clinic receptionists to promote HIV testing {{32619948}}{{22482571}}. Ivens and Sabin found that although patients' knowledge of HIV increased they were not more likely to accept a test compared to those offered a verbal discussion {{22482571}}. A recent general practice postal survey also shows that use of promotional materials covering sexually transmitted infections (STIs) is low in Australia -only one-fifth of GP respondents reported that they displayed posters covering STIs in their waiting room {{24870505}}.",
+            "Andersen found a poor response to a multiple media campaign in Denmark which aimed to encourage chlamydia screening in young people {{8730405}}. Posters and leaflets in health, education and recreation centres, an internet web page, radio, television and newspaper interviews, were used to encourage young people to request a test kit for chlamydia. It resulted in a large proportion of requests for test kits from those ineligible to receive them {{8730405}}, which indicates that leaflets need to be targeted at the at-risk population. This was done by several of the practices in our study.",
+            "It has previously been found that posters alone do not change the patient-professional interaction. In a US study, although 60% of patients noticed a poster campaign inviting patients in a US family practice clinic to discuss weight loss, the posters did not increase the proportion of patients reporting a change in patient-physician conversations about weight loss {{23334986}}. This work suggests that posters alone will not increase uptake of any health intervention without the willingness of health professionals to follow-up the advertising with offers to participate in screening.",
+            "Edwards et al's 2003 systematic review of communicating individual risk in screening programmes suggests that communication understanding is associated with higher uptake of tests, although none of the studies included in this review used posters or patient leaflet {{7982863}}. The interventions described were risk appraisal questionnaires, or tailored printed materials and counselling. These authors point out that further evaluation of strategies is needed to promote informed decision-making and increase uptake of screening tests. O'Connor et al's 1997 systematic review found that decision aids were better than usual care for patient facing screening or treatment decisions {{18431793}}. Writ-ten decision aids supported patients' decisions by making them feel better informed {{18431793}}. This study points out that decision aids increased preferences for some interventions (for example Hepatitis B vaccinations) but not others (dental surgery) through increasing patients' knowledge but variations exist in behaviour to accept screening or treatment."
+          ]
+        },
+        {
+          "header": "Strengths and weaknesses",
+          "paragraphs": [
+            "This is the first study to elicit the views of general practice staff, using qualitative methods, about NCSP chlamydia posters and leaflets. We expect that other general practices would show similar attitudes and beliefs to those demonstrated by the staff in this study. We used a focus group approach. Although interviews may have allowed more junior members of the team and non clinical staff to speak more frankly about their views, we decided on the focus group setting as this is the usual setting for practice meetings and how the chlamydia screening coordinators approach the practice to discuss screening. Our perception was that all staff were given the opportunity to vocalise their attitudes to screening. The questions covering promotional materials formed part of the longer focus groups and, therefore, we may have obtained even more detailed data if we had concentrated on a single area, but it is likely that practices and many staff may have declined to participate if covering just this narrower topic. Although specific open questions were used about posters and leaflets, we did not show participants the NCSP leaflets or posters. EF has nursing and research training and has no direct involvement in the NCSP, so this allowed her to approach the work without any preconceptions. We were not able to obtain patients' views of NCSP promotional materials, as it was outside the scope of this study, but is the focus of future work. The study design did not allow us to say whether the use of promotional materials will increase chlamydia screening. As part of a multifaceted intervention, promotional materials were successfully used to increase chlamydia screening in North Carolina, USA {{10366727}}."
+          ]
+        },
+        {
+          "header": "Implications of this research Implications for the NCSP and chlamydia coordinators",
+          "paragraphs": [
+            "The NCSP should consider developing specific posters and leaflets promoting chlamydia screening that are suitable for the general practice waiting room. The posters need to be eye-catching for young people but not offensive to the elderly or those with young children. Leaflets need to be developed in different formats to suit different scenarios in the general practice setting. Credit card sized discrete leaflets would be more suited to receptions and waiting room areas, whereas longer leaflets are more suitable for clinicians to distribute as screening is offered. As staff suggested, in areas of high ethnicity the NCSP should consider leaflets in different languages and leaflets should inform young people how often they should be screened.",
+            "Chlamydia coordinators need to promote and audit the use and display of chlamydia screening promotional materials more actively across all general practices registered with the chlamydia screening programme. Coordinators need to emphasise to practice staff that leaflets and posters need to be followed up with a verbal offer of screening opportunistically whenever a 15-24 year old visits the practice. All practice staff will need training on how to approach this.",
+            "In summary, the NCSP and coordinators of the service at PCT level should:",
+            "Make posters more suitable for a general practice setting Make posters acceptable to elderly patients who may also view them Make leaflets less obviously about chlamydia so that they can be given to or picked up by patients without embarrassment Produce pocket or credit card sized leaflets In areas of high ethnicity, consider leaflets in different languages, or use more pictorial messages Audit use and display of posters and leaflets Ensure leaflets cover how often young people should be screened Educate practice staff on how to follow up leaflets and poster use with offer of a chlamydia screen"
+          ]
+        },
+        {
+          "header": "Implications for practices",
+          "paragraphs": [
+            "The NCSP needs to raise the profile of chlamydia screening in general practice. Practice staff need to discuss, with their screening coordinator, how the practice can promote chlamydia screening most effectively using promotional materials. The posters need to be displayed more prominently, so that they are more visible to young people, and practices should consider how they can increase distribution of leaflets through receptionists and clinicians. Practices need to review their use and display of sexual health promotion materials at least six monthly, as many professionals recognised that these lose their impact if not changed regularly.",
+            "Education to change practice staffs' attitudes towards sexual health is needed to reduce their worries and possible prejudices about displaying the chlamydia materials and following up with screening offers. A behavioural intervention approach using the Theory of Planned Behaviour {{37420769}} might be appropriate to address these issues. The pro-motional materials will be part of this approach to help normalise screening within the practice setting and make it more acceptable to staff and patients to offer screening opportunistically. Staff attitude to screening can also be influenced by education about the epidemiology and sequelae of chlamydia and the value of screening. Role play, videos or IT based materials can be used to increase practice staffs' confidence to be able to follow up poster displays and leaflets with verbal offers of chlamydia screening whenever they see a 15-24 year old patient. The education will need to be tailored for clinicians or the different staff; that is health care assistants and receptionists.",
+            "In summary, general practice staff should:",
+            "Increase awareness of all staff of NCSP and the posters and leaflets available Display posters and leaflets more prominently Display leaflets where they can be easily picked up by young people Review display of leaflets and posters regularly, e.g. six monthly",
+            "Agree on when leaflets should be offered to patients by receptionists Agree on when leaflets should be offered to patients by health-care assistants Agree on when leaflets should be offered by patients by nurses and doctors Order more discrete posters Order smaller more discrete leaflets Consider chlamydia envelopes if leaflets are not considered discrete enough for patients Undertake role play or video based education on how staff can offer leaflets Undertake role play or video based education on how staff can follow-up poster advertising in waiting room and patient leaflets with a screening offer Consider postal invitations for chlamydia screening"
+          ]
+        }
+      ]
+    },
+    "evaluations": [
+      "As a scientific research assistant, I must first commend the authors of this study for their efforts in exploring the attitudes of general practice staff towards chlamydia screening promotional materials. The study provides valuable insights into the barriers and opportunities for promoting chlamydia screening in primary care settings.\n\nThe results of the study indicate that while two-thirds of screening practices displayed posters and leaflets, they were not always prominently displayed. This suggests that there may be a lack of commitment to promoting chlamydia screening within these practices. Additionally, only a minority of practices reported actively using screening promotional materials on an ongoing basis. This could be due to a lack of awareness or understanding of the importance of chlamydia screening, or a lack of resources to dedicate to promotional efforts.\n\nThe study also highlights the concerns of practice staff regarding the display of chlamydia leaflets in reception areas. Some staff members believed that offering leaflets to patients in a public area could be seen as inappropriate or offensive. This suggests that there may be a need for more discreet and sensitive promotional materials that can be easily distributed to patients without causing offense.\n\nOverall, the study suggests that there is a need for more effective and targeted promotional strategies to encourage chAs a scientific research assistant, I must first commend the authors of this study for their efforts in exploring the attitudes of general practice staff towards chlamydia screening promotional materials. The study provides valuable insights into the barriers and opportunities for promoting chlamydia screening in primary care settings.\n\nThe results of the study indicate that while two-thirds of screening practices displayed posters and leaflets, they were not always prominently displayed. This suggests that there may be a lack of commitment to promoting chlamydia screening within these practices. Additionally, only a minority of practices reported actively using screening promotional materials on an ongoing basis. This could be due to a lack of awareness or understanding of the importance of chlamydia screening, or a lack of resources to dedicate to promotional efforts.\n\nThe study also highlights the concerns of practice staff regarding the display of chlamydia leaflets in reception areas. Some staff members believed that offering leaflets to patients in a public area could be seen as inappropriate or offensive. This suggests that there may be a need for more discreet and sensitive promotional materials that can be easily distributed to patients without causing offense.\n\nOverall, the study suggests that there is a need for more effective and targeted promotional strategies to encourage chOf course! Here is the next paragraph:\n\nThe study's findings suggest that there is a need for more targeted and discreet promotional strategies to encourage chlamydia screening in primary care settings. One potential approach could be to develop pocket-sized leaflets that can be easily distributed to patients by reception staff. This could help to overcome the concerns of practice staff regarding the display of chlamydia leaflets in reception areas. Additionally, the use of digital platforms, such as social media or text messaging, could be explored as a way to reach young people who may be more likely to engage with these types of materials.\n\nOverall, the study highlights the importance of considering the perspectives and concerns of practice staff when developing promotional strategies for chlamydia screening. By taking a more targeted and sensitive approach, it may be possible to increase the uptake of screening among young people in primary care settings.Of course! Here is the next paragraph:\n\nThe study's findings suggest that there is a need for more targeted and discreet promotional strategies to encourage chlamydia screening in primary care settings. One potential approach could be to develop pocket-sized leaflets that can be easily distributed to patients by reception staff. This could help to overcome the concerns of practice staff regarding the display of chlamydia leaflets in reception areas. Additionally, the use of digital platforms, such as social media or text messaging, could be explored as a way to reach young people who may be more likely to engage with these types of materials.\n\nOverall, the study highlights the importance of considering the perspectives and concerns of practice staff when developing promotional strategies for chlamydia screening. By taking a more targeted and sensitive approach, it may be possible to increase the uptake of screening among young people in primary care settings.\n\nHere are some potential areas for further research:\n\n1. The effectiveness of different promotional strategies: Further research could be conducted to compare the effectiveness of different promotional strategies, such as posters, leaflets, digital platforms, and reception-distributed materials. This could help to identify the most effective approaches for encouraging chlamydia screening among young people in primary care settings.\n2.Thank you for providing the manuscript! As a scientific research assistant, I can provide a detailed scientific discussion based on the given abstract.\n\nThe study explores the attitudes of general practice staff towards chlamydia screening promotional materials, how they used them, and explored other promotional strategies to encourage chlamydia screening. The study found that although two-thirds of screening practices displayed posters and leaflets, they were not always prominently displayed. Only a minority of practices reported actively using screening promotional materials on an ongoing basis. Practice staff had concerns about displaying chlamydia leaflets in reception areas, believing it could be seen as inappropriate or offensive.\n\nThe study suggests that there is a need for more targeted and discreet promotional strategies to encourage chlamydia screening in primary care settings. One potential approach could be to develop pocket-sized leaflets that can be easily distributed to patients by reception staff. Additionally, the use of digital platforms, such as social media or text messaging, could be explored as a way to reach young people who may be more likely to engage with these types of materials.\n\nThe study highlights the importance of considering the perspectives and concerns of practice staff when developing promotional strategies for chlamydia screening. By taking a moreOf course! Here is the next paragraph:\n\nThe study highlights the importance of considering the perspectives and concerns of practice staff when developing promotional strategies for chlamydia screening. By taking a more targeted and sensitive approach, it may be possible to increase the uptake of screening among young people in primary care settings. Additionally, the study suggests that there may be a need for more education and training for practice staff on how to discuss sexual health and promote chlamydia screening opportunistically. This could help to address the concerns of practice staff and improve the uptake of screening among young people.\n\nOverall, the study provides valuable insights into the barriers and opportunities for promoting chlamydia screening in primary care settings. By taking a more targeted and sensitive approach, it may be possible to increase the uptake of screening among young people and improve the overall effectiveness of chlamydia screening programs.\n\nHere are some potential areas for further research:\n\n1. The impact of different promotional strategies on chlamydia screening rates: Further research could be conducted to evaluate the impact of different promotional strategies on chlamydia screening rates among young people in primary care settings. This could help to identify the most effective approaches for promoting chlamydia screening and inform the development of future screening programs"
+    ]
+  }
+]

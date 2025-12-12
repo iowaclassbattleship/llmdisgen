@@ -61,4 +61,4 @@ class Mistral:
             f"{user_prompt} [/INST]"
         )
     
-LLMClass = Mistral
+# LLMClass = Mistral

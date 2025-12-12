@@ -33,4 +33,4 @@ class DeepSeek:
 
         return response.choices[0].message.content
     
-LLMClass = DeepSeek
+# LLMClass = DeepSeek
