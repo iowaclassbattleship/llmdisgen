@@ -1,0 +1,168 @@
+
+Introduction
+
+Meron solutions of two-dimensional non-linear sigma models {{not_in_s2orc}} are interesting singular solutions that are characterized by topological charge equal to 1/2 and logarithmically divergent action. Instanton solutions in this class of models can be understood as being composed by two merons. These have been studied especially in the context of the relation of two-dimensional sigma models to four-dimensional Yang-Mills theories {{121804459}}, (for a review on the subject see {{123579404}} and the references therein), which are also characterized by such solutions which dominate the path integral at strong coupling providing a qualitative picture for the confined phase of these theories {{10443315}}.
+Elliptic solutions that interpolate between instanton and meron solutions have also been discovered {{not_in_s2orc}}. These solutions can be understood as the intermediate stages of the dissociation of meron pairs, supporting the relation between meron pairs and instantons.
+There is an alternative approach to study non-linear sigma models in symmetric spaces, the so called Pohlmeyer reduction {{123165375}}{{123761193}}{{119534683}}{{not_in_s2orc}}{{not_in_s2orc}}{{123345148}}{{not_in_s2orc}}. The critical element of this approach is a non-local coordinate transformation that manifestly satisfies the Virasoro constraints, thus leaving only the physical degrees of freedom. In the case of the O (3) model, this method leads to the relation of the sigma model to the sine-Gordon equation {{123165375}}, while for higher dimensional symmetric spaces one results in multi-component generalizations of the latter.
+Whether the reduced theory can be obtained from a local action is a non-trivial question in this approach, since the degrees of freedom of the reduced theory are connected to the original ones in a non-local way. It turns out that the reduced theory can be considered as a gauged WZW model with an integrable potential in a specific gauge {{119380056}}{{18830993}}{{18368480}}, allowing a systematic method to find the Lagrangian of the reduced theory.
+The reduced theory has an integrable structure, allowing the construction of interesting solitonic solutions. However, the construction of the corresponding solution in the original sigma model is non-trivial due to the non-trivial relation between the original and reduced degrees of freedom. Such constructions have been of particular interest in the context of AdS/CFT correspondence in which case the non-linear sigma model describes the dynamics of strings propagating in AdS spaces {{2450039}}{{118514287}}{{2284875}}{{16004701}}{{not_in_s2orc}}.
+Since several aspects of the relation between the sigma model and the reduced integrable theory have not been understood yet, mapping the solutions of the reduced theories to instanton, meron and elliptic solutions or the original sigma model may provide interesting insights to the properties of Pohlmeyer reduction.
+The structure of this paper is as following: In section 2 we review basic facts of the O (3) non-linear sigma model. In section 3 we review the instanton, meron and elliptic solutions of the model. In section 4 we study the Pohlmeyer reduction of the Euclidean O (3) model resulting in the sinh-Gordon equation. In section 5, we study the mapping between the solutions of the sigma model in the original formulation, as reviewed in section 2, and solutions of the sinh-Gordon equation. Finally, in section 6 we discuss our results. There is also en appendix with properties of Jacobi elliptic functions that are used throughout the text.
+The Euclidean O(3) Non-linear Sigma Model
+
+The Model
+
+The Euclidean O(3) non-linear sigma model describes the dynamics of a three component vector field X i (σ 0 , σ 1 ) with unit norm. Its action is given by
+Index i takes the values 1, 2, 3, while index m takes the values 0, 1 and is contracted with the Euclidean metric δ mn . We first introduce the complex coordinate z,
+Then, the action of the Euclidean O(3) model is written as
+The constraint can be easily satisfied introducing angular field variables Θ and Φ as
+Then, the action is written as
+Finally, we can define the "stereographic projection" complex field variable W as,
+and the action is written as
+(2.9)
+Any field configuration describes a mapping from the complex plane to the sphere S 2 . Any finite action configuration must have a unique limit as the magnitude of the complex number z tends to infinity. In such cases, the complex plane can be compactified to the sphere S 2 and the finite action field configurations are mappings from S 2 to S 2 , thus, they are classified by the homotopy classes of these mappings, which are trivially the elements of the group of integers Z. One can define the topological number density as the Jacobian of the mapping
+(2.10)
+The Equations of Motion and the Stress-energy Tensor
+
+It will turn out that all the formulations of the Euclidean O(3) non-linear sigma model presented in section 2.1, given by equations (2.3), (2.7) and (2.9) will be useful for different points of view of the model solutions. For this reason we will derive the equations of motion and the stress-energy tensor in all these formulations.
+Scalar Fields Triplet Formulation
+
+Starting from action (2.3), the equations of motion for the fields X m are
+while the equation of motion for the Lagrange multiplier λ is the constraint equation
+Acting with ∂∂ on the constraint equation we get
+The latter, using both equations of motion for X i and the constraint, can be written as
+implying that we can write down the equations of motion for the fields X i decoupled from the Lagrange multiplier as
+We can also calculate the stress-energy tensor and find it equal to
+The stress-energy tensor in the angular field variables formulation equals
+Stereographic Complex Field Formulation
+
+The equations of motion derived from action (2.9) are
+The stress-energy tensor equals
+As expected, T zz vanishes identically as a result of conformal symmetry in all three formulations.
+Solutions of the O(3) Non-linear Sigma Model
+
+The O(3) non-linear Sigma Model is known to have several interesting solutions. We will distinguish three classes of solutions: solutions of integer topological charge, i.e. instantons, solutions of half-integer topological charge, i.e. merons and solutions that interpolate between merons and instantons. For the analysis in this section, we will use the formulation of the sigma model in terms of the complex field variable W .
+Instantons
+
+Clearly, any holomorphic function W or antiholomorphic functionW
+is a solution of the equations of motion (2.24). If one wants to restrict to solutions that are characterized by finite action, i.e. solutions that become single valued at infinity, the general solution has to be written as product of factors of the form z−a − z−a + , for instantons and as product of factors of the formz −a − z−a + , for antiinstantons {{118103020}},
+It is easy to show that upon substitution of (3.3) and {{not_in_s2orc}} to the expression for the topological charge (2.10), we find
+Studying the form of the action for the solutions (3.3) and (3.4) and having found the corresponding topological charges, it is natural to interpret these solutions as Ninstanton or N -antiinstanton solutions respectively, localized at positions 1 2 a + i + a − i . Instantons and antiinstantons are the only finite action solutions of the sigma model {{121034572}}. Further details are beyond the scope of this work.
+Equations (2.25) and (2.26) imply that the instanton and anti-instanton solutions are characterized by vanishing stress-energy tensor.
+Merons
+
+Meron solutions are solutions characterized by vanishing topological charge except for singular points. Since the topological charge density is simply the Jacobian of the mapping defined by the fields X i , merons correspond to degenerate solutions that map the complex plane to one-dimensional submanifolds of the sphere. Demanding the above, it turns out that the general meron solution of equations (2.24) is of the form
+where f (z) is an arbitrary meromorphic function of z. Furthermore, the demand that the solution is single valued at infinity results in a specific selection of function f (z),
+which corresponds to a 2N meron configuration, with merons localized at a − i and a + i . For more details on merons, the reader is encouraged to read {{not_in_s2orc}}.
+Substituting (3.9) to (2.25) and (2.26), it is simple to find that the stress-energy tensor elements corresponding to the solution (3.9) are
+(3.12)
+Elliptic Solutions
+
+Although, the instanton and meron solutions are both infinite families of solutions, many more solutions have been neglected due to the demand of localized topological charge. In this section, we will abandon this demand, and following {{not_in_s2orc}}, we will find solutions interpolating between the single meron solution W = z/z and the single instanton solution W = z. To do so, we substitute in equations (2.24) the ansatz
+It is a matter of simple algebra to find that substituting (3.13) in equations (2.9), (2.10), (2.25) and (2.26), yields
+and
+Equation {{not_in_s2orc}} implies that the unspecified function ψ (t) obeys the equation
+which is the one-dimensional sine-Gordon equation or in other words the equation of motion of the pendulum with time having been substituted with the spacial variable t and potential equal to V = cos ψ − 1. {{not_in_s2orc}} Thus, this effective one-dimensional problem has a stable equilibrium that lies at ψ = π and an unstable one at ψ = 0. It has to be pointed out that this one-dimensional sine-Gordon has nothing to do with the sine-Gordon that occurs after the Pohlmeyer reduction 1 . Unlike the connection between the NLSM degrees of freedom and the Pohlmeyer reduced field, which is nonlocal, as we will see in section 4, in this special case ψ is locally connected to the degrees of freedom of the NLSM through {{not_in_s2orc}}. This kind of mapping of the O(3) NLSM to the sine-Gordon equation is a property of the particular model only and it greatly facilitates the study of its elliptic solutions.
+Simple solutions of this effective problem can give us an idea about how the general solution of this problem interpolates between the single meron and single instanton solutions. The unstable vacuum solution ψ = 0 corresponds to the trivial solution W = 0. The kink solution ψ = 4tan −1 e t = 4tan −1 |z| corresponds to the one-instanton solution W = z. Finally the stable vacuum solution ψ = π corresponds to the onemeron solution W = z/z. Thus, the general solution to be found should have the limits of the stable vacuum solution and the kink solution.
+It is a direct consequence of the equation of motion (3.19) that
+In the language of the pendulum the above would be simply energy conservation. We can categorize the solutions in the following classes
+The integral (3.21) of the equations of motion, allows the expression of the general solution in terms of the Jacobi elliptic functions (see also {{14507301}}). Several useful definitions and properties of Jacobi elliptic functions are summarized in appendix A. If one defines ψ = 2Ψ + π, equation (3.21) is written as
+Assuming an initial condition of the form ψ (t 0 ) = π (or Ψ (t 0 ) = 0), the above expression can be integrated using the definition of the incomplete elliptic integral of the first kind (A.1)
+where F (x; k) is the incomplete elliptic integral of the first kind with modulus k and am (x; k) is its inverse function, namely the amplitude of Jacobi elliptic functions. It is a matter of simple algebra to find that
+As physically expected from the pendulum mechanical analog of the problem, the above solutions are periodic for E < 0, and quasi-periodic for E > 0, thus the indices in expressions (3.25) and {{not_in_s2orc}}. Periodic properties of Jacobi elliptic functions (A.17) allow the specification of the corresponding periods,
+where K (x) is the complete elliptic integral of the first kind. Property (A.11) of Jacobi elliptic functions implies that at the limit E → −2 one recovers the single meron solution
+as expected. On the other hand, property (A.14) of Jacobi elliptic functions implies that at the limit E → 0 both periodic and quasi-periodic solutions tend to the instanton solution lim
+In figure 1, the surfaces in S 2 corresponding to the periodic elliptic solutions and the meron and instanton limits are displayed. It can be seen that indeed the elliptic solutions interpolate between the degenerate mapping of the meron configuration to the identity mapping from S 2 to S 2 that corresponds to a single instanton.
+We would also like to comment that the topological charge, as implied by equation (3.16), is not well defined for the elliptic solutions due to the non-existence of the limit lim t→∞ ψ (t). Of course at the limits E → −2 and E → 0, corresponding to the stable equilibrium and kink solutions respectively, the solution is neither periodic nor quasiperiodic and the limit lim t→∞ ψ (t) is well defined, giving rise to a well defined topological charge number, as required for meron and instanton solutions.
+For solutions (3.25) and (3.26), as can be easily seen from equations (3.17) (3.18), the existence of the integral (3.21) implies that the stress-energy tensor components are equal to
+It is easy to check that the above expressions agree with the fact that the instanton solutions are characterized by vanishing stress-energy tensor, as well the formulas (3.11) and (3.12), giving the stress-energy tensor components for a meron configuration at the appropriate limit E → −2 and f (z) → z.
+Reduction of the Euclidean O(3) Non-linear Sigma Model
+
+The Pohlmeyer reduced theory is derived based on the formulation of the sigma model in terms of the scalar fields triplet X i , that take values in a symmetric target space, namely S 2 . The most known example of such reduction is for the Lorentzian version of the model under study, leading to the sine-Gordon equation {{123165375}}. Here we will follow closely the analysis of {{123165375}} in the reduction of the Euclidean version of O(3) non-linear sigma model.
+Definition of the Reduced Theory Field
+
+First, we would like to observe that by definition of the O(3) sigma model, the scalar fields obey the constraint X i X i = 1. It is a direct consequence that the vector X i is perpendicular to the vectors ∂X i and∂X i .
+An important feature of the sigma model that is critical for Pohlmeyer reduction is the fact that the T zz component of the stress-energy tensor is a function solely of z, while the Tzz component is a function solely ofz. Indeed, using expression (2.16) for T zz , the equations of motion (2.11) and the orthogonality between X i and ∂X i , we find
+The stress-energy tensor for meron solutions (3.11) and (3.12), for elliptic solutions (3.30) and (3.31), as well as the fact that the stress-energy tensor for instanton solutions vanishes, are all in accordance with this property. The above fact implies that there is an appropriate redefinition of the complex coordinate z, z = z (w) andz =z (w) that allows setting the stress-energy tensor elements to a real and positive constant 2
+(4.4)
+Notice that (4.4) implies that the fields do not acquire a given value as |w| → ∞ and thus, such boundary conditions should be abandoned when the Pohlmeyer reduced theory is considered.
+In the traditional Pohlmeyer reduction of the Lorentzian O(3) sigma model, the reduced field is defined as the angle between the vectors ∂ + X i and ∂ − X i , where x ± are light cone coordinates x ± = x 0 ±x 1 . In this case, it is a natural definition for the reduced degrees of freedom to set ∂ + X i ∂ − X i = µ 2 cos ϕ, since ∂ ± X i are real vectors with norm equal to µ, as a consequence of the stress-energy tensor being equal to T ++ = T −− = µ 2 , similarly to our case. However, in the Euclidean scenario under study, the inner product of ∂X i and∂X i is always positive and larger than the absolute value of µ 2 . If we define the real and imaginary parts of w as x and y and remembering that we have performed an appropriate coordinate redefinition such that µ 2 is real, it is true that
+Thus, ∂X m∂ X m ≥ µ 2 and a natural definition for the reduced degrees of freedom in the case of the Euclidean sigma model is
+Notice that since ∂X m∂ X m is both positive and larger than the absolute value of T zz , equation (4.7) is a good definition for the reduced field ϕ only if µ 2 has been selected to be positive. Thus, one has to be careful when defining the complex variable w, so that T ww is not only constant and real, but also positive.
+The Basis in Enhanced Space and the Reduced Theory
+
+We would like to specify the dynamics of the field ϕ. In order to do so, we need to calculate the derivative ∂∂ cosh ϕ. Using the definition (4.7) of the field ϕ, we get
+The first term turns out to be the most complicated to calculate. Finding a base in the enhanced, flat, three-dimensional target space of the theory would be convenient, in order to express the second derivatives of X i in that base and calculate the desired term.
+As explained in section 4.1, the vector X i is perpendicular to the vectors ∂X i and∂X i . Consequently, unless a degeneracy between the real and imaginary parts of ∂X i occurs, the three vectors X i , ∂X i and∂X i form a basis in the three-dimensional enhanced flat target space of the sigma model and thus, any vector can be written as a linear combination of the above.
+Let's take advantage of this fact and write the second derivative of X i as such a linear combination,
+Then, equation (4.1) and the definition of the field ϕ (4.7) imply that ∂ 2 X i X i = a, (4.10)
+The vectors X i and ∂X i are orthogonal. It is a direct consequence that
+The vector ∂X i has constant magnitude and thus,
+Finally, from the definition of the field variable ϕ, we get
+Thus, we have all necessary information to specify the coefficients a, b and c. We find
+It is now straightforward to calculate the inner product ∂ 2 X i ∂ 2 X i , ∂ 2 X i∂2 X i = aā + µ 2 bc +bc + µ 2 bb + cc cosh ϕ = µ 4 + µ 2 cosh ϕ∂ϕ∂ϕ .
+(4.20)
+The second and third terms of (4.8) can be easily calculated with the help of the equations of motion (2.15), expressed with the help of field ϕ,
+(4.21)
+Differentiating the above and taking the appropriate inner product we find
+Finally, the last term of (4.8) can be calculated directly from the equations of motion
+All four terms required for the calculation of the derivative ∂∂ cosh ϕ through equation (4.8) have been specified and we get µ 2 ∂∂ cosh ϕ = µ 2 cosh ϕ∂ϕ∂ϕ − µ 4 sinh 2 ϕ, {{not_in_s2orc}} implying that ∂∂ϕ = −µ 2 sinh ϕ, We would like to point out here that in an obvious way, Pohlmeyer reduction cannot be performed if the stress-energy tensor is vanishing. Thus, it is expected that instanton solutions, which are the only finite-action solutions, do not have a counterpart within the solutions of the sinh-Gordon equation. Consequently, we expect that the counterparts of the elliptic solutions must also become problematic at the E → 0 limit.
+Meron Solutions in the Reduced Theory
+
+The stress-energy tensor elements in the case of meron solutions are given by equations {{not_in_s2orc}} and {{not_in_s2orc}}. We desire performing a conformal transformation z = z (w) so that the stress-energy tensor elements are set to a positive constant. After such a conformal transformation, the new stress-energy tensor ww component is equal to
+So if we demand that g 2 T ww = µ 2 , the appropriate conformal transformation should obey
+In terms of the new coordinate w, the meron solution is written as
+Thus, the corresponding solution of the Pohlmeyer reduced theory is
+This implies that all meron solutions are mapped through Pohlmeyer reduction to the ground state of the sinh-Gordon equation.
+The Elliptic Solutions in the Reduced Theory
+
+We have seen in Section 3.3, that the Euclidean O(3) NLSM accepts a family of solutions that correspond to solutions of the one-dimensional pendulum with potential V = cos ψ − 1, characterized by the value of the energy integral E. The stress-energy tensor for these solutions is given by equations (3.30) and (3.31).
+Quasi-Periodic Elliptic Solutions
+
+As for merons, the reduction of the theory requires the performance of a conformal transformation in order to set the stress-energy tensor equal to a positive constant. For quasi-periodic elliptic solutions, for whom E > 0, such an appropriate conformal transformation is z = e w a . (5.6)
+Then, the stress-energy tensor takes the form
+Defining the real and imaginary parts of the complex variable w to be x and y respectively,
+It turns out that these solutions have a simpler expression in terms of the angular field coordinates Θ and Φ. Specifically,
+Since Θ depends only on the real part of w and Φ depends only on the imaginary part of w, we acquire the following simple formulas using equations (2.21) and (2.7)
+Thus, the counterpart of the quasi-periodic elliptic solution (3.25) in the Pohlmeyer reduced theory is
+(5.14)
+Since the reduced field solution depends only on the real part of the complex variable w, the solutions belong to a special subset of the solutions of the Euclidean sinh-Gordon equation that depend on only one real variable, ϕ = ϕ (x) and consequently they obey
+These solutions have an one-dimensional mechanical analog of a "hyperbolic pendulum" with potential V = 4µ 2 cosh ϕ, {{not_in_s2orc}} which from energy conservation obey
+It is a matter of simple algebra to show that equation (5.14) implies
+Periodic Elliptic Solutions
+
+For periodic elliptic solutions, for whom E < 0, an appropriate conformal transformation to set the stress-energy tensor to a constant is
+Then, the stress-energy tensor takes the form
+Defining the real and imaginary parts of the complex variable w to be x and y respectively,
+This implies that the solution in terms of the angular field coordinates is written as {{not_in_s2orc}} and similarly to the case of quasi-periodic solutions we can acquire the following simple expressions
+Thus, the counterpart of the periodic elliptic solution (3.26) in the reduced theory is
+As in the case of the quasi-periodic elliptic solution, the reduced field solution depends only on the imaginary part of the complex variable w, and, thus, the solutions belong to a special subset of the solutions of the Euclidean sinh-Gordon equation that depend only on one real variable, ϕ = ϕ (y) and therefore obey d 2 ϕ dy 2 = −4µ 2 sinh ϕ, {{not_in_s2orc}} being the same ordinary differential equation as in the case of quasi-periodic solutions.
+Consequently, there is also the same one-dimensional mechanical analog of a "hyperbolic pendulum" with potential given by equation {{not_in_s2orc}}. Energy conservation in this one-dimensional mechanical analog implies that the counterparts of periodic elliptic solutions in the Pohlmeyer reduced theory obey
+It is a matter of simple algebra to show that equation (5.27) implies that
+which is the exact same formula as in the case of quasi-periodic solutions.
+Comparison of the Initial and Reduced Formulations
+
+In the process of deriving the form of the counterparts of the NLSM solutions in the Pohlmeyer reduced theory, we performed a conformal transformation that sets the stress-energy tensor to a real and positive constant. Although equation (4.2) ensures that there is always such a transformation, it is not the case that this is the same transformation for all NLSM solutions. This becomes evident comparing the appropriate conformal transformations in the case of meron and elliptic solutions, given by equations (5.2), (5.6) and {{not_in_s2orc}}. Even in the case of the family of elliptic solutions, the same conformal transformation manages to set the stress-energy tensor components to a real and positive constant for the whole family, but a different one for each member of the family. Since this constant enters into the reduced problem as the mass scale of the sinh-Gordon equation, each solution of the elliptic family has been mapped to a solution of a different version of the sinh-Gordon equation.
+In order to better understand the correspondence between the elliptic solutions of the NLSM and the solutions of the sinh-Gordon equation, we would like to make a more specific conformal transformation for each solution, so that the mass scale of the sinh-Gordon equation is always the same. This can be achieved by taking advantage of the freedom to select the parameter a appearing in the conformal transformations {{not_in_s2orc}} and {{not_in_s2orc}}. Choosing
+the potential of the one-dimensional effective mechanical problem equals V = cosh ϕ (5.32) in all cases. Then, the corresponding energy constant in the reduced one-dimensional mechanical problem (the "hyperbolic" pendulum problem) is related with the energy constant in the initial one-dimensional mechanical problem (the pendulum problem) as
+Notice that E diverges as E → 0. This is expected since for E → 0 the elliptic solutions tend to the instanton limit, which cannot have a Pohlmeyer counterpart. In figure 2, we can see the correspondence of the energy levels between the initial and reduced problems. Interestingly, for every energy level corresponding to a periodic solution of the initial pendulum problem, there is another energy level corresponding to a quasi-periodic solution and vice versa, such that the two solutions correspond to the same energy level in the reduced "hyperbolic pendulum" problem. This is evident in figure 3, which depicts the relation between the energy levels in the original and reduced problems. Since the reduced problem solution is characterized only by its energy level (up to a shift in the "time" variable), the two solutions of the reduced problem are actually the same solution. One can easily check that equations (5.18) and (5.30), together with the appropriate setting of the parameter a (5.31), imply that two energy levels E 1 < 0 and E 2 > 0 in the original problem corresponding to the same energy level in the reduced theory E 1 = E 2 obey E 1 E 2 + 2 (E 1 + E 2 ) = 0. and thus, the two solutions would be connected with the modular transformation k → 1/k. On the other hand, the two solutions in the initial formulation of the theory are not identical. The periodic solution corresponds to a surface that covers part of the whole sphere as shown in figure 1, while the quasi-periodic solution covers the whole sphere, but it is singular at the poles, as the derivatives of the fields do not vanish there. Actually, the discontinuity of the surface corresponding to the periodic solution is similar to the discontinuity to the longitudinal tangential vector of the surface corresponding to the quasi-periodic solution; one can show that
+One may suggest that the two distinct NLSM solutions correspond to the same solution in the reduced theory, as Pohlmeyer reduction deals with the position vector and tangential vector in a symmetric way, as two elements of the basis defined in the enhanced flat three-dimensional target space.
+
+Acknowledgments
+
+This work is dedicated to the memory of Prof. Ioannis Bakas. His unexpected loss deprived the scientific community of a member with an elegant way of thinking, infinite organization skills and integrity. This paper is the outcome of uncountable discussions on the connection between geometry and physics and it was built alongside our previous joint work.
+A Useful Formulas for Jacobi's Elliptic Functions
+
+The incomplete elliptic integral of the first kind is defined as
+
+
+
+
+CITED_PAPERS:
+
+
+12750838:Dressing the Giant Magnon
+
+
+
+

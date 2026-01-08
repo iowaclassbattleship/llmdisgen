@@ -1,0 +1,43 @@
+**Discussion**
+
+This protocol describes a multicentre, randomised controlled trial (RCT) evaluating whether a rapid, biomarker-based test to exclude ventilator-acquired pneumonia (VAP) improves antibiotic stewardship, specifically by reducing unnecessary antibiotic use in ICU patients with suspected VAP. The trial builds on robust prior observational and validation work demonstrating high negative predictive value (NPV) of bronchoalveolar lavage (BAL) fluid measurements of IL-1β and IL-8 for excluding VAP {{17391743}}.
+
+**Rationale and Expected Impact**
+
+Overuse of antibiotics in ICU settings is well-documented, with empirical initiation of therapy common in cases of suspected VAP; however, culture-proven infection is confirmed in only a minority of cases {{17391743}}. Prolonged, and often unnecessary, exposure to antibiotics drives antimicrobial resistance, increases healthcare costs, and exposes patients to risks such as secondary infections and toxicity. Previous studies have shown that clinical criteria lack specificity and traditional culture methods are time-consuming, reinforcing the need for more rapid and accurate diagnostic aids. Biomarker-guided approaches, such as the measurement of IL-1β and IL-8, have been shown to reliably rule out VAP, allowing the potential for earlier discontinuation of antibiotics {{17391743}}.
+
+The pragmatic RCT described aims to directly test whether provision of results from a rapid BAL biomarker assay to clinicians can actually change prescribing behaviour and increase antibiotic-free days (AFD), the chosen primary outcome. By comparing biomarker-driven recommendations against standard culture-guided care, the study will address whether the strong diagnostic performance of these biomarkers, with an NPV approaching 100% in validation cohorts, is sufficient to translate into a measurable clinical practice change.
+
+**Strengths of the Study Design**
+
+Key strengths of this protocol include:
+
+- **Multicentre, Pragmatic Approach**: Inclusion of diverse ICUs across the UK and minimal restrictions on patient eligibility improve generalisability and ensure real-world relevance of results.
+- **Well-Defined Eligibility and Safety Measures**: The exclusion of patients at high risk from BAL and the clear randomisation and blinding strategy maximise patient safety and minimise bias.
+- **Robust Training and Quality Assurance**: Standardised laboratory protocols, staff training, and flow cytometry quality controls reduce technical variability.
+- **Patient-Centred and Clinically Relevant Outcomes**: Use of AFD as the primary endpoint directly targets the impact of stewardship interventions and aligns with current practice and previous research {{17391743}}. Secondary outcomes, such as organ support duration, ICU/hospital mortality, and rates of resistant or nosocomial infections, provide a comprehensive assessment of safety and broader clinical impact.
+- **Implementation Process Evaluation**: Evaluation of contextual, behavioural, and logistic factors influencing intervention delivery increases the utility of findings for future implementation.
+
+**Limitations and Potential Challenges**
+
+Notwithstanding its strengths, several limitations and practical challenges are notable:
+
+- **Dependence on BAL**: The need for bronchoscopic sampling restricts eligibility to patients who can safely undergo this invasive procedure. As noted previously {{17391743}}, this necessarily excludes a significant fraction of the potential VAP population, including the most physiologically unstable.
+- **Diagnostic Reference Standard**: The reliance on quantitative BAL culture at >10^4 CFU/mL as the gold standard is imperfect, particularly in patients receiving prior antibiotics which may cause false-negative cultures. As in prior studies, these limitations could affect both the application and the performance characteristics of the biomarker rule-out.
+- **Risk of Reluctance to Change Practice**: While the protocol allows clinician discretion to deviate from biomarker recommendations, entrenched prescribing patterns and concern for false negatives may blunt the intervention effect. This highlights the importance of the concurrent process evaluation to understand and address barriers to guideline adoption.
+- **Limited Scope for Biomarker False Negatives**: Although validation data demonstrate extremely high NPV for the IL-1β/IL-8 combination, false negatives remain possible, which could, in rare cases, pose clinical risks if antibiotics are inappropriately stopped. The protocol mitigates this by leaving final prescribing decisions to clinicians, but this also may dilute effectiveness if clinicians default to continuation.
+- **Implementation Delays**: The logistics of sample transport to laboratory ‘hubs’ and rapid turnaround may not be scalable to all settings, potentially limiting generalisability beyond equipped and connected UK centres.
+
+**Comparison with Existing Literature**
+
+Most previous attempts to aid VAP diagnosis using alternative biomarkers—such as procalcitonin and sTREM-1—have not demonstrated diagnostic performance sufficient for routine clinical adoption, with non-reproducible results across cohorts {{17391743}}. The rigorous multicentre validation of IL-1β and IL-8 by cytometric bead array, with rapid turnaround and high NPV, represents a notable advance, but its utility depends on demonstrated clinical impact on antibiotic exposure. The trial is well positioned as the necessary next step, as highlighted in the most recent validation study {{17391743}}, which called for randomised evidence as proof of effect on stewardship.
+
+**Implications for Practice and Research**
+
+Should this trial demonstrate a meaningful increase in AFD without compromising clinical outcomes, it could justify widespread adoption of a biomarker-augmented diagnostic approach to antibiotic stewardship in ICUs. However, issues of cost, workflow, and uptake—particularly outside research-rich settings—would need careful consideration. Future research may extend these findings by investigating the utility of similar biomarker rule-outs using less invasive (e.g., non-bronchoscopic, or even blood-based) sampling techniques, as well as evaluating the approach in broader patient subgroups currently excluded due to BAL risks.
+
+Finally, this protocol’s emphasis on CONSORT and best-practice reporting standards {{5387743}} sets a benchmark for reporting in interventional stewardship research and will facilitate evidence synthesis and translation to guideline recommendations.
+
+**Conclusion**
+
+This RCT protocol is robustly designed to address a critical gap in the management of suspected VAP and antibiotic stewardship. The trial’s outcomes should provide definitive evidence as to whether biomarker-guided exclusion of VAP, as opposed to conventional microbiology alone, can safely and effectively reduce unnecessary antibiotic exposure in the ICU. The findings will have significant implications for practice, policy, and the development of future rapid diagnostic strategies in critical care.

@@ -1,0 +1,110 @@
+h before killing. Tissue was processed for t-#m sections as previously described {{not_in_s2orc}}. In addition, the sections were coated with a silver emulsion and incubated for 2 wk before Giemsa staining and microscopic examination. Autoradiography of [aH]thymidine incorporation into cell nuclei was used to quantitate endothelial cell proliferation. Labeled endothelial cells had >5 grains of precipitated silver superimposed on their nuclei. The percentage of labeled endothelial cells was determined within a 0.5-ram swath along the wound edge from the epidermis to the panniculus carnosis and within the adjacent swath 0.5-1.0 mm from the wound edge.
+Reciprocal Species-specific Anti-Fibronectin Antibodies. Rat and mouse fibronectin was isolated from normal rat-and mouse-citrated plasma using gelatin-affinity chromatography {{19792028}}. Fibronectin from each animal was mixed with complete Freund's adjuvant and injected into the footpads of reciprocal animals. This procedure produced species-specific antibodies. Antisera from each species were purified by adsorption on insolubilized fibronectin-depleted plasma of that species. Antibodies were isolated by passage of the antisera over a protein A affinity column {{not_in_s2orc}} and then conjugated with either fluorescein or rhodamine by the dialysis method {{not_in_s2orc}}. Immunofluorescence was performed as previously described {{not_in_s2orc}}.
+
+Results
+
+To test whether blood vessel fibronectin was produced in situ, we used rat ear skin transplanted onto the flanks of immunosuppressed mice and reciprocal species-specific anti-fibronectin antibodies. Previous studies have shown that donor (rat) blood vessels persisted in the xenograft for at least 4 wk after transplantation {{17786725}}{{14452609}}; therefore, within this time period mouse anti-rat fibronectin antisera would identify fibronectin produced in situ by donor (rat) blood vessel cells, while rat anti-mouse fibronectin antisera would identify plasma derived fibronectin deposited in the vessels from the recipient (mouse) circulation. Because the graft sites were healed within 2 wk after surgery, it was possible to extirpate a 3-ram punch biopsy from the center of each graft site at that time.
+2 d after excisional wounding, the endothelial cells of the microvasculature along the wound edge appeared markedly activated as characterized by swollen nuclei with an open chromatin pattern, swollen cytoplasm, and bulging of the entire cell into the vessel lumen. Some endothelial cells in blood vessels within 0.5 mm of the wound edge demonstrated mitotic figures by day 4. These cytologic findings correlated with the greatly increased numbers of [aH]thymidine-labeled endothelial cells near the wound edge demonstrated with 1-/tin section autoradiography at 2 and 4 d after injury (Fig. 1).
+When the microvasculature near the wound was examined with species-specifc, fluorescein-labeled, anti-rat fibronectin antibodies, an increased fluorescence of fibronectin was noted in the walls of blood vessels that coursed within 0.5 mm of the wound edge the second day after injury (Fig 2. A and B) compared with the staining of fibronectin in walls of rat blood vessels within the graft before injury (Fig 2. D). When the rat vessels near the wound edge were stained with anti-mouse fibronectin no staining was apparent (Fig 2. C). The lack of vessel fluorescence with anti-mouse fibronectin was not secondary to a failure of the anti-mouse fibronectin antibodies to stain mouse fibronectin in tissue sections, because the microvasculature of normal mouse skin fluoresced with the same anti-mouse antibodies (Fig 2. E) but not with anti-rat fibroneetin antibodies (Fig 2. F). Specificity of the antisera was confirmed by the demonstration that anti-rat, but not anti-mouse, fibronectin antibody-staining activity could be abolished by passage over a rat-fibronectin Sepharose 4B affinity column; conversely, anti-mouse, but not anti-rat, fibronectin staining could be abrogated by absorption with insolubilized mouse fibronectin. At the interface between transplanted skin and host skin, the microvasculature from the two animals might intermingle; therefore, we examined the graft/host interface with our reciprocal anti-rat and anti-mouse fibronectin fluorescent antibody probes. At this location, at 2 wk after transplantation, the blood vessels stained with either anti-rat fibronectin (Fig. 3 A) or anti-mouse fibronectin (Fig. 3 B) but not with both antibody preparations (Fig. 3 A and B). Thus, these data further support the hypothesis that fibronectin is synthesized in situ in blood vessels and that fibronectin production is stimulated during microvasculature proliferation in response to injury.
+
+
+CITED_PAPERS:
+
+
+13161383:Distribution of fetal bovine serum fibronectin and endogenous rat cell fibronectin in extracellular matrix
+
+
+MATERIALS AND METHODS
+
+KEY WORDS fibronectin fetal bovine serum -pericellular matrix species-specific antiserum " immunofluorescence Fibronectin, a 450,000-dalton glycoprotein, is present in a soluble form in plasma or sera of all vertebrate species that have been studied and in growth media of cells cultured in vitro . It is found in an insoluble form on the surface of normal cells and in the surrounding extracellular matrix (for review and references see reference 16) .
+The basis for the solubility of fibronectin in blood and in culture media as opposed to its insolubility in extracellular matrix is not known. There is evidence that the plasma and cell-derived fibronectins, although very similar (17), are not completely identical. Cellular fibronectin has been found to be slightly slower in SDS polyacrylamide gel electrophoresis (16) and more efficient in altering the morphology of transformed cells toward normal (20) than plasma fibronectin .
+Fibronectin in cell layers is present in fibrillar structures which can be visualized in immunofluorescence (9, I8) . Fibronectin extracted from cell layers of cultured fibroblasts when added to cul-Volume 83 October 1979 255-259 tures of transformed cells becomes reconstituted into a fibrillar matrix (1,19) . Because of the obvious importance of the adhesive fibronectin matrix to the behavior of cells, it would be important to understand the processes involved in insolubilization of fibronectin into the matrix form . As a step toward this end, we decided to study whether the circulating form of fibronectin could be converted into the matrix form .
+Making use of species-specific anti-fibronectin sera, we observed that fibronectin from fetal bovine serum (FBS) can be found in typical fibrillar structures on the surface of rat cells cultured in the presence of such serum. This shows that the process that results in the incorporation of fibronectin into extracellular matrix is, at least partly, independent of whatever chemical differences might exist between the cellular and plasma forms .
+
+Cells and Culture Conditions
+
+Normal rat kidney (NRK, reference 3) cells were cultured on glass cover slips in Leighton tubes (Bellco Glass, Inc ., Vineland, N. J .) in Eagle's minimal essential medium supplemented with 10% heat-inactivated FBS (Flow Laboratories, Inc., Inglewood, Calif., and Grand Island Biological Co ., Grand Island, N. Y.) containing fibronectin or depleted of it .
+
+Removal of Fibronectin from Serum
+
+Fibronectin was removed from FBS by treatment of the serum with gelatin (Sigma Chemical Co ., St . Louis, Mo .) coupled to Sepharose 4B (4) (Pharmacia Fine Chemicals, Uppsala, Sweden), followed by treatment with Sepharose to which antibodies to bovine fibronectin had been coupled. This treatment removed >98% of fibronectin as detected by radioimmunoassay (14) .
+
+Immunofluorescence
+
+Immunofluorescence was performed at room temperature following the procedures of Linder et al . (8). The antibodies used for the staining were prepared as follows: Antisera were raised in rabbits against rat and bovine fibronectin purified using gelatin-Sepharose (13) . The initial absorption of the antisera with normal serum depleted of fibronectin has also been described (14) . The antisera were absorbed further to make them speciesspecific . Anti-rat fibronectin was depleted of antibodies cross-reactive with bovine fibronectin by treatment with bovine fibronectin coupled to Sepharose. Antibodies to rat fibronectin were then isolated by absorption and elution from rat fibronectin coupled to Sepharose. Antibodies to bovine fibronectin were prepared similarly by absorption with rat fibronectin-Sepharose and elution from bovine fibronectin-Sepharose . The resulting antibodies were species-specific when tested in immunodiffusion and in radioimmunoassay. The antibody preparations used to stain cells showed no binding of "'Ilabeled heterologous fibronectin, while binding of the homologous antigen was still detectable at dilution 10-'.
+Gammaglobulin fraction from pooled normal rabbit serum and rabbit anti-bovine alpha-fetoprotein (6) were used as controls . Antibodies to rat and bovine fibronectin were absorbed with Sepharose-coupled rat and bovine fibronectins, respectively, and used as further negative controls .
+For immunofluorescence, the cells were fixed in 3.5% formaldehyde in phosphate-buffered saline (PBS), pH 7.4, for 30 min, washed with PBS, then incubated for 30 min with rabbit antibodies to fibronectin or the control antibodies . The cover slips were washed extensively with PBS and then incubated for 30 min with purified goat antibodies to rabbit IgG conjugated with fluorescein isothiocyanate (Sigma Chemical Co .) . The cover slips were washed again and mounted in buffered glycerol (pH 7.4) on microscope slides and examined and photographed for fluorescence under a Zeiss Universal microscope with an epi-illuminator (X 320) .
+
+Species-Specific Immunofluorescent Staining of Fibronectin in Cell Layer
+
+Cell surface fibronectin was visualized by indirect immunofluorescent staining of cultured cells using species-specific antisera . As expected, antirat fibronectin revealed fibrillar structures in cultures of NRK cells (Fig. 1 a) . A similar but somewhat weaker staining was obtained with anti-bovine fibronectin when the cells were grown in the presence of FBS containing bovine fibronectin (Fig. 1 c) . Cells grown in the medium depleted of bovine fibronectin showed unchanged staining with anti-rat fibronectin (Fig . 1 e) but no staining with anti-bovine fibronectin (Fig . 1 g) . The staining with each antiserum was abolished by absorption with the homologous antigen ( Fig . l b, f, d, and h) . Normal rabbit gammaglobulin gave no staining with cells grown in either medium . As a  The presence of bovine fibronectin in the cell layer was corroborated by results obtained with radioimmunoassay. About 10% of the total fibronectin in the cell layer was of bovine origin when the cells were grown in the presence of fetal calf serum containing fibronectin (Table II) . The relative amount of bovine fibronectin in the extracellular matrix may be higher than this figure would suggest, since intracellular fibronectin contributes to the rat fibronectin in our assay .
+Our results show that serum fibronectin can be found in the cell layer of normal cultured cells . The similarity of the staining patterns of the fibronectin produced by the cells and that originating from the culture fluid makes it unlikely that this would be due to simple trapping of the FBS fibronectin into the cell layer. Instead, it appears that the serum fibronectin becomes incorporated into the same structures in the extracellular matrix as the fibronectin derived from the cells . This interpretation is supported by the fact that bovine alpha-fetoprotein, another glycoprotein present in FBS, was not found in the cell layer.
+The function of the circulating fibronectin, which has a concentration of 300 ftg/ml in human plasma (10), is not known . There is evidence that serum fibronectin may function as a nonspecific opsonin (2), which, through its affinity to collagen (4) and fibrin (15), would promote uptake of effete tissue by the reticuloendothelial system . In vitro, the plasma form of fibronectin mediates cell adhesion and spreading when used to coat collagen or plastic surfaces (5,7,11,12) . The present findings suggest that one of the functions of the circulating fibronectin may be to serve as material for the assembly of the extracellular matrix . A number of different investigators (see reference 20 and references cited therein) have presented arguments pro and con as to the identity of plasma and cellular fibronectins . Our data weigh on the side of similarity because, whatever chemical differences might exist between the fibronectin in plasma and that on the cell surface, they do not seem to influence the incorporation of these fibronectins into the pericellular matrix . This distribution depends on yet unknown interactions at the cell surface .
+Our results also raise the problem of contamination of cellular fibronectin preparation with serum-derived fibronectin and suggest that the detection of fibronectin on the cell surface by the commonly used species-nonspecific antisera is not unambiguous evidence for the synthesis of fibronectin by those cells .
+We thank Aulikki Pekkala for technical assistance .
+Supported by grants CA 22108 and CA 16434 from the National Cancer Institute, Department of Health, Education, and Welfare .
+
+FIGURE 1
+
+1Cells in panels a, b, c, and d were cultured in medium containing bovine fibronectin; cells in panels e,f, g, and h were cultured in fibronectin-deficient medium. The cells were stained as follows: Antirat fibronectin (a and e) ; anti-rat fibronectin absorbed with rat fibronectin (b andf); anti-bovine fibronectin (c and g); anti-bovine fibronectin absorbed with bovine fibronectin (d and h) . Photographic exposure time for panels a, c, and e was 60 s; for panels b, d, f, g, and h, a 5-min exposure was required to bring out cellular outlines . Bar, 60 pm . the specificity of the uptake of fibronectin by the cell layer, we tried to stain the cells with antibodies to bovine alpha-fetoprotein, another glycoprotein present in FBS(6) . No staining was obtained.
+
+TABLE I
+
+IBovine Fibronectin Concentration of Untreated FBS,FBS Extracted with Gelatin-Sepharose, and FBS 
+extracted with Gelatin-Sepharose and Anti-Bovine
+* Four different lots from two suppliers .
+Fibronectin-Sepharose
+Sample
+No .
+Concn pg/ml
+FBS* 
+1 
+25 .0 
+2 
+27 .5
+3 
+30 .5 
+4 
+24 .7 
+FBS extracted with gelatin-
+I 
+9.0 
+Sepharose 
+2 
+11 .2 
+3 
+9.2 
+4 
+8.2 
+FBS extracted with gelatin-
+1 
+0.170 
+Sepharose and anti-bovine 
+2 
+0.190 
+fibronectin-Sepharose 
+3 
+0.260
+Restoratio n of normal morphology, adhesion and cytoskeleton in transformed cells by addition of a transformation-sensitive surface protein. I U Ali, V R Mau&apos;rner, R O Lanza, Hynes, Cell. 11ALI, I. U., V. MAU'rNER . R. LANZA. and R. O. HYNES. 1977 . Restoratio n of normal morphology, adhesion and cytoskeleton in transformed cells by addition of a transformation-sensitive surface protein. Cell. 11 :115- 126.
+Isolatio n and biochemical characterization of a-2-opsonic glycoprotein from rat serum. F Blumenstock, P Weber, T M Saba, J. Biol. Chem. 252BLUMENSTOCK, F., P. WEBER, and T. M. SABA. 1977 . Isolatio n and biochemical characterization of a-2-opsonic glycoprotein from rat se- rum. J. Biol. Chem. 252:7156-7162 .
+. H Doc-Nguyen, DOc-NGUYEN, H. .
+Persistent infection of a rat kidney cell line with Rauscher murine leukemia virus. E N Rosenblum, R F Zeigel, J. Bacterial. 92E. N. ROSENBLUM, and R. F. ZEIGEL . 1966 . Persistent infection of a rat kidney cell line with Rauscher murine leukemia virus. J. Bacterial. 92:1133-1140 .
+Binding of soluble form of fibroblast surface protein, fibronectin, to collagen. E Engvall, E Ruoslahti , Int. J. Cancer. 20ENGVALL, E., and E. RUOSLAHTI. 1977 . Binding of soluble form of fibroblast surface protein, fibronectin, to collagen . Int. J. Cancer. 20:1- 5.
+. F F Grinnelt, GRINNELT, F. F. .
+Cell adhesion and spreading factor . Partial purification and properties. D G Hays, D Minter, Exp. Cell Res. 110D. G. HAYS, and D. MINTER . 1977 . Cell adhesion and spreading factor . Partial purification and properties. Exp. Cell Res. 110: 175-190 .
+Immunological properties of alpha-fetoprotein (AFP) and antibodies to autologous. J Alanko, H , E Engvall , E Ruoslahtl, AFP. lmmunol. Commun. 7J.ALANKO, H., E. ENGVALL. and E. RUOSLAHTL 1978 . Immunological properties of alpha-fetoprotein (AFP) and antibodies to autologous AFP. lmmunol. Commun. 7:209-222 .
+Isolation of a collagen-dependent cell attachment factor. R Klebe, Nature (Loud.). 250KLEBE, R. 1. 1974 . Isolation of a collagen-dependent cell attachment factor . Nature (Loud.). 250:248-251 .
+Distribution of fibroblast surface antigen in the developing chick embryo. E Linder, A Vaheri, E Ruoslahti, J Wartiovaara, J. Exp. Med. 14241119LINDER, E., A. VAHERI, E. RUOSLAHTI, and J. WARTIOVAARA. 1975 . Distribution of fibroblast surface antigen in the developing chick embryo . J. Exp. Med. 142:41119 .
+Surfac e distribution of LETS protein in relation to the cytoskeleton of normal and transformed cells. V Mautner, R O Hynes, J. Cell Biol. 75MAUTNER, V., and R. O. HYNES. 1977. Surfac e distribution of LETS protein in relation to the cytoskeleton of normal and transformed cells. J. Cell Biol. 75:743-768 .
+The cold-insoluble globulin of human plasma. I . Purification, primary characterization, and relationship to fibrinogen and other cold-insoluble fraction components. M W Mosesson, R A Umfleet, J. Riot .. Chem. 245MOSESSON, M. W., and R. A. UMFLEET. 1970. The cold-insoluble globulin of human plasma. I . Purification, primary characterization, and relationship to fibrinogen and other cold-insoluble fraction com- ponents. J. Riot .. Chem . 245:5728-5736 .
+Plasma membrane glycoprotein which mediates adhesion of fibroblasts to collagen. E Pearlstein, Nature (Loud.). 262PEARLSTEIN, E. 1976 . Plasma membrane glycoprotein which mediates adhesion of fibroblasts to collagen. Nature (Loud.) . 262:497-500 .
+Tw o active sites with different characteristics in fibronectin. FEBS (Fed. E Ruoslahti, E G Hayman, Eur. Biochem Soc.) Lett. 97RUOSLAHTI, E., and E. G. HAYMAN . 1978 . Tw o active sites with different characteristics in fibronectin. FEBS (Fed. Eur. Biochem Soc.) Lett. 97: 221-224.
+Immunochemical and collagenbinding properties of fibronectin. E Ruoslahti, E Engvall , Ann. N. Y Acad. Sci. 312RUOSLAHTI, E., and E. ENGVALL. 1978 . Immunochemical and collagen- binding properties of fibronectin. Ann. N. Y Acad. Sci. 312:178-191 .
+. E Ruoslahti, RUOSLAHTI, E. .
+Interaction of fibronectin with antibodies and collagen in radioimmunoassay. M Vuento, E Engvall , Biochem. Biophys. Acia. 534M. VUENTO, and E. ENGVALL. 1978 . Interaction of fibronectin with antibodies and collagen in radioimmunoassay . Biochem. Biophys. Acia . 534:210-218 .
+Interaction of soluble fibroblast surface antigen with fibrinogen and fibrin . Identity with cold insoluble globulin of human plasma. E Ruoslahti, A Vaheri, J. Exp. Med. 141RUOSLAHTI, E., and A. VAHERI . 1975 . Interaction of soluble fibroblast surface antigen with fibrinogen and fibrin . Identity with cold insoluble globulin of human plasma . J. Exp. Med. 141:497-501 .
+Fibroblast surface protein. A Vaheri, E Ruoslahti , D F Mosher, Ann. N. Y. Acad. Sci. 312VAHERI, A., E. RUOSLAHTI. and D. F. MOSHER, editors. 1978. Fibroblast surface protein. Ann. N. Y. Acad. Sci. 312:1-456 .
+Similarity of fibronectins isolated from human plasma and spent fibroblast culture medium . FEBS (Fed. Eur. M Vuento, M Wrann, E Ruoslahti , Biochem. Soc.) Lett. 82VUENTO, M., M. WRANN, and E. RUOSLAHTI. 1977 . Similarity of fibronectins isolated from human plasma and spent fibroblast culture medium . FEBS (Fed. Eur. Biochem. Soc.) Lett. 82:227-231 .
+Distribution of fibroblast surface antigen . Association with fibrillar structures of normal cells and loss upon viral transformation. J Wartiovaara, E Linder, E Ruoslahti, A Vaheri, J. Exp. Med. 140WARTIOVAARA, J., E. LINDER, E. RUOSLAHTI, and A. VAHERI . 1974 . Distribution of fibroblast surface antigen . Association with fibrillar structures of normal cells and loss upon viral transformation. J. Exp. Med. 140:1522-1533 .
+Immunological characterization of a major transformation-sensitive fibroblast cell surface glycoprotein. K M Yamada, J. Cell Biol. 78YAMADA, K. M. 1978 . Immunological characterization of a major transformation-sensitive fibroblast cell surface glycoprotein . J. Cell Biol. 78:520-541 .
+Fibroblast cellular and plasma fibronectins are similar but not identical. K M Yamada, D W Kennedy, J. Cell Biol. 80RAPID COMMUNICATIONSYAMADA, K. M., and D. W. KENNEDY. 1979 . Fibroblast cellular and plasma fibronectins are similar but not identical . J. Cell Biol. 80:492- 498. RAPID COMMUNICATIONS

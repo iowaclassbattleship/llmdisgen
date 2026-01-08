@@ -1,0 +1,37 @@
+**Discussion**
+
+This work presents a novel strategy for inertial sensor-based gait recognition, combining a new 2D representation—Angle Embedded Gait Dynamic Image (AE-GDI)—with a convolutional neural network (CNN) based classifier. The results consistently demonstrate substantial improvements over state-of-the-art approaches in both gait authentication and gait labeling tasks.
+
+**AE-GDI: Representation Strengths and Contribution**
+
+AE-GDI extends the concept of Gait Dynamic Images (GDIs) by explicitly encoding angle features proved to be robust to linear transformations, such as orientation changes and time-series translation, which often stem from device installation variability and necessary preprocessing (e.g., zero-mean normalization). Compared to prior approaches where orientation invariance was achieved through statistical estimations or transformation into new coordinate systems (e.g., via rotation matrix estimation or autocorrelation in the Fourier domain {{18077429}}, {{516056}}, {{217728}}), AE-GDI achieves invariance geometrically by leveraging angular relations in 3D sensor data—a significantly more stable approach in practical settings. Experimental results highlight that AE-GDIs produce more discriminative features than traditional time-series or even classic GDI forms, supporting higher recognition accuracy across subjects and repeat sessions.
+
+**Segmentation: Impact of Accurate Cycle Detection**
+
+The implementation of a grid-based greedy algorithm for gait cycle segmentation is shown to be essential. Unlike sliding window or overlapped window methods {{18360263}}, which can introduce misalignments and lose periodic structure, the proposed approach explicitly enforces gait periodicity and selects starting points based on global and local signal characteristics. Belonging to a family of data-driven event detection algorithms, the method avoids the need for window resampling or cycle length stretching, as used in past studies {{14538361}}, facilitating faithful preservation of individual gait dynamics. The experiments confirmed that cycle-level segmentation resulted in significantly improved identification and authentication performance, indicating that precise temporal alignment of gait events positively impacts feature consistency and, consequently, classification outcomes.
+
+**CNN-based Classification: Avoiding Handcrafted Features and Enabling Robust Generalization**
+
+The use of a CNN framework for direct feature learning from AE-GDIs establishes clear advantages over previous machine-learning pipelines relying on hand-crafted features or classical classifiers such as k-nearest neighbors, HMMs, or SVMs {{14538361}}, {{17797679}}, {{25926594}}. The CNN automatically extracts hierarchical feature representations aligned with the data structure, as supported by results in diverse activity recognition domains {{12228599}}, {{7551351}} and supported by the broader literature on deep learning for structured data such as images {{206592484}}. As a result, the need for extensive manual feature engineering—often sensitive to dataset-specific factors and prone to overfitting—is eliminated.
+
+The paper’s results indicate that the parametric CNN classifier is more storage- and computation-efficient than non-parametric classifiers, as the learned model summarized the essential information from training data in compact forms, while nearest neighbor approaches require the full gallery to be retained and searched at inference.
+
+**Empirical Performance: Evaluation and Generalizability**
+
+The findings from evaluation on both the McGill dataset and the large-scale OU-ISIR dataset underscore the proposed method’s broad applicability and scalability. In same-day authentication and cross-day testing (with changes in user clothing and context), AE-GDI-CNN achieved higher accuracy compared to traditional methods, with performance further improving when aggregating over more gait cycles (higher N) and increasing the training gallery size, though with diminishing returns above certain thresholds. Notably, even with only half the available training set, classification performance plateaued, indicating high data efficiency.
+
+In labeling tasks (multiclass identification among up to 744 subjects), the method maintained high accuracy while outperforming temporal 1D CNNs, baseline AE-GDI variants with less robust segmentation, and GDIs. This supports the assertion that AE-GDI is inherently more suitable for image-based classification frameworks due to richer spatial-temporal correlation capture than time-series-only approaches.
+
+**Parameter Sensitivity and Model Optimization**
+
+The ablation study on the CNN architecture revealed that deeper models, to a point, conferred increased robustness and discrimination, but further increases in depth did not yield corresponding benefits, reflecting findings in the CNN literature regarding overfitting and diminishing returns on deeper stacking {{206592484}}. Maintaining a balance between model expressiveness and overfitting risk (supported by strategies like max pooling and dropout) was crucial for optimal generalization.
+
+**Limitations and Future Directions**
+
+Despite its promising results, the approach exhibits sensitivity to grossly inconsistent sensor placement—a common challenge for inertial-based biometrics {{109058827}}, {{6746021}}—and was evaluated primarily under conditions where the sensor was worn consistently. Extending evaluation to more challenging real-world data, where sensor location and orientation may shift unpredictably (e.g., in loosely worn devices, varying pockets), will be important for assessing practical viability.
+
+Additionally, the current pipeline, while robust, does not explicitly model long-range temporal dependencies beyond single or a few contiguous cycles. Integrating convolutional recurrent architectures, which have shown strong performance for temporal sequence classification and context modeling, could provide further accuracy gains, particularly in extended free-living or health monitoring settings.
+
+**Conclusion**
+
+Overall, this work advances wearable gait biometrics by introducing an effective, invariance-preserving encoding and a robust deep learning architecture. The direct mapping between inertial time-series and image-based learning spaces has broad implications, potentially opening up further integration with advances in image-based deep learning methods. Future work should address deployment under uncontrolled sensor placement and integration with temporal sequence models for unconstrained real-world gait analysis.

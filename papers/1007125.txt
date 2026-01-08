@@ -1,0 +1,1303 @@
+Results: Based on the information theory, we propose a model for transcription factor binding of regulatory DNA sites. Our model incorporates position interdependencies in effective ways. The model computes the information transferred (TI) between the transcription factor and the TFBS during the binding process and uses TI as the criterion to determine whether the sequence motif is a possible TFBS. Based on this model, we developed a computational method to identify TFBSs. By theoretically proving and testing our model using both real and artificial data, we found that our model provides highly accurate predictive results.
+Conclusions: In this study, we present a novel model for transcription factor binding regulatory DNA sites. The model can provide an increased ability to detect TFBSs.
+
+Background
+
+The transcription of genes is controlled by transcription factors (TFs), which bind to short DNA motifs that are known as transcription factor binding sites (TFBSs). Identification of TFBSs lies not only at the very heart of expanding our knowledge of regulatory elements in the genome by helping to decode genomic data, discover regulatory patterns in gene expression, and establish transcription regulatory networks, but also of explaining the origins of organismal complexity and development {{12126316}}. Computational identification of TFBSs is a rapid, cost-efficient way to locate unknown TFBSs. With increased potential for highthroughput genome sequencing, the availability of accurate computational methods for TFBS prediction has never been as important as it currently is. However, DNA regulatory elements are frequently short and variable, making the computational identification of them a challenging problem because the real TFBSs might be easily lost in random DNA sequences, i.e., the "background noise".
+To date, many models have been developed for transcription factor binding of regulatory DNA sites, and based on those models, numerous computational algorithms have been established to identify TFBSs. Several studies have utilised the structural information of DNA and protein to build predictive models for DNA binding sites {{31478541}}{{694416}}{{9363757}}{{1719642}}. These algorithms are able to identify previously uncharacterised binding sites for TFs and have improved performance over simple sequence profile models {{24190925}}. However, these algorithms have not been generally used because their parameters depend on the knowledge of the solved protein-DNA complex structures, which is a limited data set.
+Several methods use pattern recognition algorithms derived from computer science or other research areas. These methods include support vector machines (SVMs) {{18256527}}, self-organising maps (SOMs) {{not_in_s2orc}}, and Bayesian networks {{263729}}. These algorithms can automatically provide objective and non-user-defined thresholds by training the programme with known data. Nevertheless, the biggest limitation of these methods might be the lack of explicitly biochemical or biophysical explanations.
+Currently, position weight matrix (PWM) is the most common model for TFBS recognition. Many methods or programmes are based on the PWM model or its expansion, such as Match {{207855666}}, the expectation-maximisation (EM) algorithm {{23756127}}, and the stochastic variant of EM, the Gibbs sampling method {{3040614}}{{2150500}}. In PWM, an L-long sequence motif is represented by a 4*L matrix, with weights giving the frequency of the four DNA bases (or the logarithm) in each of the L positions {{24190925}}{{11932090}}{{8801283}}. The basic PWM model is based on the biophysical considerations of protein-DNA interactions and uses the relative entropy, which is also known as the information content, as the criterion to determine whether an input sequence is a TFBS. According to this theory, the affinity between the factor and its TFBS is related to the free energy, which correlates with the relative entropy {{24190925}}{{11932090}}{{8801283}}. Therefore, in order for a sequence to be a TFBS, it must have higher relative entropy. Consequently, the relative entropy can be used as the criterion to detect a TFBS.
+The PWM approach assumes that the contribution of each nucleotide position within a TFBS to the free energy is independent and that the effect on the binding strength is cumulative. We call this hypothesis the "independent hypothesis" because it supposes that each base of the motif is independent of the others. Methods based on the independent hypothesis are simple and have small numbers of parameters, making them easy to implement. These methods are widely used and often considered acceptable models for binding-site predictions.
+The PWM model can suffer from high false-positive (FP) rates if motifs are degenerate. In addition, in some real cases, the affinity between factors and their TFBSs is weak, causing a high false-negative (FN) rate while using these methods. More importantly, the independent hypothesis can lead to deviations in the scoring mechanism and produce inaccurate results. Experimental evidence {{14355663}}{{14628039}}{{36684637}}{{not_in_s2orc}}{{37555511}} suggests that there is interdependence among positions in the binding sites, which has prompted the development of models that incorporate position dependencies. The related methods include Bayesian networks {{2934493}}, permuted Markov models {{7392928}}, Markov chain optimisation {{14234550}}, hidden Markov models {{6512203}}, non-parametric models {{5504524}}, and generalised weight matrix models {{11167034}}. Methods based on positiondependency models usually have better binding site prediction accuracy with lower FP rates. However, these methods require more complicated mathematical tools with more parameters to estimate and more experimental data than are typically available {{6355740}}.
+Orthogonal information from comparative genomics and information on co-regulation at the transcriptional level have also been integrated into these methods to identify cisregulatory sites {{1757992}}{{14666264}}{{15514943}}{{6334403}}. Methods have also been proposed to discover the composite regulatory module (CMA) {{7743805}}{{5631931}}. Because most of these methods rely on the basic algorithms proposed previously, their performances are mainly determined by these basic algorithms.
+Therefore, although significant progress has been made, the accuracy of the computational identification of TFBSs can still be improved. To tackle the general problem of binding site identification in the absence of high-throughput experimental data, theoretical models of binding sites are still required.
+One aim of this work is to develop a new model that incorporates position interdependencies in effective ways to improve the computational prediction of TFBSs. Based on information theory {{5747983}}{{not_in_s2orc}}, in this study, we propose a novel computational model. By theoretically proving and testing our model using both real and artificial data, we find that our model gives highly accurate predictive results.
+Information transmission model
+
+An information transfer model for TFBS binding
+
+In this paper, we treat the complex between a transcription factor and its binding site as a stand-alone system. During the binding process, energy exchanges occur between the TF and TFBS, and the spatial structure and physical state of the system change. We assume that the total amount of information in the system remains unchanged in this process and that information is only transferred between the factor and the site:
+In this equation, INFO is the total information contained by the system, IF1 and IF2 are the information carried by the transcription factor in the unbound and bound states, respectively, and IS1 and IS2 are the information possessed by the DNA site at the unbound and bound states, respectively. During the binding process, the information flows from the TFBS to the factor ( Figure 1). The transferred information is
+Taking an L-bp sequence (seq) as the input sequence to be scanned, the jth base of seq is seq(j). The background probability of A, T, C, and G is q(i). In this formula, i represents the base A, T, C, or G, and the background probability can be obtained by Figure 1 Information transferred from TFBS to TF during binding. In this figure, we assume the transcription factor and its binding site are a stand-alone system. scanning the chromosome sequences of the species. Before binding, the occurrence probability of base seq(j) is q (seq(j)). According to information theory {{5504524}}{{11167034}}, the information carried by the jth base is -log 2 (q(seq(j))). With the independent hypothesis, the total information carried by the input sequence can be simply calculated by summing all of the information carried by each base of seq:
+Suppose that a transcription factor and its known TFBSs are aligned by an appropriate algorithm. In this study, we use L to represent the length of the aligned motif, j to represent the base position and p j (i) to represent the occurrence probability that the base i (A, T, C or G) appears at the position j according to the motif.
+After the TF binding to its site, the state of the DNA sequence changes. The occurrence probability of base seq(j) changes to p j (seq(j)); therefore, the information carried by the jth base becomes -log 2 p j (seq(j)), and with the independent hypothesis, the total information IS2 is as follows:
+The TI can be described as
+We hypothesise that a factor binds to a TFBS only if enough information is transferred from the site to the factor. We can use a basic criterion to determine whether the factor can bind to the sequence: the TI of the sequence must be larger than a threshold value. This value can be defined as the minimum transferred information (MTI), which is the natural and objective threshold used to determine whether the binding can occur. That is,
+Once the TI of an input sequence is larger than MTI, then it is accepted as a possible TFBS.
+Enhancement of the model to be universal
+
+The independent model might lead to inaccurate predictive results. In this section, we discuss in detail how this can happen by example and in theory and how we enhanced our model to be independent of this hypothesis.
+An example of the correlation among different bases is shown in Figure 2. The same example is used by GuhaThakurta {{12126316}} to show the basic concept of the PWM and relative entropy methods. We can see that the 1 st and 11 th bases are correlated: when the 1 st base is C, the 11 th base is strictly T. We can find that P 1,11 (C,T) = 0.5, and P 1 (C) P 11 (T) = 0.5*0.75 = 0.375. As P 1,11 (C,T)>P 1 (C)P 11 (T); therefore, we conclude that these bases are positively correlated. When position 1 is C, there is a high probability that position 11 is T. For these two positions, P 1,11 (T,T) = 0.25, P 1 (T)P 11 (T) = 0.375. So P {{12126316}}{{23756127}} (T,T)<P 1 (T)P 11 (T); therefore, we conclude that the positions are negatively correlated, which means that when position 1 is T, there is a high probability that position 11 is not T. Such correlations are not rare, as they can be found in most of the real TFBS data set.
+Based on this observation, we propose a formal definition of positive and negative correlations of the bases in a motif: if P seq i 1 negatively correlated. In this formula, seq(i) is the ith base of the sequence seq. For example, the 4 th and 6 th bases are positively correlated and contain no more or less information than only the individual base. Therefore, the independent hypothesis leads to an inaccurate estimation of the TI, thereby making an erroneous prediction of the TFBS. Similarly, the use of other methods that are based on the independent hypothesis also results in incorrect scores and leads to inaccurate predictive results. To avoid this inaccuracy, the model was enhanced to address the correlations such that it is capable of determining the correct TI despite the inaccuracy of the independent hypothesis. First, we know that after binding of the TF to the TFBS, the information encoded by the TFBS seq, is IS2 ¼
+TFBSs of the TF. Due to unknown TFBSs and lack of statistical data of the known TFBSs, we cannot determine p seq or I L directly, but these terms can be estimated from the known TFBSs. We use the information of r-base sub-sequences  This probability can reveal the correlation among these bases. For example, if base i 1 is fully and positively correlated with base i k , as the 4 th and 6 th positions in Figure 2 are, then
+hence, the information of these two bases is
+, it is only half of the information of the independent situation). If base i 1 is independent from base i k , then p seq i 1
+As there are C r L such r-base sub-sequences in total, the average information for r-base sub-sequences is À1 C r L P i 1 >i 2 >⋯>i r log 2 P seq i 1 ð Þ;⋯;seq i r ð Þ . Because the length of these subsequences is r, then the average information carried by one base is À1 rC r L P i 1 >i 2 >⋯>i r log 2 P seq i 1 ð Þ;⋯;seq i r ð Þ . The information of the whole sequence can be estimated by simply multiplying by the length L:
+Similar to the example in Figure 2, if there is a strong tendency for the bases to be positively correlated, then it can be assumed that
+Under this assumption, we can prove an important relationship, as follows:
+From (8) we know that
+Next, we obtain
+According to {{23756127}}, we can infer that
+If we assume that I rþ1 ≥I r , then we immediately obtain I rþ1 ≥I 1 , which contradicts {{23756127}}. Therefore, it must be the case that I rþ1 < I r . Hence, (10) is proved.
+Immediately, we know that when the correlation is positive
+Similarly, if the correlation tends to be negative, then the following must be true:
+Therefore,
+If the TFBS seq conforms to the independent hypothesis, according to (5) and (8), its information is
+Therefore, conversely, the tendency of I r can be used to judge if the correlation is positive, negative, or independent. We now know that I independent would overestimate (when the correlation is positive) or underestimate (when the correlation is negative) the I L if the independent hypothesis is not true. Again, this finding can explain why using the independent hypothesis can lead to inaccurately predicted results. More importantly, from (13) and (15), we know that I r is more accurate than I independent when r ≥ 2. So, we can use I r (r ≥ 2) to estimate the information and obtain the predictive results with more accuracy.
+The method for calculating the background probabilities must be revised accordingly to adapt to the enhanced model. Instead of counting each single base by scanning the chromosome sequences to obtain the background probability under the independent hypothesis, a window of length L slides through the chromosomes, and all of the r-base sub-sequences in this window are counted. After the scanning, 4 r probabilities are calculated for all of the 4 r possible r-base sub-sequences. These values are used to estimate the information carried by the TFBS before the binding event:
+In this equation, q seq i 1 ð Þ;⋯;seq i r ð Þ is the background correlation probability, calculated as described previously.
+In addition, the formula for estimating the transferred information is changed as follows:
+Once TI r ≥ MTI r (factor), then seq is accepted as a possible TFBS.
+
+Results
+
+Performance in Saccharomyces cerevisiae promoter regions
+
+We tested our model by calculating the TI for all of the known TFBSs of 10 wellcharacterised transcription factors in the yeast S. cerevisiae promoter database (SCPD) {{14632410}}.
+We found that most of the TFBSs have a TI larger than 0. This evidence strongly supports our TI hypothesis that the information is transferred from the TFBS to the factor, and binding of the TF to the TFBS only happens if enough information is transferred. First, we use 100% of the known TFBSs as the training set to work out the MTI for each TF and test our method with r = 1, 2, 3, and 4 on this data set. We observed that the number of predicted TFBS decreases more than twofold when r changes from 1 to 2 (Figure 3), which guarantees an increase in accuracy as Figure 4 shows. From Figure 3 and Figure 4, we observe that when r ≥ 2, the performance increases with increasing r-values but not as significantly as when r changes from 1 to 2. Because the computational complexity of our method rapidly increases as r increases, r = 3 is a proper value to obtain good performance and maintain a low level of computational complexity. Therefore, the results of r = 3 were used to compare this method with the others.
+Next, we examined how the average performance changes as the proportion of the training set increased from 25% to 100% with r = 3 ( Figure 5). We found that as the proportion increased, 1-FN increased linearly; hence, more of the real TFBSs were identified. Moreover, this curve indicated that the method is powerful when little is known about the TFBS. For example, 49% of TFBSs were identified when the model was trained by 25% known TFBSs. Additionally, the FP rate increased little when the proportion of the training set increased, and it was always below 0.3.
+In this study, we illustrate several snapshots of TI by scanning several sequences of S. cerevisiae. These sequences cover the coding regions, the regulatory regions and the "flank" regions.
+In Figure 6, we illustrate a snapshot of TI by scanning a promoter region of S. cerevisiae. With 75% of the real TFBSs as the training set, we obtained the MTI for the factor. The highest peaks are precisely the real TFBSs, and there are also peaks on the opposite strand that do not reach the threshold.
+A comparison of the TI model with other methods
+
+To illustrate the performance of the information transmission model, we implemented this novel model with a programme named tfbsInfoScanner and compared it with Figure 3 The number of predicted TFBS. With 100% of the known TFBSs as the training set, the number of predicted TFBS decreases more than two times when r changes from 1 to 2, which guarantees an increase in accuracy.
+commonly used motif identification programmes, such as SOMBRERO, MEME and AlignACE. Mahony et al. {{14628039}} proposed the TFBS prediction method SOMBRERO and compared the results derived from SOMBRERO with those from two popular motif finding programmes, MEME {{7117788}} and AlignACE {{23756127}}. These researchers used the same real data set that we used. To efficiently analyse the performance of our method and to avoid repetitive and time-consuming computation, we used the same real sequence data set and compared results derived from our method to those obtained from SOM-BRERO, MEME and AlignACE. Table 1 shows a performance comparison of our method and three other programmes. The results indicate that when the proportion of the training set is larger than or equal to 50%, our method achieves the best performance in most cases.
+Performance on artificial sequences
+
+To examine the performance of our method in discovering "unknown" TFBSs, we subsequently trained our method with all of the known TFBSs and embedded the artificial sequences with pseudo-motifs. Similar to Mahony et al. {{14628039}}, we also generated three artificial test set, although using our own method. In the artificial test set used by Mahony et al., each set comprises 10 data sets, each of which comprises 10 sequences; each sequence harbours a random number of occurrences (0~3) for each of the Figure 4 Variety of performance as r changes from 1 to 4. In this figure, the proportion of the training set = 100%; however, the figures for proportion of training set = 25%, 75% and 100% are similar. In this figure, PERF=(k P)/(K P), where K is the set of known motif sites and P is the set of predicted motif sites. RT/ PT is defined as the ratio of the real TFBSs to the predicted TFBSs. binding motifs for gcn4, gal4 and mat1 (generated from PWMs). The total lengths of these three sets of 100 sequences are 4500, 8000 and 12500 bp, respectively. The average length of one sequence is therefore 45 bp, 80 bp or 125 bp, but each sequence harbours at most 9 occurrences of the motifs. We believe this number of occurrences may be too dense, and perhaps a high occurrence of pseudo-TFBSs may be encoded by these sequences.
+In our modified method, we also generated three artificial test sets with different sequence lengths (450, 800 and 1250 bp), and each test set consists of 10 sequences that were randomly generated according to the GC content of S. cerevisiae. Each sequence harbours a random number of occurrences (0~3) for each of the binding motifs for gcn4, gal4 and mcb (randomly generated from PWMs). Mahony et al. {{14628039}} used mat1 as a test object, but in the new version of SCPD, the TFBS of mat1 is split into  Table 1 Performance comparison between our TI method (r = 3) and three other programmes: SOMBRERO, MEME and AlignACE The best performances of the other three programmes are underlined. The performances of our method that are better than the best of the other three programmes are in bold and underlined. The performances that were close to the best of the other three programmes are in bold. The results show that when the proportion of the training set is larger than or equal to 50%, our method achieves the best performance in most cases.
+mat1_alpha and mat1_beta; therefore, we arbitrarily chose mcb as a substitute for mat1. This test set is more rigorous because these artificial sequences are 10 times longer, leading to an increase in the number of random sequences, which may result in a higher FP rate. As our method is still under development, in this test, the pseudo-TFBSs are also generated from the PWMs. Because the PWM method assumes that the independent hypothesis is true, these pseudo-TFBSs cannot correctly indicate correlation among the bases. This deficiency might lead to a lower TI, and, therefore, some pseudo-TFBSs may not be identified by our method. However, we can investigate what happens when scanning these artificial sequences.
+The average performance in each test set using r = 3 is summarised in Table 2. As demonstrated, most pseudo-TFBSs of gcn4 and mcb were recognised. As for gal4, almost none of these sites was identified. Almost none of the unreal result was predicted at the same time. This result was observed mainly because the correlations of actual TFBSs are strong, while the pseudo-motifs do not have such correlations, and therefore their TI is far below the MTI. However, this finding does not mean that our method is ineffective in identifying pseudo-TFBSs. A typical snapshot of the artificial regulatory region that harbours the unrecognised pseudo-TFBSs is shown in Figure 7. Although these pseudo-TFBSs have no correlation in their sites, our method can still identify a strong TI.
+The average performance for r = 1 is also summarised in Table 3. When r = 1, our method is equivalent to the assumption that the independent hypothesis is true; therefore, all of the pseudo-TFBSs were identified. Not surprisingly, the FP rate was high. According to both sets of results, the FN rate was low. The FP rate was maintained at a moderate level for r = 3, even though these artificial sequences were 10 times longer than those described previously.
+
+Concluding remarks
+
+In this work, we present a novel model for transcription factor binding regulatory DNA sites. This information transmission model is based on information theory and effectively incorporates position interdependencies. By testing the model on both real and artificial data sets, we have illustrated that our method is efficient at predicting unknown TFBSs.
+
+Materials and methods
+
+Data set preparation
+
+The TFBSs of the 11 TFs and regulatory region sequences were obtained from the yeast S. cerevisiae Promoter Database (SCPD, http://rulai.cshl.edu/SCPD) {{1757992}}. This data set includes 68 regulatory regions with a total length of 30299 bp. These sequences harbour 309 experimentally mapped TFBS, including 141 real TFBSs of the 11 TFs. The chromosome sequences of S. cerevisiae were obtained from the National Center for Biotechnology Information (NCBI) reference sequence database.
+The artificial sequences used in the test were randomly generated, taking into account the GC content of the S. cerevisiae genome. The pseudo-TFBSs of gcn4, gal4 and mcb were randomly generated from PWMs. We did not generate the correlated TFBSs directly because it is difficult to make the pseudo-TFBSs conform to the correlation relationships, as real TFBSs do.
+Background probabilities calculation
+
+Background probabilities are used to estimate the information carried by the TFBS before the binding event. An L-base window slides through the chromosomes, and all of the r-base sub-sequences in this window are counted. After the scanning, 4 r probabilities are calculated for all the 4 r possible r-base sub-sequences. This computation is time-consuming, but once the background probabilities are worked out, they can be reused in all of the TFBS predictions of this species without being recalculated.
+
+
+
+
+CITED_PAPERS:
+
+
+15514943:Predicting transcription factor binding sites using local over-representation and comparative genomics
+
+
+Background
+
+The computational identification of functional transcription factor (TF) binding sites (TFBSs) from a nucleotide sequence alone is difficult. TFBSs are usually short (around 5-15 bases) and degenerate, and hence potential binding sites can occur very frequently by chance, leading to a high level of false positive in the predicted sites. Wasserman and Sandelin have termed this the futility theorem, since nearly 100% of predicted TFBSs have no function in vivo [1]. Solving this problem is crucial for mammalian genomes that contain large noncoding regions.
+Phylogenetic footprinting can significantly increase the accuracy of TFBSs predictions. If a region is conserved between sequences from distantly related organisms, it is likely to be subject to greater selection pressure and to have a biological role. Phylogenetic footprinting methods are based on the assumption that TFBSs are located in conserved regions that can be detected by alignment algorithms. A current limitation for mammalian organisms is that when nothing is known about the motif, the number of orthologous sequences at the correct evolutionary distance needs to be high [2].
+Another potentially fruitful approach for improving the accuracy of TFBS prediction is to use a set of coexpressed genes. The rationale behind this approach is that coexpressed genes should contain common cis-regulatory elements in their noncoding sequences, with the number of motifs for these elements being greater than what would be expected by chance. The application of Gibbs sampling algorithms [3] and combinatorial algorithms [4,5] to the problem of de novo motif inference has proven successful in identifying cis-regulatory elements in bacterial and yeast genomes, but de novo motif discovery in higher eukaryotic genomes remains an unsolved challenge [6]. It is also possible to focus on overrepresented motifs modeled by known profiles, such as position weight matrices (PWMs) [7,8]. Large databases of PWMs are available, including JASPAR [9] and TRANSFAC [10]. Several tools for evaluating the significance of a set of putative TFBSs modeled by PWMs have recently been made available (e.g., MSCAN, OTFBS, TOUCAN [11][12][13][14]). These programs can handle sequences coming from either one or multiple species, although in the latter case the same background model is used for all sequences. oPOSSUM [15] makes an exception: it combines a precomputed database of conserved TFBSs in human and mouse promoters, and uses statistical methods to identify overrepresented sites in a set of coexpressed genes.
+In this paper, we present a new method that searches for locally overrepresented TFBSs in a set of coregulated genes, which we have named TFM-Explorer ("TF matrix explorer"). TFM-Explorer associates motif overrepresentation with comparative genomics, allowing for multiple species to be included. One novel feature of the method is that it takes advantage of the spatial conservation of cisregulatory elements, when it exists. Often, the distance from cis-regulatory elements to the transcription start site (TSS) plays an essential role in the control of the gene. The activity of basal or general TFs, such as GC-box binding or TATA-box binding proteins, is strongly conditioned by the distance from the binding site to the TSS and, as far as we know, no existing tools exploit this information.
+More precisely, TFM-Explorer relies on three main principles. The first is that the background distribution used to assess the statistical significance of overrepresented motifs is a local model that depends on the location on the sequence with respect to the TSS. This allows us to cope with large heterogeneous regulatory regions, including proximal cis-regulatory elements as well as distal enhancers. Second, it is possible to combine background models between sequences, which makes the method able to cope with multiple species. In contrast with other phylogenetic footprinting approaches, genes do not need to be orthologous, and conserved TFBSs are not expected to be surrounded by similar regions that can be easily aligned. Lastly, we use spatial conservation as supplementary information, for which we have developed an algorithm that is able to identify the portion of sequences with local overrepresentation without prior knowledge of either the size or the location of the involved region. This allows us to infer short regions exhibiting a local signal, as well as large regions when we have to identify cis-regulatory motifs that show no spatial conservation.
+
+Implementation
+
+The input to TFM-Explorer is a set of upstream sequences that are expected to share cis-regulatory elements. These sequences may come from several species, and need not be aligned beforehand. The only requirement is that the location of the TSS needs to be known for each sequence.
+TFM-Explorer then uses PWMs available in the TRANS-FAC or JASPAR database to search for locally overrepresented TFBSs, and outputs a list of regions that show significant TFBS overrepresentation. The search algorithm includes three steps that are discussed in the following subsections: (1) localizing all potential TFBSs for a database of PWMs, (2) identifying windows showing an overrepresentation for a given PWM, and (3) assessing the statistical significance of the regions found at the previous stage.
+
+Localizing all potential TFBSs
+
+The method initially identifies all potential TFBSs for a set of PWMs given by a database of profiles. TFBSs are usually selected using a score cutoff that expresses the probability in a target model -the profile -compared to the probability of the motif appearing in a background model [8,16]. Therefore, the selection of putative positions is highly dependent on the choice of background model. This point is crucial for higher eukaryotic organisms due to the variability of the sequence content in upstream regions [17], which makes it difficult to build uniform models for the entirety of upstream regions. We follow the approach recently proposed by Huang et al., which is using a threshold based on the parameters determined by the genomic context [18]. Given a PWM, we obtain for each sequence a set of putative TFBSs in which overlapping occurrences are removed; these are referred to as hits.
+
+Extracting regions with a high density of TFBSs
+
+The second step involves discovering regions showing local overrepresentation of hits for a given PWM. All existing methods implicitly rely on global overrepresentation, looking for motifs that have a significant number of occurrences among the entire set of sequences. But a short signal, covering a few dozen bases, may be overwhelmed by a flat distribution of hits in the neighborhood. In this case, the result depends on the size of the input sequences: the signal is found if the sequences are short, but is lost if they are long. This is why we introduce a strategy that is not influenced by the length of the data set, and that is able to recover short but significant regions in large sequences.
+One solution is to employ a sliding window technique, applying statistical analysis to each window along the set of sequences. The main drawback of this approach is that the result can be highly dependent on the window size, and testing several window sizes is time-consuming. To circumvent this problem, we developed a heuristic algorithm based on a positional scoring scheme that takes into account the expected frequency of each hit according to both its position in the upstream sequence and the corresponding species. Let N be the total number of sequences, i be a position relative to the TSS, and k i be the number of sequences having a hit at position i. The associated score s i is defined as follows:
+where and are the parameters of the Poisson distribution for sequence n at position i in the target and background models, respectively, and s i expresses ratio between the probabilities of observing k i hits in the target and background models when the distribution of hits is approximated by a Poisson distribution. In practice, is determined from a large sets of sequences, and is obtained by scaling . This positional score is then incorporated into an incremental score:
+High-scoring regions are retained as candidate regions for the next step of the method (see Figure 1). This scoring scheme leads to a very efficient search algorithm. Sequences are scanned "on the fly", which enables largescale data analysis. One point worth noting is that this scoring strategy allows windows to be extracted without knowing a priori whether they are proximal or distal, short or long. Moreover, as shown in the Results section, the method can also detect several consecutive windows corresponding to collaborative TFs.
+
+Evaluating the statistical significance of overrepresentation
+
+The final step of the method consists of evaluating the statistical significance of the candidate windows that have been identified at the previous stage. We have to determine whether the number of hits for each window could be observed by chance. To this end, we compute a probability called the P-value: given a PWM M and a window [i, j] containing k hits for M, the P-value is defined as the probability of observing at least k hits in window [i, j] with the same combination of background models (i.e., the same number of sequences coming from each species).
+For each sequence, the distribution of hits in window [i, j] is approximated by a Poisson distribution, whose parameter is derived from the region [i, j] in the background model. We used a goodness-of-fit test to evaluate the validity range of this approximation of the hit-count distribution. For all JASPAR and TRANSFAC vertebrate matrices, we computed the chi-square goodness-of-fit for different locations and sizes of window applied to a large set of human gene upstream sequences. Table 1 indicates that the majority of PWMs passed the test.
+To determine the significance of the window for the entire set of sequences, we sum the distributions to handle the combination of models for sequences coming from several species.
+Assuming that motif occurrences are mutually independent, the P-value can be defined as follows:
+where μ n is the parameter of the Poisson distribution for the n th sequence in a window [i, j], and |w| is the window width. Score profile and window extraction. Example of the score used to predict windows with a significant overrepresentation of TFBSs. Panel (a) shows the predicted TFBSs (black boxes) along the upstream sequences of five genes that come from two species. Panel (b) shows the evolution of the cumulative score computed for a given PWM with those sequences. Local overrepresentations detected by the algorithm are represented by boxes.
+
+Results
+
+To evaluate the efficiency of TFM-Explorer, we performed three case studies involving human, mouse, and rat data sets: Rel/NF-κB target genes, muscle-specific genes, and genes coding for histones. In the first part of this section we compare the results of TFM-Explorer with those obtained by using three existing tools that are also based on PWM overrepresentation: OTFBS [13], TOUCAN [14], and oPOSSUM [15]. In the last part, we describe the results of applying TFM-Explorer to random data sets to evaluate its robustness to noise.
+TOUCAN is an integrated suite of software for discovering cis-regulatory elements in a set of related genes. For our purposes, we first used MotifScanner [14] to predict potential TFBSs and then performed the statistical overrepresentation analysis. MotifScanner searches for potential TFBSs in a set of sequences by maximizing the probability of observing those sequences in a mixed model composed of motif instances and a Markovian background model. This allowed us to predict instances of potential TFBSs for all the TRANSFAC vertebrate PWMs in our input sequences. The statistical overrepresentation tool was then used to extract PWMs that had significantly overrepresented instances. This statistical overrepresentation is based upon a binomial P-value that is the probability of finding at least the observed number of TFBSs instances in a precomputed background model. We used version 2.2.5 of TOUCAN with the TRANSFAC Public 7.0 Vertebrate PWMs database and the EPD(3) Markovian model to run MotifScanner, leaving other parameters unchanged.
+The prior-frequency file epd_vertebrates_499_prior0.1.freq was then used to compute the statistical overrepresentation.
+OTFBS searches for overrepresented motifs of known TFs from a set of related sequences. Like TOUCAN it proceeds in two steps to extract the most significant TFs from among all TRANSFAC PWMs: it first searches for potential TFBSs using the Matinspector algorithm [19] and then computes a P-value for each PWM using a binomial significance test. Version 1.0 of OTFBS was used simply by pasting our sequences (since no options were available).
+oPOSSUM uses different methods to identify overrepresented TFBSs. It combines a precomputed database of conserved TFBSs in human and mouse promoters with statistical methods for detecting overrepresentation (onetailed Fisher exact probability analysis and Z-score) to identify overrepresented TFBSs in the input gene promoters. Version 1.3 of oPOSSUM was applied to all the data sets using JASPAR vertebrate PWMs (no other PWM database was available) and default parameters. Results were sorted based on the Fisher P-value.
+We used TFM-Explorer with the default parameters. All upstream sequences were retrieved from the UCSC Genome Browser [20] (assemblies hg18, mm8, and rn3) using RefSeq identifiers.
+
+Skeletal-muscle-specific genes
+
+The first example involves a set of genes with skeletalmuscle-specific expression. This is an up-to-date version of the reference compilation of Wasserman and Fickett [21], which has been widely used to assess the accuracy of TFBS prediction programs [see Additional file 1]. The data set contained nine human genes. Early steps in skeletal muscle development are controlled by combinatorial interactions between members of the MyoD family of basic helix-loop-helix TFs (MyF) and TFs from the MADS family, with the myocyte enhancer factor-2 (MEF2) and the serum response factor (SRF) [22]. Other TFs, such as TEF, MZF, and Sp1, are also known to contribute to skeletal-muscle-specific expression. Table 2 reports the predictions of TFM-Explorer, Toucan, OTFBS, and oPOSSUM for this data set. The three most significant TFs ranked by TFM-Explorer are SRF, MEF-2, and MZF_1, all of which correspond to factors that are known to be involved in the regulation of muscle-specific genes. Under the same conditions, OTFBS predicted two TFs (MZF1 and MEF2) involved in the regulation of muscle-specific genes, but only at the second and third rank. oPOSSUM and TOUCAN predicted only one factor (MEF2) that is known to contribute to muscle-specific expression among the top five factors. Note that oPOS-SUM achieved this result by using supplementary orthologous mouse genes and by taking advantage of conservation between human and mouse promoter sequences.
+
+Rel/NF-κB target genes
+
+The second data set comprised Rel/NF-κB human target genes. Rel/NF-κB TFs are involved in inflammatory and immunizing mechanisms, as well as apoptosis. Five regulatory proteins of this family are known in vertebrate organisms: c-Rel, RelA (p65), RelB, NF-κB1 (p50), and NF-κB2 (p52); and they share similar binding sites. This corresponds to six PWMs in the TRANSFAC database: A set of 99 human target genes with experimentally verified binding sites was compiled from the literature [23] [see Additional file 2]. In order to test how the sequence length influenced the predictions for each program, we selected both large and short regulatory sequences for these genes: those 2 kb upstream, and those 5 kb upstream and 5 kb downstream of the TSS were used. We first applied TFM-Explorer to those sequences, searching exhaustively for all vertebrate PWMs in TRANSFAC (243 matrices). Nearly identical results were obtained by TFM-Explorer for short and long sequence sets. This shows one advantage of the local approach of TFM-Explorer: its ability to identify several local regions in a large data set without compromising the sensitivity.
+The top-ten windows identified by TFM-Explorer with the associated TFs are listed in Table 3. The first notable observation is that all windows are located around the TSS, which is a region rich in cis-regulatory elements. Second, the six PWMs corresponding to TFs from the Rel/NF-κB family are all present in the list, and the location of the associated window in the promoter is consistent with the location of the experimentally verified binding sites [23].
+The remaining TFs do not correspond to experimentally verified binding sites for this data set. However, except for CDXA_01, there are many indications that they are biologically valid. Besides the Rel/NF-κB factors, TFM-Explorer identified a short window for TATA-box binding proteins located 40 bp upstream of the TSS. Both the size and position of the window are characteristic of this factor. The prediction indicates that 40% of genes in the data set contain a TATA-box, compared to 32% in the human genome [24]. Fast inducible genes (such as genes mediated by Rel/NF-κB) frequently contain a strong TATA-box in their core promoter. In contrast, TATA-box-less genes tend to be expressed at a low and constant rate.
+Therefore, this relative abundance of TATA-boxes in the core promoter is an expected property for this data set. Another TF family detected by TFM-Explorer is Spl, which is a zinc-finger TF that binds to GC-boxes. Once again, the position of the window ([-94 : -43]) is consistent with the information on this factor published in the literature. Several Rel/NF-κB target genes that are present in the data set show promoter organization containing functional GCboxes, such as MnSod [25] and interleukins [26].
+In order to compare our results with predictions made by other tools, we applied OTFBS, TOUCAN, and oPOSSUM to the data set with both short and long sequences (Table N k x 6 . 3 9 9 e -0 3 10
+RORalfa-2 7.747e-03  Irf-1 6.815e-04 Table 3: Results for Rel/NF-κB target genes. Most significant TFBSs detected in Rel/NF-κB target genes set by TFM-Explorer, TOUCAN, OTFBS, and oPOSSUM. The data set comprised 99 human Rel/NF-κB target genes that have experimentally verified binding sites. Both 2-kb-upstream sequences and 5-kb-downstream/5-kb-upstream sequences were used. The TRANSFAC vertebrate matrix collection was used with TFM-Explorer, TOUCAN, and OTFBS, and JASPAR vertebrate matrices were used with oPOSSUM. TFs of the Rel/NF-κB family are marked with *. Other TFBSs (such as TATA-box) are also likely to be biologically valid. (Continued) 3). One of the most noticeable results is that while all the programs performed relatively well on relatively short sequences (2 kb), this was not the case with longer sequences (5 kb upstream and 5 kb downstream). In this last case, only oPOSSUM was able to give reliable predictions. Moreover, oPOSSUM produced similar results for the long and short sequences, since it searches for TFBSs only in regions that are conserved across human and mouse.
+
+Histone genes
+
+Histone proteins are at the heart of the chromatin structure in the eukaryotic cell nucleus. They act as a spool and help in packing DNA by wrapping it around. They also play an important role in transcriptional regulation. They are divided into five classes: H1, H2A, H2B, H3, and H4. These proteins (particularly H3 and H4) are known to be highly conserved evolutionarily. Four of the functional motifs that are known to be involved in H3 regulation have been clearly identified: CCAAT-box, Oct-1 box, GCbox, and AC-Box.
+Excluding the AC-box (for which no entry was found in TRANSFAC), the corresponding matrices in TRANSFAC database are as follows: NFY_01, NFY_C, NFY_Q6, CAAT_01, and CAAT_C for CCAAT-boxes; OCT1_Q6, OCT1_C, and OCT1_0* for Oct-1 boxes; and SP1_01 and SP1_Q6 for GC-boxes.
+One advantage of TFM-Explorer is its ability to cope with heterogeneous sets of genes. We evaluated the impact of using genes from a related species, with a set of 19 H3 genes compiled from [27] [see Additional file 3], comprising 11 human, 7 mouse, and 1 rat genes. Sequences of 2 kb that were upstream of the TSS were submitted against all TRANSFAC vertebrate matrices to TFM-Explorer. Table  4 indicates that two functional motifs (CCAAT-box and Oct-1 box) known to be involved in the regulation of H3 genes were predicted, which correspond to the TRANSFAC matrices NFY_C and NFY_Q6, and OCT1_04 and OCT1_07, respectively.
+Among the top-five predictions of TFM-Explorer, only one matrix, XFD1_01, was unlikely to be found. An explanation for this false positive prediction comes from the profile of XFD1_02. It appears that it is likely to find occurrences of XFD1_01 where OCT1_04 or OCT1_07 match, because of the similarity between their profiles. In TFM-Explorer, we added the ability to compare two different predictions and to identify such redundant or biased results. The comparison was performed on the basis of the proportion of overlapping hits. We also computed the theoretical rate of overlapping hits using a previously reported similarity measure [28]. In this case, a large number of XFD1_01 TFBSs actually overlap with OCT1_07 and OCT1_04 TFBSs (37% and 53%, respectively). A similar conclusion can be drawn for PBX1_02 and matrices corresponding to the CCAAT-box. The predictions made by TOUCAN and OTFBS are listed in Table  4; oPOSSUM is not included since it was unable to produce results from this data set.
+
+Robustness to noise
+
+In order to test the robustness of TFM-Explorer, we also measured its ability to detect regulation signals in a noisy environment. We constructed artificial data sets with various noise levels in the following way: starting with homogeneous data sets (the NF-κB target genes and muscle-specific data sets presented above), we replaced from 10% to 90% of the reference sequences with randomly selected genes, generating 100 such data sets for each noise level. The percentage of correct predictions is reported in Figure 2. The prediction was considered to be correct when the most significant predicted TF is known to be involved in the regulation process. Figure 2 shows that the tolerable amount of noise depends greatly on the quality of the TF signal in the set and on its size. For example, up to 50% of noise can be tolerated for the Rel/NF-κB sample without altering the positive predictive value. Note also that for most data sets, noise levels higher than 50% result in the progressive loss of the true regulation signals.
+Lastly, we evaluated the specificity of TFM-Explorer under the extreme condition of there being only noise to identify (i.e., no signal present). This tested the level of the P-value that can be observed by chance. To achieve this we constructed a large number of sets of randomly selected genes that are not expected to share common functional TFBSs. Predictions returned by TFM-Explorer on these data sets are thus considered as false positive. To estimate the relationship between the false positive rate and the P-value cutoff, we generated 100 random sets of 10, 50, and 100 2-kb sequences. For each run, the ten most significant windows identified by TFM-Explorer and their associated P-value were retained. Figure 3 gives the percentage of trials that produced false positive predictions for each size of sample data set according to the chosen P-value cutoff. The first conclusion is that the cutoff must decrease with increasing sample size. For a fixed false positive rate of 10% (i.e., with no more than one false positive among the top ten), the optimal P-value cutoff was 10 -6 and 10 -7 for data sets containing 10 and 100 sequences, respectively. But for all data sets, a window with a P-value lower than 10 -10 can be considered significant.
+
+Conclusion
+
+We have developed a new method for analyzing the regulatory regions of a set of genes sharing regulatory elements that can come from several species. Our method compares favorably with existing tools, such as TOUCAN, OTFBS, and oPOSSUM. We have also established that it can tolerate a high level of noise, which is a valuable property when dealing with experimental data derived from microarray experiments. One basic principle of the method is the use of the TSS as a reference element to handle gene upstream sequences. While this assumption proved to be valid for a variety of examples, it is insufficient for at least two reasons: (1) the correct position of the TSS is hard to annotate, and alternative splicing may lead to alternative TSSs; and (2) many regulatory elements show no spatial conservation relative to the TSS. Moreover, regulatory elements can even be found in introns or in 3'UTR. We believe that it would be useful to extend the method to other reference elements -such as highly conserved regions between species, or functional binding sites for a given regulatory protein -when searching for collaborative TFs.
+Effect of P-value cutoff on the false positive error rate   Influence of noise on the positive predictive value Figure 2 Influence of noise on the positive predictive value.
+Starting from the Rel/NF-κB and muscle data sets, an increasing number of actual sequences were replaced by random sequences. The noise level represents the proportion of sequences for the given set that have been randomly selected in the genome. The positive predictive value corresponds to the proportion of valid predictions (the most significant extracted TF is known to be involved in the regulation of the reference set).
+
+Availability and requirements
+
+TFM-Explorer has been implemented in C/Python and is freely available upon request. It takes only a few seconds to execute on a standard workstation for a data sample of 20 genes with 2-kb-upstream promoter sequences while scanning for both TRANSFAC and JASPAR databases.
+We also offer an easy-to-use Web-accessible server http:// bioinfo.lifl.fr/TFM-Explorer, which includes precomputed background models for human, mouse, and rat genomes. All annotated genes with RefSeq identifiers [29] available in the UCSC Genome Browser assembly [20] (release dates: hg18, March 2006; mm8, March 2006; rn3, June 2003) have been retrieved. This corresponds to 24 328, 19 343, and 8 314 genes for the human, mouse, and rat genomes, respectively. For all of these genes, promoter regions corresponding to 10 kb upstream and 5 kb downstream of the TSS were used to build background models. Potential TFBSs with a P-value of 0.001 have been exhaustively precomputed for all TRANSFAC and JASPAR vertebrate matrices. TFM-Explorer returns a ranked list of overrepresented TFBSs. Various types of complementary information are provided to enhance the understanding of the raw prediction, including the location of binding sites, the number of predicted binding sites per sequence in the window, the PWM composition and quality, and the correlation between hits and PWMs. The results can be exported as ASCII files for later use.
+
+Additional material
+
+
+Figure 3
+
+3Effect of P-value cutoff on the false positive error rate. Various set sizes (5, 50, and 100 sequences) were used to evaluate the rate of false positive. The suggested P-value cutoffs for a fixed false positive rate of 10% are 10 -6 and 10 -8 for 5 and 100 sequences, respectively.
+
+Table 1 :
+
+1Poisson chi-square goodness-of-fit test for the hit-count distribution. Percentage of PWMs for which the hit-count distribution (i.e., the number of putative TFBSs in a given sequence) is well modeled by a Poisson distribution according to the chi-square goodness-of-fit test, for three values of significance. Proximal upstream sequences from 1000 randomly selected human genes were used to compute the data listed.Matrices Database
+α > 0.1 
+α > 0.05 
+α > 0.01
+JASPAR 
+72% 
+80% 
+87% 
+TRANSFAC (public) 
+68% 
+74% 
+83%
+
+Table 2 :
+
+2Results for skeletal-muscle-specific human genes. Most significant TFBSs detected in the muscle data set by TFM-Explorer, TOUCAN, OTFBS, and oPOSSUM using sequences that were 2 kb upstream. The TRANSFAC vertebrate matrix collection was used with TOUCAN and OTFBS, and JASPAR vertebrate matrices were used with TFM-Explorer and oPOSSUM. TFs with experimentally verified sites in the data set are marked with *.TFM-Explorer
+Rank 
+PWM 
+Window 
+P-value
+1 
+* 
+SRF 
+[-0224: -0091] 
+7.869e-06 
+2 
+* 
+MEF2 
+[-0060: -0030] 
+2.350e-05 
+3 
+* 
+MZF_1-4 
+[-1431: -0576] 
+1.678e-04 
+4 
+Staf 
+[-1950: -1311] 
+2.539e-04 
+5 
+Irf-2 
+[-1892: -1592] 
+3.002e-04 
+6 
+NRF-2 
+[-0779: -0324] 
+3.180e-04 
+7 
+Brachyury 
+[-0307: -0048] 
+4.503e-04 
+8 
+Bsap 
+[-1911: -0978] 
+4.800e-04 
+9 
+cEBP 
+[-1733: -1679] 
+6.032e-04 
+10 
+* 
+MZF_5-13 
+[-1633: -1078] 
+7.141e-04
+TOUCAN
+Rank 
+PWM 
+P-value
+1 
+HEN1_01 
+8.567e-02 
+2 
+* 
+MEF2_02 
+1.021e-01 
+3 
+RSRFC4_01 
+1.129e-01 
+4 
+TAL1BETAITF2_01 
+1.311e-01 
+5 
+STAT5A_01 
+1.856e-01 
+6 
+TAL1BETAE47_01 
+2.322e-01 
+7 
+YY1_01 
+2.391e-01 
+8 
+STAT5B_01 
+2.534e-01 
+9 
+* 
+MEF2_03 
+3.056e-01 
+10 
+CDC5_01 
+3.134e-01
+OTFBS
+Rank 
+PWM 
+P-value
+1 
+YY1_02 
+2.047e-06 
+2 
+* 
+MZF1_02 
+2.763e-06 
+3 
+* 
+MEF2_02 
+9.493e-06
+oPOSSUM
+Rank 
+PWM 
+P-value
+1 
+* 
+MEF2 
+1.768e-04 
+2 
+Hen-1 
+3.730e-04 
+3 
+S R Y 
+1 . 5 3 1 e -0 3 
+4 
+c-MYB_l 
+1.780e-03 
+5 
+S 8 
+2 . 9 8 3 e -0 3 
+6 
+HFH-3 
+2.994e-03 
+7 
+* 
+SP1 
+3.220e-03 
+8 
+* 
+MZF_5-13 
+3.675e-03 
+9
+
+Table 3 :
+
+3Results for Rel/NF-κB target genes. Most significant TFBSs detected in Rel/NF-κB target genes set by TFM-Explorer, TOUCAN, OTFBS, and oPOSSUM. The data set comprised 99 human Rel/NF-κB target genes that have experimentally verified binding sites. Both 2-kb-upstream sequences and 5-kb-downstream/5-kb-upstream sequences were used. The TRANSFAC vertebrate matrix collection was used with TFM-Explorer, TOUCAN, and OTFBS, and JASPAR vertebrate matrices were used with oPOSSUM. TFs of the Rel/NF-κB family are marked with *. Other TFBSs (such as TATA-box) are also likely to be biologically valid.TFM-Explorer, region -5000, 5000
+Rank 
+PWM 
+Window 
+P-value
+1 
+* 
+NFKAPPAB65_01 
+[-0520: +0115] 
+8.875e-27 
+2 
+* 
+NFKAPPAB_01 
+[-0698: +0116] 
+1.026e-20 
+3 
+* 
+NFKB_C 
+[-0522: -0020] 
+9.148e-19 
+4 
+TATA_01 
+[-0056: -0010] 
+5.585e-18 
+5 
+* 
+NFKB_Q6 
+[-0537: +0092] 
+2.241e-16 
+6 
+TATA_C 
+[-0055: -0015] 
+4.128e-16 
+7 
+* 
+CREL_01 
+[-0501: -0020] 
+3.510e-15 
+8 
+CDXA_01 
+[-0071: -0018] 
+4.262e-15 
+9 
+* 
+NFKAPPAB50_01 
+[-0521: +0012] 
+8.601e-13 
+10 
+SP1_Q6 
+[-0094: -0043] 
+1.451e-11
+TFM-Explorer, region -2000, 0
+Rank 
+PWM 
+Window 
+P-value
+1 
+* 
+NFKAPPAB65_01 
+[-0520: -0019] 
+7.706e-27 
+2 
+* 
+NFKAPPAB_01 
+[-0698: -0019] 
+9.418e-20 
+3 
+TATA_0l 
+[-0056: -0023] 
+1.118e-19 
+4 
+* 
+NFKB_C 
+[-0522: -0020] 
+9.148e-19 
+5 
+TATA_C 
+[-0055: -0015] 
+4.128e-16 
+6 
+* 
+CREL_01 
+[-0501: -0020] 
+3.510e-15 
+7 
+* 
+CDXA_01 
+[-0071: -0018] 
+4.262e-15 
+8 
+* 
+NFKB_Q6 
+[-0537: -0021] 
+3.574e-14 
+9 
+* 
+NFKAPPAB50_01 
+[-0521: -0019] 
+1.066e-12 
+10 
+SP1_Q6 
+[-0094: -0043] 
+1.451e-11
+TOUCAN, region -5000, 5000
+Rank 
+PWM 
+P-value
+1 
+HFH3_01 
+0.0 
+2 
+BRACH_01 
+4.667e-01 
+3 
+RORA2_01 
+8.596e-01 
+4 
+NRSF_01 
+9.956e-01 
+5 
+E 4 7 _ 0 1 
+1 . 0 
+6 
+VMYB_01 
+1.0 
+7 
+AP4_01 
+1.0 
+8 
+MEF2_01 
+1.0 
+9 
+ELK1_01 
+1.0 
+10 
+EVI1_06 
+1.0
+TOUCAN, region -2000, 0
+Rank 
+PWM 
+P-value
+1 
+* 
+NFKAPPAB65_01 
+1.381e-05 
+2 
+* 
+NFKB_C 
+6.975e-05 
+3 
+* 
+NFKAPPAB_01 
+3.139e-04 
+4 
+ARP1_01 
+1.257e-03 
+5 
+SREBP1_01 
+6.795e-03 
+6 
+* 
+N F K B _ Q 6 
+4 . 6 8 3 e -0 2 
+7 
+* 
+NFKAPPAB50_01 
+8.661e-02 
+8 
+RORA2_01 
+9.847e-02
+
+Table 4 :
+
+4Results for the H3 gene set. Most significant TFBSs detected in the H3 data set by TFM-Explorer, TOUCAN, OTFBS, and oPOSSUM using sequences that were 2 kb upstream. The TRANSFAC vertebrate matrices were used with TOUCAN, OTFBS, and TFM-Explorer. oPOSSUM was unable to produce results from this data set. TFs with experimentally verified sites in the set are marked with *.TFM-Explorer
+Rank 
+PWM 
+Window 
+P -value
+1 
+* 
+NFY_C 
+[-1375: -0039] 
+4.757e-24 
+2 
+* 
+OCT1_04 
+[-0588: -0022] 
+1.537e-20 
+3 
+* 
+NFY_Q6 
+[-1318: -0039] 
+4.026e-16 
+4 
+* 
+OCT1_07 
+[-0574: -0025] 
+7.932e-14 
+5 
+XFD1_01 
+[-0890: -0025] 
+2.253e-13 
+6 
+PBX1_02 
+[-0491: -0040] 
+2.737e-13 
+7 
+SRY_02 
+[-0895: -0015] 
+1.803e-12 
+8 
+MEF2_04 
+[-0482: -0038] 
+1.826e-12 
+9 
+HNF1_01 
+[-0642: -0097] 
+7.089e-12 
+10 
+EVI1_04 
+[-0417: -0040] 
+9.277e-12
+TOUCAN
+Rank 
+PWM 
+P-value
+1 
+* 
+NFY_01 
+1.364e-08 
+2 
+* 
+OCT1_01 
+1.854e-05 
+3 
+GFI1_01 
+4.506e-05 
+4 
+TATA_01 
+1.315e-03 
+5 
+* 
+CAAT_01 
+1.781e-03 
+6 
+* 
+OCT_C 
+1_018e-02 
+7 
+MEF2_02 
+1.041e-02 
+8 
+MEF2_03 
+1.041e-02 
+9 
+NFY_C 
+1.633e-02 
+10 
+CART1_01 
+2.569e-02
+OTFBS
+Rank 
+PWM 
+P-value
+1 
+IRF1_01 
+5.099e-26 
+2 
+HFH3_01 
+6.865e-22 
+3 
+FOXJ2_01 
+1.606e-21 
+4 
+MEF2_01 
+6.896e-20 
+5 
+HNF3B_01 
+1.165e-18 
+6 
+MEF2_04 
+1.243e-18 
+7 
+FOXD3_01 
+3.698e-18 
+8 
+MEF2_02 
+2.964e-15 
+9 
+XFD1_01 
+8.016e-15 
+10 
+* 
+NFY_C 
+6.396e-14
+(page number not for citation purposes)
+TSS sequence 3, species B sequence 2, species B sequence 1, species B sequence 2, species A sequence 1, species A (b) (a)
+Applied bioinformatics for the identification of regulatory elements. W Wasserman, A Sandelin, Nature Reviews Genetics. 54Wasserman W, Sandelin A: Applied bioinformatics for the iden- tification of regulatory elements. Nature Reviews Genetics 2004, 5(4):276-287.
+A Model of the Statistical Power of Comparative Genome Sequence Analysis. S R Eddy, PLoS Biology. 31Eddy SR: A Model of the Statistical Power of Comparative Genome Sequence Analysis. PLoS Biology 2005, 3(1):.
+A higher-order background model improves the detection of promoter regulatory elements by Gibbs sampling. G Thijs, M Lescot, K Marchal, S Rombauts, B Bdm, P Rouzé, Y Moreau, 17BioinformaticsThijs G, Lescot M, Marchal K, Rombauts S, B BDM, Rouzé P, Moreau Y: A higher-order background model improves the detection of promoter regulatory elements by Gibbs sampling. Bioinfor- matics 2001, 17(12):1113-1122.
+Algorithms for extracting structured motifs using a suffix tree with an application to promoter and regulatory site consensus identification. L Marsan, M F Sagot, J Comput Biol. 7PrintMarsan L, Sagot MF: Algorithms for extracting structured motifs using a suffix tree with an application to promoter and regulatory site consensus identification. J Comput Biol 2000, 7(1066-5277 (Print)):345-62.
+Extracting regulatory sites from the upstream region of yeast genes by computational analysis of oligonucleotide frequencies. J Van Helden, Andre B Collado-Vides, J , J Mol Biol. 2815van Helden J, Andre B, Collado-Vides J: Extracting regulatory sites from the upstream region of yeast genes by computa- tional analysis of oligonucleotide frequencies. J Mol Biol 1998, 281(5):827-42.
+Assessing Computational Tools for the Discovery of Transcription Factor Binding Sites. M Tompa, N Li, T L Bailey, G M Church, B D Moor, E Eskin, A V Favorov, M C Frith, Y Fu, W J Kent, V J Makeev, A A Mironov, W S Noble, G Pavesi, G Pesole, M Regnier, N Simonis, S Sinha, G Thijs, J Van Helden, M Vandenbogaert, Z Weng, C Workman, C Ye, Z Zhu, Nature Biotechnology. 23Tompa M, Li N, Bailey TL, Church GM, Moor BD, Eskin E, Favorov AV, Frith MC, Fu Y, Kent WJ, Makeev VJ, Mironov AA, Noble WS, Pavesi G, Pesole G, Regnier M, Simonis N, Sinha S, Thijs G, van Helden J, Vandenbogaert M, Weng Z, Workman C, Ye C, Zhu Z: Assessing Computational Tools for the Discovery of Transcription Fac- tor Binding Sites. Nature Biotechnology 2005, 23:137-144.
+Identifying DNA and protein patterns with statistically significant alignments of multiple sequences. G Z Hertz, G D Stormo, Bioinformatics. 157-8Hertz GZ, Stormo GD: Identifying DNA and protein patterns with statistically significant alignments of multiple sequences. Bioinformatics 1999, 15(7-8):563-77.
+DNA binding sites: representation and discovery. G D Stormo, Bioinformatics. 16Stormo GD: DNA binding sites: representation and discovery. Bioinformatics 2000, 16:16-23.
+JASPAR: an open-access database for eukaryotic transcription factor binding profiles. A Sandelin, W Alkema, P Engstrom, W W Wasserman, B Lenhard, Nucleic Acids Res. Sandelin A, Alkema W, Engstrom P, Wasserman WW, Lenhard B: JASPAR: an open-access database for eukaryotic transcrip- tion factor binding profiles. Nucleic Acids Res 2004:D91-4.
+TRANSFAC: an integrated system for gene expression regulation. E Wingender, X Chen, R Hehl, H Karas, I Liebich, V Matys, T Meinhardt, M Pruss, I Reuter, F Schacherer, Nucleic Acids Res. 28Wingender E, Chen X, Hehl R, Karas H, Liebich I, Matys V, Meinhardt T, Pruss M, Reuter I, Schacherer F: TRANSFAC: an integrated system for gene expression regulation. Nucleic Acids Res 2000, 28:316-9.
+Identification of functional clusters of transcription factor binding motifs in genome sequences: the MSCAN algorithm. O Johansson, W Alkema, W W Wasserman, J Lagergren, 19BioinformaticsSupplJohansson O, Alkema W, Wasserman WW, Lagergren J: Identifica- tion of functional clusters of transcription factor binding motifs in genome sequences: the MSCAN algorithm. Bioinfor- matics 2003, 19 Suppl 1:i169-76.
+MSCAN: identification of functional clusters of transcription factor binding sites. Wbl Alkema, O Johansson, J Lagergren, W W Wasserman, Nucleic Acids Res. Alkema WBL, Johansson O, Lagergren J, Wasserman WW: MSCAN: identification of functional clusters of transcription factor binding sites. Nucleic Acids Res 2004:W195-8.
+An approach to identify over-represented cis-elements in related sequences. J Zheng, J Wu, Z Sun, Nucleic Acids Res. 317Zheng J, Wu J, Sun Z: An approach to identify over-represented cis-elements in related sequences. Nucleic Acids Res 2003, 31(7):1995-2005.
+Toucan: deciphering the cis-regulatory logic of coregulated genes. S Aerts, G Thijs, B Coessens, M Staes, Y Moreau, De Moor, B , Nucleic Acids Res. 316Aerts S, Thijs G, Coessens B, Staes M, Moreau Y, De Moor B: Tou- can: deciphering the cis-regulatory logic of coregulated genes. Nucleic Acids Res 2003, 31(6):1753-64.
+oPOSSUM: identification of over-represented transcription factor binding sites in co-expressed genes. S J Ho Sui, J R Mortimer, D J Arenillas, J Brumm, C J Walsh, B P Kennedy, W W Wasserman, Nucleic Acids Res. 3310Ho Sui SJ, Mortimer JR, Arenillas DJ, Brumm J, Walsh CJ, Kennedy BP, Wasserman WW: oPOSSUM: identification of over-repre- sented transcription factor binding sites in co-expressed genes. Nucleic Acids Res 2005, 33(10):3154-64.
+The statistical significance of nucleotide position-weight matrix matches. J M Claverie, S Audic, Comput Appl Biosci. 12PrintClaverie JM, Audic S: The statistical significance of nucleotide position-weight matrix matches. Comput Appl Biosci 1996, 12(0266-7061 (Print)):431-9.
+Composition-sensitive analysis of the human genome for regulatory signals. O Kel-Margoulis, D Tchekmenev, A Kel, E Goessling, K Hornischer, B Lewicki-Potapov, E Wingender, In Silico Biol. 31-2Kel-Margoulis O, Tchekmenev D, Kel A, Goessling E, Hornischer K, Lewicki-Potapov B, Wingender E: Composition-sensitive analysis of the human genome for regulatory signals. In Silico Biol 2003, 3(1-2):145-71.
+Determination of local statistical significance of patterns in Markov sequences with application to promoter element identification. H Huang, Mcj Kao, X Zhou, J S Liu, W H Wong, J Comput Biol. 11Huang H, Kao MCJ, Zhou X, Liu JS, Wong WH: Determination of local statistical significance of patterns in Markov sequences with application to promoter element identification. J Com- put Biol 2004, 11:1-14.
+MatInd and MatInspector: new fast and versatile tools for detection of consensus matches in nucleotide sequence data. K Quandt, K Frech, H Karas, E Wingender, T Werner, Nucleic Acids Res. 2323Quandt K, Frech K, Karas H, Wingender E, Werner T: MatInd and MatInspector: new fast and versatile tools for detection of consensus matches in nucleotide sequence data. Nucleic Acids Res 1995, 23(23):4878-84.
+The UCSC Genome Browser Database. D Karolchik, R Baertsch, M Diekhans, T S Furey, A Hinrichs, Y T Lu, K M Roskin, M Schwartz, C W Sugnet, D J Thomas, R J Weber, D Haussler, W J Kent, Nucleic Acids Res. 31Karolchik D, Baertsch R, Diekhans M, Furey TS, Hinrichs A, Lu YT, Roskin KM, Schwartz M, Sugnet CW, Thomas DJ, Weber RJ, Haussler D, Kent WJ: The UCSC Genome Browser Database. Nucleic Acids Res 2003, 31:51-4.
+Identification of regulatory regions which confer muscle-specific gene expression. W W Wasserman, J W Fickett, J Mol Biol. 278Wasserman WW, Fickett JW: Identification of regulatory regions which confer muscle-specific gene expression. J Mol Biol 1998, 278:167-81.
+Requirement for serum response factor for skeletal muscle growth and maturation revealed by tissue-specific gene deletion in mice. S Li, M P Czubryt, J Mcanally, R Bassel-Duby, J A Richardson, F F Wiebel, A Nordheim, E N Olson, Proc Natl Acad Sci. 102Li S, Czubryt MP, McAnally J, Bassel-Duby R, Richardson JA, Wiebel FF, Nordheim A, Olson EN: Requirement for serum response factor for skeletal muscle growth and maturation revealed by tissue-specific gene deletion in mice. Proc Natl Acad Sci USA 2005, 102(0027-8424):1082-7.
+K Gosselin, H Touzet, C Abbadie, NF-κB target genes. Gosselin K, Touzet H, Abbadie C: NF-κB target genes. [http:// bioinfo.lifl.fr/NF-KB/].
+. Y Suzuki, T Tsunoda, J Sese, H Taira, J Mizushima-Sugano, H Hata, T Ota, T Isogai, T Tanaka, Y Nakamura, A Suyama, Y Sakaki, S Morishita, K Okubo, S Sugano, Identification and characterization of the potential promoter regions of 1031 kinds of human genesSuzuki Y, Tsunoda T, Sese J, Taira H, Mizushima-Sugano J, Hata H, Ota T, Isogai T, Tanaka T, Nakamura Y, Suyama A, Sakaki Y, Morishita S, Okubo K, Sugano S: Identification and characterization of the potential promoter regions of 1031 kinds of human genes.
+. Genome Research. 115Genome Research 2001, 11(5):677-84.
+The c-Rel transcription factor can both induce and inhibit apoptosis in the same cells via the upregulation of MnSOD. D Bernard, D Monte, B Vandenbunder, C Abbadie, Oncogene. 21PrintBernard D, Monte D, Vandenbunder B, Abbadie C: The c-Rel tran- scription factor can both induce and inhibit apoptosis in the same cells via the upregulation of MnSOD. Oncogene 2002, 21(0950-9232 (Print)):4392-402.
+Characterization of a functional NF-kappa B site in the human interleukin 1 beta promoter: evidence for a positive autoregulatory loop. J Hiscott, J Marois, J Garoufalis, D &apos;addario, M Roulston, A Kwan, I Pepin, N Lacoste, J Nguyen, H Bensi, G , Mol Cell Biol. 13PrintHiscott J, Marois J, Garoufalis J, D'Addario M, Roulston A, Kwan I, Pepin N, Lacoste J, Nguyen H, Bensi G: Characterization of a functional NF-kappa B site in the human interleukin 1 beta promoter: evidence for a positive autoregulatory loop. Mol Cell Biol 1993, 13(0270-7306 (Print)):6231-40.
+Promoter modeling: the case study of mammalian histone promoters. R Chowdhary, R A Ali, W Albig, D Doenecke, V B Bajic, Bioinformatics. 2111Chowdhary R, Ali RA, Albig W, Doenecke D, Bajic VB: Promoter modeling: the case study of mammalian histone promoters. Bioinformatics 2005, 21(11):2623-8.
+Large-scale matching for Position Weight Matrices. Combinatorial Pattern Matching. A Liefooghe, H Touzet, J S Varré, Lecture Notes in Computer Science. Liefooghe A, Touzet H, Varré JS: Large-scale matching for Posi- tion Weight Matrices. Combinatorial Pattern Matching, Lecture Notes in Computer Science 2006.
+NCBI Reference Sequence (RefSeq): a curated non-redundant sequence database of genomes, transcripts and proteins. K D Pruitt, T Tatusova, D R Maglott, Nucleic Acids Res. Pruitt KD, Tatusova T, Maglott DR: NCBI Reference Sequence (RefSeq): a curated non-redundant sequence database of genomes, transcripts and proteins. Nucleic Acids Res 2005:D501-4.
+
+
+9363757:Protein–DNA binding specificity predictions with structural models
+
+
+INTRODUCTION
+
+Gene regulation is mediated in part by protein transcription factors (TFs) binding to cis-regulatory regions of the genome.
+Accurate genomewide characterization of TF binding sites is thus a necessary prerequisite to deciphering complex gene expression patterns. Probabilistic models of TF binding profiles, often called position-specific weight matrices (PWMs), are typically used as input to such predictions (1)(2)(3). With the weight matrix representation of TF binding sites, the probability P(S j p) that sequence S is a binding site for the TF represented by p is given by
+where L is the length of the binding site in base pairs, s i is the base at position i and p i a is the probability of base a (A, C, G or T) at position i in the weight matrix, subject to normalization: P 4 a¼1 p i a ¼ 1 (any i). PWMs can be constructed from an alignment of binding sites obtained by footprinting methods, gel-shift analysis and reporter constructs. In addition, TF binding sites can be characterized using SELEX, DNA microarray, genomewide location (ChIP-chip) and other in vitro techniques (1). However, TF binding specificity data of this type cannot be used to rationalize the mechanism by which proteins interact with DNA. Moreover, for many TFs there is little or no experimental binding site information.
+In principle, one should be able to predict the TF binding site profile from a structure of the protein-DNA complex or its close homolog. At first it was anticipated that structural studies would reveal a universal protein-DNA recognition code, which could be used for predicting TF binding sites based on amino acid identities at the protein-DNA interface (4,5). It became apparent, however, when more protein-DNA structures were solved and classified that despite some predominantly occurring interactions, such as Lys-G, the energetics of amino acid-base contacts depends on their structural context and, in particular, on the structural family of the DNA-binding protein (6)(7)(8)(9)(10). Many amino acids were observed to form favorable contacts with different bases, making it necessary to generalize a deterministic recognition code to a probabilistic binding profile based, for example, on maximizing the likelihood of observed protein-DNA contacts (11)(12)(13). The online version of this article has been published under an open access model. Users are entitled to use, reproduce, disseminate, or display the open access version of this article for non-commercial purposes provided that: the original authorship is properly and fully attributed; the Journal and Oxford University Press are attributed as the original place of publication with the correct citation details given; if an article is subsequently reproduced or disseminated not in its entirety but only in part or as a derivative work this must be clearly indicated. For commercial re-use, please contact journals.permissions@oxfordjournals.org Probabilistic recognition codes are more accurate when developed for a specific structural family, thereby implicitly taking protein-DNA structural context into account. Indeed, binding site profiles based on the classification of TFs into families were found to be useful in bioinformatics pattern detection algorithms (14). However, data availability has so far limited knowledge-based PWM predictions to the C 2 H 2 zinc finger family (15,16).
+An alternative approach to specificity and binding affinity predictions is based on all-atom modeling of protein-DNA complexes (17)(18)(19). Starting from a known structure of the protein bound to its consensus DNA sequence, an ensemble of models is created by threading novel DNA sequences onto the binding site. Protein-DNA binding energies, DG, are then evaluated for each member of the structural ensemble. DG predictions can be either used to directly infer high-affinity binding sites in genomic sequence or converted into PWM probabilities using the Boltzmann formula. In the latter case, it is only necessary to compute DG values for all one-point mutations from the consensus-binding site. The main limiting factor of the structural approach to TF binding site specificity predictions is the availability of experimentally determined structures of protein-DNA complexes. The range of applicability of structural methods will significantly increase if the DNA-binding proteins can be modeled by homology. Homology modeling involves threading a protein amino acid sequence onto a suitable structural template chosen on the basis of its sequence similarity to the protein of interest. The threading procedure creates a new protein-DNA binding interface, for which DG and PWM probability calculations are then carried out as in native structures.
+Here we present a computational model for predicting protein-DNA binding affinities and specificities. The model can be applied to a wide variety of DNA-binding proteins for which there is either a native protein-DNA structure or a sufficiently close homolog. The model is based on a simple free energy function, which consists of the protein-DNA interaction energy and the DNA conformational energy. The protein-DNA interaction energy is used to describe direct readout of the DNA sequence by the protein, whereas the DNA conformational energy takes into account distortion of B-DNA shape caused by protein binding. We carried out a series of tests of our PWM and binding energy predictions. First, we checked the ability of the model to reproduce experimental binding free energy measurements. We also assessed the accuracy of the pairwise additivity approximation in our analysis. Second, we checked the ability of our algorithm to discriminate experimentally known TF binding sites from random ensembles of sequences. Third, we carried out PWM predictions for a number of TFs and compared them with experimental PWMs. For all these predictions native protein-DNA complexes were used as structural templates. Finally, the extent of applicability of homology modeling to protein-DNA binding affinity predictions was explored with several representative PWM calculations. The relative accuracy and computational efficiency of our approach allowed us to carry out numerous predictions of TF binding affinities and specificities, facilitating future experimental and computational studies of transcriptional regulation in different organisms and biological systems.
+
+METHODS
+
+
+Binding stability and weight matrix predictions
+
+Free energy model of protein-DNA interactions. We extended Rosetta protein-nucleic acid model developed in Ref. (20) by adding sequence-specific DNA conformational energy. The free energy function employed in protein-DNA binding affinity calculations consists of the protein-DNA interaction component describing intermolecular readout of the DNA sequence by the protein, and of the DNA deformation component describing intramolecular readout of the binding site sequence:
+Protein-DNA interactions are modeled as a linear combination of the Lennard-Jones potential (which switches to a linear repulsive potential at short distances) (20), the orientationdependent hydrogen bonding potential describing amino acid side chain-amino acid side chain and amino acid side chain-DNA base hydrogen bonds (21), the Generalized Born electrostatics and solvation model (22), and the implicit solvation model developed by Lazaridis and Karplus (23):
+where each energy is a sum over all protein-DNA and proteinprotein atomic pairs, and {w} is a set of fitting weights. Parameterization of the Lennard-Jones potential, the hydrogen bonding potential and the Lazaridis and Karplus solvation model is carried out as described in Ref. (20), whereas the Generalized Born model with AMBER parm99 atomic partial charges (24) is adopted from Ref. (22). Other free energy components, including the knowledge-based potential derived from residue pair statistics and the solvent accessible surface area term, were tested but omitted from the final model since they did not significantly improve the predictions of protein-DNA binding energies. The model requires an atomic representation of protein-DNA complexes including all hydrogen and heavy atoms. Hydrogen atoms and heavy atoms missing from experimental structures were built using standard CHARMM27 bond lengths and bond angles, with all rotatable bonds connecting hydrogens to heavy atoms optimized using Monte Carlo search with the free energy function described above.
+The DNA sequence-dependent conformational energy model is based on the effective harmonic potential developed in Ref. (25). The DNA conformational energy is computed as a sum over all base pair and base step energies:
+where the first sum is over all base pairs in the double helical DNA (a,b denote bases in a base pair), the second sum is over all consecutively stacked base pair steps (a,b denote base pairs in a base step), and w dna-bp , w dna-bs are fitting weights. Base pairs and base steps are counted once in the 5 0 -3 0 direction. The first term in Equation 4 is necessary to enforce reasonable base pairing in the process of DNA minimization, which occurs in the space of DNA torsional angles and not in the space of effective degrees of freedom defined below. Both E dna-bs and E dna-bp are approximated with harmonic functions (25):
+where the sum runs over effective degrees of freedom {q} (Twist, Tilt, Roll, Shift, Slide and Rise for base steps; Opening, Buckle, Propeller, Shear, Stretch and Stagger for base pairs) (26). All effective geometric parameters are calculated as described in Ref. (27). Every set of six geometric parameters completely describes the mutual orientation of two bases or base pairs represented as rigid bodies. dq a i is a deviation of q a i from its value averaged over a set of experimental observations (DNA structures from a non-homologous set of protein-DNA complexes): dq a i ¼ q a i À hq a i i:
+The force constants f ab ij are evaluated by inverting the covariance matrix of dq i a averaged over the same set of DNA structures: f ab ij ¼ hdq a i dq b j i À1 . All q distributions are self-consistently trimmed by removing all data points for which at least one of the geometric parameters is more than three standard deviations away from the average, followed by updating all averages and standard deviations. This procedure is repeated until convergence, which usually requires 2-3 iterations and removes just a few percent of the data points (28). A non-homologous, manually curated set of 101 structures used in Ref. (20) was employed to derive the force constants for the DNA conformational potential.
+Given free energies of the protein-DNA complex and its unbound partners, the binding free energy is computed as follows:
+Mutations of one or several base pairs in the binding site result in changes of protein-DNA binding free energies:
+where DG mut (DG wt ) refers to the mutated and wild-type DNA sequence, respectively.
+
+Weight matrix predictions based on binding free energies
+
+Computation of weight matrix probabilities p i s i requires an assumption of the pairwise additivity of base pair energies:
+where L is the length of the binding site in base pairs, s i is the base at position i and DG i a is the binding energy of base a (A, C, G or T) at position i, which is assumed to be independent of all other bases. In our model, all energy terms except for the base step energies are explicitly pairwise independent. However, even the energies that are pairwise independent by construction (i.e. computed as sums over individual atom-atom interactions) can become non-additive if conformational rearrangement is allowed at the protein-DNA binding interface. Thus, it is important to check explicitly if the energies in our model are approximately pairwise additive.
+With the pairwise additivity assumption, a set of 4L predicted energies DG i a can be converted into weight matrix probabilities using the Boltzmann formula (29):
+where b ¼ 1/RT is the inverse temperature used as a fitting parameter [b was changed in steps of 0.25 (kcal/mol) À1 in all fits].
+
+Experimental datasets
+
+Binding free energies. Table 1 collects structural data for protein-DNA complexes with binding free energy measurements available from the ProNIT database (http://dna01.bse. kyutech.ac.jp/jouhou/pronit/pronit.html) and from the literature. Each dataset in Table 1 consists of a structure of the protein-DNA complex and a series of binding free energy measurements DG for wild-type and mutant DNA sequences.
+In several cases, association or dissociation constants reported by the authors were converted into binding free energies using
+with RT ¼ 0.59 kcal/mol. In the case of the MAT a1/a2 TF, in vivo repression levels of the heterologous reporter promoter construct were used as a measure of binding affinity:
+where R is the repression ratio in the presence and absence of the wild-type or mutant a1/a2 binding site (30). Eleven Binding sites and weight matrices. Table 2 collects protein-DNA structures for which binding site data and experimental weight matrix data are available. The Zif268 weight matrix was taken from a selection experiment (31). The experiment generated the G-C-G-T/g-G/A-G-G-C/a/t-G-G/T consensus sequence, which we used to create five binding site variants (in addition to the consensus sequence from the Zif268 structure). Binding sites and weight matrices for seven Escherichia coli TFs were obtained from the DPInteract database (32). For TrpR, 4 sites from DPInteract were augmented with 10 additional sites from RegulonDB (33). For Ndt80 in Saccharomyces cerevisiae we used the weight matrix from Ref. (34); Ndt80 binding sites were collected by searching promoters of the genes known to be regulated by Ndt80 with the YGNCACAAAA consensus sequence. A collection of 17 naturally occurring MAT a1/a2 binding sites plus the synthetic consensus sequence were obtained from Ref. (30). Eight Gcn4p sites were assembled from Ref. (35) and the TRANSFAC database (36). Finally, binding sites and weight matrices for the Prd homeodomain homodimer were taken from Ref. (37), whereas binding data for the rest of Drosophila melanogaster TFs were collected by E. D. Siggia and E. Emberly (unpublished data).
+
+Prediction testing
+
+Protein-DNA interaction model based on the number of interface atomic contacts. In order to test our DDG and PWM predictions we developed a simple null model that exploits the structure of the protein-DNA complex but does not require any detailed predictions of protein-DNA energetics. This so-called 'contact' model constructs a weight matrix from the consensus DNA sequence and the number of atomic contacts N between protein side chains and DNA base pairs. In particular, we assume that the three non-consensus bases occur with equal probabilities, whereas the consensus base is favored over any non-consensus base by (N/N max ) if N < N max . If N > N max , the consensus base becomes absolutely conserved:
+Here p i s i N ð Þ is the probability of the base pair type s i ¼ {A, C, G, T} in the PWM column i, wt denotes a consensus base pair found in the protein-DNA complex at position i, N is the number of protein-DNA base atomic contacts summed over the base pair i (protein and DNA atoms are defined to be in contact if they are separated by <4.5 Å ; hydrogen atoms are excluded from the counts), and N max is the number of contacts above which the native base pair is always conserved. N max is treated as a free parameter in the probability model.
+Probabilities defined by Equation 12 are converted into energies using:
+The log p i s i 0 ð Þ ¼ log 0:25 ð Þoffset ensures that mutations from the consensus sequence are not penalized in the absence of protein-DNA contacts. The maximum energy penalty is capped at E max , which together with N max constitute the free parameters of the model. In all contact model fits N max was changed in steps of 5 kcal/mol and E max was changed in steps of 1.0 kcal/mol.
+Significance test of PWM predictions. Statistical significance of PWM predictions is estimated using the y-test, which is a generalization of the well-known c 2 -test (38):
+where {p j } are predicted probabilities, {q j } are experimental frequencies and L is the length of the binding site in base pairs. Both p and q distributions are smoothed by adding 0.05 to all PWM entries and re-normalizing. The quality of PWM predictions is further estimated by comparing y(p, q) with the average value of y computed for an ensemble of 10 000 alignments of random weight matrices p j random to the experimental weight matrix frequencies {q j } [hy ( p random , q)i]. Each column in the random weight matrix is obtained by uniformly sampling four numbers in the (0,1) interval and enforcing normalization afterwards. The difference between hy (p random ,q)i and y (p, q) can be viewed as a measure of success of our predictions.
+
+RESULTS AND DISCUSSION
+
+
+Binding free energy predictions
+
+All-atom free energy models. DNA-binding proteins employ two complementary mechanisms of binding site recognition. The intermolecular readout mechanism is based on direct interactions of protein side chains with DNA bases, whereas the intramolecular readout mechanism involves sequencespecific deformation of the DNA site by the bound protein.
+We developed a free energy function that takes both these mechanisms into account. Interactions of protein side chains with DNA are modeled using an all-atom representation of both protein and DNA, including all the hydrogen atoms. The protein-DNA interaction energy is a weighted sum of terms describing shape complementarity and packing at the interface, polar interactions (electrostatics and hydrogen bonds), van der Waals forces and solvation energies (Equation 3). The DNA conformational energy is calculated using a reduced geometric representation in which DNA bases and base pairs are represented by rigid bodies and their mutual orientation serves as a measure of deviation from the B-form DNA. The DNA conformational energy is a weighted sum of two terms describing base pairing and stacking of consecutive base pairs. Using this free energy function, we developed the following approach to predicting protein-DNA binding affinities. First, a suitable protein-DNA complex is identified as a structural template for computational modeling. Second, each novel DNA sequence (i.e. from a set for which experimentalbinding affinity measurements are available) is threaded onto the DNA phosphate backbone with fixed DNA torsional angles. The result of this procedure is a set of initial structural models with novel DNA sequences. Third, binding free energies, DG, for each member of the set are computed in either of two different ways. One approach, which we shall call the static model, does not allow any side chain or DNA conformational rearrangements in the protein-DNA complex. The free energy is computed once for each initial model, and the difference in binding affinity between mutant and wild-type DNA sequences is calculated as DDG ¼ G mut protÀdna À G wt protÀdna ‚ where G prot-dna is the free energy of the protein-DNA complex. The relative weights of the free energy terms in Equation 2 are found by the leastsquares fit to a set of experimentally observed protein-DNA binding affinities. The experimental dataset used in the fitting consists of 11 series of DG measurements with a total of 196 data points (Table 1). For each series of measurements there is a crystal structure of the protein-DNA complex with <3.0 Å resolution used as a template for base pair threading and binding affinity predictions. The set of weights obtained in this way is cross validated by removing parts of the dataset and refitting the weights. Very similar weights are obtained in each case (data not shown). The ratio of protein-DNA to DNA conformational energies obtained through the least squares fit to experimental DDG data is necessarily averaged over protein families included in the fit. Although there are not enough data to carry out separate fits for each protein family, restricting the fit to proteins known to significantly bend and twist DNA results in a larger contribution of the DNA conformational energies.
+In the other approach, called the dynamic model, we minimize the total free energy of the protein-DNA complex starting from the initial model. The protein backbone stays fixed during minimization, whereas the torsional angles of DNA and interface side chains are allowed to relax (the protein-DNA interface is defined based on amino acid-dependent distance cutoffs). The conformational search used in G prot-dna minimization consists of 10 two-step iterations. (i) Simulated annealing of amino acid side chains at the protein-DNA interface with side chains represented as discrete backbone-dependent rotamers (39) on a fixed protein backbone, and frozen DNA conformation. (ii) Continuous minimization of amino acid side chains at the protein-DNA interface together with simultaneous conformational relaxation of DNA. Amino acid side chains are no longer represented by rotamers at this step.
+Experimental binding affinity data available to us are insufficient to reliably fit the weights by iterations to selfconsistency when conformational rearrangement is allowed. Instead, we obtain the weights for components of the protein-DNA free energy function by maximizing the recovery of native amino acid side chains at all interface positions in a non-homologous set of protein-DNA complexes. In other words, we adopt a strategy used in protein sequence design in which rotamer conformations for all amino acids are substituted at all interface positions, and the probability of native amino acids is maximized by varying the weights (20,40). Similar to the static model, the ratio of the protein-DNA energy to the DNA conformational energy is expected to be protein family dependent and was estimated on average by requiring that the typical fluctuations from the equilibrium shape observed in the database of protein-DNA complexes be on the order of RT: 3 f f ii h q q i 2 i $ RT (overbar denotes an average over all base step/base pair types; we neglect offdiagonal coupling of the effective degrees of freedom). The estimated ratio of the protein-DNA to intra-DNA energies is consistent with the non-iterative least squares fit to experimental DDG data from Table 1. In the dynamic model, DDG is calculated as
+protÀdna is the minimized free energy of the protein-DNA complex, and G mut=wt dna is the reference free energy of the unbound DNA (G mut prot ¼ G wt prot since the protein sequence is fixed). G mut=wt dna is computed by continuous minimization of the DNA conformation in the absence of the protein. Including separately minimized unbound DNA rather than ideal B-DNA as a reference state was found to be beneficial in most cases where DNA was not significantly distorted from its equilibrium shape. However, in several more extreme cases, such as BamHI endonuclease and the PU.1 ETS domain, local DNA minimization in the absence of bound protein was found to be insufficient for relaxing DNA conformation and was omitted from the model. Better conformational sampling might be provided by simulated annealing of DNA degrees of freedom.
+Measures of prediction success and the contact model. We use three alternative measures to assess the quality of DG predictions: a linear correlation coefficient r, an average unsigned error e between predicted and experimental binding free energies, and a fraction of correct predictions F. Although the first two measures are computed using standard formulae, the fraction of correct predictions is based on a binary function: a prediction is considered to be correct if both DDG comp and DDG exp are <1.0 kcal/mol, or >1.0 kcal/mol, or else separated by <0.3 kcal/mol. The threshold value of 1.0 kcal/mol corresponds to a $5-fold reduction in binding affinity at room temperature. DG predictions are labeled as correct if they are successfully classified to be favorable or destabilizing, even if the absolute magnitudes of binding energies are not perfectly reproduced.
+We compare calculations of binding energies described above with predictions based on a simple contact model.
+Instead of modeling detailed energetics of protein-DNA complexes, the contact model uses only the consensus sequence and the number of protein-DNA base atomic contacts at the binding interface (see Methods). The energy penalty for each mutation from the consensus sequence is given by Equation 13; it is a function of N max (the minimum number of contacts at which a given consensus base is assumed to be absolutely conserved, cf. Equation 12) and of E max (the maximum energy penalty for a mutation of the consensus base). N max and E max are adjusted to simultaneously maximize the fraction of correct predictions F and minimize the average error e over the DDG dataset. The latter requirement is necessary since many N max /E max pairs result in similar values of F. The minimum value of e ¼ 1.73 kcal/mol is obtained for N max ¼ 15 and E max ¼ 3.0 kcal/mol. We find that the contact model provides a stringent test of more complicated models because, as demonstrated below, it is fairly successful in binding affinity and weight matrix predictions.
+DDG predictions and weight fitting. The extent to which the static model reproduces experimental DDG measurements from the 196 point dataset used for static model weight fitting is shown in Figure 1A (closed circles). The overall correlation between experimental and predicted binding free energies is 0.57 (Table 3). This is better than the correlation of 0.42 predicted with the contact model ( Figure 1A, red triangles). The number of mutations from the consensus sequence is also shown ( Figure 1A, green triangles). With the static model, the fraction of correct predictions is 73%, somewhat higher than  the 70% fraction for the contact model. The average unsigned error between experiment and prediction (e) is 1.58 kcal/mol for the static model. Most of the errors (with an exception of the l repressor) occur when the experimentally measured reduction in binding affinity is underpredicted by our method. This will lead to false positive hits in genomic sequence scans, but will not miss true binding sites. Finally, we observe that including DNA conformational energy into the model is beneficial on average even though the relative degree of its importance is probably protein family specific: prediction quality decreases when it is excluded from the fit ( Table 3). The EcoRI endonuclease example clearly demonstrates why the fraction of correct prediction is a relevant measure of success. The linear correlation between prediction and experiment in a series of destabilizing mutations of the EcoRI endonuclease (41) is only 0.19, but all of the mutations are correctly predicted to be destabilizing ( Figure 1A, EcoRI panel). The experiment shows binding free energy reduction in the 4.1-5.7 kcal/mol range, whereas static model predictions range from 0.83 to 12.21 kcal/mol (the latter prediction is for the inverted 6 bp consensus sequence: GAATTC ! CTTAAG; experiment shows 5.2 kcal/mol reduction in binding energy in this case). Two binding free energy changes are underpredicted at 0.83 and 1.06 kcal/mol, but the rest penalize unfavorable mutations with 1.5 kcal/mol or higher. Therefore, high-affinity sequences will be correctly identified by our method even though the degree of suppression of unfavorable mutations is not perfectly reproduced. In accordance with this observation, only 1 out of 13 predictions is labeled as incorrect in the binary measure. Another example is a series of seven destabilizing mutations of the zinc finger consensus sequence ( Figure 1A, Zif268 panel) (42). Apparent binding dissociation constants (determined by a nitrocellulose filter binding assay) were too low to be measured accurately; the experiment only provides the lower bound of 3.13 kcal/mol on the binding energy reduction. Our calculations underpredict the magnitude of destabilization in two out of seven cases (giving 0.55 and 0.77 kcal/mol rather than >3.13 kcal/mol), but the other five mutations are correctly identified as being very unfavorable. The linear correlation coefficient is less relevant in this case since experimental binding affinities are not exactly known. Figure 1B shows the dynamic model predictions for the same DDG dataset. Unlike the static model, relative weights of energy terms are not adjusted using these data. Overall, the prediction quality is somewhat decreased compared with the static model, both in terms of the correlation coefficient and the fraction of correct predictions (Table 3). There is a striking increase in the average error (2.90 kcal/mol versus 1.58 kcal/mol), caused by the absence of the least squares fit to the data. Indeed, the error decreases considerably when such a fit is carried out ( Table 3). The decision to 'turn on' conformational rearrangements and energy minimization depends on several crucial factors, such as the quality of the structural template (e.g. its X-ray resolution), the degree of DNA bending (in some extreme cases such as IHF in E.coli DNA is distorted so much that our effective quadratic description of DNA conformational energies may be no longer accurate), and the necessity to model changes in DNA shape caused by amino acid substitutions at the protein-DNA binding interface. It is remarkable that in most cases where the protein-DNA crystal structure is available, reasonable quality DDG predictions can be made simply by computing the free energy of the initial, non-minimized complex. The static model is very efficient computationally and is nearly pairwise additive by construction, making possible rapid scans of longer genomic sequences for high-affinity binding sites. However, it is more likely to fail when DNA conformational change is required to predict novel binding sites by homology, because the DNA shape from the structure will always favor the original binding site sequence unless it is allowed to relax.
+In Figure 2 we show four binding free energy predictions with the static model. Static model weights are not fitted on this dataset. The first prediction is for Ndt80, the primary transcriptional activator of the middle sporulation genes in budding yeast (43). Ndt80 binds to the middle sporulation element (MSE) with the gNCRCAAAW consensus sequence found in promoters of middle sporulation genes. Its in vitro binding affinity was studied by Pierce et al. (34) for a number of one-point mutations from the GTCACAAAT MSE variant and its flanking sequence. The measurements were carried out using the electrophoretic mobility shift assay (EMSA) and reported as ratios of protein concentrations bound to the mutant sequence and the wild-type sequence. We converted these ratios into changes in free energy using the Boltzmann formula, and carried out binding affinity predictions starting from the Ndt80 crystal structure with 1.4 Å resolution and the GACACAAAA site. The correlation between theoretical predictions and experimental measurements is 0.67, the average error is 0.58 kcal/mol, and the fraction of correct predictions is 19/26. When the dynamic model is used for predictions the correlation improves to 0.74, but the fraction of correct predictions drops to 15/26 (data not shown).
+The second prediction is for the MAT a1/a2 homeodomain heterodimer. a1 and a2 TFs bind cooperatively to repress transcriptional activity of haploid-specific genes in diploid a/a cells (44). Jin et al. (30) investigated effects of mutations in the a1-a2 binding site on in vivo repression of a heterologous promoter assayed for b-galactosidase activity in wild-type diploid a/a cells. The presence of the a1-a2 binding site in the promoter causes MAT a1/a2 dependent repression of lacZ expression. Repression ratios relative to wild type are converted into energies using the Boltzmann formula (see Methods) and compared to the experimental predictions. For the static model, the correlation coefficient is 0.45, the average error is 0.62 kcal/mol, and 44 out of 54 measurements are predicted correctly according to our definition. All but one of the incorrect predictions result in energies that are lower than corresponding experimental energies  ); and e (kcal/mol), average unsigned error between predicted and experimentalbinding affinities.
+( Figure 2). The dynamic model is less successful in this case (r ¼ 0.37; data not shown), probably because the X-ray structural template is only resolved to 2.5 Å and the 19 bp long binding site presents a challenge for DNA conformational modeling. For our third and fourth predictions the only available structural templates were solved by NMR rather than X-ray crystallography. AtERF1 is the ERF DNA-binding domain from Arabidopsis, which mediates gene regulation by the plant hormone ethylene (45). c-Myb is a product of the mouse protooncogene c-myb essential in proliferation and differentiation of hematopoietic cells (46). In both cases the binding affinity data were obtained by using EMSA (45,47). Surprisingly, the static model is capable of reasonable quality predictions ( Figure 2). The fraction of correct predictions is 12/21 for AtERF1 and 20/27 for c-Myb. All incorrect predictions classify corresponding mutations as too favorable, probably as a result of experimental uncertainty in atomic coordinates of NMR structures. This observation is confirmed by a significant drop in prediction quality when the DNA conformation is allowed to relax (data not shown). We generally find that attempts at refinement of side chain and DNA atomic positions starting from NMR structures do not lead to better DDG and weight matrix predictions, in agreement with a previous observation that X-ray structures are consistently more accurate than NMR-derived structures (48).
+DNA conformational energy and sequence specificity. Finally, we studied how well the DNA base step energy captures sequence specificity owing to indirect readout in BamHI endonuclease (49)   recognition site and measured resulting binding free energy changes. Inspection of the protein-DNA structure reveals that outside of the core binding site sequence specificity is mostly imparted by protein-phosphate backbone contacts and thus should be 'recorded' in the DNA shape. Using the 2.2 Å crystal structure of the BamHI/DNA complex as a modeling template we were able to reproduce experimental binding affinities measured for flanking sequence mutations with a correlation coefficient of 0.63 ( Figure 3, left panel). Interestingly, this prediction requires DNA minimization in the context of the protein-DNA complex, probably owing to DNA geometry artifacts in the initial structure (the correlation drops to 0.24 if DNA is not allowed to relax). For the PU.1 ETS domain, up to 3 bp upstream and/or 2 bp downstream of the GGAA core recognition site were mutated and corresponding free energy changes measured using EMSA (50). We again observe that most of the flanking sequence specificity is due to the changes in DNA shape conferred by protein-phosphate backbone contacts and captured by the DNA base step energy (Figure 3, right panel). DNA minimization is not as critical in this case (the correlation is 0.69 for the static model and 0.70 for the dynamic model).
+Since most of the binding specificity for base pairs dominated by indirect readout can be captured by the DNA conformational energy, it is interesting to know what fraction of the base pairs in protein-DNA complexes has mostly phosphate backbone contacts. For these base pairs, the DNA conformational energy could be more important than the energies of direct interactions between protein side chains and DNA bases. A survey of protein-DNA contacts in structures from Figure 1 shows that out of 143 bp which have at least one contact with the protein, 54 bp have a ratio of phosphate backbone contacts to DNA base contacts of 3 or higher. When the static model DDG fit is restricted to mutations at positions with high backbone/base contact ratio, the fitted DNA weights are indeed several times greater than in the fit with all data points, indicating the increased importance of DNA conformational energies in this limit (data not shown).
+
+Additivity in protein-DNA interactions
+
+The assumption of independence of DNA base pair probabilities at each position in the binding site forms a basis of the weight matrix description of binding specificity (1,2). Independence of DNA base pair probabilities implies that the binding energy of a given DNA sequence is a sum of energies associated with each base pair (Equation 8). Although there is direct experimental evidence indicating that pairwise additivity is a reasonable approximation for l, Cro and Mnt repressors (51)(52)(53), there are also reports in the literature emphasizing the importance of dinucleotide and higher order correlations (54,55). Nonetheless, it is generally believed that pairwise additive energies do provide a reasonable approximation to true protein-DNA interaction energies (1,56).
+In protein-DNA energy, non-additivity can only arise in the dynamic model because all atomic potentials are pairwise. When conformational rearrangement is allowed, the degree of additivity will depend on the range of protein-DNA interactions. For example, long-range electrostatic interactions may cause more deviations from pairwise additivity than relatively short-range van der Waals and hydrogen bonding interactions. The degree of conformational change at the protein-DNA interface in turn depends on the quality of experimental structures and the number of water molecules at the interface (as they are not explicitly modeled in our approach). In DNA conformational energy the base stacking term is non-additive by construction. If, however, the total binding energy predicted by our model turns out to be approximately pairwise additive, the search for binding sites in genomic sequence can be considerably simplified by constructing a weight matrix or a table of energies for all one-point mutations from the consensus sequence, instead of independently computing DG values for each putative binding site.
+In Figure 4, we compare protein-DNA binding energies computed directly and by assuming pairwise additivity. In the latter approach, the protein-DNA binding energy change caused by an arbitrary number of binding site mutations is computed as a sum over energy changes DDG i a associated with one-point mutations from the consensus sequence:
+where L is the length of the binding site in base pairs, s i is the base at position i in sequence S, a ¼ {A, C, G, T}, and d a‚ s i ¼ 1 if a ¼ s i and 0 otherwise. In the left panel of Figure 4 we plot the energies of all adjacent dinucleotide mutations of the Ndt80 binding site using the dynamic model (all terms in the static model except the base stacking energy are exactly pairwise additive). The protein-DNA interaction energies of the mutant sequences are quite well reproduced by the additive model. One discrepancy is in the absolute magnitude of binding energies which is predicted to be too large in the additive model. In the right panel of Figure 4, a similar comparison is carried out for a set of sequences including naturally occurring l repressor operators and multiple mutations of the O R 1 site. The agreement is reasonable but somewhat less pronounced, perhaps reflecting the increased number of mutations from the O R 1 consensus sequence. For each sequence in this set, DDG and DDG i a measurements were also made (51). A similar plot using experimental DDG measurements shows better correlation (51), demonstrating limits of applicability of computational models to predicting the experimental degree of pairwise additivity.
+
+Binding site discrimination
+
+In order to carry out successful predictions of genomewide transcriptional regulation, computational models of protein-DNA binding free energy should be able to discriminate TF binding sites from random ensembles of sequences. Since we demonstrated that the static model works best for DDG predictions, we assess its discriminatory power here by computing binding free energies of 16 TFs for which multiple DNA-binding sites are available ( Table 2). Because pairwise additivity is nearly exact for the static model, we can compute binding energies of sites with arbitrary sequences using only binding energies for one-point mutations from the consensus sequence as input (Equation 15). The degree of discrimination of TF binding sites from random sites is given by the Z-score:
+where DDG(S) is the binding energy of sequence S measured relative to the wild-type binding energy, hDDGi is the average binding energy for the ensemble of all possible 4 L sequences (L is the length of the binding site) and s is the standard deviation for the same ensemble. In Table 4 we show Z-scores for the binding site from the protein-DNA complex (Z PDB ) and Z-scores averaged over all sites from Table 2 (hZ site i). In addition, binding energies with sites from protein-DNA complexes are ranked for all TFs with L < 15. The overall quality of predictions is quite good, consistent with our previous DDG predictions. Interestingly, the energy of the binding site from the protein-DNA structure is more favorable than the average energy of all binding sites in all cases except Trl (1yui; Table 4), showing that most experimentally characterized binding sites have lower affinities than the consensus site. Nonetheless, almost all of the inspected sites have highly favorable binding energies and thus low Z-scores. One notable exception is the integration host factor protein (Ihf) for which the average Z-score for 27 sites from Table 2 is only À1.12. The large discrepancy between the average Z-score and the PDB Z-score might be explained in this case by the major role of indirect readout in Ihf binding: the crystal structure of the Ihf-DNA complex shows that DNA is bent almost 180 and has relatively few direct contacts between side chains and DNA bases, especially in the 5 0 region of the binding site. The experimental PWM is relatively non-specific, and different sites or groups of sites might utilize significantly different binding modes that are not captured well by our approach. Ranking binding sites from the protein-DNA structure versus ensembles of random sites provides further illustration of the accuracy of our predictions: for example, the native binding site of the Ndt80 (1mnn) is 14th out of 16 777 216 sequences, whereas in Gcn4p (1ysa) the native binding site is the lowest in energy among 16 384 sequences (Table 4). Similar to DDG predictions, binding site discrimination from random sequences strongly depends on the quality of the structural template: Trl (1yui) native site is ranked only 91st out of 16 384, most probably because the structure of the protein-DNA complex was determined by NMR.
+
+PWM predictions
+
+Results from the previous section show a reasonable degree of additivity in protein-DNA binding free energy predictions, most probably because of the limited role of long-range interactions in our model. Therefore, we can convert binding energies into weight matrices without significant loss of information and test our PWM predictions against experimental data. Similar to DDG predictions, we compare allatom static and dynamic models with the simpler contact model, which uses the number of atomic contacts between protein side chains and DNA base pairs as a measure of binding specificity (Equation 12).
+Experimental PWMs and prediction testing. We constructed experimental PWMs for 20 TFs using several alternative approaches. PWMs for lR (1lmb), CroR (6cro), c-Myb (1mse) and AtERF1 (1gcc) were created by converting experimental binding free energy measurements for all one-point mutations of the binding site (Table 1) into probabilities using the Boltzmann formula at room temperature.
+The resulting PWMs are then constructed in a way directly comparable to computational predictions. Another and more commonly used method for constructing PWMs is based on the alignment of binding sites obtained from either a SELEX experiment or a set of promoter sequences of genes regulated by the TF (2). The quality of weight matrices obtained from such alignments depends on the number of sequences used in the alignment. In our 20 PWM dataset shown in Table 2, 4 PWMs are created from DDG measurements, 14 PWMs are based on genomic sites available from the literature, the Zif268 PWM is from a SELEX experiment (31), and the EcR/Usp PWM comes from a combination of SELEX (57) and genomic sites. PWM predictions are analyzed using the y-test (Equation 14). y(p, q) is a non-negative measure of the 'goodness of fit' between computational probabilities and experimental frequencies (38). It is a monotonic function of prediction quality.
+Free parameters of PWM models. The contact model replaces detailed calculations of protein-DNA energetics with an assumption that the probability of each base in the consensus sequence is directly proportional to the number of contacts made between the base pair and all protein side chains (Equation 12). As in the binding free energy contact model, protein-DNA contacts are defined as protein-DNA base atomic pairs within R max ¼ 4.5 Å ; contacts to the phosphate backbone are ignored. As the number of contacts N increases, the consensus base becomes more and more specific, with the rest of the probability evenly divided between the other three bases. The probability of the consensus base becomes 1 for N ¼ N max , and all other probabilities become 0. Given R max , N max is a free parameter to be adjusted by minimizing y(p, q) averaged over a subset of TFs from Table 2. PWMs constructed from fewer than 10 binding site sequences [including Gcn4p (1ysa), Trl (1yui) and DnaA (1j1v)] are removed from the N max fit. The average value of y is at a minimum for N max ¼ 20.
+Using the Boltzmann formula to convert energies into probabilities involves an inverse temperature factor b ¼ 1/RT, which can also be viewed as an adjustable scaling factor. The specificity of PWM predictions depends on b: at low temperatures only a few lowest energy binding sites contribute to weight matrix probabilities, whereas at high temperatures a broader spectrum of sites is included. Therefore, incorrect predictions of low-energy sites will result in higher fitted temperatures. The static model fit with the 17 TF dataset used for adjusting N max in the contact model gives b ¼ 2.25 (kcal/mol) À1 . For the dynamic model fit, we additionally exclude all NMR structures (1gcc and 1mse), crystal structures with >2.5 Å resolution (6cro, 2drp, 1run and 2puc) and the Ihf-DNA complex (1ihf) because its DNA conformation cannot be reasonably expected to be modeled by relaxation with the quadratic DNA potential. The dynamic model fit over 10 remaining TFs results in b ¼ 0.75 (kcal/mol) À1 .
+PWM predictions and comparison with experiment. The fitted values of N max and b are used to make PWM predictions for all 20 TFs (16 for the dynamic model as 3 NMR structures and Ihf are excluded). In Table 5 we show values of y computed using the contact, static and dynamic models. We compare model predictions with the average value of y for an ensemble of randomly generated weight matrices (hy random i column in Z PDB is the Z-score (Equation 16) for the protein-DNA binding energy with the binding site found in the protein-DNA structure; hZ site i is the average Z-score for protein-DNA binding energies with binding sites listed in Table 2; Rank is the rank of the binding energy for the structural site in the ensemble of 4 L sequences (L is the binding site length). Rank was computed for all binding sites with L < 15. Static model was used in all predictions. TF binding sites (including sequences from protein-DNA complexes) are as listed in Table 2 (see Methods for details). Table 5). y is lower than the corresponding random value if a prediction is successful. For the contact model the average value of y over all TFs is 0.19, significantly better than the random value of 0.70. For the static and dynamic models the average over all TFs increases to 0.23 and 0.35, respectively. Note, however, that even for the least successful predictions (1b8i for the contact model, 1mj2 for the static model and 2puc for the dynamic model) y is much smaller than the corresponding random y (Table 5). Surprisingly, it is the contact model that is the most successful on average: the static model has a lower y in only 6 cases out of 20. This finding demonstrates that PWM predictions may not require detailed models of protein-DNA energetics if native protein-DNA complexes are available. Furthermore, allowing conformational change generally makes predictions worse, consistent with our earlier observations regarding DDG predictions. The y-test provides only an average measure of success and does not necessarily reflect all relevant details of probability distributions in specific columns. Hence it is useful to analyze several PWM predictions in more detail. In Figure 5, PWM WebLogo representations (58) are shown for 2 TFs: Ndt80 (A) and Zif268 (B). The total height of each weight matrix column is constant and the relative height of each letter is proportional to its probability in a given PWM column. All bases are sorted by probability. For each panel in Figure 5 the top logo is the experimental PWM and the other three logos are predictions with the contact model, the static model and the dynamic model, respectively.
+For Ndt80, y is 0.14 for the contact model, 0.12 for the static model and 0.20 for the dynamic model (Table 5). Figure 5A shows that relative specificities of C at position 5 and A/g at position 6 are best reproduced with the static model (the contact model underpredicts specificity of C5 and overpredicts specificity of A6, whereas in the dynamic model both C5 and A6 are insufficiently conserved). All three computational models overpredict specificity of guanine at position 3 and underpredict specificity of adenine at position 9. Specificity of adenine at position 8 is predicted best with the contact model. Our second prediction is for the Zif268 zinc finger with the experimental PWM from a SELEX experiment ( Figure 5B) (31). The value of y is 0.13, 0.19 and 0.35 for the contact, static and dynamic models, respectively. Because almost all positions in the experimental PWM are strongly conserved, the contact model with the appropriate N max cutoff is capable of a near perfect prediction of experimental results. The high degree of specificity in the SELEX  experiment could be an artifact of the stopping criteria in the selection rounds. The main advantage of more complicated models is in making some columns less specific in better agreement with the experimental data, notably G/a at position 5. Interestingly, the y-test yields 0.13 for the weight matrix predicted using zinc finger energy matrices from Benos et al. (15), comparable to our predictions with contact and static models.
+In summary, reliable PWM predictions can be carried out if the native structure of the protein-DNA complex is used as a starting point for computational modeling. The contact model which assigns base pair specificity based on the number of atomic contacts between protein amino acids and DNA bases is surprisingly successful. In some cases, the static model provides the best results: although the agreement with the experimental data is somewhat worse on average compared with the contact model, core motif probabilities are often better reproduced ( Figure 5). Finally, the dynamic model is typically worse than the others, especially in cases where a high-resolution crystal structure of the protein-DNA complex is not available, or where ordered water molecules mediating protein-DNA interactions play a significant role. Water molecules are not explicitly modeled in our approach and, thus, their removal from the interface may result in artificially increased conformational freedom of neighboring bases and side chains. Limited utility of side chain conformational rearrangement in computational modeling of intermolecular binding interfaces was previously noted in the context of protein-protein complexes (59).
+
+Homology modeling
+
+Binding affinity and specificity predictions described in the previous sections require native structures of protein-DNA complexes. However, even in well-studied organisms such as S.cerevisiae and D.melanogaster there are only 10-15 suitable structures in the database. Furthermore, in most cases experimentally available protein-DNA complexes are not focused on any specific biological pathway (such as regulation of the Drosophila segmentation gene network), being instead distributed across a range of regulatory pathways and cell types. Hence the ability to model protein-DNA interactions by homology is crucial to future practical applications of our approach.
+A suitable modeling template is initially identified by sequence similarity to protein-DNA complexes in the structural database using Ginzu (60). Besides sequence similarity, the quality of experimental structures (such as X-ray resolution or missing atoms) is taken into account. Amino acid substitutions at the DNA-binding interface are identified by a sequence-structure alignment with the template using K * Sync (60) or ClustalW (61). The approximate pairwise additivity of base pair energies and the relatively short range nature of the free energy function make it possible to ignore amino acid substitutions elsewhere because they are less likely to mediate protein-DNA interactions. An obvious consequence of this assumption is that binding specificity does not change if all amino acids at the protein-DNA interface are conserved. To give a specific example, essentially all DNA contacting amino acids are conserved in the Rel homology region family (8) and, thus, binding sites for the embryonic polarity protein dorsal in fly bear a strong resemblance to nuclear factor kB sites from mouse and human [e.g. a dorsal weight matrix from Ref. (62)
+
+gives the T-G/T-G-G-A/T-T-T-T-T/C-C-C consensus sequence, very close to the T-G-G-G-A-
+
+A-T-T-C-C-C binding site from the structure of the mouse nuclear factor kB p50 homodimer bound to DNA]. A classification of protein-DNA complexes into families and subfamilies has been carried out on the basis of identical DNA contacting amino acids (8). The definition of interface amino acids is somewhat arbitrary: typically, amino acids are considered to be at the interface based on distance cutoffs and/or visual identification of hydrogen bonds, van der Waals contacts and favorable electrostatic interactions with DNA atoms. We adopt a simple interface definition based on the 4.5 Å cutoff between protein side chain atoms and DNA base or phosphate backbone atoms.
+In Figure 6 we show PWM predictions by homology for two TFs from the Drosophila segmentation gene network: the maternal factor bicoid (Bcd) and the gap factor giant (Gt) (63). Bcd is a homeodomain TF; its experimentally characterized binding sites suggest monomeric binding. The experimental PWM for Bcd obtained from the alignment of 30 binding sites shows a strongly conserved C/T-T-A-A-T-C-C/T-C/G consensus sequence. We use structures of the Engrailed homeodomain-DNA wild-type complex (3hdd) and its Q50K mutant (2hdd) as modeling templates (64,65). The amino acid at position 50 is an important specificity determinant for the 2 bp 3 0 of the core TAAT homeodomain motif: Lys-50 makes favorable contacts with two guanines complementary to the CC dinucleotide immediately 3 0 of TAAT, contributing to the difference between Q50 wild-type Engrailed (GTAATTAC) and Engrailed Q50K (GTAATCCC) binding sites from the structures.
+Using the Q50K Engrailed mutant as a structural template for Bcd makes homology modeling relatively easy: all amino acids are conserved at the DNA-binding interface, even though there are 28/55 amino acid substitutions and a 2 residue gap in the alignment. Because Q50K Engrailed and Bcd DNAbinding interfaces are virtually identical, the experimental PWM for Bcd is reasonably well reproduced by the contact model. Prediction of the motif 3 0 of the TAAT core is further improved with the static model, but the TAAT motif becomes less specific ( Figure 6A). Structural analysis of homeodomain-DNA complexes reveals that homeodomain binding causes distortion in the DNA conformation (37,66). The conformational change serves to enclose the recognition helix within the major groove, increasing the surface area of the protein-DNA interface and resulting in the B eg ÀDNA (enlarged groove) DNA form (66). The distortion of the DNA site is captured by the DNA conformational component of the free energy function ( Figure 6A; note that DNA conformational energy weights from the static model are multiplied by 5). Surprisingly, DNA shape confers binding specificity not only to the TAAT core homeodomain motif, but also to the 3 0 CCC motif.
+Owing to the differences between Bcd-and En-binding specificities, the contact model is not very successful in predicting the bicoid PWM starting from the wild-type En-DNA complex. The dynamic model reproduces PWM columns 8 and 9 significantly better, but in column 7 adenine is favored over cytosine, and in column 4 adenine is mixed with guanine to the extent not corroborated by the experiment (Figure 6A). One possible reason for this discrepancy is that the model does not fully reproduce experimentally observed conformational differences between wild-type and Q50K DNA sites (64). This difference is reflected in wild-type Engrailed DNA conformational energies which favor T/A at position 7 and G at position 8 ( Figure 6A; the static model DNA weights are multiplied by 5 as before). Better DNA conformational sampling should improve the accuracy of PWM predictions with homology models.
+Giant is a TF from the leucine zipper family. It binds DNA as a homodimer, with the TTAC consensus motif at positions 3-6 and its inverted complement GTAA at positions 7-10 ( Figure 6B). The experimental PWM for Gt is constructed using just 7 binding sites and thus might be too specific at positions 1 and 2 and 11 and 12, where there are few contacts with protein side chains (as is evident from the contact model prediction). We used the 1.8 Å resolution crystal structure of the human nuclear factor NF-IL6 bound to the GAT-TGCGCAATA site (1gu4) as the homology modeling template. For each monomer in the homodimer there are 5 amino acid mutations at the protein-DNA binding interface: 1 DNA base contact and 4 phosphate backbone contacts. However, only one of these contacts is non-homologous (K contacting phosphate backbone in NF-IL6 is mutated to V in Gt), suggesting that NF-IL6-and Gt-binding specificities should not be very different. The mutated LYS makes contacts with the phosphate group joining a dinucleotide complementary to TG at positions 4 and 5 in one chain, and to CA at positions 8 and 9 in the other chain ( Figure 6B, panel 2 from top; column numbers are from the experimental PWM). In accordance with this observation, comparison of the experimental PWM for Gt with the contact model shows that the specificity change is largely restricted to positions 5 (G!A) and 8 (C!T). By construction, the contact model is incapable of accommodating this change, whereas static and dynamic models are partially successful, but at the price of making the prediction at position 6 in the experimental PWM less specific ( Figure 6B).
+The Bcd and Gt examples described above are representative of the future applications of our approach. Binding site specificity predictions based on structural modeling can be used in conjunction with existing bioinformatic algorithms to study regulatory gene networks in many species. Even though the requirement of having homologous structures of protein-DNA complexes with a limited number of mutations at the protein-DNA binding interface is much less restrictive, it is still likely to be the main limitation of our approach. PWM prediction by homology becomes less tractable if the number of mutations at the interface is >2 or 3, probably because the current implementation of our model does not allow protein backbone degrees of freedom to relax. Modeling TF binding specificities using distant homologs may require including rigid body motion of the TF and sampling over multiple docking conformations.
+
+CONCLUSIONS
+
+We developed a computational all-atom approach for predicting protein-DNA binding affinities and TF weight matrices. Protein-DNA energetics is described with the empirical free contact model, static model with full energy function and static model with DNA conformational energy only (with dna-bp and dna-bs weights multiplied by 5) using D.melanogaster Engrailed homeodomain Q50K (2hdd) as a template; panels 5-7: contact model, dynamic model with full energy function (reference DNA energies are not subtracted since DNA is bent in homeodomains) and static model with DNA conformational energy only (with dna-bp and dna-bs weights multiplied by 5) using D.melanogaster Engrailed wild-type homeodomain (3hdd) as a template. (B) Experiment, contact model, static model and dynamic model using Homo sapiens nuclear factor NF-IL6 (C/ EBP-b;1gu4) as a template. All amino acids substituted at the protein-DNA interface are repacked in the static model. PWMs are displayed using the uniform height WebLogo representation (58). energy function that accounts for protein-DNA interactions (including electrostatics, solvation, hydrogen bonding, van der Waals interactions and packing) and distortion of the DNA shape caused by protein binding. Each term in the free energy function is multiplied by a weight which is adjusted to optimize the performance of the model on an experimental dataset. Free energy minimization and conformational rearrangement at the protein-DNA binding interface are either not employed at all (static model), or limited to repacking interface side chains and DNA minimization (dynamic model). Protein-DNA docking orientation and protein backbone conformation are kept fixed during energy minimization. Our approach is computationally efficient and can be applied on the genomewide scale. We demonstrated its utility by carrying out a number of DDG and PWM predictions using native protein-DNA complexes as structural templates.
+Proteins bind DNA in a sequence-specific manner by utilizing two distinct interaction mechanisms. The mechanism of direct readout is mediated by protein side chains directly contacting DNA base atoms. Favorable protein-DNA base contacts result in base pair preferences at corresponding positions in the binding site. The mechanism of indirect readout is mediated by side chain contacts with the DNA phosphate backbone. These contacts are typically as numerous as direct protein-DNA base contacts and can exploit DNA flexibility by twisting and bending it into the shape that fits best with the binding interface presented by the protein. Since some DNA sequences are more flexible than others, DNA conformational change confers additional sequence specificity to the binding site. In cases where indirect readout predominates, our model predicts a major contribution of the DNA conformational energy to the overall binding specificity (Figure 3).
+None of the terms in the DNA base pair energy depend on neighboring base pairs in the absence of conformational rearrangement (except the base stacking energy) and, thus, DNA base pair energies are nearly independent in the static model and only weakly coupled in the dynamic model ( Figure 4). Thus, we can convert binding affinity predictions for one-point mutations into weight matrix probabilities without significant information loss. Results in Table 5 demonstrate that we are reasonably successful in predicting experimental PWMs for a variety of TFs starting from the native protein-DNA complex. Surprisingly, a simple contact model based on the consensus sequence from the protein-DNA complex works quite well, even though specific examples in Figure 5 make evident some of its limitations compared with all-atom models of protein-DNA interactions.
+The number of protein-DNA complexes currently available in the structural database is insufficient for modeling transcriptional regulation on a large scale. Therefore, the range of applicability of our approach depends on its accuracy in modeling TF binding specificities starting from homologous structures. Owing to the relatively short-range nature of our free energy function, it is sufficient to substitute amino acids only at the DNA-binding interface when creating protein-DNA homology models. Homology modeling should be easiest when there are no dissimilar amino acid substitutions at the interface, because in many instances TFs with conserved interfaces have identical binding specificities. Our model makes accurate predictions in such cases, but changes in binding specificity resulting from amino acid mutations are often pre-dicted less accurately ( Figure 6). Refinement of protein-DNA interfaces is a challenging problem which is strongly affected by the quality of experimental structural data and the presence of ordered water molecules mediating interactions across the protein-DNA binding interface. Homology-based predictions should be improved if interface waters are explicitly modeled and multiple protein docking conformations are allowed. Furthermore, homology modeling should be aided by better DNA conformational sampling (i.e. using simulated annealing techniques rather than minimization towards the nearest local minimum).
+In summary, the computational algorithm developed here is useful for binding affinity and weight matrix predictions if either a native structure of the protein-DNA complex or its sufficiently close homolog is available. Unlike previously reported knowledge-based approaches (15,16), our algorithm is not limited to any specific TF family and is not as data intensive. However, its accuracy strongly depends on the quality of the experimental structure used as the modeling template, and the number of amino acid substitutions at the DNA-binding interface. In future, we intend to combine structurally predicted PWMs with motif detection algorithms in order to identify TF binding sites on the genomic scale.
+
+SOFTWARE AND DATA AVAILABILITY
+
+The protein-nucleic acid interaction module is implemented in C++ in the ROSETTA software package (http://www. bakerlab.org). ROSETTA software package is freely available to academic users. We hope to foster further development of computational algorithms for protein-DNA binding specificity predictions by providing all experimental datasets used in this study (including DG measurements, PWMs and TF binding sites) as Supplementary Data.
+
+*
+
+To whom correspondence should be addressed. Tel: +1 212 327 8139; Fax: +1 212 327 8544; Email: morozov@edsb.rockefeller.edu Ó The Author 2005. Published by Oxford University Press. All rights reserved.
+
+Figure 1 .
+
+1DDG predictions (ddG comp ) versus experimental measurements (ddG exp
+and the PU.1 ETS domain (50). Engler et al. (49) mutated 3 bp sequences flanking the GGATCC core BamHI
+
+Figure 2 .
+
+2DDG predictions (ddG comp ) versus experimental measurements (ddG exp ). Static model binding energy predictions for Ndt80, (34) MAT a1/a2, (30) AtERF1 (45) and c-Myb. (47) Closed circles, static model; red triangles, contact model; green triangles, number of mutations from the consensus sequence. r1-Linear correlation coefficient for the static model and r2-linear correlation coefficient for the contact model.
+
+Figure 3 .
+
+3Experimental binding affinities conferred by indirect readout can be explained with DNA conformational energies alone. Dynamic model predictions of DNA base step energies (ddG dna ) versus experimental binding free energies (ddG exp ) for BamHI endonuclease(49) and PU.1 ETS domain(50).
+
+Figure 4 .
+
+4Degree of pairwise additivity in binding energies predicted with the dynamic model. Comparison of binding energies computed after making multiple base pairs substitutions (ddG comp ) with the sum of binding energies computed for corresponding one-point mutations of the DNA site from the protein-DNA structure (ddG pw ).
+
+Figure 5 .
+
+5PWM predictions for Ndt80 (A) and Zif268 (B). From top to bottom: experiment, contact model based on the consensus sequence and the number of protein-DNA contacts, static model and dynamic model (see text for details). PWMs are displayed using the uniform height WebLogo representation(58): the height of each letter in the column is proportional to its probability in the PWM.
+
+Figure 6 .
+
+6PWM predictions by homology for D.melanogaster TF bicoid (Bcd) (A) and giant (Gt) (B). From top to bottom: (A) panel 1: experiment; panels 2-4:
+
+Table 1 .
+
+1Experimental binding affinity datasetName 
+PDB 
+code
+Method 
+(Res., Å )
+DDG data 
+points
+Organism 
+Reference
+Zif268 
+1aay X-ray (1.6) 15 (8) 
+Mus musculus 
+(42) 
+Zif268 
+1aay X-ray (1.6) 
+6 (6) 
+M.musculus 
+(67) 
+Zif268 
+D20A
+1jk1 X-ray (1.9) 
+6 (6) 
+M.musculus 
+(67)
+Tus 
+1ecr X-ray (2.7) 20 (20) Escherichia coli 
+(68) 
+LacR 
+1efa X-ray (2.6) 
+5 (5) 
+E.coli 
+(69) 
+lR 
+1lmb X-ray (1.8) 51 (51) l-Phage 
+(51) 
+TrpR 
+1tro X-ray (1.9) 
+9 (9) 
+E.coli 
+(70) 
+ER 
+1hcq X-ray (2.4) 
+7 (7) 
+Homo sapiens 
+(71) 
+CroR 
+6cro X-ray (3.0) 56 (56) l-Phage 
+(52) 
+EcoRI 
+1ckq X-ray (1.85) 13 (13) E.coli 
+(41) 
+Crp 
+1run X-ray (2.7) 15 (15) E.coli 
+(72) 
+BamHI 
+1bhm X-ray (2.2) 23 (0) 
+Bacillus 
+amyloliquefaciens
+(49)
+PU.1 ETS 1pue X-ray (2.1) 25 (0) 
+M.musculus 
+(50) 
+Ndt80 
+1mnn X-ray (1.4) 26 (0) 
+Saccharomyces 
+cerevisiae
+(34)
+MAT a1/a2 1yrn X-ray (2.5) 54 (0) 
+S.cerevisiae 
+(30) 
+c-Myb 
+1mse NMR (NA) 27 (0) 
+M.musculus 
+(47) 
+AtERF1 
+1gcc NMR (NA) 21 (0) 
+Arabidopsis 
+thaliana
+(45)
+For protein-DNA structures solved by X-ray crystallography, resolution (Å ) is 
+shown in parentheses. The total number of DDG measurements are shown for 
+each dataset, with the number of data points used in free energy function 
+parameterization listed in parentheses.
+
+Table 2 .
+
+2Experimental binding site and weight matrix dataset parentheses. N seq is the total number of aligned binding site sequences (including the DNA sequence from the protein-DNA complex). a PWM is obtained from DDG data for all one-point mutations of the binding site. b PWM is obtained separately from the binding sites listed in the table, by SELEX experiments or independently published surveys of genomic sites. c Alignment of binding sites listed in the N seq column is used to create an experimental PWM (binding site from the protein-DNA structure is not included into PWM; pseudocounts are set to 0.0).Name 
+PDB code Method 
+(Res., Å )
+N seq Organism 
+Reference
+lR 
+1lmb 
+X-ray (1.8) -a 
+l-Phage 
+(51) 
+CroR 
+6cro 
+X-ray (3.0) -a 
+l-Phage 
+(52) 
+AtERF1 
+1gcc 
+NMR (NA) -a 
+A.thaliana 
+(45) 
+c-Myb 
+1mse 
+NMR (NA) -a 
+M.musculus 
+(47) 
+Zif268 
+1aay 
+X-ray (1.6) 
+6 b M.musculus 
+(31) 
+Ndt80 
+1mnn 
+X-ray (1.4) 
+8 b S.cerevisiae 
+(34) 
+Gcn4p 
+1ysa 
+X-ray (2.9) 
+9 c S.cerevisiae 
+(35,36) 
+MAT a1/a2 1yrn 
+X-ray (2.5) 19 c S.cerevisiae 
+(30) 
+EcR/Usp 
+1r0o 
+X-ray (2.24) 33 c Drosophila 
+melanogaster
+(57)
+Ttk 
+2drp 
+X-ray (2.8) 16 c D.melanogaster -
+Prd(homeo) 1fjl 
+X-ray (2.0) 15 c D.melanogaster (37) 
+Ubx/Exd 
+1b8i 
+X-ray (2.4) 
+4 b D.melanogaster -
+Trl 
+1yui 
+NMR (NA) 
+5 c D.melanogaster -
+MetJ 
+1mj2 
+X-ray (2.4) 16 c E.coli 
+(32) 
+TrpR 
+1tro 
+X-ray (1.9) 15 c E.coli 
+(32,33) 
+PhoB 
+1gxp 
+X-ray (2.5) 16 c E.coli 
+(32) 
+Ihf 
+1ihf 
+X-ray (2.5) 27 c E.coli 
+(32) 
+DnaA 
+1j1v 
+X-ray (2.1) 
+9 c E.coli 
+(32) 
+PurR 
+2puc 
+X-ray (2.7) 23 c E.coli 
+(32) 
+Crp 
+1run 
+X-ray (2.7) 50 c E.coli 
+(32)
+For protein-DNA structures solved by X-ray crystallography, resolution (Å ) is 
+shown in
+). (A) Static model binding energy predictions for the set of experimental measurements used in fitting static model weights. (B) Dynamic model binding energy predictions for the same set of experimental measurements. Closed circles, static/dynamic model; red triangles, contact model; green triangles, number of mutations from the consensus sequence. r1-Linear correlation coefficient for the static/ dynamic model and r2-linear correlation coefficient for the contact model. Three Zif268 datasets from Table 1 [two for Zif268 wild-type(42,67) and one for Zif268 D20A mutant(67)] are combined into one panel.
+
+Table 3 .
+
+3DDG predictions summaryN 
+r 
+F 
+e 
+Description
+1 
+0.57 
+143/196 
+1.58 
+static model: full 
+2 
+0.57 
+125/196 
+1.80 
+static model: protein-DNA only 
+3 
+0.43 
+133/196 
+2.90 
+dynamic model: full 
+4 
+0.41 
+128/196 
+2.93 
+dynamic model: protein-DNA only 
+5 
+0.39 
+117/196 
+1.86 
+dynamic model: full, fitted weights 
+6 
+0.42 
+137/196 
+1.73 
+contact model
+r, Linear correlation coefficient; F, fraction of successful predictions (see text
+
+Table 4 .
+
+4Summary of binding site energy predictionsPDB 
+Z PDB 
+hZ site i 
+Rank 
+L
+1mnn 
+À3.69 
+À2.54 
+14 
+12 
+1ysa 
+À3.38 
+À2.53 
+1 
+7 
+1yrn 
+À4.30 
+À3.34 
+-
+19 
+1aay 
+À3.70 
+À3.60 
+13 
+10 
+1b8i 
+À3.22 
+À2.74 
+8 
+10 
+1r0o 
+À3.80 
+À2.88 
+-
+15 
+2drp 
+À3.77 
+À2.76 
+6 
+11 
+1yui 
+À2.38 
+À2.48 
+91 
+7 
+1fjl 
+À3.22 
+À2.93 
+4507 
+13 
+1gxp 
+À4.17 
+À3.06 
+-
+20 
+1ihf 
+À3.41 
+À1.12 
+-
+34 
+1j1v 
+À4.20 
+À3.36 
+13 
+13 
+1mj2 
+À3.09 
+À2.13 
+-
+16 
+1run 
+À3.50 
+À2.32 
+-
+22 
+1tro 
+À3.73 
+À2.57 
+-
+18 
+2puc 
+À3.88 
+À3.68 
+-
+16
+
+Table 5 .
+
+5The y-test of PWM predictions for the contact, static, dynamic and random modelsPDB 
+y contact 
+y static 
+y dynamic 
+hy random i
+1mnn 
+0.14 
+0.12 
+0.20 
+0.68 
+1ysa 
+0.16 
+0.31 
+0.39 
+0.91 
+1yrn 
+0.20 
+0.26 
+0.36 
+0.73 
+1lmb 
+0.10 
+0.09 
+0.14 
+0.47 
+6cro 
+0.07 
+0.10 
+0.21 
+0.47 
+1mse 
+0.26 
+0.24 
+-
+0.55 
+1gcc 
+0.15 
+0.12 
+-
+0.57 
+1aay 
+0.13 
+0.19 
+0.35 
+0.95 
+1b8i 
+0.35 
+0.34 
+0.36 
+0.87 
+1r0o 
+0.22 
+0.25 
+0.38 
+0.72 
+2drp 
+0.19 
+0.24 
+0.23 
+0.69 
+1yui 
+0.07 
+0.26 
+-
+0.95 
+1fjl 
+0.30 
+0.32 
+0.51 
+0.83 
+1gxp 
+0.24 
+0.28 
+0.41 
+0.68 
+1ihf 
+0.21 
+0.19 
+-
+0.43 
+1j1v 
+0.21 
+0.22 
+0.36 
+0.70 
+1mj2 
+0.21 
+0.38 
+0.33 
+0.69 
+1run 
+0.10 
+0.17 
+0.38 
+0.51 
+1tro 
+0.30 
+0.31 
+0.39 
+0.71 
+2puc 
+0.18 
+0.26 
+0.63 
+0.81
+Random model uses randomly sampled normalized PWM entries (see 
+Methods). Three NMR structures and Ihf (1ihf) are excluded from the dynamic 
+model predictions.
+ACKNOWLEDGEMENTSThe authors would like to thank Jonathan Widom for careful reading of the manuscript and many useful suggestions, and Eldon Emberly for providing experimental binding data for several TFs. A.V.M. would like to acknowledge a fellowship from the Leukemia and Lymphoma Society. J.J.H. is a fellow of the Jane Coffin Childs Memorial Fund for Medical Research. Funding to pay the Open Access publication charges for this article was provided by National Institutes of Health (NIH).Conflict of interest statement. None declared.SUPPLEMENTARY DATASupplementary Data are available at NAR Online.
+Computational prediction of transcription-factor binding site locations. M Bulyk, Genome Biol. 5201Bulyk,M. (2003) Computational prediction of transcription-factor binding site locations. Genome Biol., 5, 201.
+DNA binding sites: representation and discovery. G D Stormo, Bioinformatics. 16Stormo,G.D. (2000) DNA binding sites: representation and discovery. Bioinformatics, 16, 16-23.
+Computational methods for transcriptional regulation. E D Siggia, Curr. Opin. Genet. Dev. 15Siggia,E.D. (2005) Computational methods for transcriptional regulation. Curr. Opin. Genet. Dev., 15, 214-221.
+Sequence-specific recognition of double helical nucleic acids by proteins. N C Seeman, J M Rosenberg, A Rich, Proc. Natl Acad. Sci. USA. 73Seeman,N.C., Rosenberg,J.M. and Rich,A. (1976) Sequence-specific recognition of double helical nucleic acids by proteins. Proc. Natl Acad. Sci. USA, 73, 804-808.
+DNA recognition code of transcription factors in the helix-turn-helix, probe helix, hormone receptor, and zinc finger families. M Suzuki, N Yagi, Proc. Natl Acad. Sci. USA. 91Suzuki,M. and Yagi,N. (1994) DNA recognition code of transcription factors in the helix-turn-helix, probe helix, hormone receptor, and zinc finger families. Proc. Natl Acad. Sci. USA, 91, 12357-12361.
+Protein-DNA interaction. No code for recognition. B W Matthews, Nature. 335Matthews,B.W. (1988) Protein-DNA interaction. No code for recognition. Nature, 335, 294-295.
+Amino acid-base interactions: a three-dimensional analysis of protein-DNA interactions at an atomic level. N M Luscombe, R A Laskowski, J M Thornton, Nucleic Acids Res. 29Luscombe,N.M., Laskowski,R.A. and Thornton,J.M. (2001) Amino acid-base interactions: a three-dimensional analysis of protein-DNA interactions at an atomic level. Nucleic Acids Res., 29, 2860-2874.
+Protein-DNA interactions: amino acid conservation and the effects of mutations on binding specificity. N M Luscombe, J M Thornton, J. Mol. Biol. 320Luscombe,N.M. and Thornton,J.M. (2002) Protein-DNA interactions: amino acid conservation and the effects of mutations on binding specificity. J. Mol. Biol., 320, 991-1009.
+Transcription factors: structural families and principles of DNA recognition. C O Pabo, R T Sauer, Annu. Rev. Biochem. 61Pabo,C.O. and Sauer,R.T. (1992) Transcription factors: structural families and principles of DNA recognition. Annu. Rev. Biochem., 61, 1053-1095.
+Geometric analysis and comparison of protein-DNA interfaces: Why is there no simple code for recognition?. C O Pabo, L Nekludova, J. Mol. Biol. 301Pabo,C.O. and Nekludova,L. (2000) Geometric analysis and comparison of protein-DNA interfaces: Why is there no simple code for recognition? J. Mol. Biol., 301, 597-624.
+Is there a code for protein-DNA recognition?. P V Benos, A S Lapedes, G D Stormo, Probab(ilistical)ly Bioessays. 24Benos,P.V., Lapedes,A.S. and Stormo,G.D. (2002) Is there a code for protein-DNA recognition? Probab(ilistical)ly Bioessays, 24, 466-475.
+Quantitative parameters for amino acid-base interaction: implications for prediction of protein-DNA binding sites. Y Mandel-Gutfreund, H Margalit, Nucleic Acids Res. 26Mandel-Gutfreund,Y. and Margalit,H. (1998) Quantitative parameters for amino acid-base interaction: implications for prediction of protein-DNA binding sites. Nucleic Acids Res., 26, 2306-2312.
+Structure-based prediction of DNA target sites by regulatory proteins. H Kono, A Sarai, Proteins. 35Kono,H. and Sarai,A. (1999) Structure-based prediction of DNA target sites by regulatory proteins. Proteins, 35, 114-131.
+Constrained binding site diversity within families of transcription factors enhances pattern discovery bioinformatics. A Sandelin, W W Wasserman, J. Mol. Biol. 338Sandelin,A. and Wasserman,W.W. (2004) Constrained binding site diversity within families of transcription factors enhances pattern discovery bioinformatics. J. Mol. Biol., 338, 207-215.
+Probabilistic code for DNA recognition by proteins of the EGR family. P V Benos, A S Lapedes, G D Stormo, J. Mol. Biol. 323Benos,P.V., Lapedes,A.S. and Stormo,G.D. (2002) Probabilistic code for DNA recognition by proteins of the EGR family. J. Mol. Biol., 323, 701-727.
+ab initio prediction of transcription factor targets using structural knowledge. T Kaplan, N Friedman, H Margalit, PLoS Comput. Biol. 11Kaplan,T., Friedman,N. and Margalit,H. (2005) ab initio prediction of transcription factor targets using structural knowledge. PLoS Comput. Biol., 1, e1.
+Toward an atomistic model for predicting transcription-factor binding sites. R G Endres, T C Schulthess, N S Wingreen, Proteins. 57Endres,R.G., Schulthess,T.C. and Wingreen,N.S. (2004) Toward an atomistic model for predicting transcription-factor binding sites. Proteins, 57, 262-268.
+Analyzing protein-DNA recognition mechanisms. G Paillard, R Lavery, Structure. 12Paillard,G. and Lavery,R. (2004) Analyzing protein-DNA recognition mechanisms. Structure, 12, 113-122.
+Looking into DNA recognition: zinc finger binding specificity. G Paillard, C Deremble, R Lavery, Nucleic Acids Res. 32Paillard,G., Deremble,C. and Lavery,R. (2004) Looking into DNA recognition: zinc finger binding specificity. Nucleic Acids Res., 32, 6673-6682.
+A simple physical model for the prediction and design of protein-DNA interactions. J J Havranek, C M Duarte, D Baker, J. Mol. Biol. 344Havranek,J.J., Duarte,C.M. and Baker,D. (2004) A simple physical model for the prediction and design of protein-DNA interactions. J. Mol. Biol., 344, 59-70.
+An orientationdependent hydrogen bonding potential improves prediction of specificity and structure for proteins and protein-protein complexes. T Kortemme, A V Morozov, D Baker, J. Mol. Biol. 326Kortemme,T., Morozov,A.V. and Baker,D. (2003) An orientation- dependent hydrogen bonding potential improves prediction of specificity and structure for proteins and protein-protein complexes. J. Mol. Biol., 326, 1239-1259.
+Exploring protein native states and large-scale conformational changes with a modified generalized Born model. A Onufriev, S D Bashford, D A Case, Proteins. 55Onufriev,A., Bashford,S.D. and Case,D.A. (2004) Exploring protein native states and large-scale conformational changes with a modified generalized Born model. Proteins, 55, 383-394.
+Effective energy function for proteins in solution. T Lazaridis, M Karplus, Proteins. 35Lazaridis,T. and Karplus,M. (1999) Effective energy function for proteins in solution. Proteins, 35, 133-152.
+How well does a restrained electrostatic potential (RESP) model perform in calculating conformational energies of organic and biological molecules?. J Wang, P Cieplak, P A Kollman, J. Comput. Chem. 21Wang,J., Cieplak,P. and Kollman,P.A. (2000) How well does a restrained electrostatic potential (RESP) model perform in calculating conformational energies of organic and biological molecules? J. Comput. Chem., 21, 1049-1074.
+DNA sequence-dependent deformability deduced from protein-DNA crystal complexes. W K Olson, A A Gorin, X Lu, L M Hock, V B Zhurkin, Proc. Natl Acad. Sci. USA. 95Olson,W.K., Gorin,A.A., Lu,X., Hock,L.M. and Zhurkin,V.B. (1998) DNA sequence-dependent deformability deduced from protein-DNA crystal complexes. Proc. Natl Acad. Sci. USA, 95, 11163-11168.
+3DNA: a software package for the analysis, rebuilding and visualization of three-dimensional nucleic acid structure. X Lu, W K Olson, Nucleic Acids Res. 31Lu,X. and Olson,W.K. (2003) 3DNA: a software package for the analysis, rebuilding and visualization of three-dimensional nucleic acid structure. Nucleic Acids Res., 31, 5108-5121.
+Structure and conformation of helical nucleic acids: analysis program (SCHNAaP). X Lu, M A El Hassan, C A Hunter, Lu,X., El Hassan,M.A. and Hunter,C.A. (1997) Structure and conformation of helical nucleic acids: analysis program (SCHNAaP).
+. J. Mol. Biol. 273J. Mol. Biol., 273, 668-680.
+Intermolecular and intramolecular readout mechanisms in protein-DNA recognition. M M Gromiha, J G Siebers, S Selvaraj, H Kono, A Sarai, J. Mol. Biol. 337Gromiha,M.M., Siebers,J.G., Selvaraj,S., Kono,H. and Sarai,A. (2004) Intermolecular and intramolecular readout mechanisms in protein-DNA recognition. J. Mol. Biol., 337, 285-294.
+Selection of DNA binding sites by regulatory proteins. Statistical-mechanical theory and application to operators and promoters. O G Berg, P H Hippel, J. Mol. Biol. 193Berg,O.G. and von Hippel,P.H. (1987) Selection of DNA binding sites by regulatory proteins. Statistical-mechanical theory and application to operators and promoters. J. Mol. Biol., 193, 723-750.
+The yeast a1 and a2 homeodomain proteins do not contribute equally to heterodimeric DNA binding. Y Jin, H Zhong, A K Vershon, Mol. Cell. Biol. 19Jin,Y., Zhong,H. and Vershon,A.K. (1999) The yeast a1 and a2 homeodomain proteins do not contribute equally to heterodimeric DNA binding. Mol. Cell. Biol., 19, 585-593.
+DNA-binding specificity of NGFI-A and related zinc finger transcription factors. A H Swirnoff, J Milbrandt, Mol. Cell. Biol. 15Swirnoff,A.H. and Milbrandt,J. (1995) DNA-binding specificity of NGFI-A and related zinc finger transcription factors. Mol. Cell. Biol., 15, 2275-2287.
+A comprehensive library of DNA-binding site matrices for 55 proteins applied to the complete Escherichia coli K-12 genome. K Robison, A Mcguire, G Church, J. Mol. Biol. 284Robison,K., McGuire,A. and Church,G. (1998) A comprehensive library of DNA-binding site matrices for 55 proteins applied to the complete Escherichia coli K-12 genome. J. Mol. Biol., 284, 241-254.
+. H Salgado, S Gama-Castro, A Martínez-Antonio, E Díaz-Peredo, F Sánchez-Solano, M Peralta-Gil, D Garcia-Alonso, V Jimenez-Jacinto, A Santos-Zavaleta, C Bonavides-Martinez, Salgado,H., Gama-Castro,S., Martínez-Antonio,A., Díaz-Peredo,E., Sánchez-Solano,F., Peralta-Gil,M., Garcia-Alonso,D., Jimenez- Jacinto,V., Santos-Zavaleta,A., Bonavides-Martinez,C. et al. (2004)
+): transcriptional regulation, operon organization and growth conditions in Escherichia coli K-12. Regulondb, Nucleic Acids Res. 32version 4.0RegulonDB (version 4.0): transcriptional regulation, operon organization and growth conditions in Escherichia coli K-12. Nucleic Acids Res., 32, D303-D306.
+Sum1 and Ndt80 proteins compete for binding to middle sporulation element sequences that control meiotic gene expression. M Pierce, K R Benjamin, S P Montano, M M Georgiadis, E Winter, A K Vershon, Mol. Cell. Biol. 23Pierce,M., Benjamin,K.R., Montano,S.P., Georgiadis,M.M., Winter,E. and Vershon,A.K. (2003) Sum1 and Ndt80 proteins compete for binding to middle sporulation element sequences that control meiotic gene expression. Mol. Cell. Biol., 23, 4814-4825.
+Transcriptional profiling shows that Gcn4p is a master regulator of gene expression during amino acid starvation in yeast. K Natarajan, M R Meyer, B M Jackson, D Slade, C Roberts, A G Hinnebusch, M J Marton, Mol. Cell. Biol. 21Natarajan,K., Meyer,M.R., Jackson,B.M., Slade,D., Roberts,C., Hinnebusch,A.G. and Marton,M.J. (2001) Transcriptional profiling shows that Gcn4p is a master regulator of gene expression during amino acid starvation in yeast. Mol. Cell. Biol., 21, 4347-4368.
+The TRANSFAC system on gene expression regulation. E Wingender, X Chen, E Fricke, R Geffers, R Hehl, I Liebich, M Krull, V Matys, H Michael, R Ohnhauser, Nucleic Acids Res. 29Wingender,E., Chen,X., Fricke,E., Geffers,R., Hehl,R., Liebich,I., Krull,M., Matys,V., Michael,H., Ohnhauser,R. et al. (2001) The TRANSFAC system on gene expression regulation. Nucleic Acids Res., 29, 281-283.
+High resolution crystal structure of a paired (Pax) class cooperative homeodomain dimer on DNA. D S Wilson, B Guenther, C Desplan, J Kuriyan, Cell. 82Wilson,D.S., Guenther,B., Desplan,C. and Kuriyan,J. (1995) High resolution crystal structure of a paired (Pax) class cooperative homeodomain dimer on DNA. Cell, 82, 709-719.
+Probability Theory: The Logic of Science. E T Jaynes, Cambridge University PressCambridge, UKJaynes,E.T. (2003) Probability Theory: The Logic of Science. Cambridge University Press, Cambridge, UK.
+Bayesian statistical analysis of protein side-chain rotamer preferences. R L Dunbrack, Jr, F E Cohen, Protein Sci. 6Dunbrack,R.L.,Jr and Cohen,F.E. (1997) Bayesian statistical analysis of protein side-chain rotamer preferences. Protein Sci., 6, 1661-1681.
+Native protein sequences are close to optimal for their structures. B Kuhlman, D Baker, Proc. Natl Acad. Sci. USA. 97Kuhlman,B. and Baker,D. (2000) Native protein sequences are close to optimal for their structures. Proc. Natl Acad. Sci. USA, 97, 10383-10388.
+The energetic basis of specificity in the EcoRI endonuclease-DNA interaction. D R Lesser, M R Kurpiewski, L Jen-Jacobson, Science. 250Lesser,D.R., Kurpiewski,M.R. and Jen-Jacobson,L. (1990) The energetic basis of specificity in the EcoRI endonuclease-DNA interaction. Science, 250, 776-786.
+Comparison of the DNA binding characteristics of the related zinc finger proteins WT1 and EGR1. T B Hamilton, F Borel, P J Romaniuk, Biochemistry. 37Hamilton,T.B., Borel,F. and Romaniuk,P.J. (1998) Comparison of the DNA binding characteristics of the related zinc finger proteins WT1 and EGR1. Biochemistry, 37, 2051-2058.
+The transcriptional program of sporulation in budding yeast. S Chu, J Derisi, M Eisen, J Mulholland, D Botstein, P O Brown, I Herskowitz, Science. 282Chu,S., DeRisi,J., Eisen,M., Mulholland,J., Botstein,D., Brown,P.O. and Herskowitz,I. (1998) The transcriptional program of sporulation in budding yeast. Science, 282, 699-705.
+Binding of yeast a1 and a2 as a heterodimer to the operator DNA of a haploid-specific gene. A M Dranginis, Nature. 347Dranginis,A.M. (1990) Binding of yeast a1 and a2 as a heterodimer to the operator DNA of a haploid-specific gene. Nature, 347, 682-685.
+Unique mode of GCC box recognition by the DNA-binding domain of ethylene-responsive element-binding factor (ERF domain) in plant. D Hao, M Ohme-Takagi, A Sarai, J. Biol. Chem. 273Hao,D., Ohme-Takagi,M. and Sarai,A. (1998) Unique mode of GCC box recognition by the DNA-binding domain of ethylene-responsive element-binding factor (ERF domain) in plant. J. Biol. Chem., 273, 26857-26861.
+Transformation by v-Myb. J S Lipsick, D.-M Wang, Oncogene. 18Lipsick,J.S. and Wang,D.-M. (1999) Transformation by v-Myb. Oncogene, 18, 3047-3055.
+Recognition of specific DNA sequences by the c-myb protooncogene product: role of three repeat units in the DNA-binding domain. J Tanikawa, T Yasukawa, M Enari, K Ogata, Y Nishimura, S Ishii, A Sarai, Proc. Natl Acad. Sci. USA. 90Tanikawa,J., Yasukawa,T., Enari,M., Ogata,K., Nishimura,Y., Ishii,S. and Sarai,A. (1993) Recognition of specific DNA sequences by the c-myb protooncogene product: role of three repeat units in the DNA-binding domain. Proc. Natl Acad. Sci. USA, 90, 9320-9324.
+Free-energy calculations highlight differences in accuracy between X-ray and NMR structures and add value to protein structure prediction. M R Lee, P A Kollman, Structure. 9Lee,M.R. and Kollman,P.A. (2001) Free-energy calculations highlight differences in accuracy between X-ray and NMR structures and add value to protein structure prediction. Structure, 9, 905-916.
+The energetics of the interaction of BamHI endonuclease with its recognition site GGATCC. L E Engler, P Sapienza, L F Dorner, R Kucera, I Schildkraut, L Jen-Jacobson, J. Mol. Biol. 307Engler,L.E., Sapienza,P., Dorner,L.F., Kucera,R., Schildkraut,I. and Jen-Jacobson,L. (2001) The energetics of the interaction of BamHI endonuclease with its recognition site GGATCC. J. Mol. Biol., 307, 619-636.
+Base coupling in sequence-specific site recognition by the ETS domain of murine PU.1. G M K Poon, R B Macgregor, Jr, J. Mol. Biol. 328Poon,G.M.K. and Macgregor,R.B.,Jr (2003) Base coupling in sequence-specific site recognition by the ETS domain of murine PU.1. J. Mol. Biol., 328, 805-819.
+Repressor recognizes the $2-fold symmetric half-operator sequences asymmetrically. A Sarai, Y Takeda, Proc. Natl Acad. Sci. USA. 86Sarai,A. and Takeda,Y. (1989) l Repressor recognizes the $2-fold symmetric half-operator sequences asymmetrically. Proc. Natl Acad. Sci. USA, 86, 6513-6517.
+Analysis of the sequence-specific interactions between Cro repressor and operator DNA by systematic base substitution experiments. Y Takeda, A Sarai, V M Rivera, Proc. Natl Acad. Sci USA. 86Takeda,Y., Sarai,A. and Rivera,V.M. (1989) Analysis of the sequence-specific interactions between Cro repressor and operator DNA by systematic base substitution experiments. Proc. Natl Acad. Sci USA, 86, 439-443.
+Quantitative specificity of the Mnt repressor. D N Fields, Y He, A Y Al-Uzri, G D Stormo, J. Mol. Biol. 271Fields,D.N., He,Y., Al-Uzri,A.Y. and Stormo,G.D. (1997) Quantitative specificity of the Mnt repressor. J. Mol. Biol., 271, 178-194.
+Non-independence of Mnt repressor-operator interaction determined by a new quantitative multiple fluorescence relative affinity (QuMFRA) assay. T.-K Man, G D Stormo, Nucleic Acids Res. 15Man,T.-K. and Stormo,G.D. (2001) Non-independence of Mnt repressor-operator interaction determined by a new quantitative multiple fluorescence relative affinity (QuMFRA) assay. Nucleic Acids Res., 15, 2471-2478.
+Nucleotides of transcription factor binding sites exert inter-dependent effects on the binding affinities of transcription factors. M L Bulyk, P Johnson, G Church, Nucleic Acids Res. 30Bulyk,M.L., Johnson,P. and Church,G. (2002) Nucleotides of transcription factor binding sites exert inter-dependent effects on the binding affinities of transcription factors. Nucleic Acids Res., 30, 1255-1261.
+Additivity in protein-DNA interactions: how good an approximation is it?. P V Benos, M L Bulyk, G D Stormo, Nucleic Acids Res. 30Benos,P.V., Bulyk,M.L. and Stormo,G.D. (2002) Additivity in protein-DNA interactions: how good an approximation is it? Nucleic Acids Res., 30, 4442-4451.
+High level transactivation by the ecdysone receptor complex at the core recognition motif. M Vogtli, C Elke, M O Imhof, M Lezzi, Nucleic Acids Res. 26Vogtli,M., Elke,C., Imhof,M.O. and Lezzi,M. (1998) High level transactivation by the ecdysone receptor complex at the core recognition motif. Nucleic Acids Res., 26, 2407-2414.
+Sequence logos: a new way to display consensus sequences. T D Schneider, R M Stephens, Nucleic Acids Res. 18Schneider,T.D. and Stephens,R.M. (1990) Sequence logos: a new way to display consensus sequences. Nucleic Acids Res., 18, 6097-6100.
+A simple physical model for binding energy hot spots in protein-protein complexes. T Kortemme, D Baker, Proc. Natl Acad. Sci. USA. 99Kortemme,T. and Baker,D. (2002) A simple physical model for binding energy hot spots in protein-protein complexes. Proc. Natl Acad. Sci. USA, 99, 14116-14121.
+Protein structure prediction and analysis using the Robetta server. D E Kim, D Chivian, D Baker, Nucleic Acids Res. 32Kim,D.E., Chivian,D. and Baker,D. (2004) Protein structure prediction and analysis using the Robetta server. Nucleic Acids Res., 32, W526-W531.
+CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice. J D Thompson, D G Higgins, T J Gibson, Nucleic Acids Res. 22Thompson,J.D., Higgins,D.G. and Gibson,T.J. (1994) CLUSTAL W: improving the sensitivity of progressive multiple sequence alignment through sequence weighting, position-specific gap penalties and weight matrix choice. Nucleic Acids Res., 22, 4673-4680.
+Computational detection of genomic cis-regulatory modules applied to body patterning in the early Drosophila embryo. N Rajewsky, M Vergassola, U Gaul, E D Siggia, BMC Bioinformatics. 330Rajewsky,N., Vergassola,M., Gaul,U. and Siggia,E.D. (2002) Computational detection of genomic cis-regulatory modules applied to body patterning in the early Drosophila embryo. BMC Bioinformatics, 3, 30.
+Transcriptional control in the segmentation gene network of Drosophila. D Schroeder, M Pearce, J Fak, H Fan, U Unnerstall, E Emberly, N Rajewsky, E D Siggia, U Gaul, PLoS Biol. 2Schroeder,D., Pearce,M., Fak,J., Fan,H., Unnerstall,U., Emberly,E., Rajewsky,N., Siggia,E.D. and Gaul,U. (2004) Transcriptional control in the segmentation gene network of Drosophila. PLoS Biol., 2, 1396-1410.
+Engrailed homeodomain-DNA complex at 2.2 Å resolution: a detailed view of the interface and comparison with other Engrailed structures. E Fraenkel, M A Rould, K A Chambers, C O Pabo, J. Mol. Biol. 284Fraenkel,E., Rould,M.A., Chambers,K.A. and Pabo,C.O. (1998) Engrailed homeodomain-DNA complex at 2.2 Å resolution: a detailed view of the interface and comparison with other Engrailed structures. J. Mol. Biol., 284, 351-361.
+Engrailed (Gln50->Lys) homeodomain-DNA complex at 1.9 Å resolution: structural basis for enhanced affinity and altered specificity. L Tucker-Kellogg, M A Rould, K A Chambers, S E Ades, R T Sauer, C O Pabo, Structure. 5Tucker-Kellogg,L., Rould,M.A., Chambers,K.A., Ades,S.E., Sauer,R.T. and Pabo,C.O. (1997) Engrailed (Gln50->Lys) homeodomain-DNA complex at 1.9 Å resolution: structural basis for enhanced affinity and altered specificity. Structure, 5, 1047-1054.
+Distinctive DNA conformation with enlarged major groove is found in Zn-finger-DNA and other protein-DNA complexes. L Nekludova, C O Pabo, Proc. Natl Acad. Sci. USA. 91Nekludova,L. and Pabo,C.O. (1994) Distinctive DNA conformation with enlarged major groove is found in Zn-finger-DNA and other protein- DNA complexes. Proc. Natl Acad. Sci. USA, 91, 6948-6952.
+Rearrangement of side-chains in a Zif268 mutant highlights the complexities of zinc finger-DNA recognition. J C Miller, C O Pabo, J. Mol. Biol. 313Miller,J.C. and Pabo,C.O. (2001) Rearrangement of side-chains in a Zif268 mutant highlights the complexities of zinc finger-DNA recognition. J. Mol. Biol., 313, 309-315.
+Sequence-specific interactions in the Tus-Ter complex and the effect of base pair substitutions on arrest of DNA replication in Escherichia. coli. F F Coskun-Ari, T M Hill, J. Biol. Chem. 272Coskun-Ari,F.F. and Hill,T.M. (1997) Sequence-specific interactions in the Tus-Ter complex and the effect of base pair substitutions on arrest of DNA replication in Escherichia. coli. J. Biol. Chem., 272, 26448-26456.
+Thermodynamics of the interactions of Lac repressor with variants of the symmetric Lac operator: effects of converting a consensus site to a non-specific site. D E Frank, R M Saecker, J P Bond, M W Capp, O V Tsodikov, S E Melcher, M M Levandoski, M T Record, Jr, J. Mol. Biol. 267Frank,D.E., Saecker,R.M., Bond,J.P., Capp,M.W., Tsodikov,O.V., Melcher,S.E., Levandoski,M.M. and Record,M.T.,Jr (1997) Thermodynamics of the interactions of Lac repressor with variants of the symmetric Lac operator: effects of converting a consensus site to a non-specific site. J. Mol. Biol., 267, 1186-1206.
+Probing the physical basis for trp repressor-operator recognition. A O Grillo, M P Brown, C A Royer, J. Mol. Biol. 287Grillo,A.O., Brown,M.P. and Royer,C.A. (1999) Probing the physical basis for trp repressor-operator recognition. J. Mol. Biol., 287, 539-554.
+Quantitative characterization of the interaction between purified human estrogen receptor a and DNA using fluorescence anisotropy. M Boyer, N Poujol, E Margeat, C A Royer, Nucleic Acids Res. 28Boyer,M., Poujol,N., Margeat,E. and Royer,C.A. (2000) Quantitative characterization of the interaction between purified human estrogen receptor a and DNA using fluorescence anisotropy. Nucleic Acids Res., 28, 2494-2502.
+DNA sequence determinants for binding of the Escherichia coli catabolite gene activator protein. A Gunasekera, Y W Ebright, R H Ebright, J. Biol. Chem. 267Gunasekera,A., Ebright,Y.W. and Ebright,R.H. (1992) DNA sequence determinants for binding of the Escherichia coli catabolite gene activator protein. J. Biol. Chem., 267, 14713-14720.

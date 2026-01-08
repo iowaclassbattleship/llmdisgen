@@ -1,0 +1,31 @@
+**Discussion**
+
+The present study addressed two major challenges in paraphrase extraction using the re-translation method from parallel corpora: the merging of distinct word senses in paraphrase candidate sets, and the dominance of more frequent senses in ranking, leading to insufficient sense coverage in top-ranked results. Focusing on German particle verbs (PVs)—a highly ambiguous and empirically challenging class—the research evaluated whether graph-based clustering of synonym candidates, informed by distributional similarity, could enhance precision and sense coverage in paraphrase extraction.
+
+**Comparison to Baseline Approaches**
+
+The standard re-translation approach, in line with Bannard and Callison-Burch (2005) [{{15728911}}], retrieved synonym candidates and ranked them solely on translation probabilities. As expected, this baseline exhibited well-known shortcomings: paraphrases related to rarer senses were often underrepresented among the top candidates, while multiple senses were conflated in single lists. Incorporating distributional similarity between candidates and target PVs, following approaches such as Erk and Padó (2008) and the framework of Padó and Lapata (2007) [{{1588782}}], improved ranking performance, consistent with findings that distributional context provides additional, sense-sensitive information [{{1998986}}].
+
+**Effectiveness of Graph-Based Clustering**
+
+We hypothesized that graph-based clustering—partitioning paraphrase candidates using distributional similarity—would separate candidates according to sense, possibly leading to better precision and more diverse sense coverage, akin to the approaches of Apidianaki et al. (2014) and Pavlick et al. (2015) [{{11942888}}]. However, the empirical results only partially confirmed these expectations. While the best cluster-informed ranking marginally increased precision and sense coverage in the top-10 candidate lists compared to translation probability alone, these improvements were not statistically significant. Notably, simply re-ranking candidates by combining translation probability with distributional similarity already yielded most of the observable gains, suggesting diminishing returns for the additional complexity of clustering under current parameterizations.
+
+This outcome contrasts somewhat with the clear gains for sense clustering reported by Pavlick et al. (2015) [{{11942888}}] on the Paraphrase Database for English nouns, and Apidianaki et al. (2014), potentially due to differences in language, annotation resources, paraphrase candidate characteristics, or the sense granularity of the evaluation gold standard. The German PVs in this study may have senses that are more difficult to separate based on distributional similarity alone, or our clustering method may not exploit the structure as effectively as more advanced spectral or hierarchical methods.
+
+**Limitations of Graph-Based Clustering**
+
+An important observation is that iterative re-clustering (increasing the similarity threshold) tended to fragment candidate sets excessively, producing smaller, less connected clusters, and resulting in poorer precision and reduced sense coverage. This suggests a trade-off between partitioning for sense separation and retaining sufficient density for robust ranking. Furthermore, the clustering approach relies heavily on the quality and granularity of the underlying distributional similarity measure; if this signal is noisy or insufficiently sense-discriminative for PVs, then clustering will be suboptimal. The tendency for large "supernodes" caused by light verbs (and their removal in preprocessing) illustrates how specific linguistic phenomena can complicate graph-based methods.
+
+**Implications for Paraphrase Extraction and Sense Separation**
+
+These findings indicate that, for German PVs, distributional similarity is a crucial feature for ranking synonym candidates, confirming conclusions from structured vector space and selectional preference research [{{1588782}}]. However, the additional complexity of clustering paraphrase candidates for sense separation may not pay off with current methods and feature sets, especially within the context of the noisy, ambiguous, and compositionally complex PV domain. Effective sense separation may require either more powerful clustering algorithms (e.g., those that incorporate foreign alignments, second-order similarity, or entailment signals as in {{11942888}}) or richer feature representations (potentially leveraging contextualized word embeddings or external semantic resources).
+
+**Directions for Future Work**
+
+First, more nuanced clustering algorithms, such as spectral or hierarchical factorization clustering (Yu et al., 2005; Sun and Korhonen, 2011), may align better to the inherently multi-granular sense structure of PVs [{{11942888}}], especially if cluster number is tuned adaptively. Second, leveraging contextual information from beyond the immediate paraphrase pair (e.g., using sentence-level context or cross-lingual alignment graphs as in Diab, 2003) may improve sense discrimination. Third, evaluating extracted paraphrases in downstream tasks—such as machine translation evaluation or lexical substitution—could clarify the utility of sense-informed paraphrase clusters.
+
+Lastly, extending evaluation beyond dictionary-grouped senses to crowd-annotated or usage-context-based sense clusters, as advocated by Pavlick et al. (2015), may provide a better measure of practical sense coverage and paraphrase utility.
+
+**Conclusion**
+
+In summary, while distributional similarity substantially strengthens synonym candidate ranking in paraphrase extraction for German PVs, the current implementation of graph-based sense clustering yields only limited additional benefits. This highlights the continued challenge of effective sense-sensitive paraphrase extraction, especially for complex multi-word expressions in morphologically rich languages, and underscores the need for more advanced clustering algorithms and context-sensitive features to achieve robust sense separation within paraphrase resources.

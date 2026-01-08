@@ -1,0 +1,27 @@
+**Discussion**
+
+The research presented delves into establishing interactive proofs in a model where classical verifiers and quantum provers are both limited to polynomial-time computations. The significance of this work lies in the theoretical and practical implications of engaging classical and quantum systems in computational tasks that are otherwise infeasible for classical systems alone.
+
+**Complexity Aspects and Model**
+
+The primary contribution is demonstrating that with a polynomial number of non-communicating quantum provers, each performing a single operation, a classical polynomial-time verifier can interactively prove any language in BQP. This is achieved by leveraging self-testing and measurement-based quantum computation, which are instrumental in confirming that provers follow the prescribed protocol using graph states and plane measurements.
+
+**Technical Innovations**
+
+The work includes various technical innovations, particularly in error analysis and measurement protocols. By improving the error scaling in self-testing graph states, the authors enable verification with fewer trials while maintaining accuracy. This fine-tuning is crucial as it allows practical deployment where testing resources and time may be constrained.
+
+**Comparison with Other Models**
+
+Compared to previous constructions like that of Reichardt et al., this approach simplifies the prover requirements by focusing solely on measurement operations, thus avoiding the complexity of full process tomography. This simplicity is a potential advantage in practical implementations, reducing the experimental overhead needed to execute and verify quantum computations.
+
+**Practical Implications**
+
+From a practical perspective, this research supports the idea of classical computers outsourcing complex computations to quantum servers in a verifiable manner. By ensuring that a classical verifier can catch errors introduced by potentially dishonest quantum provers, this model addresses a critical trust issue in quantum computing. Such verifications are particularly valuable in experimental quantum physics, where classical validations of complex quantum states or operations can be infeasible.
+
+**Future Directions**
+
+While establishing a robust foundation, this research also opens several avenues for future exploration. Tightening the error bounds remains an area of potential enhancement, as does testing the interactive proof model with a reduced number of provers. Further, the techniques and insights gained from this study can be extended to other quantum computational tasks, potentially enriching both theoretical frameworks and practical applications of quantum computing.
+
+**Conclusion**
+
+Hence, this work significantly contributes to quantum interactive proof systems, enhancing theoretical understanding and indicating paths for practical applications. The intersection of classical and quantum computational limits expands the horizon for future quantum innovations, promising advancements in secure quantum computing and practical quantum information processing.

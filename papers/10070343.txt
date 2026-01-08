@@ -1,0 +1,347 @@
+A well-developed patientÁphysician relationship has been shown to improve patient health outcomes and compliance {{10381721}}{{38487710}}. Being empathic is one of the many factors contributing to enhancing the patientÁ physician relationship {{23276280}}. In the clinical setting, empathy is defined as the ability to feel the patient experience to form better understanding {{26280977}}. Empathy is beneficial to the provider as well, as it corresponds to better job satisfaction as well as improved clinical practice {{10381721}}{{38487710}}{{26280977}}. Studies have shown that feelings of stress and depression have an inverse relationship with empathy among health care professionals and lead to lower quality of care and an increase in medical errors (5Á7).
+It is well known that medical students have high rates of stress and depression (8Á14) and show decreases in empathy during training {{not_in_s2orc}}. Furthermore, a statistically significant percentage of medical students exhibit burnout and show increased signs of depression during medical school {{10381721}}{{12990017}}. To address these challenges, many medical schools are developing curricular interventions to better prepare medical students for the rigors of the profession.
+With these goals in mind, the Mind Body Medicine (MBM) program at Georgetown University School of Medicine offers a 11-week elective course to first-year medical students involving experiential introduction to practices such as meditation, guided imagery, and journal writing within small group interactions {{12990017}}. The primary objective is to introduce students to MBM skills that foster self-awareness and help them better cope with stress. Each group of 10 students is facilitated by two trained faculty members. The program was started by a grant provided by Georgetown University School of Medicine in 2001 and a larger award from the National Institutes of Health {{not_in_s2orc}}.
+Previous studies of the MBM course at Georgetown University have reported that participants had reduced perceived levels of stress and physiologic stress biomarkers
+
+Medical Education Online ae
+
+Medical Education Online 2016. # 2016 Allen K. Chen et al. This is an Open Access article distributed under the terms of the Creative Commons Attribution 4.0 International License (http://creativecommons.org/licenses/by/4.0/), allowing third parties to copy and redistribute the material in any medium or format and to remix, transform, and build upon the material for any purpose, even commercially, provided the original work is properly cited and states its license. and increased levels of empathy {{not_in_s2orc}}. In the present study, we used different instruments to assess whether stress and depression in medical students would be affected by participation in the MBM course.
+
+Methods
+
+This was a prospective, pre-and post-test quasiexperimental study. The study population consisted of medical students in the class of 2018 who received the Jefferson Scale of Physician Empathy Á Students (JSPE-S), the Perceived Stress Scale (PSS), and Personal Health Questionnaire (PHQ). Our inclusion criteria were firstyear medical students enrolled in the class of 2018.
+We opted to use the JSPE-S {{38487710}}{{7595451}}{{12990017}} which is a validated instrument widely used in medical students. The JSPE was specifically designed for medical students (the S-version) in context of medical education and patient care {{7595451}}. The PSS is a 14-item questionnaire answered on a five-point frequency scale. The PSS serves to measure each individual's perceived frequency of stress and has been widely used (11Á13). The verified measure for depression is the PHQ. The PHQ is a nine-item questionnaire that focuses on symptoms of depression that the subject may experience. The total score is out of 27 points, and a clinical diagnosis of depression may be made if the subject answers 2 or 3 for 5 or more symptoms {{not_in_s2orc}}{{not_in_s2orc}}. Copies of the JSPE were obtained with permission from the Center for Research in Medical Education and Health Care at Jefferson University. The PHQ and PSS are available in the public domain.
+Survey participants were given unique identifiers. Demographics collected were age, gender, and race/ethnicity. The above demographics were collected prior to starting the MBM course. First-year medical students not participating in MBM course served as controls, while firstyear medical students participating in MBM course served as the experimental group. After obtaining IRB approval, the JSPE-S, PHQ, and PSS were administered to first-year medical students at the beginning of their fall semester of the first year. This allowed us to measure baseline levels of stress, depression, and empathy and to evaluate any confounding variables. The students selfselected for the MBM course program, which consisted of approximately 60Á80 students out of a class of approximately 180 students. Toward the end of the first year, the instruments were administered once again.
+
+Results
+
+At the beginning of their fall semester (August 2014), 122 first-year medical students completed the surveys; however, only 27 completed the post-test surveys upon conclusion of their first year (May 2015). The data were matched with identifiers and results that did not include both a pre-and post-test were not included.
+Ultimately, there were 20 individuals in this dataset. Of those, 7 were not enrolled in the MBM course and 13 were. We conducted Fisher's exact test to test whether enrollment in the MBM course was independent of the demographic characteristics. We concluded that enrollment in the MBM course was in fact independent of gender, ethnicity, race, marital status, and religion, respectively (p-values !0.05).
+Using the KolmogorovÁSmirnoff test, a non-normal distribution (p-values B 0.05) was observed. Therefore, a Wilcoxon Signed Rank test was used to test for preÁpost differences within the MBM and non-MBM groups. The Wilcoxon Rank Sum test was used to make betweengroup comparisons at baseline and after completion of the course.
+As shown in Fig. 1, there was a statistically significant increase in PSS scores between the two time points in both groups. There were no statistically significant differences in either baseline or post-test stress scores between the two groups (p !0.05) (Fig. 1). Data regarding empathy are shown in Fig. 2. Both the control group and students who enrolled in the MBM course showed a statistically significant decrease in empathy (pB0.05). Here too, there was no significant difference in JSPE-S values between the two groups (p!0.05) either in baseline or post-test scores (Fig. 2).
+With regard to the PHQ survey for depression (Fig. 3), there was a statistically significant increase in median values for depression in the control group (pB0.05), which was not seen in the students who took the MBM course.
+
+Conclusion
+
+Our study examined the impact of participation in an MBM course at Georgetown University School of Medicine on empathy, stress, and depression. The findings confirm that perceived stress increases and empathy declines during the first year of medical school. This inverse relationship was not altered by the MBM course participation. We did find that depression scores went up significantly in the control group but not in students who participated in the MBM course. While this pilot study was limited in scope, it does provide important information and will serve to provide baseline data for future studies examining the effects of MBM interventions in medical students.
+
+
+
+
+CITED_PAPERS:
+
+
+5632524:How Do Distress and Well-being Relate to Medical Student Empathy? A Multicenter Study
+
+
+INTRODUCTION
+
+Professionalism is an essential trait for physicians and has been recognized as a core competency for physicians in training. 1 Although professionalism is a multifaceted quality, one of its central characteristics is empathy-the ability to listen to, understand, sympathize with, and provide support to another individual. 2,3 Empathy has been found to correlate with medical students' (MSs) clinical competency, 4 and the American Association of Medical Colleges has recognized the cultivation of empathy in MSs as a key goal in its consensus opinion on qualities students should possess by the time of graduation. 5 In spite of the well recognized importance of physician empathy and the commitment of medical educators to nurture this quality, previous studies suggest that empathy declines during medical school, 6,7 and may decline even further during residency training. 8 Based on the decline in empathy through the course of medical school in several single-institution studies, a number of investigators have hypothesized the training curriculum itself may lead to or contribute to this erosion. 6,7,9 Although others have attributed the decline of compassion after starting medical school to personal characteristics, 10 learning style, 10 student abuse, 11,12 and a "hidden curriculum" of cynicism, 13,14 relationships between all factors contributing to this problem are yet to be identified.
+Over the last decade, physician distress (burnout, depression, anxiety, stress) has also been recognized as an important influence on practice habits. [15][16][17][18] Personal distress during residency appears to have a negative effect on the quality of care that residents provide, 17 and may parallel a decline in empathy. 18 Studies in practicing physicians further suggest physician distress influences patient compliance, 19,20 patient satisfaction, 21,22 physician turnover, [23][24][25] and quality of care. 16,26 Despite these observations, little information is available on the consequences of distress among MSs.
+Others have noted that distress is only one end of the quality of life (QOL) continuum, and that achieving enhanced QOL or "well-being" is the ultimate goal. [27][28][29][30] This paradigm holds that well-being goes beyond the absence of distress and is characterized by being challenged, successfully responding, and attaining satisfaction in a variety of domains of life (mental, physical, emotional, spiritual, social). 31 Some have speculated that achieving a high degree of well-being may enhance the compassion and quality of care that physicians provide patients, 27,[32][33][34] although limited empiric research is available in this area. 35 We hypothesized that lower levels of empathy among MSs in the United States are associated with personal distress experienced during medical school. We further hypothesized that students experiencing a high degree of personal well-being may possess higher levels of empathy, implying that both positive and negative aspects of QOL are related to student professionalism. To test these hypotheses, we performed a multicenter study of all MSs in the state of Minnesota in which both distress and well-being were comprehensively evaluated to assess their relationship to student empathy.
+
+METHODS
+
+
+Participants
+
+
+Data Collection
+
+Students were surveyed electronically in April of 2004. Participants were blinded to any specific hypothesis of the study. The survey included 118 questions including demographic information, and validated tools to measure empathy, 18,[35][36][37][38] burnout, 39,40 symptoms of depression, 41,42 and QOL. 36,43
+
+Measurement of Empathy
+
+Empathy is a multidimensional construct with cognitive, emotive, and behavioral domains. 44 Cognitive empathy relates to an individual's capacity to understand another person's perspective rather than being exclusively self-oriented, while emotive empathy refers to an individual's tendency to respond to feelings experienced by others. Much of the literature on physician empathy distinguishes between these domains of "detached concern" and "sympathetic emotions." While it is commonly felt that the former is the essential skill for clinicians, 3,45 other educators have highlighted the importance of both the cognitive and emotive aspects, 3,34,36,37,46,47 and emphasized the behavioral component, which involves the outward expression of these internal qualities to influence the patient encounter. 44 The Interpersonal Reactivity Index (IRI) is a 28-item instrument with 4 separate 7-item subscales evaluating different dimensions of empathy, which are considered independently. 36 Respondents are asked to indicate how well each item on the survey describes them using a 5-point Likert scale. We included the IRI subscales which measure the cognitive (perspective-taking subscale) and emotive (empathetic concern subscale) domains of empathy in this survey. The IRI subscales have been shown to be reliable and reproducible measures of sensitivity to views and feelings of others, 17,18,36,37,48 and have been used in a wide variety of research settings, including previous studies of physicians and MSs. 17,18,38,[48][49][50] Student scores on the IRI were compared to normative samples, which are published separately by gender. 36
+
+Measures of Distress
+
+Burnout is a syndrome of professional distress that leads to decreased effectiveness at work. Although dissatisfaction at work can "spill over" into personal life, effects of burnout are primarily related to the professional sphere and distinguish burnout from the global impairment of depression. 39 For this study, burnout was measured using the Maslach burnout inventory, a validated 22-item questionnaire considered a standard tool for measuring burnout. 39,40,51,52 The instrument has 3 subscales to evaluate related but independent domains of burnout: emotional exhaustion, depersonalization (characterized by treating people as if they are impersonal objects), and personal accomplishment. Symptoms of depression were identified using the 2-item primary care evaluation of mental disorders, 41 a validated screening tool which performs as well as longer instruments. 42
+
+Measures of Quality of Life
+
+Domains of QOL were measured using linear analog selfassessment (LASA), a 10-item questionnaire for measuring QOL that has been shown to be reproducible and valid in various settings, [53][54][55][56][57][58][59][60][61][62] including the assessment of physician QOL. 63 Each item asks respondents to rate their QOL in a given domain on a 0-10 numerical analog scale (i.e., mental, emotional, physical, spiritual, level of support from family/ friends, level of social activity, level of fatigue, degree of legal concerns, degree of financial concerns, and overall QOL). Higher scores for each item are an indicator of higher QOL or "well-being." The overall QOL of an individual is a composite of multiple domains with the importance of each aspect weighted differently by each person. This can result in individuals rating their overall QOL higher or lower than their scores for individual domains.
+
+Statistical Analysis
+
+Primary analysis involved descriptive summary statistics for estimating the incidence of burnout, positive depression screen, and QOL. Comparisons to normative data were tested using 1-sample t tests. Empathy scores were compared by year in school, and based on the presence of symptoms of depression, degree of burnout, and QOL. The Cochran-Armitage trend test 64 was used for assessing trends in proportions by year in school, and simple linear regression was used for assessing trends in continuous variables. Comparisons between empathy and QOL were tested using Fisher's exact tests for categorical variables and Wilcoxon tests for ordinal variables. Fisher's exact tests had 90% power to detect a 5% difference between groups and the Wilcoxon tests had 90% power to detect a quarter standard deviation difference between groups. Finally, forward stepwise logistic regression evaluated independent associations among year in training, burnout, symptoms of depression, QOL, and empathy. All tests were considered exploratory and were done using 2-sided tests with type-I error rates of 0.05. All analyses were done using SAS version 8 (SAS Institute, Cary, NC, USA).
+
+RESULTS
+
+Of the 1,098 MSs in the state of Minnesota, correct e-mail addresses could be confirmed for 1,087 students, 545 of whom returned surveys (response rate 50%). Table 1 shows the demographic characteristics of the responders. Compared to responders, nonresponders were more likely to be male (59% vs 45%, P<.001) and less likely to be first-year students (15% vs 33%, P < .001). Descriptive data on the prevalence of burnout and depression for this cohort are reported elsewhere. 65 Empathy MS mean scores for cognitive empathy were higher than a normative sample of similar-age college students (CS) ( To explore the possibility that empathy may differ at various points in the training process, we evaluated MSs' cognitive and emotive empathy scores by year in training. No statistically significant differences in levels of cognitive and emotive empathy were observed over the 4 years of medical school for either men or women.
+
+Relationship Between Empathy and Measures of Professional and Personal Distress
+
+To evaluate the hypothesis that personal and professional distress are associated with lower levels of empathy, we evaluated relationships between empathy and measures of depression and burnout. Empathy scores inversely correlated with measures of burnout. Specifically, increasing depersonalization was strongly associated with a decrease in both cognitive and emotive empathy independent of gender (all P<.02). Increasing emotional exhaustion also correlated with lower emotive empathy scores for men (P=.009) with a trend toward correlation for women (P=.076). Students' sense of personal accomplishment demonstrated a positive correlation with both domains of empathy independent of gender (all P<.001).
+Although results of depression screening did not demonstrate a significant relationship with either measure of empathy for men, symptoms of depression correlated with lower scores in both domains of empathy for women (Table 2).
+
+Relationship Between Empathy and Quality of Life
+
+To evaluate the hypothesis that well-being may be associated with higher levels of empathy, we next evaluated the relationship between empathy and well-being as measured by the 10 domains of QOL assessed by the LASA. For men, of the 10
+
+Multivariate Analysis of Factors Associated with Empathy
+
+Multivariate modeling evaluated independent correlations between empathy and measures of both distress (depression, 3 domains of burnout) and QOL simultaneously. Separate models were built for men and women due to differences in empathy scores and the relationships between distress and QOL with empathy by gender. For each model, year in school and measures of distress and QOL that demonstrated a relationship with empathy (P<.1) on bivariate analysis were included to evaluate independent associations. A summary of factors associated with higher or lower empathy scores on multivariate analysis is presented in Figure 1. Measures of burnout, particularly depersonalization (inverse correlation) and personal accomplishment (positive correlation), emerged as contributing variables for both men and women. Other predictors of cognitive and emotive empathy differed by gender. For men, emotive empathy positively correlated with overall QOL (P=.025) and personal accomplishment (P<.001) and negatively correlated with depersonalization (P<.001). A trend for a negative correlation between empathy and increasing years in school (P=.061) was also observed. Cognitive empathy for men positively correlated with personal accomplishment (P=.002) and negatively correlated with depersonalization (P=.018).
+For women, emotive empathy positively correlated with personal accomplishment (P=.003) and negatively correlated with depersonalization (P<.001). Trends toward a positive correlation with emotional exhaustion (P=.072) and a negative correlation with symptoms of depression (P=.057) were also observed. Cognitive empathy for women positively correlated with personal accomplishment (P<.001) and negatively correlated with years in school (P=.046). Trends toward a positive correlation with level of social activity (P=.103) and a negative correlation with depersonalization (P=.063) were also observed.
+
+DISCUSSION
+
+Previous studies report that students experience a decline in empathy and an increase in cynicism during the course of medical school. 6,7,[66][67][68][69] Results of our multicenter study suggest this decline in empathy is related to aspects of student distress and QOL rather than progression through the training curriculum alone. On multivariate analysis, measures of burnout (depersonalization and personal accomplishment), well-being, and years in training were all independent predictors of cognitive and emotive empathy. Although depression also correlated with both domains of empathy for women on bivariate analysis, it had only a trend correlation with empathy on multivariate analysis controlling for other variables. These results suggest that professional burnout rather than depression may be more intimately related to declining empathy. These results are consistent with findings in residents which identify a link between empathy and distress, 18 and suggest burnout, rather than depression, has the strongest effect on residents' care of patients. 17 While the prevalence of physician anxiety and depression have been appreciated for decades, 16,[20][21][22][70][71][72][73] the recognition of the burnout syndrome in residents 17,74 and practicing physicians [75][76][77][78][79] has been a more recent observation. Few studies of burnout among MSs have been reported 80,81 ; only one of which, the present study, 65 included U.S. MSs. These studies suggest that the incidence of burnout among MSs is lower than that observed in residents and practicing physicians, that it is lowest during the first year of medical school, and that it increases through training. These observations support the concept that factors that contribute to burnout occur early in physician training and may be related to both personal and curricular influences. 10,65,80 While the influence of distress on physicians is now recognized at every stage of physician training and practice, the sources of stress and satisfaction at each time point are, in part, unique. MSs experience significant distress from adjustment to the medical school environment, perceived ethical and professional dilemmas, first-time exposure to death and human suffering, student abuse, personal life events, and educational debt. 82 Residents face distinct challenges because of sleep deprivation, student loan debts, extended duty hours, a lack of time for personal life, and efforts to find a job at the completion of training. 17,83,84 Practicing physicians are confronted with issues regarding malpractice suits, their degree of autonomy, reimbursement issues, and challenges related to office management. 27,[85][86][87] Other sources of distress are similar at all stages of a career, including encounters with patient death and suffering, medical errors, fatigue, and challenges in balancing personal and professional lives. 88,89 In recent years, there has been increased interest in edifying aspects of health (high mental, physical, and spiritual QOL) in addition to the study of distress. 27,90 With respect to physicians, early efforts in this field of "positive psychology" have explored what physicians find meaningful about their work and what strategies they use to promote personal wellbeing. 15,28,32,33,91,92 Although respected medical educators have postulated that heightened QOL or "well-being" may have the potential to enhance professionalism, [32][33][34]47,93 this is one of the first studies to empirically evaluate this hypothesis. 35 Our multivariate analysis found that higher QOL in specific domains correlated with higher empathy scores among MSs, with the specific domains of QOL related to empathy varying by gender. While preliminary, our findings begin to provide insight into the complex interaction of positive and negative aspects of QOL on physician professionalism. The results emphasize the potential influence of both well-being and distress on students' professional development and highlight the need for additional research to dissect the contribution of distress, well-being, and curricular factors to student competency.
+Our study has several important limitations. First, although the response rate is typical of physician surveys, 94,95 response bias remains a possibility. Second, our study is limited by its cross-sectional nature and cannot determine causality. Third, although we found correlations between positive and negative measures of QOL and measures of empathy on multivariate analysis, the magnitude of some of these correlations is small. Fourth, although this was a multicenter study and nearly 40% of participants originated from outside the state of Minnesota, the generalizability of these results to other regions of the country is unknown. The incidence of a positive depression screen among students in this survey [96][97][98][99][100] and the mean empathy score on the IRI are similar to other studies of MSs and young physicians, 18,35 suggesting that the distress and empathy observed in this sample is typical of MSs in the United States.
+Finally, while the importance of empathy in MSs and physicians is widely acknowledged, 1 it is not known how best to promote or measure this skill. A number of methods to promote empathy have been proposed, including communication skills training, 46,49,50,101 mentoring, 2 lectures, 49,50,102 personal and shared reflection, [32][33][34]45,47,[103][104][105] and promotion of physicians' own wellness. 103,106,107 Determining the effectiveness of these interventions requires the ability to measure empathy. 46 Although observation, 49,108 response to clinical vignettes, patient assessment, 109 validated survey instruments, 4,18,49,50,[109][110][111] and self-ratings have all been used to measure empathy, each of these approaches has limitations. In this study, we used a validated survey tool to measure empathy. While such "pencil and paper" tests are surrogate measures of empathy, some studies suggest they may be meaningful surrogates. 4,48,101,112 Our study has several important strengths. This is one of the largest studies of MS empathy and, to our knowledge, is the only study to explore the relationship between either burnout or enhanced well-being and student empathy. Students in this survey were from 3 very different medical school environments, lending generalizability to most types of institutions in the United States. Finally, the survey instruments used were validated tools that have been widely used in other samples of MSs and physicians in training, which provides a context for our findings. 17,18,35,38,49,50,80 Our results affirm a relationship of both distress and wellbeing with professionalism among physicians in training and suggest that efforts to promote empathy must consider these influences. Both positive and negative aspects of personal health appear to relate to physicians' compassion, suggesting that efforts to reduce distress should be part of broader efforts to promote well-being if peak competency is to be achieved. Little is known about the effectiveness of strategies to promote well-being, and empiric research in this area is needed. 27,28,35,82,91 Prospective longitudinal studies of causes of distress and well-being among physicians in training and their causal relationship to aspects of professionalism would be particularly useful to medical school and residency training programs. 44 We initiated such studies in 2003, which are now ongoing in both MSs and residents. Although preliminary, our findings suggest that efforts to reduce distress and cultivate student well-being may also nurture empathy and promote the graduation of compassionate physicians.
+
+Figure 1 .
+
+1Factors associated with higher and lower emotive and cognitive empathy for men and women on multivariate analysis. Asterisks P<.05, daggers P<.1.
+All 1,098 MSs in the state of Minnesota were eligible to participate in this study. Participation was elective and all responses were anonymous. MSs in Minnesota attend a private medical school (Mayo Clinic College of Medicine), a traditional public university (University of Minnesota-Minneapolis campus), or a public university with a focus on primary care (University of Minnesota-Duluth campus). The Mayo Clinic College of Medicine and University of Minnesota Institutional Review Boards approved this study.
+male MS=19.5 vs male CS=16.78, P<.001; female MS=21.0 vs female CS=17.96, P<.001). Similarly, higher scores were also observed for emotive empathy (male MS=21.1 vs male CS= 19.04, P<.001; female MS=24.1 vs female CS=21.67, P<.001).
+
+Table 1 .
+
+1Demographics and Characteristics of Participating Medical Students (N=545)Variable 
+Participants n (%)
+Female 
+297 (54.6) 
+Age <24 
+192 (35.4) 
+Age 25-30 
+319 (58.7) 
+Age >30 
+32 (6) 
+Year in medical school 
+1st year 
+179 (32.8) 
+2nd year 
+116 (21.3) 
+3rd year 
+83 (15.2) 
+4th year 
+154 (28.3) 
+Other* 
+13 (2.4) 
+State of residence 
+MN 
+334 (61.5) 
+USA excluding MN 
+178 (32.8) 
+Foreign 
+31 (5.7) 
+Race/ethnicity 
+Caucasian 
+454 (84.4) 
+Asian 
+40 (7.4) 
+African-American 
+8 (1.5) 
+Other minority 
+36 (6.7)
+MN Minnesota. 
+*i.e., research year.
+
+Table 2 .
+
+2Empathy and Markers of DistressMean cognitive empathy score 
+Mean emotive empathy score
+Men 
+P value 
+Women 
+P value 
+Men 
+P value 
+Women 
+P value
+Burnout 
+Emotional exhaustion* 
+Low (<=18) 
+19.8 
+0.183 
+21.3 
+0.634 
+21.7 
+0.009 
+24.6 
+0.076 
+Moderate 
+19.6 
+20.2 
+21.0 
+23.5 
+High (>=27) 
+18.9 
+21.2 
+20.2 
+24.0 
+Depersonalization* 
+Low (<=5) 
+20.4 
+0.002 
+21.5 
+0.017 
+22.4 
+<0.001 
+24.7 
+<0.001 
+Moderate 
+19.5 
+20.6 
+21.2 
+24.0 
+High (>=10) 
+18.1 
+19.9 
+18.9 
+22.5 
+Personal accomplishment  † 
+High (>=40) 
+20.7 
+<0.001 
+22.5 
+<0.001 
+22.6 
+<0.001 
+24.9 
+<0.001 
+Moderate 
+18.7 
+19.9 
+20.4 
+23.6 
+Low (<=33) 
+18.6 
+19.5 
+19.7 
+23.2 
+Depression 
+Screen negative (n=241) 
+19.6 
+0.583 
+21.8 
+0.013 
+21.3 
+0.476 
+24.9 
+0.001 
+Screen positive (n=294) 
+19.3 
+20.5 
+20.9 
+23.5
+*High score on this scale is indicative of burnout. 
+ † Low score on this scale is indicative of burnout.
+Acknowledgment: This study was funded through an Academic Primary Care Grant, provided by the division of Primary Care Internal Medicine, Mayo Clinic College of Medicine, and through a Professionalism Grant, provided by the Department of Medicine, Mayo Clinic College of Medicine. The sponsors had no role in the design and conduct of the study; collection, management, analysis, and interpretation of the data; or preparation, review, or approval of the manuscript. The primary author had full access to all of the data in the study and takes responsibility for the integrity of the data and the accuracy of the data analysis.
+. Acgme Acgme Outcome, Project, ACGME. ACGME Outcome Project. [cited 2006 August 18]; Available from: http://www.acgme.org/Outcome/
+Senior residents' views on the meaning of professionalism and how they learn about it. A K Brownell, L Cote, Acad Med. 767Brownell AK, Cote L. Senior residents' views on the meaning of professionalism and how they learn about it. Acad Med 2001;76 (7):734-7.
+What is clinical empathy?. J Halpern, J Gen Intern Med. 188Halpern J. What is clinical empathy? J Gen Intern Med 2003;18 (8):670-4.
+Empathy in medical students as related to academic performance, clinical competence and gender. M Hojat, J S Gonnella, S Mangione, Med Educ. 366Hojat M, Gonnella JS, Mangione S, et al. Empathy in medical students as related to academic performance, clinical competence and gender. Med Educ 2002;36(6):522-7.
+Learning objectives for medical student education-guidelines for medical schools: report I of the Medical School Objectives Project. The Medical School Objectives Writing Group. 74The Medical School Objectives Writing Group. Learning objectives for medical student education-guidelines for medical schools: report I of the Medical School Objectives Project. Acad Med 1999;74(1): 13-8.
+An analysis of empathy in medical students before and following clinical experience. R A Diseker, R Michielutte, J Med Educ. 5612Diseker RA, Michielutte R. An analysis of empathy in medical students before and following clinical experience. J Med Educ. 1981;56(12):1004-10.
+An empirical study of decline in empathy in medical school. M Hojat, S Mangione, T J Nasca, Med Educ. 389Hojat M, Mangione S, Nasca TJ, et al. An empirical study of decline in empathy in medical school. Med Educ 2004;38(9):934-41.
+Mood change and empathy decline persist during three years of internal medicine training. L M Bellini, J A Shea, Acad Med. 802Bellini LM, Shea JA. Mood change and empathy decline persist during three years of internal medicine training. Acad Med 2005;80(2):164-7.
+Psychometric test results associated with high achievement in basic science components of a medical curriculum. P J Tutton, Acad Med. 712Tutton PJ. Psychometric test results associated with high achievement in basic science components of a medical curriculum. Acad Med 1996;71(2):181-6.
+Stress, burnout, and doctors' attitudes to work are determined by personality and learning style: A twelve year longitudinal study of UK medical graduates. I C Mcmanus, E Paice, A A Keeling, BMC Med. 229McManus IC, Paice E, Keeling AA. Stress, burnout, and doctors' attitudes to work are determined by personality and learning style: A twelve year longitudinal study of UK medical graduates. BMC Med 2004;2:29.
+Medical student abuse. Incidence, severity, and significance [see comment. H K Silver, A D Glicken, JAMA. 2634Silver HK, Glicken AD. Medical student abuse. Incidence, severity, and significance [see comment]. JAMA 1990;263(4):527-32.
+Medical students' perspectives on and responses to abuse during the internal medicine clerkship. D M Elnicki, R H Curry, M Fagan, Teach Learn Med. 142Elnicki DM, Curry RH, Fagan M, et al. Medical students' perspectives on and responses to abuse during the internal medicine clerkship. Teach Learn Med 2002;14(2):92-7.
+The hidden curriculum, ethics teaching, and the structure of medical education. F W Hafferty, R Franks, Acad Med. 6911Hafferty FW, Franks R. The hidden curriculum, ethics teaching, and the structure of medical education. Acad Med 1994;69(11):861-71.
+Beyond curriculum reform: confronting medicine's hidden curriculum. F W Hafferty, Acad Med. 734Hafferty FW. Beyond curriculum reform: confronting medicine's hidden curriculum. Acad Med 1998;73(4):403-7.
+Mental health of hospital consultants: the effects of stress and satisfaction at work [see comment. A J Ramirez, J Graham, M A Richards, A Cull, W M Gregory, Lancet. 3479003Ramirez AJ, Graham J, Richards MA, Cull A, Gregory WM. Mental health of hospital consultants: the effects of stress and satisfaction at work [see comment]. Lancet 1996;347(9003):724-8.
+Doctors' perceptions of the links between stress and lowered clinical care. J Firth-Cozens, J Greenhalgh, Soc Sci Med. 447Firth-Cozens J, Greenhalgh J. Doctors' perceptions of the links between stress and lowered clinical care. Soc Sci Med 1997;44 (7):1017-22.
+Burnout and selfreported patient care in an internal medicine residency program. T D Shanafelt, K A Bradley, J E Wipf, A L Back, Ann Intern Med. 1365Shanafelt TD, Bradley KA, Wipf JE, Back AL. Burnout and self- reported patient care in an internal medicine residency program. Ann Intern Med 2002;136(5):358-67.
+Variation of mood and empathy during internship. L M Bellini, M Baime, J A Shea, JAMA. 28723Bellini LM, Baime M, Shea JA. Variation of mood and empathy during internship. JAMA 2002;287(23):3143-6.
+Job satisfaction in general practice: implications for prescribing. A Melville, Med Psychol Med Sociol. 146Soc Sci MedMelville A. Job satisfaction in general practice: implications for prescribing. Soc Sci Med [Med Psychol Med Sociol] 1980;14A(6):495-9.
+Physicians' characteristics influence patients' adherence to medical treatment: results from the Medical Outcomes Study. M R Dimatteo, C D Sherbourne, R D Hays, Health Psychol. 122DiMatteo MR, Sherbourne CD, Hays RD, et al. Physicians' character- istics influence patients' adherence to medical treatment: results from the Medical Outcomes Study. Health Psychol 1993;12(2):93-102.
+Physician and patient satisfaction as factors related to the organization of internal medicine group practices. L S Linn, R H Brook, V A Clark, A R Davies, A Fink, J Kosecoff, Med Care. 2310Linn LS, Brook RH, Clark VA, Davies AR, Fink A, Kosecoff J. Physician and patient satisfaction as factors related to the organization of internal medicine group practices. Med Care 1985;23(10):1171-8.
+Is the professional satisfaction of general internists associated with patient satisfaction?. J S Haas, E F Cook, A L Puopolo, H R Burstin, P D Cleary, T A Brennan, J Gen Intern Med. 152Haas JS, Cook EF, Puopolo AL, Burstin HR, Cleary PD, Brennan TA. Is the professional satisfaction of general internists associated with patient satisfaction? J Gen Intern Med 2000;15(2):122-8.
+Understanding physicians' intentions to withdraw from practice: the role of job satisfaction, job stress, mental and physical health. E S Williams, T R Konrad, W E Scheckler, Health Care Manage Rev. 261Williams ES, Konrad TR, Scheckler WE, et al. Understanding physicians' intentions to withdraw from practice: the role of job satisfaction, job stress, mental and physical health. Health Care Manage Rev 2001;26(1):7-19.
+Satisfaction, commitment, and psychological well-being among HMO physicians. D K Freeborn, West J Med. 1741Freeborn DK. Satisfaction, commitment, and psychological well-being among HMO physicians. West J Med 2001;174(1):13-8.
+The job satisfaction and retention of physicians in organized settings: a literature review. R L Lichtenstein, Med Care Rev. 413Lichtenstein RL. The job satisfaction and retention of physicians in organized settings: a literature review. Med Care Rev 1984;41(3):139- 79.
+Physician burnout: recommendations for HMO managers. R A Schmoldt, D K Freeborn, H D Klevit, HMO Pract. 82Schmoldt RA, Freeborn DK, Klevit HD. Physician burnout: recom- mendations for HMO managers. HMO Pract 1994;8(2):58-63.
+The well-being of physicians. T D Shanafelt, J A Sloan, T M Habermann, Am J Med. 1146Shanafelt TD, Sloan JA, Habermann TM. The well-being of physi- cians. Am J Med 2003;114(6):513-9.
+A qualitative study of physicians' own wellness-promotion practices. E L Weiner, G R Swain, B Wolf, M Gottlieb, West J Med. 1741Weiner EL, Swain GR, Wolf B, Gottlieb M. A qualitative study of physicians' own wellness-promotion practices. West J Med 2001;174 (1):19-23.
+Promoting wellbeing among doctors. G Yamey, M Wilkes, BMJ. 3227281Yamey G, Wilkes M. Promoting wellbeing among doctors. BMJ 2001;322(7281):252-3.
+Supporting the well-being of medical students. V Yiu, CMAJ. 1727Yiu V. Supporting the well-being of medical students. CMAJ 2005;172 (7):889-90.
+Quality of life and pharmacoeconomics in clinical trials. B Spilker, New York; Lippincott-RavenSpilker B. Quality of life and pharmacoeconomics in clinical trials. New York: Lippincott-Raven; 1996.
+Calibrating the physician. Personal awareness and effective patient care. Working Group on Promoting Physician Personal Awareness, American Academy on Physician and Patient [see comment. D H Novack, A L Suchman, W Clark, R M Epstein, E Najberg, C Kaplan, JAMA. 2786Novack DH, Suchman AL, Clark W, Epstein RM, Najberg E, Kaplan C. Calibrating the physician. Personal awareness and effective patient care. Working Group on Promoting Physician Personal Awareness, American Academy on Physician and Patient [see comment]. JAMA 1997;278(6):502-9.
+Toward creating physicianhealers: fostering medical students' self-awareness, personal growth, and well-being. D H Novack, R M Epstein, R H Paulsen, Acad Med. 745Novack DH, Epstein RM, Paulsen RH. Toward creating physician- healers: fostering medical students' self-awareness, personal growth, and well-being. Acad Med 1999;74(5):516-20.
+Mindful practice [see comment. R M Epstein, JAMA. 2829Epstein RM. Mindful practice [see comment]. JAMA 1999;282(9):833-9.
+Relationship between increased personal well-being and enhanced empathy among internal medicine residents. T D Shanafelt, C West, X Zhao, J Gen Intern Med. 207Shanafelt TD, West C, Zhao X, et al. Relationship between increased personal well-being and enhanced empathy among internal medicine residents. J Gen Intern Med 2005;20(7):559-64.
+A multidimensional approach to individual differences in empathy. Catalog of Selected Documents in. M H Davis, Psychology. 1085Davis MH. A multidimensional approach to individual differences in empathy. Catalog of Selected Documents in Psychology 1980;10 MS. 2124: p 85.
+Measuring individual differences in empathy: Evidence for a multidimensional approach. M H Davis, J Pers Soc Psychol. 441Davis MH. Measuring individual differences in empathy: Evidence for a multidimensional approach. J Pers Soc Psychol 1983;44(1):113-1 26.
+Scores on the Interpersonal Reactivity Index: a sample of Australian medical students. G J Coman, B J Evans, R O Stanley, Psychol Rep. 623Coman GJ, Evans BJ, Stanley RO. Scores on the Interpersonal Reactivity Index: a sample of Australian medical students. Psychol Rep. 1988;62(3):943-5.
+Maslach Burnout Inventory Manual. C Maslach, Consulting Psychologists PressPalo Alto, CAMaslach C. Maslach Burnout Inventory Manual. Palo Alto, CA: Consulting Psychologists Press; 1986.
+Validity of the Maslach Burnout Inventory for family practice physicians. J P Rafferty, J P Lemkau, R R Purdy, J R Rudisill, J Clin Psychol. 423Rafferty JP, Lemkau JP, Purdy RR, Rudisill JR. Validity of the Maslach Burnout Inventory for family practice physicians. J Clin Psychol 1986;42(3):488-92.
+Utility of a new procedure for diagnosing mental disorders in primary care. The PRIME-MD 1000 study. R L Spitzer, J B Williams, K Kroenke, JAMA. 27222Spitzer RL, Williams JB, Kroenke K, et al. Utility of a new procedure for diagnosing mental disorders in primary care. The PRIME-MD 1000 study. JAMA 1994;272(22):1749-56.
+Case-finding instruments for depression. Two questions are as good as many. M A Whooley, A L Avins, J Miranda, W S Browner, J Gen Intern Med. 127Whooley MA, Avins AL, Miranda J, Browner WS. Case-finding instruments for depression. Two questions are as good as many. J Gen Intern Med 1997;12(7):439-45.
+How to score and interpret single-item health status measures: a manual for users of the SF-8 health survey. J Ware, M Kosinski, J Dewey, B Gandek, QualityMetric IncorporatedLincoln, RIWare J, Kosinski M, Dewey J, Gandek B. How to score and interpret single-item health status measures: a manual for users of the SF- 8 health survey. Lincoln, RI: QualityMetric Incorporated; 2001.
+Clinical empathy as emotional labor in the patientphysician relationship. E B Larson, X Yao, JAMA. 2939Larson EB, Yao X. Clinical empathy as emotional labor in the patient- physician relationship. JAMA 2005;293(9):1100-6.
+Empathy: an essential skill for understanding the physician-patient relationship in clinical practice. C D Brock, J V Salinsky, Fam Med. 254Brock CD, Salinsky JV. Empathy: an essential skill for understanding the physician-patient relationship in clinical practice. Fam Med 1993;25(4):245-8.
+What is empathy, and how can it be promoted during clinical clerkships. J Benbassat, R Baumal, Acad Med. 799Benbassat J, Baumal R. What is empathy, and how can it be promoted during clinical clerkships? Acad Med 2004;79(9):832-9.
+The patient-physician relationship. Narrative medicine: a model for empathy, reflection, profession, and trust. R Charon, JAMA. 28615Charon R. The patient-physician relationship. Narrative medicine: a model for empathy, reflection, profession, and trust. JAMA 2001;286 (15):1897-902.
+Compassionate-empathic physicians: personality traits and social-organizational factors that enhance or inhibit this behavior pattern. S Carmel, S M Glick, Soc Sci Med. 438Carmel S, Glick SM. Compassionate-empathic physicians: personality traits and social-organizational factors that enhance or inhibit this behavior pattern. Soc Sci Med 1996;43(8):1253-61.
+Measuring medical students' empathy skills. B J Evans, R O Stanley, G D Burrows, Br J Med Psychol. 662Evans BJ, Stanley RO, Burrows GD. Measuring medical students' empathy skills. Br J Med Psychol 1993;66(Pt 2):121-33.
+Psychological tests to measure the effects of medical education on students' interpersonal skills. B J Evans, R O Stanley, G J Coman, G D Burrows, Med Educ. 236Evans BJ, Stanley RO, Coman GJ, Burrows GD. Psychological tests to measure the effects of medical education on students' interpersonal skills. Med Educ 1989;23(6):492-49 7.
+A meta-analytic examination of the correlates of the three dimensions of job burnout. R T Lee, B E Ashforth, J Appl Psychol. 812Lee RT, Ashforth BE. A meta-analytic examination of the correlates of the three dimensions of job burnout. J Appl Psychol 1996;81(2):123-33.
+The discriminant validity of burnout and depression: a confirmatory factor analytic study. M P Leiter, J Durup, Anxiety Stress Coping. 7Leiter MP, Durup J. The discriminant validity of burnout and depression: a confirmatory factor analytic study. Anxiety Stress Coping 1994;7:357-73.
+Randomized comparison of four tools measuring overall quality of life in patients with advanced cancer. J A Sloan, C L Loprinzi, S A Kuross, J Clin Oncol. 1611Sloan JA, Loprinzi CL, Kuross SA, et al. Randomized comparison of four tools measuring overall quality of life in patients with advanced cancer. J Clin Oncol 1998;16(11):3662-73.
+Randomized comparison of megestrol acetate versus dexamethasone versus fluoxymesterone for the treatment of cancer anorexia/cachexia. C L Loprinzi, J W Kugler, J A Sloan, J Clin Oncol. 1710Loprinzi CL, Kugler JW, Sloan JA, et al. Randomized comparison of megestrol acetate versus dexamethasone versus fluoxymesterone for the treatment of cancer anorexia/cachexia. J Clin Oncol 1999;17 (10):3299-306.
+Does megestrol acetate down-regulate interleukin-6 in patients with cancer-associated anorexia and weight loss? A North Central Cancer Treatment Group investigation [see comment. A Jatoi, J Yamashita, J A Sloan, P J Novotny, H E Windschitl, C L Loprinzi, Support Care Cancer. 101Jatoi A, Yamashita J, Sloan JA, Novotny PJ, Windschitl HE, Loprinzi CL. Does megestrol acetate down-regulate interleukin-6 in patients with cancer-associated anorexia and weight loss? A North Central Cancer Treatment Group investigation [see comment]. Support Care Cancer 2002;10(1):71-5.
+The hospice patient's primary caregiver. What is their quality of life?. P Gill, J S Kaur, T Rummans, P J Novotny, J A Sloan, J Psychosom Res. 555Gill P, Kaur JS, Rummans T, Novotny PJ, Sloan JA. The hospice patient's primary caregiver. What is their quality of life? J Psychosom Res 2003;55(5):445-51.
+Pilot evaluation of gabapentin for treating hot flashes. L Loprinzi, D L Barton, J A Sloan, see commentLoprinzi L, Barton DL, Sloan JA, et al. Pilot evaluation of gabapentin for treating hot flashes [see comment].
+. Mayo Clin Proc. 7711Mayo Clin Proc 2002;77 (11):1159-63.
+Comparison of conditional quality of life terminology and visual analogue scale measurements. S M Grunberg, S Groshen, S Steingass, S Zaretsky, B Meyerowitz, Qual Life Res. 51Grunberg SM, Groshen S, Steingass S, Zaretsky S, Meyerowitz B. Comparison of conditional quality of life terminology and visual analogue scale measurements. Qual Life Res 1996;5(1):65-72.
+Health state valuations from the general public using the visual analogue scale. C Gudex, P Dolan, P Kind, A Williams, Qual Life Res. 56Gudex C, Dolan P, Kind P, Williams A. Health state valuations from the general public using the visual analogue scale. Qual Life Res 1996;5 (6):521-31.
+Development of a new type of global quality of life scale, and comparison of performance and preference for 12 global scales. M E Hyland, S C Sodergren, Qual Life Res. 55Hyland ME, Sodergren SC. Development of a new type of global quality of life scale, and comparison of performance and preference for 12 global scales. Qual Life Res 1996;5(5):469-80.
+Studies with different types of visual analog scales for measurement of pain. K Sriwatanakul, W Kelvie, L Lasagna, J F Calimlim, O F Weis, G Mehta, Clin Pharmacol Ther. 342Sriwatanakul K, Kelvie W, Lasagna L, Calimlim JF, Weis OF, Mehta G. Studies with different types of visual analog scales for measurement of pain. Clin Pharmacol Ther 1983;34(2):234-9.
+A critical review of visual analogue scales in the measurement of clinical phenomena. M E Wewers, N K Lowe, see commentWewers ME, Lowe NK. A critical review of visual analogue scales in the measurement of clinical phenomena [see comment].
+. Res Nurs Health. 134Res Nurs Health 1990;13(4):227-36.
+The well-being and personal wellness promotion strategies of medical oncologists in the North Central Cancer Treatment Group. T D Shanafelt, P Novotny, M E Johnson, Oncology. 681Shanafelt TD, Novotny P, Johnson ME, et al. The well-being and personal wellness promotion strategies of medical oncologists in the North Central Cancer Treatment Group. Oncology 2005;68(1):23-32.
+Tests for linear trend in proportions and frequencies. P Armitage, Biometrics. 11Armitage P. Tests for linear trend in proportions and frequencies. Biometrics 1955;11:375-3 86.
+Personal life events and medical student burnout: a multicenter study. L N Dyrbye, M R Thomas, T D Shanafelt, Acad Med. 814Dyrbye LN, Thomas MR, Shanafelt TD, et al. Personal life events and medical student burnout: a multicenter study. Acad Med 2006;81 (4):374-84.
+Differences in medical students' empathy. B W Newton, M A Savidge, L Barber, Acad Med. 75121215Newton BW, Savidge MA, Barber L, et al. Differences in medical students' empathy. Acad Med. 2000;75(12):1215.
+Medical students' attitudes toward providing care for the underserved. Are we training socially responsible physicians?. S J Crandall, R J Volk, V Loemker, JAMA. 269Crandall SJ, Volk RJ, Loemker V. Medical students' attitudes toward providing care for the underserved. Are we training socially responsible physicians? JAMA 1993;269(19):2519-23.
+Attitude change during medical school: a cohort study. W Woloschuk, P H Harasym, W Temple, Med Educ. 385Woloschuk W, Harasym PH, Temple W. Attitude change during medical school: a cohort study. Med Educ 2004;38(5):522-34.
+Changes in students' moral development during medical school: a cohort study [see comment. J Patenaude, T Niyonsenga, D Fafard, CMAJ. 1687Patenaude J, Niyonsenga T, Fafard D. Changes in students' moral development during medical school: a cohort study [see comment]. CMAJ 2003;168(7):840-4.
+The effects of stress on physicians and their medical practice. J D Mccue, N Engl J Med. 3068McCue JD. The effects of stress on physicians and their medical practice. N Engl J Med 1982;306(8):458-63.
+Job satisfaction in general practice: implications for prescribing. A Melville, Soc Sci Med. 14Melville A. Job satisfaction in general practice: implications for prescribing. Soc Sci Med 1980;14A:495-49 9.
+Emotional distress in junior house officers. J Firth-Cozens, Br Med J (Clin Res Ed). 2956597Firth-Cozens J. Emotional distress in junior house officers. Br Med J (Clin Res Ed) 1987;295(6597):533-6.
+Interventions to improve physicians' well-being and patient care. J Firth-Cozens, Soc Sci Med. 52Firth-Cozens J. Interventions to improve physicians' well-being and patient care. Soc Sci Med 2001;52:215-2 22.
+Resident physicians in family practice: who's burned out and who knows. R R Purdy, J P Lemkau, J P Rafferty, J R Rudisill, Fam Med. 193Purdy RR, Lemkau JP, Rafferty JP, Rudisill JR. Resident physicians in family practice: who's burned out and who knows? Fam Med 1987;19(3):203-8.
+Burnout syndrome in the practice of oncology: results of a random survey of 1,000 oncologists. D A Whippen, G P Canellos, J Clin Oncol. 910Whippen DA, Canellos GP. Burnout syndrome in the practice of oncology: results of a random survey of 1,000 oncologists. J Clin Oncol 1991;9(10):1916-20.
+Burnout and career-choice regret among family practice physicians in early practice. J Lemkau, J Rafferty, R Gordon, Jr , Fam Pract Res J. 143Lemkau J, Rafferty J, Gordon R, Jr. Burnout and career-choice regret among family practice physicians in early practice. Fam Pract Res J 1994;14(3):213-22.
+Work-related stress and depression among practicing emergency physicians: an international study. T W Whitley, E J Allison, Jr Gallery, M E , Ann Emerg Med. 235Whitley TW, Allison EJ, Jr., Gallery ME, et al. Work-related stress and depression among practicing emergency physicians: an interna- tional study. Ann Emerg Med 1994;23(5):1068-71.
+Burnout and psychiatric disorder among cancer clinicians. A J Ramirez, J Graham, M A Richards, see commentRamirez AJ, Graham J, Richards MA, et al. Burnout and psychiatric disorder among cancer clinicians [see comment].
+. Br J Cancer. 716Br J Cancer. 1995;71 (6):1263-9.
+Burnout among American surgeons. D A Campbell, Jr Sonnad, S S Eckhauser, F E Campbell, K K Greenfield, L J , Surgery. 1304discussion 702-5Campbell DA, Jr., Sonnad SS, Eckhauser FE, Campbell KK, Greenfield LJ. Burnout among American surgeons. Surgery 2001;130(4):696-702; discussion 702-5.
+Psychological stress and burnout in medical students: a five-year prospective longitudinal study. E Guthrie, D Black, H Bagalkote, C Shaw, M Campbell, F Creed, J R Soc Med. 915Guthrie E, Black D, Bagalkote H, Shaw C, Campbell M, Creed F. Psychological stress and burnout in medical students: a five-year prospective longitudinal study. J R Soc Med 1998;91(5):237-43.
+Examining stress and responses to stress in medical students and new medical graduates. M G Daly, S M Willcock, Med J Aust. 177supplDaly MG, Willcock SM. Examining stress and responses to stress in medical students and new medical graduates. Med J Aust. 2002;177 (suppl):S14-5.
+Medical student distress: causes, consequences, and proposed solutions. L N Dyrbye, M R Thomas, T D Shanafelt, Mayo Clin Proc. 8012Dyrbye LN, Thomas MR, Shanafelt TD. Medical student distress: causes, consequences, and proposed solutions. Mayo Clin Proc 2005;80(12):1613-16 22.
+Stress in medical residency: status quo after a decade of reform?. V U Collier, J D Mccue, Markus A Smith, L , Ann Intern Med. 1365Collier VU, McCue JD, Markus A, Smith L. Stress in medical residency: status quo after a decade of reform? Ann Intern Med 2002;136(5):384-90.
+Stress and impairment during residency training: strategies for reduction, identification, and management. Resident Services Committee, Association of Program Directors in Internal Medicine. Ann Intern Med. 1092Stress and impairment during residency training: strategies for reduc- tion, identification, and management. Resident Services Committee, Association of Program Directors in Internal Medicine. Ann Intern Med 1988;109(2):154-61.
+Managed care, time pressure, and physician job satisfaction: results from the physician worklife study. M Linzer, T R Konrad, J Douglas, see commentLinzer M, Konrad TR, Douglas J, et al. Managed care, time pressure, and physician job satisfaction: results from the physician worklife study [see comment].
+. J Gen Intern Med. 157J Gen Intern Med 2000;15(7):441-50.
+Career satisfaction of US women physicians: results from the Women Physicians' Health Study. Society of General Internal Medicine Career Satisfaction Study Group. E Frank, J E Mcmurray, M Linzer, L Elon, Arch Intern Med. 15913Frank E, McMurray JE, Linzer M, Elon L. Career satisfaction of US women physicians: results from the Women Physicians' Health Study. Society of General Internal Medicine Career Satisfaction Study Group. Arch Intern Med 1999;159(13):1417-26.
+Managed care, professional autonomy, and income: effects on physician career satisfaction. J J Stoddard, J L Hargraves, M Reed, A Vratil, J Gen Intern Med. 1610Stoddard JJ, Hargraves JL, Reed M, Vratil A. Managed care, professional autonomy, and income: effects on physician career satisfaction. J Gen Intern Med 2001;16(10):675-84.
+The psychological impact on staff of caring for people with serious diseases: the case of HIV infection and oncology. J Catalan, A Burgess, A Pergami, N Hulme, B Gazzard, R Phillips, J Psychosom Res. 404Catalan J, Burgess A, Pergami A, Hulme N, Gazzard B, Phillips R. The psychological impact on staff of caring for people with serious diseases: the case of HIV infection and oncology. J Psychosom Res 1996;40(4):425-35.
+The inner life of physicians and care of the seriously ill. D E Meier, A L Back, R S Morrison, JAMA. 28623Meier DE, Back AL, Morrison RS. The inner life of physicians and care of the seriously ill. JAMA 2001;286(23):3007-14.
+The funds, friends, and faith of happy people. D G Myers, Am Psychol. 551Myers DG. The funds, friends, and faith of happy people. Am Psychol. 2000;55(1):56-67.
+Healthy approaches to physician stress. T E Quill, P R Williamson, Arch Intern Med. 1509Quill TE, Williamson PR. Healthy approaches to physician stress. Arch Intern Med 1990;150(9):1857-61.
+Finding meaning, balance, and personal satisfaction in the practice of oncology. T D Shanafelt, J Support Oncol. 32Shanafelt TD. Finding meaning, balance, and personal satisfaction in the practice of oncology. J Support Oncol 2005;3(2):157-62, 164.
+Doctoring to heal: fostering well-being among physicians through personal reflection. M W Rabow, S J Mcphee, West J Med. 1741Rabow MW, McPhee SJ. Doctoring to heal: fostering well-being among physicians through personal reflection. West J Med 2001;174(1):66-9.
+Response rates to mail surveys published in medical journals. D A Asch, M K Jedrziewski, N A Christakis, J Clin Epidemiol. 5010Asch DA, Jedrziewski MK, Christakis NA. Response rates to mail surveys published in medical journals. J Clin Epidemiol 1997;50(10):1129-36.
+Physician response to surveys. A review of the literature. S E Kellerman, J Herold, Am J Prev Med. 201Kellerman SE, Herold J. Physician response to surveys. A review of the literature. Am J Prev Med 2001;20(1):61-7.
+Alcohol-use patterns through medical school. A longitudinal study of one class. D C Clark, E J Eckenfels, S R Daugherty, J Fawcett, JAMA. 25721Clark DC, Eckenfels EJ, Daugherty SR, Fawcett J. Alcohol-use patterns through medical school. A longitudinal study of one class. JAMA 1987;257(21):2921-6.
+Tobacco and alcohol use among 1996 medical school graduates. R S Mangus, C E Hawkins, M J Miller, JAMA. 28013Mangus RS, Hawkins CE, Miller MJ. Tobacco and alcohol use among 1996 medical school graduates. JAMA 1998;280(13):1192-3, 1195.
+The relationship between academic performance and severity of depressed mood during medical school. D C Clark, S R Daugherty, P B Zeldow, G S Gotterer, D Hedeker, Compr Psychiatry. 294Clark DC, Daugherty SR, Zeldow PB, Gotterer GS, Hedeker D. The relationship between academic performance and severity of depressed mood during medical school. Compr Psychiatry 1988;29 (4):409-20.
+Self-care in medical education: effectiveness of healthhabits interventions for first-year medical students. S Ball, A Bax, Acad Med. 779Ball S, Bax A. Self-care in medical education: effectiveness of health- habits interventions for first-year medical students. Acad Med 2002;77 (9):911-7.
+A longitudinal study of students' depression at one medical school. M C Rosal, I S Ockene, J K Ockene, S V Barrett, Y Ma, J R Hebert, Acad Med. 726Rosal MC, Ockene IS, Ockene JK, Barrett SV, Ma Y, Hebert JR. A longitudinal study of students' depression at one medical school. Acad Med 1997;72(6):542-6.
+Evaluating the outcome of communication skill teaching for entry-level medical students: does knowledge of empathy increase?. H R Winefield, A Chur-Hansen, Med Educ. 342Winefield HR, Chur-Hansen A. Evaluating the outcome of communi- cation skill teaching for entry-level medical students: does knowledge of empathy increase? Med Educ 2000;34(2):90-4.
+Values and virtues: how should they be taught. L M Kopelman, Acad Med. 7412Kopelman LM. Values and virtues: how should they be taught? Acad Med 1999;74(12):1307-10.
+What is empathy and can it be taught?. H Spiro, Ann Intern Med. 11610Spiro H. What is empathy and can it be taught? Ann Intern Med 1992;116(10):843-6.
+Empathy as a hermeneutic practice. E S More, Theor Med. 17More ES. Empathy as a hermeneutic practice. Theor Med 1996;17: 243-2 54.
+Supporting the moral development of medical students. W T BranchJr, J Gen Intern Med. 157Branch WT, Jr. Supporting the moral development of medical students. J Gen Intern Med 2000;15(7):503-8.
+Effect of gender, age, and relevant course work on attitudes toward empathy, patient spirituality, and physician wellness. L F Dilalla, S K Hull, J K Dorsey, Teach Learn Med. 162DiLalla LF, Hull SK, Dorsey JK. Effect of gender, age, and relevant course work on attitudes toward empathy, patient spirituality, and physician wellness. Teach Learn Med 2004;16(2):165-70.
+Philosophy and medical education. L M Kopelman, Acad Med. 709Kopelman LM. Philosophy and medical education. Acad Med 1995;70 (9):795-805.
+Communication patterns of primary care physicians. D L Roter, M Stewart, S M Putnam, M Lipkin, Jr Stiles, W Inui, T S , JAMA. 2774Roter DL, Stewart M, Putnam SM, Lipkin M, Jr., Stiles W, Inui TS. Communication patterns of primary care physicians. JAMA 1997;277 (4):350-6.
+Measuring medical students' empathy: a validation study. A R Hornblow, M A Kidson, K V Jones, Med Educ. 111Hornblow AR, Kidson MA, Jones KV. Measuring medical students' empathy: a validation study. Med Educ 1977;11(1):7-12.
+Sympathy, empathy, and physician resource utilization. S D Nightingale, P R Yarnold, M S Greenberg, J Gen Intern Med. 65Nightingale SD, Yarnold PR, Greenberg MS. Sympathy, empathy, and physician resource utilization. J Gen Intern Med 1991;6(5):420-3.
+The Jefferson Scale of Physician Empathy: further psychometric data and differences by gender and specialty at item level. M Hojat, J S Gonnella, T J Nasca, S Mangione, J J Veloksi, M Magee, Acad Med. 7710SupplHojat M, Gonnella JS, Nasca TJ, Mangione S, Veloksi JJ, Magee M. The Jefferson Scale of Physician Empathy: further psychometric data and differences by gender and specialty at item level. Acad Med 2002;77 (10 Suppl):S58-60.
+Does the interpersonal Reactivity Index Perspective-taking scale predict who will volunteer time to counsel adults entering college?. P A Oswald, Percept Mot Skills. 973Pt 2Oswald PA. Does the interpersonal Reactivity Index Perspective-taking scale predict who will volunteer time to counsel adults entering college? Percept Mot Skills 2003;97(3 Pt 2):1184-6.

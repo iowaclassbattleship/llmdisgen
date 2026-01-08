@@ -1,0 +1,103 @@
+[
+  {
+    "corpus_id": "10009609",
+    "title": "The impact of cancer research: how publications influence UK cancer clinical guidelines",
+    "externalids": {
+      "ACL": "",
+      "ArXiv": "",
+      "CorpusId": "10009609",
+      "DBLP": "",
+      "DOI": "10.1038/sj.bjc.6604405",
+      "MAG": "2034321615",
+      "PubMed": "18521087",
+      "PubMedCentral": "2441955"
+    },
+    "year": "2008",
+    "experiment": "abstract",
+    "level": "section",
+    "discussion": {
+      "header": "DISCUSSION",
+      "papers_cited_discussion": [
+        "9662045"
+      ],
+      "subsections": [
+        {
+          "header": "DISCUSSION",
+          "paragraphs": [
+            "The UK cancer clinical guidelines are sufficient in number and variety to provide a fair window on the impact of cancer research on clinical practice, not only in the United Kingdom, but in other leading countries, particularly in western Europe. We have seen that almost all the references (88%) are to papers that are within the subfield of cancer research. Because about one-third of the research supported by Cancer Research UK, in common with that of other medical research charities working in a particular disease area, is out with this subfield (most of this would comprise basic biology), it follows that little of this work can be expected to influence clinical guidelines -hardly a surprising conclusion, but nevertheless one that is worth stating.",
+            "Many of the guideline references are to papers in the US and the UK general medical journals -The Journal of the American Medical Association, New England Journal Medical, British Medical Journal and The Lancet. This is one reason, but by no means the only one, for the guideline references as a whole to be in high impact, and therefore well known, journals. It appears that if researchers want their work, particularly clinical trials, to be part of the evidence base for clinical guidelines, then it is desirable for them to publish in highly cited journals. Disproportionately, many of these papers will have been funded by government or the pharmaceutical industry, with charities also playing an enhanced role compared with cancer research overall. This highlights one pitfall of national guidelines in the context of research impact assessments; many important, high quality clinical trials -either because they are early phase or negative -will not make it into guidelines. The impact of research on national clinical guidelines is just one parameter that can describe the utility of health research {{9662045}} Table 4."
+          ]
+        },
+        {
+          "header": "Impact of cancer research G Lewison and R Sullivan",
+          "paragraphs": [
+            "When account is taken of the clinical nature of the work cited on guidelines, the big increase in the percentage of the papers that acknowledge funding -whether from government, charities or industry -is striking (Table 5). Many (37%) of these clinical papers with RLs greater than 1.5 are reports of clinical trials, and 85% of the latter acknowledge funding compared with 71% of the others. Cancer Research UK plays the biggest role, and supports over one-third of these trials, more even than the pharmaceutical industry as a whole, or the UK government.",
+            "The geographical analysis of the cited papers reveals that the UK papers have a threefold higher presence among them than in world cancer research. In part, this reflects the differences in cancer management between countries. Such overcitation also occurs on other scientific papers, so it is hardly surprising that it was found here. It might be expected that the UK guidelines, which aim to show which treatments are cost-effective, would reflect in particular the different financial basis of health-care provision in this country compared with that elsewhere, and so papers concerned with economics and costs would be even more overcited if they were from the United Kingdom. In fact, this does occur, but to a very minor extent (22% from the United Kingdom compared with 19% overall; the difference not being significant).",
+            "The distribution of the cited papers within the United Kingdom differs from what might have been expected based purely on overall numbers and on the extent to which the cities carry out clinical observation rather than basic research. The simple comparison of Figure 4 needs also to take account of the mean RL of papers from each area, and, when this is done ( Figure 5), a different pattern emerges, with EH \u00bc Edinburgh, OX \u00bc Oxford and CB \u00bc Cambridge forming an axis of excellence (on this indicator) and other areas' output being less cited on guidelines. The distance of the spots from this axis gives one indicator of the performance of the different centres, an imperfect one to be sure, as there will be other confounding factors not considered here, but nevertheless a useful complement to the traditional bibliometric criterion based purely on citation counts in the scientific literature.",
+            "There are in the database enough cited papers from a few other countries to enable a similar evaluation to be carried out for them. However, these data are inevitably skewed by being viewed through the prism of the UK clinical recommendations. It would be highly desirable to complement them with the results of similar exercises carried out in other countries with extensive sets of clinical guidelines, or at a European or international level. Then, provided the data were collected in exactly the same way, they could be pooled and a more international perspective on the utility of cancer research would emerge that research evaluators could employ. Such an activity could appropriately be coordinated by the European Cancer Managers' Research Forum, with all data contributors having also the right to gain access to the data provided by workers in other countries."
+          ]
+        },
+        {
+          "header": "",
+          "paragraphs": []
+        }
+      ]
+    },
+    "llm_outputs": [
+      {
+        "model": "meta-llama/Llama-2-7b-chat-hf",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "Section-Level Discussion:",
+                "The abstract highlights the increased interest in biomedical research impact assessment over the past five years, particularly in the field of cancer. The authors analyzed 43 UK guidelines and associated Health Technology Assessments published up to October 2006, and identified their geographical provenance and type of research. The study found that UK papers were cited nearly three times as frequently as would have been expected from their presence in world oncology research. Edinburgh and Glasgow stood out for their unexpectedly high contributions to the guidelines' scientific base.",
+                "The study provides valuable insights into the impact of biomedical research on clinical guidelines, particularly in the context of cancer research. The findings suggest that there is a significant correlation between the amount of funding received by researchers and the number of papers they publish, which can influence the development of clinical guidelines. The study also highlights the importance of geographical location in determining the contributions of researchers to guidelines, with Edinburgh and Glasgow standing out as notable contributors.",
+                "The study's findings have several implications for the field of biomedical research. Firstly, they suggest that there is a need for more comprehensive and systematic assessments of the impact of research on clinical guidelines. Secondly, they highlight the importance of geographical location in determining the"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "model": "meta-llama/Llama-3.2-1B-Instruct",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "**Discussion**",
+                "The increasing interest in biomedical research impact assessment has been a significant trend in recent years, with various methods being employed to evaluate its effectiveness. This trend is particularly relevant in the context of cancer research, where guidelines and associated Health Technology Assessments (HTAs) have been instrumental in shaping the field. The UK has published 43 guidelines and HTAs across three series, with a substantial number of references cited, indicating a high level of scrutiny.",
+                "The analysis of these guidelines reveals a clear distinction between their geographical provenance and type of research. The UK papers are cited nearly three times as frequently as would be expected based on their presence in world oncology research. This suggests that the UK's influence on the development of guidelines is more pronounced than initially thought. Notably, Edinburgh and Glasgow stand out as having contributed significantly to the guidelines' scientific base, indicating a potential hub of expertise in the field.",
+                "Furthermore, the UK's funding patterns are also noteworthy. The papers cited from the UK acknowledged explicit funding from all sectors, whereas the UK cancer research papers were cited at a lower level. This disparity may indicate that the UK's research institutions have more significant involvement in the development and dissemination of guidelines.",
+                "The implications of these findings are significant, as they highlight the importance of considering"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "model": "mistralai/Mistral-7B-Instruct-v0.2",
+        "discussion": {
+          "header": "Discussion",
+          "subsections": [
+            {
+              "header": "Discussion",
+              "paragraphs": [
+                "f, just the discussion\n<</SYS>>",
+                "Write the section-level discussion based on the following scientific excerpt: Write a scientific discussion section for the following abstract. If the abstract cites papers these are also in the prompt",
+                "There has been a substantially increased interest in biomedical research impact assessment over the past 5 years. This can be studied by a number of methods, but its influence on clinical guidelines must rank as one of the most important. In cancer, there are 43 UK guidelines (and associated Health Technology Assessments) published (up to October 2006) across three series, each of which has an evidence base in the form of references, many of which are papers in peer-reviewed journals. These have all been identified and analysed to determine their geographical provenance and type of research, in comparison with overall oncology research published in the peak years of guideline references (1999\u20132001). The UK papers were cited nearly three times as frequently as would have been expected from their presence in world oncology research (6.5%). Within the United Kingdom, Edinburgh and Glasgow stood out for their unexpectedly high contributions to the guidelines' scientific base. The cited papers from the United Kingdom acknowledged much more explicit funding from all sectors than did the UK cancer research papers at the same research level. [/INST] [/INST] Discussion:",
+                "The interest in assessing the impact of biomedical research on clinical guidelines has witnessed a significant surge over the past five years. One essential aspect of this research is understanding its influence on cancer guidelines, which account for a substantial portion of such guidelines. In the UK context, there were 43 cancer guidelines published up to October 2006, along with associated Health Technology Assessments (HTAs). Each guideline has an evidence base in the form of references, the majority of which were peer-reviewed journal articles.",
+                "To determine the geographical provenance and research type of these references, they were analyzed and compared to overall oncology research published during the peak years of guideline references (1999-2001). The UK papers were found to be cited nearly three times more frequently than would have been expected based on their presence in global oncology research (6.5%). This implies that UK research had a disproportionately larger impact on these guidelines.",
+                "Moreover, within the UK, Edinburgh and Glasgow emerged as unexpectedly significant contributors to the scientific base of these guidelines. The cited papers from the UK acknowledged more explicit funding from various sectors than did the UK"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+]
