@@ -3,19 +3,27 @@ import matplotlib.pyplot as plt
 from collections import defaultdict
 import numpy as np
 from pathlib import Path
+import sys
+
+experiment = sys.argv[1]
+
+allowed_experiments = ["abstract_only", "full_paper"]
+if experiment not in allowed_experiments:
+    raise ValueError(f"{experiment} not in {allowed_experiments}")
 
 figs = Path("figs")
 figs.mkdir(exist_ok=True)
 
-with open("out.json", "r") as f:
+input_path = Path("out") / experiment
+
+with open(input_path / "out.json", "r") as f:
     data = json.load(f)
 
-# model -> list of P values
 d = defaultdict(list)
 
 for discussion_id, models in data.items():
     for model, entries in models.items():
-        for entry in entries:  # entries is a list
+        for entry in entries:
             p = entry.get("P")
             if p is not None:
                 d[model].append(p)
@@ -32,5 +40,5 @@ plt.xticks(rotation=45, ha="right")
 plt.ylabel("Mean Precision (P)")
 plt.title("Mean BERTScore Precision by Model")
 plt.tight_layout()
-plt.savefig(figs / "out.png", dpi=200)
+plt.savefig(figs / f"{experiment}.png", dpi=200)
 plt.close()

@@ -13,6 +13,17 @@ def get_papers(level: str):
     return papers["train"], cited["train"]
 
 
+def build_discussion_body(discussion):
+    d = ""
+    for subsection in discussion["subsections"]:
+        if subsection["header"] != discussion["header"]:
+            d += subsection["header"]
+        for paragraph in subsection["paragraphs"]:
+            d += paragraph + "\n\n"
+
+    return d, discussion["papers_cited_discussion"]
+
+
 def write_json(path: str, obj):
     if path.exists():
         try:
@@ -33,15 +44,6 @@ def write_json(path: str, obj):
         json.dump(data, f, indent=2)
 
 
-def build_discussion_txt(section, br="\n\n"):
-    txt = ""
-    for subsection in section["subsections"]:
-        paragraphs = subsection["paragraphs"]
-        if len(paragraphs):
-            txt += br.join(paragraphs)
-    return txt
-
-
 def split_discussion(sections):
     for i, section in enumerate(sections):
         if section["header"].lower() == "discussion":
@@ -58,9 +60,3 @@ def get_runs(path):
             if f.is_file() and f.name.endswith(".json")
         ]
     )
-
-
-def get_cited_papers_from_text(text: str):
-    pattern = r"\{\{(.*?)\}\}"
-
-    return re.findall(pattern, text)

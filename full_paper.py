@@ -8,8 +8,11 @@ import block_match
 from collections import defaultdict
 import json
 
-out = Path("papers")
-out.mkdir(exist_ok=True)
+out = Path("papers/full_paper")
+out.mkdir(exist_ok=True, parents=True)
+
+data_out = Path("out/full_paper")
+data_out.mkdir(exist_ok=True, parents=True)
 
 N = 20
 
@@ -31,17 +34,6 @@ def build_paper_body_sans_discussion(sections):
             for paragraph in subsection["paragraphs"]:
                 s += paragraph + "\n"
     return s
-
-
-def build_discussion_body(discussion):
-    d = ""
-    for subsection in discussion["subsections"]:
-        if subsection["header"] != discussion["header"]:
-            d += subsection["header"]
-        for paragraph in subsection["paragraphs"]:
-            d += paragraph + "\n\n"
-
-    return d, discussion["papers_cited_discussion"]
 
 
 def append_cited_papers_to_paper_body(s, matches, skip=["figure", "table"]):
@@ -104,7 +96,7 @@ def run_evaluations():
                     evres[corpus_id][model_generated_d.stem.split("_")[-1]].append(
                         {"P": P, "R": R, "F1": F1}
                     )
-    with open("out.json", "w") as f:
+    with open(data_out / f"out.json", "w") as f:
         json.dump(evres, f, indent=2)
 
 
@@ -116,7 +108,7 @@ for i in tqdm(range(min(N, len(papers["sections"])))):
     d_out_path = out / "discussion" / f"{papers["corpus_id"][i]}_discussion.txt"
 
     if not d_out_path.exists():
-        d, papers_cited_discussion = build_discussion_body(discussion_section)
+        d, papers_cited_discussion = utils.build_discussion_body(discussion_section)
         with open(d_out_path, "w") as f:
             f.write(d)
 
