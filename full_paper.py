@@ -3,15 +3,16 @@ from dotenv import load_dotenv
 import utils
 from tqdm import tqdm
 from pathlib import Path
-import compare
-import block_match
-from collections import defaultdict
-import json
+import time
 
-out = Path("papers/full_paper")
-out.mkdir(exist_ok=True, parents=True)
+experiment = "full_paper"
 
-data_out = Path("out/full_paper")
+base = Path("papers")
+
+experiment_out = base / experiment
+experiment_out.mkdir(exist_ok=True, parents=True)
+
+data_out = Path("out") / experiment
 data_out.mkdir(exist_ok=True, parents=True)
 
 N = 20
@@ -53,9 +54,9 @@ def append_cited_papers_to_paper_body(s, matches, skip=["figure", "table"]):
 
 def run_prompting(corpus_id, s):
     for model in openai.OpenAIWrapper.available_models:
-        out_path = out / "openai" / f"{corpus_id}_discussion_{model}.txt"
+        out_path = experiment_out / f"{corpus_id}_discussion_{model}.txt"
         if out_path.exists():
-            print(f"{corpus_id}:{model} exists, skipping...")
+            print(f"{out_path} exists, skipping...")
             continue
 
         llm = openai.OpenAIWrapper(model_name=model)
@@ -74,38 +75,12 @@ def run_prompting(corpus_id, s):
             f.write(output)
 
 
-def run_evaluations():
-    evres = defaultdict(lambda: defaultdict(list))
-    inp = out / "discussion"
-    discussions = [f for f in inp.iterdir()]
-
-    BERT = compare.BERTScore(model_type="bert-base-uncased")
-
-    for discussion in tqdm(discussions):
-        with open(discussion, "r") as f:
-            d = f.read()
-        corpus_id = discussion.name.split("_")[0]
-        for model_family in ["openai"]:
-            for model_generated_d in (out / model_family).iterdir():
-                if model_generated_d.stat().st_size == 0:
-                    continue
-                if corpus_id in model_generated_d.name:
-                    with open(model_generated_d, "r") as f:
-                        dp = f.read()
-                    P, R, F1 = block_match.metric(dp, d, BERT.metric)
-                    evres[corpus_id][model_generated_d.stem.split("_")[-1]].append(
-                        {"P": P, "R": R, "F1": F1}
-                    )
-    with open(data_out / f"out.json", "w") as f:
-        json.dump(evres, f, indent=2)
-
-
 for i in tqdm(range(min(N, len(papers["sections"])))):
-    # sections sans discussion
+    corpus_id = papers["corpus_id"][i]
     sections, discussion_section = utils.split_discussion(papers["sections"][i])
 
-    s_out_path = out / f"{papers['corpus_id'][i]}.txt"
-    d_out_path = out / "discussion" / f"{papers["corpus_id"][i]}_discussion.txt"
+    # s_out_path = out / f"{corpus_id}.txt"
+    d_out_path = base / "discussion" / f"{corpus_id}_discussion.txt"
 
     if not d_out_path.exists():
         d, papers_cited_discussion = utils.build_discussion_body(discussion_section)
@@ -120,8 +95,7 @@ for i in tqdm(range(min(N, len(papers["sections"])))):
 
     s = append_cited_papers_to_paper_body(s, matches)
 
-    with open(s_out_path, "w") as f:
-        f.write(s)
+    # with open(s_out_path, "w") as f:
+    #     f.write(s)
 
-    run_prompting(papers["corpus_id"][i], s)
-run_evaluations()
+    run_prompting(corpus_id, s)
