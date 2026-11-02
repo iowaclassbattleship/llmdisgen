@@ -1,0 +1,10 @@
+/venv/
+memory
+__pycache__/
+*.pyc
+.env
+bleurt
+000_out
+report
+results.db
+data/models.json
